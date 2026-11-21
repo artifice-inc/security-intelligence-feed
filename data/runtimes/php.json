@@ -1,6 +1,6 @@
 {
   "runtime": "php",
-  "updated_at": "2026-11-20T16:09:55Z",
+  "updated_at": "2026-11-21T16:38:55Z",
   "branches": [
     {
       "branch": "4.0",
@@ -140,28 +140,28 @@
       "state": "security",
       "security_support_end": "2026-12-31",
       "is_eol": false,
-      "latest_version": "8.2.35"
+      "latest_version": "8.2.36"
     },
     {
       "branch": "8.3",
       "state": "security",
       "security_support_end": "2027-12-31",
       "is_eol": false,
-      "latest_version": "8.3.36"
+      "latest_version": "8.3.37"
     },
     {
       "branch": "8.4",
       "state": "stable",
       "security_support_end": "2028-12-31",
       "is_eol": false,
-      "latest_version": "8.4.27"
+      "latest_version": "8.4.28"
     },
     {
       "branch": "8.5",
       "state": "stable",
       "security_support_end": "2029-12-31",
       "is_eol": false,
-      "latest_version": "8.5.12"
+      "latest_version": "8.5.13"
     },
     {
       "branch": "8.6",

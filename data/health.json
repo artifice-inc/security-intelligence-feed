@@ -1,127 +1,127 @@
 {
   "run_slot": "2026-11-21T07:17Z",
   "last_run": {
-    "started_at": "2026-11-21T09:14:14Z",
-    "finished_at": "2026-11-21T09:14:14Z",
+    "started_at": "2026-11-21T16:38:55Z",
+    "finished_at": "2026-11-21T16:38:55Z",
     "status": "success"
   },
-  "last_success_at": "2026-11-21T09:14:14Z",
+  "last_success_at": "2026-11-21T16:38:55Z",
   "sources": {
     "kev": {
-      "last_attempt_at": "2026-11-21T09:14:14Z",
-      "last_success_at": "2026-11-21T09:14:14Z",
+      "last_attempt_at": "2026-11-21T16:38:55Z",
+      "last_success_at": "2026-11-21T16:38:55Z",
       "last_attempt_slot": "2026-11-21T07:17Z",
       "last_success_slot": "2026-11-21T07:17Z",
       "last_attempt_ok": true,
       "last_error": null
     },
     "epss": {
-      "last_attempt_at": "2026-11-21T09:14:14Z",
-      "last_success_at": "2026-11-21T09:14:14Z",
+      "last_attempt_at": "2026-11-21T16:38:55Z",
+      "last_success_at": "2026-11-21T16:38:55Z",
       "last_attempt_slot": "2026-11-21T07:17Z",
       "last_success_slot": "2026-11-21T07:17Z",
       "last_attempt_ok": true,
       "last_error": null
     },
     "node-core": {
-      "last_attempt_at": "2026-11-21T09:14:14Z",
-      "last_success_at": "2026-11-21T09:14:14Z",
+      "last_attempt_at": "2026-11-21T16:38:55Z",
+      "last_success_at": "2026-11-21T16:38:55Z",
       "last_attempt_slot": "2026-11-21T07:17Z",
       "last_success_slot": "2026-11-21T07:17Z",
       "last_attempt_ok": true,
       "last_error": null
     },
     "node-dist": {
-      "last_attempt_at": "2026-11-21T09:14:14Z",
-      "last_success_at": "2026-11-21T09:14:14Z",
+      "last_attempt_at": "2026-11-21T16:38:55Z",
+      "last_success_at": "2026-11-21T16:38:55Z",
       "last_attempt_slot": "2026-11-21T07:17Z",
       "last_success_slot": "2026-11-21T07:17Z",
       "last_attempt_ok": true,
       "last_error": null
     },
     "php-ghsa": {
-      "last_attempt_at": "2026-11-21T09:14:14Z",
-      "last_success_at": "2026-11-21T09:14:14Z",
+      "last_attempt_at": "2026-11-21T16:38:55Z",
+      "last_success_at": "2026-11-21T16:38:55Z",
       "last_attempt_slot": "2026-11-21T07:17Z",
       "last_success_slot": "2026-11-21T07:17Z",
       "last_attempt_ok": true,
       "last_error": null
     },
     "php-releases": {
-      "last_attempt_at": "2026-11-21T09:14:14Z",
-      "last_success_at": "2026-11-21T09:14:14Z",
+      "last_attempt_at": "2026-11-21T16:38:55Z",
+      "last_success_at": "2026-11-21T16:38:55Z",
       "last_attempt_slot": "2026-11-21T07:17Z",
       "last_success_slot": "2026-11-21T07:17Z",
       "last_attempt_ok": true,
       "last_error": null
     },
     "endoflife": {
-      "last_attempt_at": "2026-11-21T09:14:14Z",
-      "last_success_at": "2026-11-21T09:14:14Z",
+      "last_attempt_at": "2026-11-21T16:38:55Z",
+      "last_success_at": "2026-11-21T16:38:55Z",
       "last_attempt_slot": "2026-11-21T07:17Z",
       "last_success_slot": "2026-11-21T07:17Z",
       "last_attempt_ok": true,
       "last_error": null
     },
     "packagist": {
-      "last_attempt_at": "2026-11-21T09:14:14Z",
-      "last_success_at": "2026-11-21T09:14:14Z",
+      "last_attempt_at": "2026-11-21T16:38:55Z",
+      "last_success_at": "2026-11-21T16:38:55Z",
       "last_attempt_slot": "2026-11-21T07:17Z",
       "last_success_slot": "2026-11-21T07:17Z",
       "last_attempt_ok": true,
       "last_error": null
     },
     "python-psf": {
-      "last_attempt_at": "2026-11-21T09:14:14Z",
-      "last_success_at": "2026-11-21T09:14:14Z",
+      "last_attempt_at": "2026-11-21T16:38:55Z",
+      "last_success_at": "2026-11-21T16:38:55Z",
       "last_attempt_slot": "2026-11-21T07:17Z",
       "last_success_slot": "2026-11-21T07:17Z",
       "last_attempt_ok": true,
       "last_error": null
     },
     "python-releases": {
-      "last_attempt_at": "2026-11-21T09:14:14Z",
-      "last_success_at": "2026-11-21T09:14:14Z",
+      "last_attempt_at": "2026-11-21T16:38:55Z",
+      "last_success_at": "2026-11-21T16:38:55Z",
       "last_attempt_slot": "2026-11-21T07:17Z",
       "last_success_slot": "2026-11-21T07:17Z",
       "last_attempt_ok": true,
       "last_error": null
     },
     "endoflife-python": {
-      "last_attempt_at": "2026-11-21T09:14:14Z",
-      "last_success_at": "2026-11-21T09:14:14Z",
+      "last_attempt_at": "2026-11-21T16:38:55Z",
+      "last_success_at": "2026-11-21T16:38:55Z",
       "last_attempt_slot": "2026-11-21T07:17Z",
       "last_success_slot": "2026-11-21T07:17Z",
       "last_attempt_ok": true,
       "last_error": null
     },
     "jpcert": {
-      "last_attempt_at": "2026-11-21T09:14:14Z",
-      "last_success_at": "2026-11-21T09:14:14Z",
+      "last_attempt_at": "2026-11-21T16:38:55Z",
+      "last_success_at": "2026-11-21T16:38:55Z",
       "last_attempt_slot": "2026-11-21T07:17Z",
       "last_success_slot": "2026-11-21T07:17Z",
       "last_attempt_ok": true,
       "last_error": null
     },
     "ipa": {
-      "last_attempt_at": "2026-11-21T09:14:14Z",
-      "last_success_at": "2026-11-21T09:14:14Z",
+      "last_attempt_at": "2026-11-21T16:38:55Z",
+      "last_success_at": "2026-11-21T16:38:55Z",
       "last_attempt_slot": "2026-11-21T07:17Z",
       "last_success_slot": "2026-11-21T07:17Z",
       "last_attempt_ok": true,
       "last_error": null
     },
     "jvn": {
-      "last_attempt_at": "2026-11-21T09:14:14Z",
-      "last_success_at": "2026-11-21T09:14:14Z",
+      "last_attempt_at": "2026-11-21T16:38:55Z",
+      "last_success_at": "2026-11-21T16:38:55Z",
       "last_attempt_slot": "2026-11-21T07:17Z",
       "last_success_slot": "2026-11-21T07:17Z",
       "last_attempt_ok": true,
       "last_error": null
     },
     "alas": {
-      "last_attempt_at": "2026-11-21T09:14:14Z",
-      "last_success_at": "2026-11-21T09:14:14Z",
+      "last_attempt_at": "2026-11-21T16:38:55Z",
+      "last_success_at": "2026-11-21T16:38:55Z",
       "last_attempt_slot": "2026-11-21T07:17Z",
       "last_success_slot": "2026-11-21T07:17Z",
       "last_attempt_ok": true,
@@ -130,13 +130,13 @@
   },
   "optional_sources": {
     "aws-bulletins": {
-      "last_attempt_at": "2026-11-21T09:14:14Z",
-      "last_success_at": "2026-11-21T09:14:14Z",
+      "last_attempt_at": "2026-11-21T16:38:55Z",
+      "last_success_at": "2026-11-21T16:38:55Z",
       "last_attempt_slot": "2026-11-21T07:17Z",
       "last_success_slot": "2026-11-21T07:17Z",
       "last_attempt_ok": true,
       "last_error": null
     }
   },
-  "packagist_updated_since": 1795252154
+  "packagist_updated_since": 1795278835
 }

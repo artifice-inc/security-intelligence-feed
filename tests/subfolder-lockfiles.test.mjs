@@ -17,7 +17,7 @@ test('a: lockfile も検出用のファイルもない案件は partial（invent
   assert.equal(outcome.status, 'partial');
   const findings = h.read('findings/demo.json');
   assert.equal(findings.scan_status, 'partial');
-  assert.ok(findings.scan_errors.some((e) => e.kind === 'inventory' && e.message.includes('projects.yaml の lockfiles を確認してください')));
+  assert.ok(findings.scan_errors.some((e) => e.kind === 'inventory' && e.message.includes('.security/stack.yml の lockfiles') && e.message.includes('config/projects.yaml の lockfiles')));
   assert.ok([...h.api.issues.values()].some((i) => i.labels.includes('health') && i.body.includes('demo')), 'health Issue に載る');
 });
 

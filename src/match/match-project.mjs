@@ -72,7 +72,7 @@ export async function detectProject({
 
   // 材料が何もないのに「影響なし」にしない。インベントリ未取得（workdir なし）は別の経路で partial になる
   if (workdir && hasNoMaterial(inventory)) {
-    errors.push({ kind: 'inventory', target: inventory.project, message: 'lockfile も検出用のファイルも見つかりません。projects.yaml の lockfiles を確認してください' });
+    errors.push({ kind: 'inventory', target: inventory.project, message: 'lockfile も検出用のファイルも見つかりません（対応しているのは npm・Composer・PyPI の lockfile と、PHP・Node.js・Python のランタイムです）。lockfile がサブフォルダにある場合は、案件の .security/stack.yml の lockfiles（中央の照合では config/projects.yaml の lockfiles）に書いてください' });
     checks.osv = 'unavailable';
     checks.packagist = 'unavailable';
   }

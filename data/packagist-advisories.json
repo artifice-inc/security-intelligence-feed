@@ -1,6 +1,6 @@
 {
   "full_sync_at": "2026-11-15T01:56:24Z",
-  "updated_since": 1795230530,
+  "updated_since": 1795252154,
   "advisories": {
     "PKSA-138c-dqwc-4pfb": {
       "packageName": "magento/product-community-edition",

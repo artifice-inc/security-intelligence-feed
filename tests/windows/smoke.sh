@@ -19,7 +19,7 @@ step "1. コードの展開"
 git config --global core.autocrlf true
 bare="$base/code.git"; code="$base/code"
 git init --quiet --bare "$bare"
-git --git-dir "$bare" fetch --quiet "$(win "$repo")" HEAD:refs/heads/main # 浅い checkout からでも取れる
+git --git-dir "$bare" fetch --quiet --update-shallow "$(win "$repo")" HEAD:refs/heads/main # 浅い checkout からでも取れる
 code_sha="$(git --git-dir "$bare" rev-parse refs/heads/main)"
 mkdir -p "$code"
 git -c core.autocrlf=false -c core.eol=lf --git-dir "$bare" archive "$code_sha" | tar -x -C "$code"

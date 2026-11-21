@@ -7,7 +7,7 @@ set -euo pipefail
 repo="$(cd "$(dirname "$0")/../.." && pwd)"
 checks="$(cygpath -am "$repo/tests/windows/check-output.mjs")"
 # 空白を含む名前で、コード・フィード・案件・DB もすべてこの下に置く
-base="${RUNNER_TEMP:-$(mktemp -d)}/si smoke"
+base="$(cygpath -u "${RUNNER_TEMP:-$(mktemp -d)}")/si smoke" # tar は D: を別のマシンの指定と読むため、Git Bash の形にする
 rm -rf "$base" && mkdir -p "$base"
 win() { cygpath -am "$1"; }
 # SKILL.md と同じく、Node（と powershell）を起動するコマンドだけ引数の変換を止める

@@ -1,6 +1,6 @@
 {
   "name": "security-check",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "description": "案件の依存関係とランタイムを、中央の脆弱性情報と照合して日本語でレポートする",
   "author": { "name": "security-intelligence 管理者" }
 }

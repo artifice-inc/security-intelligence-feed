@@ -1,0 +1,12 @@
+{
+  "type": "object",
+  "required": ["updated_at", "items"],
+  "properties": {
+    "updated_at": { "type": "string" },
+    "items": {
+      "type": "array",
+      "items": { "type": "object", "required": ["source", "id", "title", "link", "date", "cves", "verification_status", "first_seen_at"],
+        "properties": { "source": { "enum": ["jpcert", "ipa", "jvn"] }, "id": { "type": "string" }, "title": { "type": "string" }, "link": { "type": "string" }, "date": { "type": ["string", "null"] }, "cves": { "$ref": "common#/definitions/strArray" }, "verification_status": { "enum": ["text_extracted", "needs_review"] }, "first_seen_at": { "type": "string" } } }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "object",
+  "required": ["project", "exported_at", "source_ref", "source_commit", "exposure", "runtimes_detected", "files"],
+  "properties": {
+    "project": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+    "exported_at": { "type": "string" },
+    "source_ref": { "type": "string" },
+    "source_commit": { "type": "string" },
+    "exposure": { "enum": ["internet", "internal", null] },
+    "runtimes_detected": { "type": "object" },
+    "files": { "type": "array", "items": { "$ref": "common#/definitions/fileEntry" } }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "object",
+  "required": ["project", "mode", "monitor_ref", "source_commit", "inventory_as_of", "files", "runtimes", "exposure", "lockfiles"],
+  "properties": {
+    "project": { "type": "string" },
+    "mode": { "enum": ["pull", "export"] },
+    "monitor_ref": { "type": "string" },
+    "source_commit": { "type": ["string", "null"] },
+    "inventory_as_of": { "type": ["string", "null"] },
+    "files": { "type": "array", "items": { "$ref": "common#/definitions/fileEntry" } },
+    "runtimes": { "type": "object", "properties": { "php": { "$ref": "common#/definitions/runtimeEntry" }, "node": { "$ref": "common#/definitions/runtimeEntry" }, "python": { "$ref": "common#/definitions/runtimeEntry" } } },
+    "exposure": { "enum": ["internet", "internal", null] },
+    "os": { "enum": ["linux", "windows", null] },
+    "lockfiles": { "$ref": "common#/definitions/strArray" },
+    "kernel": { "type": ["object", "null"] }
+  }
+}

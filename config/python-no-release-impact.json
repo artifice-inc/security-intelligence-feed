@@ -1,0 +1,8 @@
+{
+  "PSF-2014-6": { "decision": "no_impact", "min_version": "3.0.0", "reason": "原典に「Python before 2.7.8」。bufferobject.c（Python 2 だけにあるファイル）の問題で、3.0 以上は影響なし。2系は根拠がないため 3.0.0 未満は要確認", "checked_at": "2026-11-19" },
+  "PSF-2017-6": { "decision": "no_impact", "min_version": "3.0.0", "reason": "原典に「up to 2.7.13」。PyString_DecodeEscape・stringobject.c（Python 2 だけの API）の問題で、3.0 以上は影響なし。2系は根拠がないため 3.0.0 未満は要確認", "checked_at": "2026-11-19" },
+  "PSF-2018-2": { "decision": "no_impact", "min_version": "3.0.0", "reason": "原典に「Python 2.7」の readahead（Python 2 のファイルオブジェクト）。3.0 以上は影響なし。2系は根拠がないため 3.0.0 未満は要確認", "checked_at": "2026-11-19" },
+  "PSF-2023-3": { "decision": "no_impact", "reason": "原典は「CPython v3.12.0 alpha 7」。OSV の範囲の導入と修正のコミットの間に正式版のタグがなく、正式版は影響なし", "checked_at": "2026-11-19" },
+  "PSF-2023-4": { "decision": "manual_review", "reason": "原典に「Python through 3.11.4」で正式版に影響する。範囲は introduced: 0 だけで修正コミットがなく、OSV が影響版を補えない（影響なしとは言えない）", "checked_at": "2026-11-19" },
+  "PSF-2023-7": { "decision": "no_impact", "reason": "原典は「CPython 3.12.0b1」。OSV の影響タグは v3.12.0b1〜b3 だけで、正式版は影響なし", "checked_at": "2026-11-19" }
+}

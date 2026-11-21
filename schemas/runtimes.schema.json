@@ -1,0 +1,25 @@
+{
+  "type": "object",
+  "required": ["runtime", "updated_at", "branches", "advisories"],
+  "properties": {
+    "runtime": { "enum": ["php", "nodejs", "python"] },
+    "updated_at": { "type": "string" },
+    "psf_synced_at": { "type": ["string", "null"] },
+    "pending": { "type": "array", "items": { "type": "object", "required": ["id", "reason", "since"], "properties": { "id": { "type": "string" }, "reason": { "enum": ["osv_missing", "no_versions"] }, "since": { "type": "string" } } } },
+    "branches": {
+      "type": "array",
+      "items": { "type": "object", "required": ["branch", "state", "is_eol"],
+        "properties": { "branch": { "type": "string" }, "state": { "type": ["string", "null"] }, "security_support_end": { "type": ["string", "null"] }, "is_eol": { "type": "boolean" }, "latest_version": { "type": ["string", "null"] },
+          "versions": { "type": "array", "items": { "type": "object", "required": ["version", "date"], "properties": { "version": { "type": "string" }, "date": { "type": ["string", "null"] } } } } } }
+    },
+    "advisories": {
+      "type": "array",
+      "items": { "type": "object", "required": ["key", "aliases", "ranges", "fixed_versions", "source_urls"],
+        "properties": { "key": { "type": "string" }, "aliases": { "$ref": "common#/definitions/strArray" },
+          "ranges": { "type": "array", "items": { "type": "object", "required": ["type"], "properties": { "type": { "enum": ["PHP_BRANCH", "NODE_SEMVER", "PY_VERSIONS", "UNPARSED"] } } } },
+          "fixed_versions": { "$ref": "common#/definitions/strArray" }, "source_urls": { "$ref": "common#/definitions/strArray" }, "published_at": { "type": ["string", "null"] } } }
+    }
+  },
+  "if": { "properties": { "runtime": { "const": "python" } }, "required": ["runtime"] },
+  "then": { "required": ["pending", "psf_synced_at"] }
+}

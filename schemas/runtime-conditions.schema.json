@@ -1,0 +1,12 @@
+{
+  "type": "object",
+  "propertyNames": { "enum": ["php", "node"] },
+  "additionalProperties": {
+    "type": "object",
+    "additionalProperties": {
+      "type": "object", "required": ["os", "note"],
+      "properties": { "os": { "type": "array", "minItems": 1, "items": { "enum": ["linux", "windows"] } }, "note": { "type": "string" } },
+      "additionalProperties": false
+    }
+  }
+}

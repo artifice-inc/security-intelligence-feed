@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Security Bulletins (test)</title>
+    <link>https://aws.amazon.com/security/security-bulletins/</link>
+    <description>合成した試験用のフィード</description>
+    <item>
+      <link>https://aws.amazon.com/security/security-bulletins/rss/2026-192-AWS/</link>
+      <guid isPermaLink="false">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</guid>
+      <title>Issue with example HTTP/2 (CVE-2026-0002, CVE-2026-0001, CVE-2026-0002)</title>
+      <description>&lt;p&gt;本文は読まない&lt;/p&gt;</description>
+      <pubDate>Thu, 19 Nov 2026 22:48:05 +0000</pubDate>
+      <author>test</author>
+    </item>
+    <item>
+      <link>https://aws.amazon.com/security/security-bulletins/rss/2026-191-aws/</link>
+      <guid isPermaLink="false">bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb</guid>
+      <title>Notice without CVE</title>
+      <description>x</description>
+      <pubDate>Wed, 18 Nov 2026 01:00:00 +0000</pubDate>
+    </item>
+  </channel>
+</rss>

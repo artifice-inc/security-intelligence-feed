@@ -1,0 +1,42 @@
+{
+  "type": "object",
+  "required": ["project", "monitor_ref", "scanned_at", "inventory_as_of", "inventory_status", "scan_status", "scan_errors", "provenance", "items"],
+  "properties": {
+    "project": { "type": "string" },
+    "monitor_ref": { "type": "string" },
+    "scanned_at": { "type": "string" },
+    "inventory_as_of": { "type": ["string", "null"] },
+    "inventory_status": { "$ref": "common#/definitions/inventoryStatus" },
+    "scan_status": { "$ref": "common#/definitions/scanStatus" },
+    "scan_errors": { "type": "array", "items": { "$ref": "common#/definitions/scanError" } },
+    "provenance": { "$ref": "common#/definitions/provenance" },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["advisory_key", "aliases", "locations", "fixed_versions", "judgement", "priority", "evidence", "issue_number", "first_detected_at", "last_confirmed_at", "last_confirmed_provenance"],
+        "properties": {
+          "advisory_key": { "type": "string" },
+          "aliases": { "$ref": "common#/definitions/strArray" },
+          "title": { "type": "string" },
+          "locations": {
+            "type": "array",
+            "items": { "type": "object", "required": ["lockfile", "package", "ecosystem", "installed_version", "last_confirmed_at", "last_confirmed_provenance"],
+              "properties": { "lockfile": { "type": "string" }, "package": { "type": "string" }, "ecosystem": { "type": "string" }, "installed_version": { "type": ["string", "null"] }, "last_confirmed_at": { "type": "string" },
+                "fixed_versions": { "$ref": "common#/definitions/strArray" }, "judgement": { "$ref": "common#/definitions/judgement" } } }
+          },
+          "fixed_versions": { "$ref": "common#/definitions/strArray" },
+          "source_urls": { "$ref": "common#/definitions/strArray" },
+          "judgement": { "$ref": "common#/definitions/judgement" },
+          "priority": { "$ref": "common#/definitions/priority" },
+          "evidence": { "type": "string" },
+          "kev": { "type": "boolean" },
+          "issue_number": { "type": ["integer", "null"] },
+          "first_detected_at": { "type": "string" },
+          "last_confirmed_at": { "type": "string" },
+          "last_confirmed_provenance": { "type": ["object", "null"] }
+        }
+      }
+    }
+  }
+}

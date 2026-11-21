@@ -1,0 +1,12 @@
+{
+  "name": "security-intelligence-feed",
+  "description": "脆弱性情報と案件の依存関係の照合",
+  "owner": { "name": "security-intelligence-feed 管理者" },
+  "plugins": [
+    {
+      "name": "security-check",
+      "source": "./plugins/security-check",
+      "description": "案件の依存関係とランタイムを、公開の脆弱性情報と照合して日本語でレポートする"
+    }
+  ]
+}

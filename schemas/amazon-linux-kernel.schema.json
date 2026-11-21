@@ -1,0 +1,36 @@
+{
+  "type": "object",
+  "required": ["updated_at", "cursor", "backfill_complete", "last_success_date", "retry", "known_packages", "cves"],
+  "properties": {
+    "updated_at": { "type": "string" },
+    "cursor": { "type": ["object", "null"], "required": ["modified_date", "cve_id"], "properties": { "modified_date": { "type": "string" }, "cve_id": { "type": "string", "pattern": "^CVE-\\d{4}-\\d+$" } } },
+    "backfill_complete": { "type": "boolean" },
+    "last_success_date": { "type": ["string", "null"] },
+    "retry": { "type": "array", "items": { "type": "object", "required": ["cve", "since"], "properties": { "cve": { "type": "string", "pattern": "^CVE-\\d{4}-\\d+$" }, "since": { "type": "string" } } } },
+    "known_packages": { "$ref": "common#/definitions/strArray" },
+    "cves": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["cve", "severity", "cvss_vectors", "public_date", "modified_date", "kev", "url", "packages"],
+        "properties": {
+          "cve": { "type": "string", "pattern": "^CVE-\\d{4}-\\d+$" },
+          "severity": { "type": "string" },
+          "cvss_vectors": { "$ref": "common#/definitions/strArray" },
+          "public_date": { "type": ["string", "null"] },
+          "modified_date": { "type": ["string", "null"] },
+          "kev": { "type": "boolean" },
+          "url": { "type": "string" },
+          "packages": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["key", "status", "advisory", "advisory_url", "released"],
+              "properties": { "key": { "type": "string" }, "status": { "type": "string" }, "advisory": { "type": ["string", "null"] }, "advisory_url": { "type": ["string", "null"] }, "released": { "type": ["string", "null"] } }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "object",
+  "propertyNames": { "pattern": "^PSF-\\d{4}-\\d+$" },
+  "additionalProperties": {
+    "type": "object",
+    "required": ["decision", "reason", "checked_at"],
+    "properties": {
+      "decision": { "enum": ["no_impact", "manual_review"] },
+      "min_version": { "type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$" },
+      "reason": { "type": "string", "minLength": 1 },
+      "checked_at": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" }
+    },
+    "if": { "properties": { "decision": { "const": "manual_review" } }, "required": ["decision"] },
+    "then": { "not": { "required": ["min_version"] } },
+    "additionalProperties": false
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "type": "object",
+  "required": ["project_owner", "projects"],
+  "properties": {
+    "project_owner": { "type": "string" },
+    "projects": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["project", "monitor_ref", "owners", "exposure"],
+        "properties": {
+          "project": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+          "repo": { "type": "string", "pattern": "^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$" },
+          "source": { "const": "export" },
+          "monitor_ref": { "type": "string" },
+          "owners": { "$ref": "common#/definitions/strArray" },
+          "exposure": { "enum": ["internet", "internal"] },
+          "lockfiles": { "$ref": "common#/definitions/strArray" }
+        },
+        "oneOf": [{ "required": ["repo"] }, { "required": ["source"] }]
+      }
+    }
+  }
+}

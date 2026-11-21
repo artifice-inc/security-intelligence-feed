@@ -1,0 +1,40 @@
+{
+  "type": "object",
+  "required": ["cache", "central_health", "scanner", "osv_db", "stack", "dependency_check", "dependency_checks", "results", "central_diff", "provenance"],
+  "properties": {
+    "cache": { "type": "object", "required": ["commit", "pull_ok", "pulled_at"] },
+    "central_health": { "type": "object", "required": ["last_success_at", "expected_after", "stale"] },
+    "scanner": { "type": "object", "required": ["version", "expected", "match"] },
+    "osv_db": { "type": "object" },
+    "stack": { "type": "object" },
+    "dependency_check": { "enum": ["ok", "unavailable"] },
+    "dependency_checks": {
+      "type": "object", "required": ["osv", "packagist"],
+      "properties": { "osv": { "enum": ["ok", "unavailable", "not_applicable"] }, "packagist": { "enum": ["ok", "unavailable", "not_applicable"] } }
+    },
+    "results": { "type": "array", "items": { "type": "object", "required": ["advisory_key", "aliases", "judgement", "priority", "locations", "fixed_versions", "title", "source_urls"] } },
+    "central_diff": { "type": ["object", "null"], "properties": { "only_local": { "type": "array" }, "only_central": { "type": "array" }, "mismatch_with_same_provenance": { "type": "boolean" } } },
+    "summary": {
+      "type": "object", "required": ["rows", "total"],
+      "properties": {
+        "rows": { "type": "array", "items": { "type": "object", "required": ["target", "kind", "state", "P0", "P1", "P2", "P3"], "properties": { "kind": { "enum": ["lockfile", "runtime", "os"] }, "state": { "enum": ["ok", "unavailable", "unknown"] } } } },
+        "total": { "type": "object", "required": ["P0", "P1", "P2", "P3"] }
+      }
+    },
+    "local_scan": { "type": "object", "required": ["complete", "reasons"], "properties": { "complete": { "type": "boolean" }, "reasons": { "type": "array", "items": { "type": "string" } } } },
+    "central_issues": {
+      "type": ["object", "null"],
+      "required": ["open", "fixed_in_repo", "superseded", "resolved_locally"],
+      "properties": { "open": { "type": "object" }, "fixed_in_repo": { "type": "array" }, "superseded": { "type": "array" }, "resolved_locally": { "type": ["array", "null"] } }
+    },
+    "feed_signals": {
+      "type": "object", "required": ["mode", "kev", "epss"],
+      "properties": {
+        "mode": { "enum": ["latest", "degraded"] },
+        "kev": { "type": "object", "required": ["confirmed", "fetched_at"], "properties": { "confirmed": { "type": "boolean" }, "fetched_at": { "type": ["string", "null"] } } },
+        "epss": { "type": "object", "required": ["state", "fetched_at"], "properties": { "state": { "enum": ["fresh", "previous", "expired"] }, "fetched_at": { "type": ["string", "null"] } } }
+      }
+    },
+    "provenance": { "allOf": [{ "$ref": "common#/definitions/provenance" }, { "properties": { "feed_version": { "type": ["string", "null"] } } }] }
+  }
+}

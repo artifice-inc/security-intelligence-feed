@@ -1,0 +1,39 @@
+{
+  "type": "object",
+  "required": ["run_slot", "last_run", "last_success_at", "sources", "packagist_updated_since"],
+  "additionalProperties": false,
+  "definitions": {
+    "feedError": {
+      "type": ["object", "null"],
+      "required": ["kind", "at"],
+      "additionalProperties": false,
+      "properties": { "kind": { "type": "string" }, "at": { "type": "string" } }
+    },
+    "feedSource": {
+      "type": "object",
+      "required": ["last_attempt_at", "last_success_at", "last_attempt_slot", "last_success_slot", "last_attempt_ok", "last_error"],
+      "additionalProperties": false,
+      "properties": {
+        "last_attempt_at": { "type": "string" },
+        "last_success_at": { "type": ["string", "null"] },
+        "last_attempt_slot": { "type": "string" },
+        "last_success_slot": { "type": ["string", "null"] },
+        "last_attempt_ok": { "type": "boolean" },
+        "last_error": { "$ref": "#/definitions/feedError" }
+      }
+    }
+  },
+  "properties": {
+    "run_slot": { "type": "string" },
+    "last_run": {
+      "type": "object",
+      "required": ["started_at", "finished_at", "status"],
+      "additionalProperties": false,
+      "properties": { "started_at": { "type": "string" }, "finished_at": { "type": "string" }, "status": { "enum": ["success", "partial", "failed"] } }
+    },
+    "last_success_at": { "type": ["string", "null"] },
+    "sources": { "type": "object", "additionalProperties": { "$ref": "#/definitions/feedSource" } },
+    "optional_sources": { "type": "object", "additionalProperties": { "$ref": "#/definitions/feedSource" } },
+    "packagist_updated_since": { "type": ["integer", "null"] }
+  }
+}

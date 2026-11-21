@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "required": ["fetched_at", "ok", "model_version", "score_date", "threshold", "records"],
+  "properties": {
+    "fetched_at": { "type": "string" },
+    "ok": { "type": "boolean" },
+    "model_version": { "type": ["string", "null"] },
+    "score_date": { "type": ["string", "null"] },
+    "threshold": { "type": "number" },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["cve", "epss", "percentile"],
+        "properties": { "cve": { "type": "string" }, "epss": { "type": "number" }, "percentile": { "type": "number" } }
+      }
+    }
+  }
+}

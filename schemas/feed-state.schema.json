@@ -1,0 +1,18 @@
+{
+  "type": "object",
+  "required": ["mode", "last_validated", "digest_jp", "cutover_data_commit"],
+  "properties": {
+    "mode": { "enum": ["match", "rolled_back"] },
+    "last_validated": {
+      "type": ["object", "null"],
+      "required": ["sha", "run_slot", "validated_at"],
+      "properties": { "sha": { "type": "string" }, "run_slot": { "type": "string" }, "validated_at": { "type": "string" } }
+    },
+    "digest_jp": {
+      "type": ["object", "null"],
+      "required": ["feed_sha", "keys"],
+      "properties": { "feed_sha": { "type": "string" }, "keys": { "type": "array", "items": { "type": "string" } } }
+    },
+    "cutover_data_commit": { "type": ["string", "null"] }
+  }
+}

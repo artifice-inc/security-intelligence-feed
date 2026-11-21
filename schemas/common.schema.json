@@ -1,0 +1,42 @@
+{
+  "definitions": {
+    "nullableIso": { "type": ["string", "null"] },
+    "strArray": { "type": "array", "items": { "type": "string" } },
+    "priority": { "enum": ["P0", "P1", "P2", "P3"] },
+    "judgement": { "enum": ["affected", "not_affected", "needs_review"] },
+    "inventoryStatus": { "enum": ["fresh", "stale_inventory", "unavailable"] },
+    "scanStatus": { "enum": ["complete", "partial", "failed"] },
+    "provenance": {
+      "type": "object",
+      "required": ["scanner_version", "script_version", "osv_db", "inventory_commit"],
+      "properties": {
+        "scanner_version": { "type": ["string", "null"] },
+        "script_version": { "type": ["string", "null"] },
+        "osv_db": { "type": "object" },
+        "inventory_commit": { "type": ["string", "null"] }
+      }
+    },
+    "scanError": {
+      "type": "object",
+      "required": ["kind", "target", "message"],
+      "properties": {
+        "kind": { "enum": ["source", "inventory", "lockfile", "osv_db", "scanner", "feed"] },
+        "target": { "type": "string" },
+        "message": { "type": "string" }
+      }
+    },
+    "runtimeEntry": {
+      "type": "object",
+      "properties": {
+        "version": { "type": ["string", "null"] },
+        "constraint": { "type": ["string", "null"] },
+        "source": { "type": ["string", "null"] }
+      }
+    },
+    "fileEntry": {
+      "type": "object",
+      "required": ["path", "sha256", "kind"],
+      "properties": { "path": { "type": "string" }, "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" }, "kind": { "type": "string" } }
+    }
+  }
+}

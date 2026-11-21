@@ -1,0 +1,1363 @@
+[
+ {
+  "ghsa_id": "GHSA-7875-c8px-7q5f",
+  "cve_id": "CVE-2026-93682",
+  "url": "https://api.github.com/repos/php/php-src/security-advisories/GHSA-7875-c8px-7q5f",
+  "html_url": "https://github.com/php/php-src/security/advisories/GHSA-7875-c8px-7q5f",
+  "summary": "Out-of-bounds read in the HTTP stream wrapper when following a redirect with an empty Location header",
+  "description": "### Summary\r\n\r\nWhen the HTTP stream wrapper follows a redirect and the response carries a `Location` header with an empty value, the redirect code reads one byte past the end of the heap buffer holdin",
+  "severity": "medium",
+  "author": null,
+  "publisher": {
+   "login": "bukka",
+   "id": 137594,
+   "node_id": "MDQ6VXNlcjEzNzU5NA==",
+   "avatar_url": "https://avatars.githubusercontent.com/u/137594?v=4",
+   "gravatar_id": "",
+   "url": "https://api.github.com/users/bukka",
+   "html_url": "https://github.com/bukka",
+   "followers_url": "https://api.github.com/users/bukka/followers",
+   "following_url": "https://api.github.com/users/bukka/following{/other_user}",
+   "gists_url": "https://api.github.com/users/bukka/gists{/gist_id}",
+   "starred_url": "https://api.github.com/users/bukka/starred{/owner}{/repo}",
+   "subscriptions_url": "https://api.github.com/users/bukka/subscriptions",
+   "organizations_url": "https://api.github.com/users/bukka/orgs",
+   "repos_url": "https://api.github.com/users/bukka/repos",
+   "events_url": "https://api.github.com/users/bukka/events{/privacy}",
+   "received_events_url": "https://api.github.com/users/bukka/received_events",
+   "type": "User",
+   "user_view_type": "public",
+   "site_admin": false
+  },
+  "identifiers": [
+   {
+    "value": "GHSA-7875-c8px-7q5f",
+    "type": "GHSA"
+   },
+   {
+    "value": "CVE-2026-93682",
+    "type": "CVE"
+   }
+  ],
+  "state": "published",
+  "created_at": null,
+  "updated_at": "2026-09-25T19:54:11Z",
+  "published_at": "2026-09-24T10:07:25Z",
+  "closed_at": null,
+  "withdrawn_at": null,
+  "submission": null,
+  "vulnerabilities": [
+   {
+    "package": {
+     "ecosystem": "php",
+     "name": "ext-standard"
+    },
+    "vulnerable_version_range": "<8.2.34",
+    "patched_versions": "8.2.34",
+    "vulnerable_functions": []
+   },
+   {
+    "package": {
+     "ecosystem": "php",
+     "name": "ext-standard"
+    },
+    "vulnerable_version_range": "<8.3.35",
+    "patched_versions": "8.3.35",
+    "vulnerable_functions": []
+   },
+   {
+    "package": {
+     "ecosystem": "php",
+     "name": "ext-standard"
+    },
+    "vulnerable_version_range": "<8.4.26",
+    "patched_versions": "8.4.26",
+    "vulnerable_functions": []
+   },
+   {
+    "package": {
+     "ecosystem": "php",
+     "name": "ext-standard"
+    },
+    "vulnerable_version_range": "<8.5.11",
+    "patched_versions": "8.5.11",
+    "vulnerable_functions": []
+   }
+  ],
+  "cvss_severities": {
+   "cvss_v3": {
+    "vector_string": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+    "score": 5.3
+   },
+   "cvss_v4": {
+    "vector_string": null,
+    "score": null
+   }
+  },
+  "cwes": [
+   {
+    "cwe_id": "CWE-125",
+    "name": "Out-of-bounds Read"
+   }
+  ],
+  "cwe_ids": [
+   "CWE-125"
+  ],
+  "credits": [
+   {
+    "login": "iliaal",
+    "type": "reporter"
+   },
+   {
+    "login": "jordikroon",
+    "type": "remediation_developer"
+   },
+   {
+    "login": "devnexen",
+    "type": "remediation_reviewer"
+   }
+  ],
+  "credits_detailed": [
+   {
+    "user": {
+     "login": "iliaal",
+     "id": 158724,
+     "node_id": "MDQ6VXNlcjE1ODcyNA==",
+     "avatar_url": "https://avatars.githubusercontent.com/u/158724?v=4",
+     "gravatar_id": "",
+     "url": "https://api.github.com/users/iliaal",
+     "html_url": "https://github.com/iliaal",
+     "followers_url": "https://api.github.com/users/iliaal/followers",
+     "following_url": "https://api.github.com/users/iliaal/following{/other_user}",
+     "gists_url": "https://api.github.com/users/iliaal/gists{/gist_id}",
+     "starred_url": "https://api.github.com/users/iliaal/starred{/owner}{/repo}",
+     "subscriptions_url": "https://api.github.com/users/iliaal/subscriptions",
+     "organizations_url": "https://api.github.com/users/iliaal/orgs",
+     "repos_url": "https://api.github.com/users/iliaal/repos",
+     "events_url": "https://api.github.com/users/iliaal/events{/privacy}",
+     "received_events_url": "https://api.github.com/users/iliaal/received_events",
+     "type": "User",
+     "user_view_type": "public",
+     "site_admin": false
+    },
+    "type": "reporter",
+    "state": "accepted"
+   },
+   {
+    "user": {
+     "login": "jordikroon",
+     "id": 2232811,
+     "node_id": "MDQ6VXNlcjIyMzI4MTE=",
+     "avatar_url": "https://avatars.githubusercontent.com/u/2232811?v=4",
+     "gravatar_id": "",
+     "url": "https://api.github.com/users/jordikroon",
+     "html_url": "https://github.com/jordikroon",
+     "followers_url": "https://api.github.com/users/jordikroon/followers",
+     "following_url": "https://api.github.com/users/jordikroon/following{/other_user}",
+     "gists_url": "https://api.github.com/users/jordikroon/gists{/gist_id}",
+     "starred_url": "https://api.github.com/users/jordikroon/starred{/owner}{/repo}",
+     "subscriptions_url": "https://api.github.com/users/jordikroon/subscriptions",
+     "organizations_url": "https://api.github.com/users/jordikroon/orgs",
+     "repos_url": "https://api.github.com/users/jordikroon/repos",
+     "events_url": "https://api.github.com/users/jordikroon/events{/privacy}",
+     "received_events_url": "https://api.github.com/users/jordikroon/received_events",
+     "type": "User",
+     "user_view_type": "public",
+     "site_admin": false
+    },
+    "type": "remediation_developer",
+    "state": "accepted"
+   },
+   {
+    "user": {
+     "login": "devnexen",
+     "id": 4922778,
+     "node_id": "MDQ6VXNlcjQ5MjI3Nzg=",
+     "avatar_url": "https://avatars.githubusercontent.com/u/4922778?v=4",
+     "gravatar_id": "",
+     "url": "https://api.github.com/users/devnexen",
+     "html_url": "https://github.com/devnexen",
+     "followers_url": "https://api.github.com/users/devnexen/followers",
+     "following_url": "https://api.github.com/users/devnexen/following{/other_user}",
+     "gists_url": "https://api.github.com/users/devnexen/gists{/gist_id}",
+     "starred_url": "https://api.github.com/users/devnexen/starred{/owner}{/repo}",
+     "subscriptions_url": "https://api.github.com/users/devnexen/subscriptions",
+     "organizations_url": "https://api.github.com/users/devnexen/orgs",
+     "repos_url": "https://api.github.com/users/devnexen/repos",
+     "events_url": "https://api.github.com/users/devnexen/events{/privacy}",
+     "received_events_url": "https://api.github.com/users/devnexen/received_events",
+     "type": "User",
+     "user_view_type": "public",
+     "site_admin": false
+    },
+    "type": "remediation_reviewer",
+    "state": "accepted"
+   }
+  ],
+  "collaborating_users": null,
+  "collaborating_teams": null,
+  "private_fork": null,
+  "comments": 0,
+  "cvss": {
+   "vector_string": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+   "score": 5.3
+  }
+ },
+ {
+  "ghsa_id": "GHSA-w8hw-w9fx-j79w",
+  "cve_id": "CVE-2026-109618",
+  "url": "https://api.github.com/repos/php/php-src/security-advisories/GHSA-w8hw-w9fx-j79w",
+  "html_url": "https://github.com/php/php-src/security/advisories/GHSA-w8hw-w9fx-j79w",
+  "summary": "RCE via OOM corruption",
+  "description": "## Summary\r\n\r\nPHP uses `longjmp()` for out-of-memory (OOM) errors to exit the current context and abort handling of the request. In some contexts, request memory is temporarily reachable before it is ",
+  "severity": "critical",
+  "author": null,
+  "publisher": {
+   "login": "bukka",
+   "id": 137594,
+   "node_id": "MDQ6VXNlcjEzNzU5NA==",
+   "avatar_url": "https://avatars.githubusercontent.com/u/137594?v=4",
+   "gravatar_id": "",
+   "url": "https://api.github.com/users/bukka",
+   "html_url": "https://github.com/bukka",
+   "followers_url": "https://api.github.com/users/bukka/followers",
+   "following_url": "https://api.github.com/users/bukka/following{/other_user}",
+   "gists_url": "https://api.github.com/users/bukka/gists{/gist_id}",
+   "starred_url": "https://api.github.com/users/bukka/starred{/owner}{/repo}",
+   "subscriptions_url": "https://api.github.com/users/bukka/subscriptions",
+   "organizations_url": "https://api.github.com/users/bukka/orgs",
+   "repos_url": "https://api.github.com/users/bukka/repos",
+   "events_url": "https://api.github.com/users/bukka/events{/privacy}",
+   "received_events_url": "https://api.github.com/users/bukka/received_events",
+   "type": "User",
+   "user_view_type": "public",
+   "site_admin": false
+  },
+  "identifiers": [
+   {
+    "value": "GHSA-w8hw-w9fx-j79w",
+    "type": "GHSA"
+   },
+   {
+    "value": "CVE-2026-109618",
+    "type": "CVE"
+   }
+  ],
+  "state": "published",
+  "created_at": null,
+  "updated_at": "2026-10-21T13:34:25Z",
+  "published_at": "2026-10-21T13:34:25Z",
+  "closed_at": null,
+  "withdrawn_at": null,
+  "submission": null,
+  "vulnerabilities": [
+   {
+    "package": {
+     "ecosystem": "php",
+     "name": "php-src"
+    },
+    "vulnerable_version_range": "< 8.2.35",
+    "patched_versions": "8.2.35",
+    "vulnerable_functions": []
+   },
+   {
+    "package": {
+     "ecosystem": "php",
+     "name": "php-src"
+    },
+    "vulnerable_version_range": "< 8.3.36",
+    "patched_versions": "8.3.36",
+    "vulnerable_functions": []
+   },
+   {
+    "package": {
+     "ecosystem": "php",
+     "name": "php-src"
+    },
+    "vulnerable_version_range": "< 8.4.27",
+    "patched_versions": "8.4.27",
+    "vulnerable_functions": []
+   },
+   {
+    "package": {
+     "ecosystem": "php",
+     "name": "php-src"
+    },
+    "vulnerable_version_range": "< 8.5.12",
+    "patched_versions": "8.5.12",
+    "vulnerable_functions": []
+   }
+  ],
+  "cvss_severities": {
+   "cvss_v3": {
+    "vector_string": null,
+    "score": null
+   },
+   "cvss_v4": {
+    "vector_string": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+    "score": 9.2
+   }
+  },
+  "cwes": [
+   {
+    "cwe_id": "CWE-416",
+    "name": "Use After Free"
+   },
+   {
+    "cwe_id": "CWE-755",
+    "name": "Improper Handling of Exceptional Conditions"
+   },
+   {
+    "cwe_id": "CWE-824",
+    "name": "Access of Uninitialized Pointer"
+   },
+   {
+    "cwe_id": "CWE-1325",
+    "name": "Improperly Controlled Sequential Memory Allocation"
+   },
+   {
+    "cwe_id": "CWE-1419",
+    "name": "Incorrect Initialization of Resource"
+   }
+  ],
+  "cwe_ids": [
+   "CWE-416",
+   "CWE-755",
+   "CWE-824",
+   "CWE-1325",
+   "CWE-1419"
+  ],
+  "credits": [
+   {
+    "login": "lcfr-hax",
+    "type": "reporter"
+   },
+   {
+    "login": "sagitzadik-wiz",
+    "type": "reporter"
+   },
+   {
+    "login": "tomash-areion",
+    "type": "reporter"
+   },
+   {
+    "login": "amyb-oai",
+    "type": "reporter"
+   },
+   {
+    "login": "arnaud-lb",
+    "type": "remediation_developer"
+   },
+   {
+    "login": "iluuu1994",
+    "type": "remediation_developer"
+   },
+   {
+    "login": "bukka",
+    "type": "remediation_developer"
+   },
+   {
+    "login": "ndossche",
+    "type": "remediation_developer"
+   }
+  ],
+  "credits_detailed": [
+   {
+    "user": {
+     "login": "lcfr-hax",
+     "id": 62533238,
+     "node_id": "MDQ6VXNlcjYyNTMzMjM4",
+     "avatar_url": "https://avatars.githubusercontent.com/u/62533238?v=4",
+     "gravatar_id": "",
+     "url": "https://api.github.com/users/lcfr-hax",
+     "html_url": "https://github.com/lcfr-hax",
+     "followers_url": "https://api.github.com/users/lcfr-hax/followers",
+     "following_url": "https://api.github.com/users/lcfr-hax/following{/other_user}",
+     "gists_url": "https://api.github.com/users/lcfr-hax/gists{/gist_id}",
+     "starred_url": "https://api.github.com/users/lcfr-hax/starred{/owner}{/repo}",
+     "subscriptions_url": "https://api.github.com/users/lcfr-hax/subscriptions",
+     "organizations_url": "https://api.github.com/users/lcfr-hax/orgs",
+     "repos_url": "https://api.github.com/users/lcfr-hax/repos",
+     "events_url": "https://api.github.com/users/lcfr-hax/events{/privacy}",
+     "received_events_url": "https://api.github.com/users/lcfr-hax/received_events",
+     "type": "User",
+     "user_view_type": "public",
+     "site_admin": false
+    },
+    "type": "reporter",
+    "state": "accepted"
+   },
+   {
+    "user": {
+     "login": "sagitzadik-wiz",
+     "id": 87936429,
+     "node_id": "MDQ6VXNlcjg3OTM2NDI5",
+     "avatar_url": "https://avatars.githubusercontent.com/u/87936429?v=4",
+     "gravatar_id": "",
+     "url": "https://api.github.com/users/sagitzadik-wiz",
+     "html_url": "https://github.com/sagitzadik-wiz",
+     "followers_url": "https://api.github.com/users/sagitzadik-wiz/followers",
+     "following_url": "https://api.github.com/users/sagitzadik-wiz/following{/other_user}",
+     "gists_url": "https://api.github.com/users/sagitzadik-wiz/gists{/gist_id}",
+     "starred_url": "https://api.github.com/users/sagitzadik-wiz/starred{/owner}{/repo}",
+     "subscriptions_url": "https://api.github.com/users/sagitzadik-wiz/subscriptions",
+     "organizations_url": "https://api.github.com/users/sagitzadik-wiz/orgs",
+     "repos_url": "https://api.github.com/users/sagitzadik-wiz/repos",
+     "events_url": "https://api.github.com/users/sagitzadik-wiz/events{/privacy}",
+     "received_events_url": "https://api.github.com/users/sagitzadik-wiz/received_events",
+     "type": "User",
+     "user_view_type": "public",
+     "site_admin": false
+    },
+    "type": "reporter",
+    "state": "accepted"
+   },
+   {
+    "user": {
+     "login": "tomash-areion",
+     "id": 77932180,
+     "node_id": "MDQ6VXNlcjc3OTMyMTgw",
+     "avatar_url": "https://avatars.githubusercontent.com/u/77932180?v=4",
+     "gravatar_id": "",
+     "url": "https://api.github.com/users/tomash-areion",
+     "html_url": "https://github.com/tomash-areion",
+     "followers_url": "https://api.github.com/users/tomash-areion/followers",
+     "following_url": "https://api.github.com/users/tomash-areion/following{/other_user}",
+     "gists_url": "https://api.github.com/users/tomash-areion/gists{/gist_id}",
+     "starred_url": "https://api.github.com/users/tomash-areion/starred{/owner}{/repo}",
+     "subscriptions_url": "https://api.github.com/users/tomash-areion/subscriptions",
+     "organizations_url": "https://api.github.com/users/tomash-areion/orgs",
+     "repos_url": "https://api.github.com/users/tomash-areion/repos",
+     "events_url": "https://api.github.com/users/tomash-areion/events{/privacy}",
+     "received_events_url": "https://api.github.com/users/tomash-areion/received_events",
+     "type": "User",
+     "user_view_type": "public",
+     "site_admin": false
+    },
+    "type": "reporter",
+    "state": "accepted"
+   },
+   {
+    "user": {
+     "login": "amyb-oai",
+     "id": 256202057,
+     "node_id": "U_kgDOD0VVSQ",
+     "avatar_url": "https://avatars.githubusercontent.com/u/256202057?v=4",
+     "gravatar_id": "",
+     "url": "https://api.github.com/users/amyb-oai",
+     "html_url": "https://github.com/amyb-oai",
+     "followers_url": "https://api.github.com/users/amyb-oai/followers",
+     "following_url": "https://api.github.com/users/amyb-oai/following{/other_user}",
+     "gists_url": "https://api.github.com/users/amyb-oai/gists{/gist_id}",
+     "starred_url": "https://api.github.com/users/amyb-oai/starred{/owner}{/repo}",
+     "subscriptions_url": "https://api.github.com/users/amyb-oai/subscriptions",
+     "organizations_url": "https://api.github.com/users/amyb-oai/orgs",
+     "repos_url": "https://api.github.com/users/amyb-oai/repos",
+     "events_url": "https://api.github.com/users/amyb-oai/events{/privacy}",
+     "received_events_url": "https://api.github.com/users/amyb-oai/received_events",
+     "type": "User",
+     "user_view_type": "public",
+     "site_admin": false
+    },
+    "type": "reporter",
+    "state": "accepted"
+   },
+   {
+    "user": {
+     "login": "arnaud-lb",
+     "id": 365207,
+     "node_id": "MDQ6VXNlcjM2NTIwNw==",
+     "avatar_url": "https://avatars.githubusercontent.com/u/365207?v=4",
+     "gravatar_id": "",
+     "url": "https://api.github.com/users/arnaud-lb",
+     "html_url": "https://github.com/arnaud-lb",
+     "followers_url": "https://api.github.com/users/arnaud-lb/followers",
+     "following_url": "https://api.github.com/users/arnaud-lb/following{/other_user}",
+     "gists_url": "https://api.github.com/users/arnaud-lb/gists{/gist_id}",
+     "starred_url": "https://api.github.com/users/arnaud-lb/starred{/owner}{/repo}",
+     "subscriptions_url": "https://api.github.com/users/arnaud-lb/subscriptions",
+     "organizations_url": "https://api.github.com/users/arnaud-lb/orgs",
+     "repos_url": "https://api.github.com/users/arnaud-lb/repos",
+     "events_url": "https://api.github.com/users/arnaud-lb/events{/privacy}",
+     "received_events_url": "https://api.github.com/users/arnaud-lb/received_events",
+     "type": "User",
+     "user_view_type": "public",
+     "site_admin": false
+    },
+    "type": "remediation_developer",
+    "state": "accepted"
+   },
+   {
+    "user": {
+     "login": "iluuu1994",
+     "id": 1752683,
+     "node_id": "MDQ6VXNlcjE3NTI2ODM=",
+     "avatar_url": "https://avatars.githubusercontent.com/u/1752683?v=4",
+     "gravatar_id": "",
+     "url": "https://api.github.com/users/iluuu1994",
+     "html_url": "https://github.com/iluuu1994",
+     "followers_url": "https://api.github.com/users/iluuu1994/followers",
+     "following_url": "https://api.github.com/users/iluuu1994/following{/other_user}",
+     "gists_url": "https://api.github.com/users/iluuu1994/gists{/gist_id}",
+     "starred_url": "https://api.github.com/users/iluuu1994/starred{/owner}{/repo}",
+     "subscriptions_url": "https://api.github.com/users/iluuu1994/subscriptions",
+     "organizations_url": "https://api.github.com/users/iluuu1994/orgs",
+     "repos_url": "https://api.github.com/users/iluuu1994/repos",
+     "events_url": "https://api.github.com/users/iluuu1994/events{/privacy}",
+     "received_events_url": "https://api.github.com/users/iluuu1994/received_events",
+     "type": "User",
+     "user_view_type": "public",
+     "site_admin": false
+    },
+    "type": "remediation_developer",
+    "state": "accepted"
+   },
+   {
+    "user": {
+     "login": "bukka",
+     "id": 137594,
+     "node_id": "MDQ6VXNlcjEzNzU5NA==",
+     "avatar_url": "https://avatars.githubusercontent.com/u/137594?v=4",
+     "gravatar_id": "",
+     "url": "https://api.github.com/users/bukka",
+     "html_url": "https://github.com/bukka",
+     "followers_url": "https://api.github.com/users/bukka/followers",
+     "following_url": "https://api.github.com/users/bukka/following{/other_user}",
+     "gists_url": "https://api.github.com/users/bukka/gists{/gist_id}",
+     "starred_url": "https://api.github.com/users/bukka/starred{/owner}{/repo}",
+     "subscriptions_url": "https://api.github.com/users/bukka/subscriptions",
+     "organizations_url": "https://api.github.com/users/bukka/orgs",
+     "repos_url": "https://api.github.com/users/bukka/repos",
+     "events_url": "https://api.github.com/users/bukka/events{/privacy}",
+     "received_events_url": "https://api.github.com/users/bukka/received_events",
+     "type": "User",
+     "user_view_type": "public",
+     "site_admin": false
+    },
+    "type": "remediation_developer",
+    "state": "accepted"
+   },
+   {
+    "user": {
+     "login": "ndossche",
+     "id": 7771979,
+     "node_id": "MDQ6VXNlcjc3NzE5Nzk=",
+     "avatar_url": "https://avatars.githubusercontent.com/u/7771979?v=4",
+     "gravatar_id": "",
+     "url": "https://api.github.com/users/ndossche",
+     "html_url": "https://github.com/ndossche",
+     "followers_url": "https://api.github.com/users/ndossche/followers",
+     "following_url": "https://api.github.com/users/ndossche/following{/other_user}",
+     "gists_url": "https://api.github.com/users/ndossche/gists{/gist_id}",
+     "starred_url": "https://api.github.com/users/ndossche/starred{/owner}{/repo}",
+     "subscriptions_url": "https://api.github.com/users/ndossche/subscriptions",
+     "organizations_url": "https://api.github.com/users/ndossche/orgs",
+     "repos_url": "https://api.github.com/users/ndossche/repos",
+     "events_url": "https://api.github.com/users/ndossche/events{/privacy}",
+     "received_events_url": "https://api.github.com/users/ndossche/received_events",
+     "type": "User",
+     "user_view_type": "public",
+     "site_admin": false
+    },
+    "type": "remediation_developer",
+    "state": "accepted"
+   }
+  ],
+  "collaborating_users": null,
+  "collaborating_teams": null,
+  "private_fork": null,
+  "comments": 6,
+  "cvss": {
+   "vector_string": null,
+   "score": null
+  }
+ },
+ {
+  "ghsa_id": "GHSA-6wmf-4rv5-p3rp",
+  "cve_id": "CVE-2026-109619",
+  "url": "https://api.github.com/repos/php/php-src/security-advisories/GHSA-6wmf-4rv5-p3rp",
+  "html_url": "https://github.com/php/php-src/security/advisories/GHSA-6wmf-4rv5-p3rp",
+  "summary": "RCE via stale global state",
+  "description": "## Summary\r\n\r\nPHP contains various global state, such as error, session, object and extension state that is retained by a worker but points to memory owned by one request. That state must be reset bef",
+  "severity": "critical",
+  "author": null,
+  "publisher": {
+   "login": "bukka",
+   "id": 137594,
+   "node_id": "MDQ6VXNlcjEzNzU5NA==",
+   "avatar_url": "https://avatars.githubusercontent.com/u/137594?v=4",
+   "gravatar_id": "",
+   "url": "https://api.github.com/users/bukka",
+   "html_url": "https://github.com/bukka",
+   "followers_url": "https://api.github.com/users/bukka/followers",
+   "following_url": "https://api.github.com/users/bukka/following{/other_user}",
+   "gists_url": "https://api.github.com/users/bukka/gists{/gist_id}",
+   "starred_url": "https://api.github.com/users/bukka/starred{/owner}{/repo}",
+   "subscriptions_url": "https://api.github.com/users/bukka/subscriptions",
+   "organizations_url": "https://api.github.com/users/bukka/orgs",
+   "repos_url": "https://api.github.com/users/bukka/repos",
+   "events_url": "https://api.github.com/users/bukka/events{/privacy}",
+   "received_events_url": "https://api.github.com/users/bukka/received_events",
+   "type": "User",
+   "user_view_type": "public",
+   "site_admin": false
+  },
+  "identifiers": [
+   {
+    "value": "GHSA-6wmf-4rv5-p3rp",
+    "type": "GHSA"
+   },
+   {
+    "value": "CVE-2026-109619",
+    "type": "CVE"
+   }
+  ],
+  "state": "published",
+  "created_at": null,
+  "updated_at": "2026-10-21T13:34:13Z",
+  "published_at": "2026-10-21T13:34:13Z",
+  "closed_at": null,
+  "withdrawn_at": null,
+  "submission": null,
+  "vulnerabilities": [
+   {
+    "package": {
+     "ecosystem": "php",
+     "name": "php-src"
+    },
+    "vulnerable_version_range": "< 8.2.35",
+    "patched_versions": "8.2.35",
+    "vulnerable_functions": []
+   },
+   {
+    "package": {
+     "ecosystem": "php",
+     "name": "php-src"
+    },
+    "vulnerable_version_range": "< 8.3.36",
+    "patched_versions": "8.3.36",
+    "vulnerable_functions": []
+   },
+   {
+    "package": {
+     "ecosystem": "php",
+     "name": "php-src"
+    },
+    "vulnerable_version_range": "< 8.4.27",
+    "patched_versions": "8.4.27",
+    "vulnerable_functions": []
+   },
+   {
+    "package": {
+     "ecosystem": "php",
+     "name": "php-src"
+    },
+    "vulnerable_version_range": "< 8.5.12",
+    "patched_versions": "8.5.12",
+    "vulnerable_functions": []
+   }
+  ],
+  "cvss_severities": {
+   "cvss_v3": {
+    "vector_string": null,
+    "score": null
+   },
+   "cvss_v4": {
+    "vector_string": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+    "score": 9.2
+   }
+  },
+  "cwes": [
+   {
+    "cwe_id": "CWE-416",
+    "name": "Use After Free"
+   },
+   {
+    "cwe_id": "CWE-755",
+    "name": "Improper Handling of Exceptional Conditions"
+   },
+   {
+    "cwe_id": "CWE-824",
+    "name": "Access of Uninitialized Pointer"
+   },
+   {
+    "cwe_id": "CWE-1325",
+    "name": "Improperly Controlled Sequential Memory Allocation"
+   },
+   {
+    "cwe_id": "CWE-1419",
+    "name": "Incorrect Initialization of Resource"
+   }
+  ],
+  "cwe_ids": [
+   "CWE-416",
+   "CWE-755",
+   "CWE-824",
+   "CWE-1325",
+   "CWE-1419"
+  ],
+  "credits": [
+   {
+    "login": "sagitzadik-wiz",
+    "type": "reporter"
+   },
+   {
+    "login": "tomash-areion",
+    "type": "reporter"
+   },
+   {
+    "login": "lcfr-hax",
+    "type": "reporter"
+   },
+   {
+    "login": "amyb-oai",
+    "type": "reporter"
+   },
+   {
+    "login": "arnaud-lb",
+    "type": "remediation_developer"
+   },
+   {
+    "login": "iluuu1994",
+    "type": "remediation_developer"
+   },
+   {
+    "login": "bukka",
+    "type": "remediation_developer"
+   },
+   {
+    "login": "ndossche",
+    "type": "remediation_developer"
+   }
+  ],
+  "credits_detailed": [
+   {
+    "user": {
+     "login": "sagitzadik-wiz",
+     "id": 87936429,
+     "node_id": "MDQ6VXNlcjg3OTM2NDI5",
+     "avatar_url": "https://avatars.githubusercontent.com/u/87936429?v=4",
+     "gravatar_id": "",
+     "url": "https://api.github.com/users/sagitzadik-wiz",
+     "html_url": "https://github.com/sagitzadik-wiz",
+     "followers_url": "https://api.github.com/users/sagitzadik-wiz/followers",
+     "following_url": "https://api.github.com/users/sagitzadik-wiz/following{/other_user}",
+     "gists_url": "https://api.github.com/users/sagitzadik-wiz/gists{/gist_id}",
+     "starred_url": "https://api.github.com/users/sagitzadik-wiz/starred{/owner}{/repo}",
+     "subscriptions_url": "https://api.github.com/users/sagitzadik-wiz/subscriptions",
+     "organizations_url": "https://api.github.com/users/sagitzadik-wiz/orgs",
+     "repos_url": "https://api.github.com/users/sagitzadik-wiz/repos",
+     "events_url": "https://api.github.com/users/sagitzadik-wiz/events{/privacy}",
+     "received_events_url": "https://api.github.com/users/sagitzadik-wiz/received_events",
+     "type": "User",
+     "user_view_type": "public",
+     "site_admin": false
+    },
+    "type": "reporter",
+    "state": "accepted"
+   },
+   {
+    "user": {
+     "login": "tomash-areion",
+     "id": 77932180,
+     "node_id": "MDQ6VXNlcjc3OTMyMTgw",
+     "avatar_url": "https://avatars.githubusercontent.com/u/77932180?v=4",
+     "gravatar_id": "",
+     "url": "https://api.github.com/users/tomash-areion",
+     "html_url": "https://github.com/tomash-areion",
+     "followers_url": "https://api.github.com/users/tomash-areion/followers",
+     "following_url": "https://api.github.com/users/tomash-areion/following{/other_user}",
+     "gists_url": "https://api.github.com/users/tomash-areion/gists{/gist_id}",
+     "starred_url": "https://api.github.com/users/tomash-areion/starred{/owner}{/repo}",
+     "subscriptions_url": "https://api.github.com/users/tomash-areion/subscriptions",
+     "organizations_url": "https://api.github.com/users/tomash-areion/orgs",
+     "repos_url": "https://api.github.com/users/tomash-areion/repos",
+     "events_url": "https://api.github.com/users/tomash-areion/events{/privacy}",
+     "received_events_url": "https://api.github.com/users/tomash-areion/received_events",
+     "type": "User",
+     "user_view_type": "public",
+     "site_admin": false
+    },
+    "type": "reporter",
+    "state": "accepted"
+   },
+   {
+    "user": {
+     "login": "lcfr-hax",
+     "id": 62533238,
+     "node_id": "MDQ6VXNlcjYyNTMzMjM4",
+     "avatar_url": "https://avatars.githubusercontent.com/u/62533238?v=4",
+     "gravatar_id": "",
+     "url": "https://api.github.com/users/lcfr-hax",
+     "html_url": "https://github.com/lcfr-hax",
+     "followers_url": "https://api.github.com/users/lcfr-hax/followers",
+     "following_url": "https://api.github.com/users/lcfr-hax/following{/other_user}",
+     "gists_url": "https://api.github.com/users/lcfr-hax/gists{/gist_id}",
+     "starred_url": "https://api.github.com/users/lcfr-hax/starred{/owner}{/repo}",
+     "subscriptions_url": "https://api.github.com/users/lcfr-hax/subscriptions",
+     "organizations_url": "https://api.github.com/users/lcfr-hax/orgs",
+     "repos_url": "https://api.github.com/users/lcfr-hax/repos",
+     "events_url": "https://api.github.com/users/lcfr-hax/events{/privacy}",
+     "received_events_url": "https://api.github.com/users/lcfr-hax/received_events",
+     "type": "User",
+     "user_view_type": "public",
+     "site_admin": false
+    },
+    "type": "reporter",
+    "state": "accepted"
+   },
+   {
+    "user": {
+     "login": "amyb-oai",
+     "id": 256202057,
+     "node_id": "U_kgDOD0VVSQ",
+     "avatar_url": "https://avatars.githubusercontent.com/u/256202057?v=4",
+     "gravatar_id": "",
+     "url": "https://api.github.com/users/amyb-oai",
+     "html_url": "https://github.com/amyb-oai",
+     "followers_url": "https://api.github.com/users/amyb-oai/followers",
+     "following_url": "https://api.github.com/users/amyb-oai/following{/other_user}",
+     "gists_url": "https://api.github.com/users/amyb-oai/gists{/gist_id}",
+     "starred_url": "https://api.github.com/users/amyb-oai/starred{/owner}{/repo}",
+     "subscriptions_url": "https://api.github.com/users/amyb-oai/subscriptions",
+     "organizations_url": "https://api.github.com/users/amyb-oai/orgs",
+     "repos_url": "https://api.github.com/users/amyb-oai/repos",
+     "events_url": "https://api.github.com/users/amyb-oai/events{/privacy}",
+     "received_events_url": "https://api.github.com/users/amyb-oai/received_events",
+     "type": "User",
+     "user_view_type": "public",
+     "site_admin": false
+    },
+    "type": "reporter",
+    "state": "accepted"
+   },
+   {
+    "user": {
+     "login": "arnaud-lb",
+     "id": 365207,
+     "node_id": "MDQ6VXNlcjM2NTIwNw==",
+     "avatar_url": "https://avatars.githubusercontent.com/u/365207?v=4",
+     "gravatar_id": "",
+     "url": "https://api.github.com/users/arnaud-lb",
+     "html_url": "https://github.com/arnaud-lb",
+     "followers_url": "https://api.github.com/users/arnaud-lb/followers",
+     "following_url": "https://api.github.com/users/arnaud-lb/following{/other_user}",
+     "gists_url": "https://api.github.com/users/arnaud-lb/gists{/gist_id}",
+     "starred_url": "https://api.github.com/users/arnaud-lb/starred{/owner}{/repo}",
+     "subscriptions_url": "https://api.github.com/users/arnaud-lb/subscriptions",
+     "organizations_url": "https://api.github.com/users/arnaud-lb/orgs",
+     "repos_url": "https://api.github.com/users/arnaud-lb/repos",
+     "events_url": "https://api.github.com/users/arnaud-lb/events{/privacy}",
+     "received_events_url": "https://api.github.com/users/arnaud-lb/received_events",
+     "type": "User",
+     "user_view_type": "public",
+     "site_admin": false
+    },
+    "type": "remediation_developer",
+    "state": "accepted"
+   },
+   {
+    "user": {
+     "login": "iluuu1994",
+     "id": 1752683,
+     "node_id": "MDQ6VXNlcjE3NTI2ODM=",
+     "avatar_url": "https://avatars.githubusercontent.com/u/1752683?v=4",
+     "gravatar_id": "",
+     "url": "https://api.github.com/users/iluuu1994",
+     "html_url": "https://github.com/iluuu1994",
+     "followers_url": "https://api.github.com/users/iluuu1994/followers",
+     "following_url": "https://api.github.com/users/iluuu1994/following{/other_user}",
+     "gists_url": "https://api.github.com/users/iluuu1994/gists{/gist_id}",
+     "starred_url": "https://api.github.com/users/iluuu1994/starred{/owner}{/repo}",
+     "subscriptions_url": "https://api.github.com/users/iluuu1994/subscriptions",
+     "organizations_url": "https://api.github.com/users/iluuu1994/orgs",
+     "repos_url": "https://api.github.com/users/iluuu1994/repos",
+     "events_url": "https://api.github.com/users/iluuu1994/events{/privacy}",
+     "received_events_url": "https://api.github.com/users/iluuu1994/received_events",
+     "type": "User",
+     "user_view_type": "public",
+     "site_admin": false
+    },
+    "type": "remediation_developer",
+    "state": "accepted"
+   },
+   {
+    "user": {
+     "login": "bukka",
+     "id": 137594,
+     "node_id": "MDQ6VXNlcjEzNzU5NA==",
+     "avatar_url": "https://avatars.githubusercontent.com/u/137594?v=4",
+     "gravatar_id": "",
+     "url": "https://api.github.com/users/bukka",
+     "html_url": "https://github.com/bukka",
+     "followers_url": "https://api.github.com/users/bukka/followers",
+     "following_url": "https://api.github.com/users/bukka/following{/other_user}",
+     "gists_url": "https://api.github.com/users/bukka/gists{/gist_id}",
+     "starred_url": "https://api.github.com/users/bukka/starred{/owner}{/repo}",
+     "subscriptions_url": "https://api.github.com/users/bukka/subscriptions",
+     "organizations_url": "https://api.github.com/users/bukka/orgs",
+     "repos_url": "https://api.github.com/users/bukka/repos",
+     "events_url": "https://api.github.com/users/bukka/events{/privacy}",
+     "received_events_url": "https://api.github.com/users/bukka/received_events",
+     "type": "User",
+     "user_view_type": "public",
+     "site_admin": false
+    },
+    "type": "remediation_developer",
+    "state": "accepted"
+   },
+   {
+    "user": {
+     "login": "ndossche",
+     "id": 7771979,
+     "node_id": "MDQ6VXNlcjc3NzE5Nzk=",
+     "avatar_url": "https://avatars.githubusercontent.com/u/7771979?v=4",
+     "gravatar_id": "",
+     "url": "https://api.github.com/users/ndossche",
+     "html_url": "https://github.com/ndossche",
+     "followers_url": "https://api.github.com/users/ndossche/followers",
+     "following_url": "https://api.github.com/users/ndossche/following{/other_user}",
+     "gists_url": "https://api.github.com/users/ndossche/gists{/gist_id}",
+     "starred_url": "https://api.github.com/users/ndossche/starred{/owner}{/repo}",
+     "subscriptions_url": "https://api.github.com/users/ndossche/subscriptions",
+     "organizations_url": "https://api.github.com/users/ndossche/orgs",
+     "repos_url": "https://api.github.com/users/ndossche/repos",
+     "events_url": "https://api.github.com/users/ndossche/events{/privacy}",
+     "received_events_url": "https://api.github.com/users/ndossche/received_events",
+     "type": "User",
+     "user_view_type": "public",
+     "site_admin": false
+    },
+    "type": "remediation_developer",
+    "state": "accepted"
+   }
+  ],
+  "collaborating_users": null,
+  "collaborating_teams": null,
+  "private_fork": null,
+  "comments": 7,
+  "cvss": {
+   "vector_string": null,
+   "score": null
+  }
+ },
+ {
+  "ghsa_id": "GHSA-62xp-839h-2637",
+  "cve_id": "CVE-2026-91768",
+  "url": "https://api.github.com/repos/php/php-src/security-advisories/GHSA-62xp-839h-2637",
+  "html_url": "https://github.com/php/php-src/security/advisories/GHSA-62xp-839h-2637",
+  "summary": "IPv6 ACL bypass in FastCGI listen.allowed_clients due to partial address comparison (memcmp 12 bytes)",
+  "description": "### Summary\r\n\r\nThe IPv6 branch of the FastCGI client access check compares only the first 12 bytes of a 16-byte IPv6 address, so `listen.allowed_clients` matches on a /96 prefix instead of the exact a",
+  "severity": "medium",
+  "author": null,
+  "publisher": {
+   "login": "bukka",
+   "id": 137594,
+   "node_id": "MDQ6VXNlcjEzNzU5NA==",
+   "avatar_url": "https://avatars.githubusercontent.com/u/137594?v=4",
+   "gravatar_id": "",
+   "url": "https://api.github.com/users/bukka",
+   "html_url": "https://github.com/bukka",
+   "followers_url": "https://api.github.com/users/bukka/followers",
+   "following_url": "https://api.github.com/users/bukka/following{/other_user}",
+   "gists_url": "https://api.github.com/users/bukka/gists{/gist_id}",
+   "starred_url": "https://api.github.com/users/bukka/starred{/owner}{/repo}",
+   "subscriptions_url": "https://api.github.com/users/bukka/subscriptions",
+   "organizations_url": "https://api.github.com/users/bukka/orgs",
+   "repos_url": "https://api.github.com/users/bukka/repos",
+   "events_url": "https://api.github.com/users/bukka/events{/privacy}",
+   "received_events_url": "https://api.github.com/users/bukka/received_events",
+   "type": "User",
+   "user_view_type": "public",
+   "site_admin": false
+  },
+  "identifiers": [
+   {
+    "value": "GHSA-62xp-839h-2637",
+    "type": "GHSA"
+   },
+   {
+    "value": "CVE-2026-91768",
+    "type": "CVE"
+   }
+  ],
+  "state": "published",
+  "created_at": null,
+  "updated_at": "2026-09-25T21:04:06Z",
+  "published_at": "2026-09-24T10:06:55Z",
+  "closed_at": null,
+  "withdrawn_at": null,
+  "submission": null,
+  "vulnerabilities": [
+   {
+    "package": {
+     "ecosystem": "php",
+     "name": "PHP-FPM"
+    },
+    "vulnerable_version_range": "<8.2.34",
+    "patched_versions": "8.2.34",
+    "vulnerable_functions": []
+   },
+   {
+    "package": {
+     "ecosystem": "php",
+     "name": "PHP-FPM"
+    },
+    "vulnerable_version_range": "<8.3.35",
+    "patched_versions": "8.3.35",
+    "vulnerable_functions": []
+   },
+   {
+    "package": {
+     "ecosystem": "php",
+     "name": "PHP-FPM"
+    },
+    "vulnerable_version_range": "<8.4.26",
+    "patched_versions": "8.4.26",
+    "vulnerable_functions": []
+   },
+   {
+    "package": {
+     "ecosystem": "php",
+     "name": "PHP-FPM"
+    },
+    "vulnerable_version_range": "<8.5.11",
+    "patched_versions": "8.5.11",
+    "vulnerable_functions": []
+   }
+  ],
+  "cvss_severities": {
+   "cvss_v3": {
+    "vector_string": "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+    "score": 6.5
+   },
+   "cvss_v4": {
+    "vector_string": null,
+    "score": null
+   }
+  },
+  "cwes": [],
+  "cwe_ids": [],
+  "credits": [
+   {
+    "login": "iluuu1994",
+    "type": "analyst"
+   },
+   {
+    "login": "alexandre-daubois",
+    "type": "remediation_developer"
+   },
+   {
+    "login": "l8BL",
+    "type": "reporter"
+   },
+   {
+    "login": "OSTIF-Derek",
+    "type": "reporter"
+   },
+   {
+    "login": "iliaal",
+    "type": "reporter"
+   }
+  ],
+  "credits_detailed": [
+   {
+    "user": {
+     "login": "iluuu1994",
+     "id": 1752683,
+     "node_id": "MDQ6VXNlcjE3NTI2ODM=",
+     "avatar_url": "https://avatars.githubusercontent.com/u/1752683?v=4",
+     "gravatar_id": "",
+     "url": "https://api.github.com/users/iluuu1994",
+     "html_url": "https://github.com/iluuu1994",
+     "followers_url": "https://api.github.com/users/iluuu1994/followers",
+     "following_url": "https://api.github.com/users/iluuu1994/following{/other_user}",
+     "gists_url": "https://api.github.com/users/iluuu1994/gists{/gist_id}",
+     "starred_url": "https://api.github.com/users/iluuu1994/starred{/owner}{/repo}",
+     "subscriptions_url": "https://api.github.com/users/iluuu1994/subscriptions",
+     "organizations_url": "https://api.github.com/users/iluuu1994/orgs",
+     "repos_url": "https://api.github.com/users/iluuu1994/repos",
+     "events_url": "https://api.github.com/users/iluuu1994/events{/privacy}",
+     "received_events_url": "https://api.github.com/users/iluuu1994/received_events",
+     "type": "User",
+     "user_view_type": "public",
+     "site_admin": false
+    },
+    "type": "analyst",
+    "state": "accepted"
+   },
+   {
+    "user": {
+     "login": "alexandre-daubois",
+     "id": 2144837,
+     "node_id": "MDQ6VXNlcjIxNDQ4Mzc=",
+     "avatar_url": "https://avatars.githubusercontent.com/u/2144837?v=4",
+     "gravatar_id": "",
+     "url": "https://api.github.com/users/alexandre-daubois",
+     "html_url": "https://github.com/alexandre-daubois",
+     "followers_url": "https://api.github.com/users/alexandre-daubois/followers",
+     "following_url": "https://api.github.com/users/alexandre-daubois/following{/other_user}",
+     "gists_url": "https://api.github.com/users/alexandre-daubois/gists{/gist_id}",
+     "starred_url": "https://api.github.com/users/alexandre-daubois/starred{/owner}{/repo}",
+     "subscriptions_url": "https://api.github.com/users/alexandre-daubois/subscriptions",
+     "organizations_url": "https://api.github.com/users/alexandre-daubois/orgs",
+     "repos_url": "https://api.github.com/users/alexandre-daubois/repos",
+     "events_url": "https://api.github.com/users/alexandre-daubois/events{/privacy}",
+     "received_events_url": "https://api.github.com/users/alexandre-daubois/received_events",
+     "type": "User",
+     "user_view_type": "public",
+     "site_admin": false
+    },
+    "type": "remediation_developer",
+    "state": "accepted"
+   },
+   {
+    "user": {
+     "login": "l8BL",
+     "id": 151047781,
+     "node_id": "U_kgDOCQDOZQ",
+     "avatar_url": "https://avatars.githubusercontent.com/u/151047781?v=4",
+     "gravatar_id": "",
+     "url": "https://api.github.com/users/l8BL",
+     "html_url": "https://github.com/l8BL",
+     "followers_url": "https://api.github.com/users/l8BL/followers",
+     "following_url": "https://api.github.com/users/l8BL/following{/other_user}",
+     "gists_url": "https://api.github.com/users/l8BL/gists{/gist_id}",
+     "starred_url": "https://api.github.com/users/l8BL/starred{/owner}{/repo}",
+     "subscriptions_url": "https://api.github.com/users/l8BL/subscriptions",
+     "organizations_url": "https://api.github.com/users/l8BL/orgs",
+     "repos_url": "https://api.github.com/users/l8BL/repos",
+     "events_url": "https://api.github.com/users/l8BL/events{/privacy}",
+     "received_events_url": "https://api.github.com/users/l8BL/received_events",
+     "type": "User",
+     "user_view_type": "public",
+     "site_admin": false
+    },
+    "type": "reporter",
+    "state": "accepted"
+   },
+   {
+    "user": {
+     "login": "OSTIF-Derek",
+     "id": 47627854,
+     "node_id": "MDQ6VXNlcjQ3NjI3ODU0",
+     "avatar_url": "https://avatars.githubusercontent.com/u/47627854?v=4",
+     "gravatar_id": "",
+     "url": "https://api.github.com/users/OSTIF-Derek",
+     "html_url": "https://github.com/OSTIF-Derek",
+     "followers_url": "https://api.github.com/users/OSTIF-Derek/followers",
+     "following_url": "https://api.github.com/users/OSTIF-Derek/following{/other_user}",
+     "gists_url": "https://api.github.com/users/OSTIF-Derek/gists{/gist_id}",
+     "starred_url": "https://api.github.com/users/OSTIF-Derek/starred{/owner}{/repo}",
+     "subscriptions_url": "https://api.github.com/users/OSTIF-Derek/subscriptions",
+     "organizations_url": "https://api.github.com/users/OSTIF-Derek/orgs",
+     "repos_url": "https://api.github.com/users/OSTIF-Derek/repos",
+     "events_url": "https://api.github.com/users/OSTIF-Derek/events{/privacy}",
+     "received_events_url": "https://api.github.com/users/OSTIF-Derek/received_events",
+     "type": "User",
+     "user_view_type": "public",
+     "site_admin": false
+    },
+    "type": "reporter",
+    "state": "accepted"
+   },
+   {
+    "user": {
+     "login": "iliaal",
+     "id": 158724,
+     "node_id": "MDQ6VXNlcjE1ODcyNA==",
+     "avatar_url": "https://avatars.githubusercontent.com/u/158724?v=4",
+     "gravatar_id": "",
+     "url": "https://api.github.com/users/iliaal",
+     "html_url": "https://github.com/iliaal",
+     "followers_url": "https://api.github.com/users/iliaal/followers",
+     "following_url": "https://api.github.com/users/iliaal/following{/other_user}",
+     "gists_url": "https://api.github.com/users/iliaal/gists{/gist_id}",
+     "starred_url": "https://api.github.com/users/iliaal/starred{/owner}{/repo}",
+     "subscriptions_url": "https://api.github.com/users/iliaal/subscriptions",
+     "organizations_url": "https://api.github.com/users/iliaal/orgs",
+     "repos_url": "https://api.github.com/users/iliaal/repos",
+     "events_url": "https://api.github.com/users/iliaal/events{/privacy}",
+     "received_events_url": "https://api.github.com/users/iliaal/received_events",
+     "type": "User",
+     "user_view_type": "public",
+     "site_admin": false
+    },
+    "type": "reporter",
+    "state": "accepted"
+   }
+  ],
+  "collaborating_users": null,
+  "collaborating_teams": null,
+  "private_fork": null,
+  "comments": 4,
+  "cvss": {
+   "vector_string": "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+   "score": 6.5
+  }
+ },
+ {
+  "ghsa_id": "GHSA-ch8v-r6jh-4vvr",
+  "cve_id": null,
+  "url": "https://api.github.com/repos/php/php-src/security-advisories/GHSA-ch8v-r6jh-4vvr",
+  "html_url": "https://github.com/php/php-src/security/advisories/GHSA-ch8v-r6jh-4vvr",
+  "summary": "ext/filter: encode 0xFF in FILTER_SANITIZE_ENCODED",
+  "description": "### Summary\n\n`php_filter_encode_url()` builds a 256-entry lookup table that decides which bytes `FILTER_SANITIZE_ENCODED` percent-encodes, but initialises only the first 255 entries. Entry 255 is read",
+  "severity": "low",
+  "author": null,
+  "publisher": {
+   "login": "bukka",
+   "id": 137594,
+   "node_id": "MDQ6VXNlcjEzNzU5NA==",
+   "avatar_url": "https://avatars.githubusercontent.com/u/137594?v=4",
+   "gravatar_id": "",
+   "url": "https://api.github.com/users/bukka",
+   "html_url": "https://github.com/bukka",
+   "followers_url": "https://api.github.com/users/bukka/followers",
+   "following_url": "https://api.github.com/users/bukka/following{/other_user}",
+   "gists_url": "https://api.github.com/users/bukka/gists{/gist_id}",
+   "starred_url": "https://api.github.com/users/bukka/starred{/owner}{/repo}",
+   "subscriptions_url": "https://api.github.com/users/bukka/subscriptions",
+   "organizations_url": "https://api.github.com/users/bukka/orgs",
+   "repos_url": "https://api.github.com/users/bukka/repos",
+   "events_url": "https://api.github.com/users/bukka/events{/privacy}",
+   "received_events_url": "https://api.github.com/users/bukka/received_events",
+   "type": "User",
+   "user_view_type": "public",
+   "site_admin": false
+  },
+  "identifiers": [
+   {
+    "value": "GHSA-ch8v-r6jh-4vvr",
+    "type": "GHSA"
+   }
+  ],
+  "state": "published",
+  "created_at": null,
+  "updated_at": "2026-09-24T10:07:15Z",
+  "published_at": "2026-09-24T10:07:15Z",
+  "closed_at": null,
+  "withdrawn_at": null,
+  "submission": null,
+  "vulnerabilities": [
+   {
+    "package": {
+     "ecosystem": "other",
+     "name": "ext-filter"
+    },
+    "vulnerable_version_range": "<8.2.34",
+    "patched_versions": "8.2.34",
+    "vulnerable_functions": []
+   },
+   {
+    "package": {
+     "ecosystem": "other",
+     "name": "ext-filter"
+    },
+    "vulnerable_version_range": "<8.3.35",
+    "patched_versions": "8.3.35",
+    "vulnerable_functions": []
+   },
+   {
+    "package": {
+     "ecosystem": "other",
+     "name": "ext-filter"
+    },
+    "vulnerable_version_range": "<8.4.25",
+    "patched_versions": "8.4.25",
+    "vulnerable_functions": []
+   },
+   {
+    "package": {
+     "ecosystem": "other",
+     "name": "ext-filter"
+    },
+    "vulnerable_version_range": "<8.5.10",
+    "patched_versions": "8.5.10",
+    "vulnerable_functions": []
+   }
+  ],
+  "cvss_severities": {
+   "cvss_v3": {
+    "vector_string": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+    "score": 3.7
+   },
+   "cvss_v4": {
+    "vector_string": null,
+    "score": null
+   }
+  },
+  "cwes": [],
+  "cwe_ids": [],
+  "credits": [
+   {
+    "login": "fereidani",
+    "type": "reporter"
+   },
+   {
+    "login": "iliaal",
+    "type": "remediation_developer"
+   }
+  ],
+  "credits_detailed": [
+   {
+    "user": {
+     "login": "fereidani",
+     "id": 3057665,
+     "node_id": "MDQ6VXNlcjMwNTc2NjU=",
+     "avatar_url": "https://avatars.githubusercontent.com/u/3057665?v=4",
+     "gravatar_id": "",
+     "url": "https://api.github.com/users/fereidani",
+     "html_url": "https://github.com/fereidani",
+     "followers_url": "https://api.github.com/users/fereidani/followers",
+     "following_url": "https://api.github.com/users/fereidani/following{/other_user}",
+     "gists_url": "https://api.github.com/users/fereidani/gists{/gist_id}",
+     "starred_url": "https://api.github.com/users/fereidani/starred{/owner}{/repo}",
+     "subscriptions_url": "https://api.github.com/users/fereidani/subscriptions",
+     "organizations_url": "https://api.github.com/users/fereidani/orgs",
+     "repos_url": "https://api.github.com/users/fereidani/repos",
+     "events_url": "https://api.github.com/users/fereidani/events{/privacy}",
+     "received_events_url": "https://api.github.com/users/fereidani/received_events",
+     "type": "User",
+     "user_view_type": "public",
+     "site_admin": false
+    },
+    "type": "reporter",
+    "state": "accepted"
+   },
+   {
+    "user": {
+     "login": "iliaal",
+     "id": 158724,
+     "node_id": "MDQ6VXNlcjE1ODcyNA==",
+     "avatar_url": "https://avatars.githubusercontent.com/u/158724?v=4",
+     "gravatar_id": "",
+     "url": "https://api.github.com/users/iliaal",
+     "html_url": "https://github.com/iliaal",
+     "followers_url": "https://api.github.com/users/iliaal/followers",
+     "following_url": "https://api.github.com/users/iliaal/following{/other_user}",
+     "gists_url": "https://api.github.com/users/iliaal/gists{/gist_id}",
+     "starred_url": "https://api.github.com/users/iliaal/starred{/owner}{/repo}",
+     "subscriptions_url": "https://api.github.com/users/iliaal/subscriptions",
+     "organizations_url": "https://api.github.com/users/iliaal/orgs",
+     "repos_url": "https://api.github.com/users/iliaal/repos",
+     "events_url": "https://api.github.com/users/iliaal/events{/privacy}",
+     "received_events_url": "https://api.github.com/users/iliaal/received_events",
+     "type": "User",
+     "user_view_type": "public",
+     "site_admin": false
+    },
+    "type": "remediation_developer",
+    "state": "accepted"
+   }
+  ],
+  "collaborating_users": null,
+  "collaborating_teams": null,
+  "private_fork": null,
+  "comments": 5,
+  "cvss": {
+   "vector_string": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+   "score": 3.7
+  }
+ }
+]

@@ -1,0 +1,5 @@
+{
+  "type": "array",
+  "items": { "type": "object", "required": ["issue_number", "project", "aliases", "state", "labels"],
+    "properties": { "issue_number": { "type": "integer" }, "project": { "type": "string" }, "aliases": { "$ref": "common#/definitions/strArray" }, "state": { "enum": ["open", "closed"] }, "labels": { "$ref": "common#/definitions/strArray" }, "superseded_by": { "type": ["integer", "null"] }, "member_keys": { "$ref": "common#/definitions/strArray" } } }
+}

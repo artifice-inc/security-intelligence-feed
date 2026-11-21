@@ -1,0 +1,5 @@
+{
+  "php": {
+    "CVE-2024-4577": { "os": ["windows"], "note": "Windows の PHP-CGI に限られる（GHSA-3qgc-jrrr-25jv）" }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "object",
+  "required": ["full_sync_at", "updated_since", "advisories"],
+  "properties": {
+    "full_sync_at": { "type": ["string", "null"] },
+    "updated_since": { "type": ["integer", "null"] },
+    "advisories": {
+      "type": "object",
+      "additionalProperties": { "type": "object", "required": ["packageName", "affectedVersions", "cve", "title", "link", "reportedAt", "sources"],
+        "properties": { "packageName": { "type": "string" }, "affectedVersions": { "type": "string" }, "cve": { "type": ["string", "null"] }, "title": { "type": "string" }, "link": { "type": ["string", "null"] }, "reportedAt": { "type": ["string", "null"] }, "sources": { "type": "array" } } }
+    }
+  }
+}

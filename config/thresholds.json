@@ -1,0 +1,22 @@
+{
+  "stale_source_hours": 36,
+  "osv_db_refresh_hours": 12,
+  "osv_db_max_age_hours": 72,
+  "export_max_days": 30,
+  "fixed_in_repo_reminder_days": 14,
+  "epss_percentile_p1": 0.95,
+  "risk_accepted_days": 90,
+  "packagist_full_sync_days": 7,
+  "http_timeout_ms": 30000,
+  "http_retries": 3,
+  "download_timeout_ms": 600000,
+  "download_retries": 2,
+  "sanitize_max_chars": 200,
+  "digest_new_days": 7,
+  "alas_max_per_run": 4000,
+  "alas_concurrency": 8,
+  "kernel_fixed_review_days": 30,
+  "python_release_grace_days": 7,
+  "aws_bulletins_deadline_ms": 60000,
+  "optional_source_alert_days": 7
+}

@@ -1,0 +1,24 @@
+{
+  "type": "object",
+  "properties": {
+    "project": { "type": "string" },
+    "monitor_ref": { "type": "string" },
+    "owner": { "type": "string" },
+    "runtimes": { "type": "object", "properties": { "php": { "type": "string" }, "node": { "type": "string" }, "python": { "type": "string" } }, "additionalProperties": false },
+    "exposure": { "enum": ["internet", "internal"] },
+    "os": { "enum": ["linux", "windows"] },
+    "lockfiles": { "$ref": "common#/definitions/strArray" },
+    "kernel": {
+      "type": "object",
+      "required": ["distro", "release", "package"],
+      "properties": {
+        "distro": { "enum": ["amazonlinux"] },
+        "release": { "enum": ["2", "2023"] },
+        "package": { "type": "string", "pattern": "^kernel[0-9.]*$" },
+        "repo": { "type": "string", "pattern": "^kernel-[0-9.]+$" }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

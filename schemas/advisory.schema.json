@@ -1,0 +1,48 @@
+{
+  "type": "object",
+  "required": ["key", "aliases", "status", "superseded_by", "category", "ecosystem", "title", "affected", "severity", "known_exploited", "epss", "jp_alerts", "sources", "first_seen_at", "history", "verification_status"],
+  "properties": {
+    "key": { "type": "string", "pattern": "^[A-Za-z0-9-]+$" },
+    "aliases": {
+      "type": "object",
+      "required": ["cve", "ghsa", "other"],
+      "properties": { "cve": { "$ref": "common#/definitions/strArray" }, "ghsa": { "$ref": "common#/definitions/strArray" }, "other": { "$ref": "common#/definitions/strArray" } }
+    },
+    "status": { "enum": ["active", "withdrawn"] },
+    "superseded_by": { "type": ["string", "null"] },
+    "category": { "enum": ["dependency", "runtime", "eol"] },
+    "ecosystem": { "type": "string" },
+    "title": { "type": "string" },
+    "affected": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["package", "ranges"],
+        "properties": {
+          "package": { "type": "object", "required": ["ecosystem", "name"] },
+          "ranges": { "type": "array", "items": { "type": "object", "required": ["type"] } },
+          "versions": { "$ref": "common#/definitions/strArray" },
+          "from_sources": { "$ref": "common#/definitions/strArray" }
+        }
+      }
+    },
+    "severity": { "type": "object", "required": ["level", "source"], "properties": { "level": { "type": ["string", "null"] }, "source": { "type": ["string", "null"] } } },
+    "known_exploited": { "type": "object", "required": ["kev", "date_added"], "properties": { "kev": { "type": "boolean" }, "date_added": { "type": ["string", "null"] } } },
+    "epss": { "type": "object", "required": ["score", "percentile", "date"] },
+    "jp_alerts": { "type": "array" },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "id", "url", "source_modified_at", "content_hash", "withdrawn_at"],
+        "properties": { "name": { "type": "string" }, "id": { "type": "string" }, "content_hash": { "type": ["string", "null"] }, "withdrawn_at": { "type": ["string", "null"] } }
+      }
+    },
+    "first_seen_at": { "type": ["string", "null"] },
+    "history": {
+      "type": "array",
+      "items": { "type": "object", "required": ["at", "changes", "significant"], "properties": { "at": { "type": "string" }, "changes": { "$ref": "common#/definitions/strArray" }, "significant": { "type": "boolean" } } }
+    },
+    "verification_status": { "enum": ["source_structured", "text_extracted", "needs_review"] }
+  }
+}

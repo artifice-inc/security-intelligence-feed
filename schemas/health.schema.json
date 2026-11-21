@@ -1,0 +1,14 @@
+{
+  "type": "object",
+  "required": ["last_run", "last_success_at", "sources", "projects", "osv_db", "packagist_updated_since"],
+  "properties": {
+    "last_run": { "type": "object", "required": ["started_at", "finished_at", "status"], "properties": { "status": { "enum": ["success", "partial", "failed"] } } },
+    "last_success_at": { "type": ["string", "null"] },
+    "sources": { "type": "object", "additionalProperties": { "type": "object", "required": ["last_attempt_at", "last_success_at", "last_error"] } },
+    "optional_sources": { "type": "object", "additionalProperties": { "type": "object", "required": ["first_attempt_at", "last_attempt_at", "last_success_at", "last_error"],
+      "properties": { "first_attempt_at": { "type": "string" }, "last_attempt_at": { "type": "string" }, "last_success_at": { "type": ["string", "null"] }, "last_error": { "type": ["object", "null"] } } } },
+    "projects": { "type": "object", "additionalProperties": { "type": "object", "required": ["scan_status", "inventory_status"], "properties": { "scan_status": { "$ref": "common#/definitions/scanStatus" }, "inventory_status": { "$ref": "common#/definitions/inventoryStatus" } } } },
+    "osv_db": { "type": "object", "additionalProperties": { "type": "object", "required": ["fetched_at", "sha256"] } },
+    "packagist_updated_since": { "type": ["integer", "null"] }
+  }
+}

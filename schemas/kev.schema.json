@@ -1,0 +1,23 @@
+{
+  "type": "object",
+  "required": ["fetched_at", "ok", "catalog_version", "records"],
+  "properties": {
+    "fetched_at": { "type": "string" },
+    "ok": { "type": "boolean" },
+    "catalog_version": { "type": ["string", "null"] },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["cveID", "vendorProject", "product", "dateAdded", "knownRansomwareCampaignUse"],
+        "properties": {
+          "cveID": { "type": "string" },
+          "vendorProject": { "type": ["string", "null"] },
+          "product": { "type": ["string", "null"] },
+          "dateAdded": { "type": ["string", "null"] },
+          "knownRansomwareCampaignUse": { "type": ["string", "null"] }
+        }
+      }
+    }
+  }
+}

@@ -35,7 +35,9 @@ if (mode === 'full') {
   assert.equal(output.dependency_checks.osv, 'unavailable');
   assert.ok(output.scan_errors.some((e) => e.message.includes('固定版と一致しない')), JSON.stringify(output.scan_errors));
   assert.equal(output.feed_signals.mode, 'latest');
-  assert.equal(output.results.length, 0);
+  // スキャナを起動していないこと。フィードによるランタイムの P3（版を確定できない）は出てよい
+  assert.ok(!output.results.some((r) => Object.keys(EXPECTED).some((id) => r.aliases.includes(id))), JSON.stringify(output.results));
+  assert.ok(!output.results.some((r) => r.locations.some((l) => ['npm', 'PyPI'].includes(l.ecosystem))), JSON.stringify(output.results));
 } else if (mode === 'fresh-pypi') {
   const output = readOutput(args[0]);
   assertValid('security-check-output', output);

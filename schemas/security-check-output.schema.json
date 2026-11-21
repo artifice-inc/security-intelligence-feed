@@ -24,8 +24,8 @@
     "local_scan": { "type": "object", "required": ["complete", "reasons"], "properties": { "complete": { "type": "boolean" }, "reasons": { "type": "array", "items": { "type": "string" } } } },
     "central_issues": {
       "type": ["object", "null"],
-      "required": ["open", "fixed_in_repo", "superseded", "resolved_locally"],
-      "properties": { "open": { "type": "object" }, "fixed_in_repo": { "type": "array" }, "superseded": { "type": "array" }, "resolved_locally": { "type": ["array", "null"] } }
+      "required": ["open", "fixed_in_repo", "superseded", "advisory_withdrawn", "resolved_locally"],
+      "properties": { "open": { "type": "object" }, "fixed_in_repo": { "type": "array" }, "superseded": { "type": "array" }, "advisory_withdrawn": { "type": "array" }, "resolved_locally": { "type": ["array", "null"] } }
     },
     "feed_signals": {
       "type": "object", "required": ["mode", "kev", "epss"],

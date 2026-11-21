@@ -98,11 +98,14 @@ export function buildCentralIssues({ issuesFile, projectName, localScan, aliasSe
   const open = { P0: 0, P1: 0, P2: 0 };
   const fixedInRepo = [];
   const superseded = [];
+  const advisoryWithdrawn = [];
   const candidates = [];
   for (const issue of issuesFile.filter((i) => i.project === projectName && i.state === 'open')) {
     const { issue_number: number, aliases } = issue;
     if (typeof issue.superseded_by === 'number') { superseded.push({ issue_number: number, aliases, superseded_by: issue.superseded_by }); continue; }
     if (issue.labels.includes('fixed-in-repo')) { fixedInRepo.push({ issue_number: number, aliases }); continue; }
+    // 取り下げは open にも今までどおり数える。内訳として足すだけ（版のずれで表示を崩さないため）
+    if (issue.labels.includes('advisory-withdrawn')) advisoryWithdrawn.push({ issue_number: number, aliases });
     for (const p of Object.keys(open)) if (issue.labels.includes(p)) open[p] += 1;
     // カーネルは配布元のデータだけを見ていて、手元で消えても「解消した」とは言えない
     if (aliases.some((a) => a.startsWith('KERNEL-'))) continue;
@@ -111,5 +114,5 @@ export function buildCentralIssues({ issuesFile, projectName, localScan, aliasSe
     if (memberKeys.length > 0 && itemAliasSets.some((set) => sharesAlias(memberKeys, set))) continue;
     if (!aliasSets.some((set) => sharesAlias(aliases, set))) candidates.push({ issue_number: number, aliases });
   }
-  return { open, fixed_in_repo: fixedInRepo, superseded, resolved_locally: localScan.complete ? candidates : null };
+  return { open, fixed_in_repo: fixedInRepo, superseded, advisory_withdrawn: advisoryWithdrawn, resolved_locally: localScan.complete ? candidates : null };
 }

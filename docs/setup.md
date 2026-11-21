@@ -17,7 +17,7 @@
 固定版は `config/tool-versions.json` にあります。公開側のコードを一時ディレクトリに展開し、`install-scanner.mjs` で sha256 を検証してから `~/.local/bin` に置きます。Apple Silicon は `darwin_arm64`、Intel Mac は `darwin_amd64`、Linux は `linux_amd64` を `--platform` に指定します。
 
 ```bash
-CODE_DIR="$(mktemp -d)" && git clone --bare --quiet https://github.com/artifice-inc/security-intelligence-feed "$HOME/.cache/security-intelligence-feed.git" && git --git-dir "$HOME/.cache/security-intelligence-feed.git" archive refs/heads/main | tar -x -C "$CODE_DIR" && mkdir -p "$HOME/.local/bin" && node "$CODE_DIR/src/cli/install-scanner.mjs" --platform darwin_arm64 --dest "$HOME/.local/bin" && "$HOME/.local/bin/osv-scanner" --version && rm -rf "$CODE_DIR"
+CODE_DIR="$(mktemp -d)" && git clone --bare --quiet https://github.com/artifice-inc/security-intelligence-feed "$HOME/.cache/security-intelligence-feed.git" && git --git-dir "$HOME/.cache/security-intelligence-feed.git" archive refs/heads/main | tar -x -C "$CODE_DIR" && (cd "$CODE_DIR" && npm ci --ignore-scripts --silent) && mkdir -p "$HOME/.local/bin" && node "$CODE_DIR/src/cli/install-scanner.mjs" --platform darwin_arm64 --dest "$HOME/.local/bin" && "$HOME/.local/bin/osv-scanner" --version && rm -rf "$CODE_DIR"
 ```
 
 `~/.cache/security-intelligence-feed.git` がすでにある場合は、`git clone` の部分を省いてください。`which osv-scanner` が `~/.local/bin` を指すようにします。

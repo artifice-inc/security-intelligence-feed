@@ -87,6 +87,19 @@ test('EPSS の失敗: 前回の records を残して ok:false', async () => {
   assertFailedSource(readJson(latest, 'health.json'), 'epss');
 });
 
+test('EPSS の成功: 上位に入らない CVE のアドバイザリの epss は空になり、検証を通る', async () => {
+  const remote = makeFeedRemote();
+  assert.equal(readJson(cloneFeed(remote), 'advisories/CVE-2015-6764.json').epss.percentile, 0.93226);
+  const { latest } = await collect({ remote });
+  assert.deepEqual(readJson(latest, 'advisories/CVE-2015-6764.json').epss, { score: null, percentile: null, date: null });
+  assert.deepEqual(validateFeed(path.join(latest, 'data')), []);
+});
+
+test('EPSS の失敗: アドバイザリの epss は前回の値が残る', async () => {
+  const { latest } = await collect({ remote: makeFeedRemote(), collectors: { epss: failing() } });
+  assert.equal(readJson(latest, 'advisories/CVE-2015-6764.json').epss.percentile, 0.93226);
+});
+
 test('EPSS の成功: 閾値以上の行だけを threshold とともに書く', async () => {
   const { latest } = await collect({
     remote: makeFeedRemote(),

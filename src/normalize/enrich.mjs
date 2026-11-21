@@ -3,7 +3,9 @@ import { toIso } from '../lib/time.mjs';
 
 // KEV・EPSS・国内注意喚起を、現行のアドバイザリへ付与する（D3: 照合で見つかったアドバイザリへの KEV フラグ付与）
 // kevRecords / epssRecords が null の回（取得失敗）は、その項目を前回のまま残す
-export function enrichAdvisories({ advisories, kevRecords, epssRecords, jpItems, now }) {
+// clearMissingEpss: 上位だけを取得する公開側用。取得に成功した回に、一覧に無い CVE の EPSS を空に戻す（古い値を残さない）
+const EMPTY_EPSS = { score: null, percentile: null, date: null };
+export function enrichAdvisories({ advisories, kevRecords, epssRecords, jpItems, now, clearMissingEpss = false }) {
   const kev = new Map((kevRecords ?? []).map((r) => [r.cveID, r]));
   const epss = new Map((epssRecords ?? []).map((r) => [r.cve, r]));
   const changed = new Map();
@@ -13,11 +15,12 @@ export function enrichAdvisories({ advisories, kevRecords, epssRecords, jpItems,
     const score = cves.map((c) => epss.get(c)).filter(Boolean).sort((a, b) => b.percentile - a.percentile)[0];
     const alerts = jpItems.filter((i) => i.cves.some((c) => cves.includes(c)))
       .map((i) => ({ source: i.source, id: i.id, title: i.title, link: i.link })).sort((a, b) => (a.source + a.id < b.source + b.id ? -1 : 1));
+    const missingEpss = clearMissingEpss && epssRecords !== null ? { ...EMPTY_EPSS } : advisory.epss;
     const next = {
       ...advisory,
       known_exploited: kevRecords === null ? advisory.known_exploited
         : hit ? { kev: true, date_added: hit.dateAdded } : { kev: false, date_added: null },
-      epss: score ? { score: score.epss, percentile: score.percentile, date: score.score_date?.slice(0, 10) ?? null } : advisory.epss,
+      epss: score ? { score: score.epss, percentile: score.percentile, date: score.score_date?.slice(0, 10) ?? null } : missingEpss,
       jp_alerts: alerts,
     };
     if (next.known_exploited.kev !== advisory.known_exploited.kev) {

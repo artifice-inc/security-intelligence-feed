@@ -103,6 +103,26 @@ test('KEV と EPSS と国内注意喚起が付与され、失敗した回（null
   assert.equal(keep.size, 0);
 });
 
+test('clearMissingEpss: 取得成功の回だけ、一覧に無い CVE の EPSS を空にする', () => {
+  const { all } = apply([], [fromOsv(osvRecord({ aliases: ['CVE-2026-1'] }), { now: T1 }), fromOsv(osvRecord({ id: 'GHSA-dddd-eeee-ffff', aliases: ['CVE-2026-2'] }), { now: T1 })], T1);
+  const withValue = enrichAdvisories({ advisories: all, kevRecords: [], epssRecords: [{ cve: 'CVE-2026-1', epss: 0.5, percentile: 0.97, score_date: '2026-10-24T12:00:00Z' }], jpItems: [], now: T2 });
+  const stored = all.map((a) => withValue.get(a.key) ?? a);
+  const empty = { score: null, percentile: null, date: null };
+  const run = (extra) => enrichAdvisories({ advisories: stored, kevRecords: [], jpItems: [], now: T2, ...extra });
+  const [one, two] = ['CVE-2026-1', 'CVE-2026-2'].map((cve) => stored.find((a) => a.aliases.cve.includes(cve)));
+  assert.equal(one.epss.percentile, 0.97);
+  // 既定（false）: 一覧に無くても前回のまま
+  assert.equal(run({ epssRecords: [] }).size, 0);
+  // true: 一覧にある CVE は値が入り、無い CVE は空
+  const cleared = run({ epssRecords: [{ cve: 'CVE-2026-2', epss: 0.7, percentile: 0.98, score_date: '2026-10-25T00:00:00Z' }], clearMissingEpss: true });
+  assert.equal(cleared.get(one.key).epss.percentile, null);
+  assert.deepEqual(cleared.get(one.key).epss, empty);
+  assert.equal(cleared.get(two.key).epss.percentile, 0.98);
+  // true でも取得失敗（null）なら前回のまま
+  assert.equal(run({ epssRecords: null, clearMissingEpss: true }).size, 0);
+  assertValid('advisory', cleared.get(one.key));
+});
+
 test('node-core: NODE_SEMVER の範囲と修正版、blob sha が前回値として復元できる', () => {
   const record = fromNodeCore({ id: '204', sha: 'abc', cve: ['CVE-2026-111497'], vulnerable: '22.x || 24.x', patched: '^22.23.4 || ^24.22.1', severity: 'high', ref: 'https://x', description: 'd' }, { now: T1 });
   const { all } = apply([], [record], T1);

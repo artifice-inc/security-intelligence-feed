@@ -63,6 +63,7 @@ export async function runCollect({ rootDir, feedRoot, now, deps, env }) {
   const enriched = enrichAdvisories({
     advisories: [...norm.advisories.values()], kevRecords: kev.ok ? kevFile.records : null,
     epssRecords: epss.ok ? epssFile.records.map((r) => ({ ...r, score_date: epssFile.score_date })) : null, jpItems: norm.jpAlerts.items, now,
+    clearMissingEpss: true,
   });
   for (const [key, value] of enriched) norm.advisories.set(key, value);
 

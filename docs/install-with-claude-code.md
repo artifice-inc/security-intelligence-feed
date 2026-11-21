@@ -12,7 +12,7 @@
 
 - 各ステップの前に、何をするかをユーザーに日本語で一言説明する。ソフトウェアの導入・設定ファイルの変更・PATH の変更は、**ユーザーの了承を得てから**行う。
 - `sudo` は使わない。管理者権限が要る作業（Node.js や git の導入など）は、ユーザーに手順を示して任せる。
-- 既にあるファイルやフォルダは消さない・上書きしない。この文書の「既にあれば」の指示に従う。
+- 既にあるファイルやフォルダは消さない・上書きしない。この文書の「既にあれば」の指示に従う。**例外**：Windows の `~/.local/bin/osv-scanner.exe` が固定版の sha256 と一致しないときに限り、対象のパスを示してユーザーの了承を得てから入れ直してよい。入れ直す前と後に sha256 を確かめる。
 - **`~/.config/security-intelligence/staff` は作らない。** これは提供元の社内用の目印で、作ると社内用の手順に切り替わり、動かなくなる。
 - 案件のソースコードや依存関係の一覧を、外部へ送らない。この導入と `/security-check` が通信する先は、github.com（とダウンロードの転送先の `*.githubusercontent.com`）・registry.npmjs.org・osv-vulnerabilities.storage.googleapis.com だけ。
 - 失敗したら、先へ進まずに止まる。実行したコマンドとエラーの全文をユーザーに示す。
@@ -25,9 +25,12 @@
 | macOS | Apple Silicon（arm64） | `darwin_arm64` |
 | macOS | Intel（x86_64） | `darwin_amd64` |
 | Linux | x86_64 | `linux_amd64` |
-| Windows | — | WSL2 の Linux（x86_64）の中で導入する。Windows 上で直接は動かない |
+| Windows（Git Bash） | x86_64 | `windows_amd64`（Git for Windows の Bash から実行する） |
+| WSL2 | x86_64 | WSL2 の Linux でも動く（`linux_amd64`） |
 
 macOS の CPU は `sysctl -in hw.optional.arm64` で見分ける。`1` なら Apple Silicon（`darwin_arm64`）、何も出なければ Intel（`darwin_amd64`）。Apple Silicon でも、Rosetta で動くシェルでは `uname -m` が `x86_64` と出るため、`uname` だけで決めない。
+
+Windows では、Claude Code の **Bash ツール**（Git for Windows の Bash）で手順を実行する。Claude Code が Git Bash を見つけられないときは、環境変数 `CLAUDE_CODE_GIT_BASH_PATH` に `bash.exe` のパスを設定するようユーザーに頼む。
 
 上の表にない環境（Linux の arm64 など）は対応していない。その場合はユーザーにそう伝え、下の問い合わせ先を案内して止める。
 
@@ -41,7 +44,7 @@ uname -sm; sysctl -in hw.optional.arm64 2>/dev/null; node --version; git --versi
 
 | 確かめること | 条件 | 満たさないとき |
 |---|---|---|
-| `uname -sm` | 対応表にある組み合わせ | 対応外として止める |
+| `uname -sm` | 対応表にある組み合わせ（Windows では `MINGW64_NT-...` と出る） | 対応外として止める。Windows で Git for Windows がなければ、ユーザーに導入を頼む |
 | `node --version` | v24 以上 | ユーザーに Node.js 24 以上の導入を頼む（nvm・Volta・公式インストーラのどれか、ユーザーが普段使うもの）。導入後にこのステップをやり直す |
 | `git --version` | 表示される | ユーザーに git の導入を頼む |
 | `claude --version` | 表示される | Claude Code の CLI が使えないので止める |
@@ -52,6 +55,8 @@ uname -sm; sysctl -in hw.optional.arm64 2>/dev/null; node --version; git --versi
 OSV-Scanner は、依存関係を脆弱性のデータベースと照合するツール。版は提供元が固定しており（`config/tool-versions.json`）、導入スクリプトが sha256 を検証してから `~/.local/bin` に置く。
 
 既に `~/.local/bin/osv-scanner` があり、`~/.local/bin/osv-scanner --version` の版が `config/tool-versions.json` の版と同じなら、このステップは飛ばす。
+
+**Windows**：`~/.local/bin/osv-scanner.exe` について、**起動する前に** `sha256sum` の値を `config/tool-versions.json` の `windows_amd64` の `sha256` と比べる。一致してから `--version` を見て、同じ版なら飛ばす。一致しなければ入れ直す（共通のルールの例外）。コマンドは `docs/setup.md` の「Windows（x86_64・Git Bash）」の節のとおり（`cygpath -am` で変換し、引用符で囲む。`unzip` も PATH の設定も要らない）。
 
 `<PLATFORM>` は対応表の値に置き換える。`~/.cache/security-intelligence-feed.git` が既にあれば、`git clone` の部分（最初の `&&` まで）を `git --git-dir "$HOME/.cache/security-intelligence-feed.git" fetch --quiet origin +refs/heads/main:refs/heads/main` に置き換える。
 
@@ -84,7 +89,7 @@ claude plugin marketplace add artifice-inc/security-intelligence-feed && claude 
 次をすべて満たせば、導入は完了。
 
 - [ ] `~/.local/bin/osv-scanner --version` が固定版の版を表示する
-- [ ] `command -v osv-scanner` が `~/.local/bin/osv-scanner` を指す（新しいシェルで）
+- [ ] `command -v osv-scanner` が `~/.local/bin/osv-scanner` を指す（新しいシェルで。Windows では PATH の確認の代わりに、`~/.local/bin/osv-scanner.exe` の sha256 が固定版と一致し、そのうえで `--version` が固定版の版を表示すること）
 - [ ] `claude plugin list` に `security-check@security-intelligence-feed` が `enabled` で出る
 - [ ] `~/.config/security-intelligence/staff` が**ない**
 

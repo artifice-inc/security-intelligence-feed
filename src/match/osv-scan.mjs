@@ -20,7 +20,15 @@ const fixedVersionsOf = (vuln, pkg) => [...new Set((vuln.affected ?? [])
   .filter((a) => a.package?.name === pkg.name && a.package?.ecosystem === pkg.ecosystem)
   .flatMap((a) => (a.ranges ?? []).flatMap((r) => (r.events ?? []).map((e) => e.fixed).filter(Boolean))))].sort();
 
-export function parseScannerOutput(stdout, { root, inputs }) {
+// Windows は区切り・大小の違いだけを吸収する。複数に一致・不一致・別のドライブは null（どの lockfile にも割り当てない）
+function resolveWindowsReported(reported, inputs) {
+  if (!path.win32.isAbsolute(reported)) return null;
+  const keyOf = (p) => path.win32.normalize(p).toLowerCase();
+  const matches = new Set(inputs.filter(({ scanPath }) => keyOf(scanPath) === keyOf(reported)).map(({ file }) => file));
+  return matches.size === 1 ? [...matches][0] : null;
+}
+
+export function parseScannerOutput(stdout, { root, inputs, platform = process.platform }) {
   let doc;
   try { doc = JSON.parse(stdout); } catch { return { ok: false, error: { kind: 'scanner', target: 'osv-scanner', message: 'OSV-Scanner の出力を JSON として解析できません' } }; }
   if (!Array.isArray(doc?.results)) return { ok: false, error: { kind: 'scanner', target: 'osv-scanner', message: 'OSV-Scanner の出力に results がありません' } };
@@ -29,7 +37,12 @@ export function parseScannerOutput(stdout, { root, inputs }) {
   const detections = [];
   for (const result of doc.results) {
     const reported = result.source?.path ?? '';
-    const lockfile = fileOfScanPath.get(reported) ?? path.relative(root, reported);
+    let lockfile = fileOfScanPath.get(reported);
+    if (lockfile === undefined) {
+      if (platform === 'win32') lockfile = resolveWindowsReported(reported, inputs);
+      else lockfile = path.relative(root, reported);
+    }
+    if (lockfile === null) continue;
     seen.add(lockfile);
     for (const entry of result.packages ?? []) {
       for (const vuln of entry.vulnerabilities ?? []) {
@@ -51,6 +64,7 @@ export async function runOsvScan({ exec, scannerPath, root, inputs, dbDir }) {
   const targets = inputs.filter((i) => ecosystemOfLockfile(i.file) !== null);
   if (targets.length === 0) return { ok: true, detections: [], errors: [] };
   const outcome = await exec(scannerPath, buildScannerArgs({ inputs: targets }), { env: { OSV_SCANNER_LOCAL_DB_CACHE_DIRECTORY: dbDir } });
+  if (outcome.reason) return { ok: false, detections: [], errors: [{ kind: 'scanner', target: 'osv-scanner', message: `OSV-Scanner を起動しませんでした: ${outcome.reason}` }] };
   if (outcome.code === EXIT_NO_PACKAGES) {
     return { ok: false, detections: [], errors: targets.map((i) => ({ kind: 'lockfile', target: i.file, message: 'パッケージを1件も読み取れませんでした（終了コード128）' })) };
   }

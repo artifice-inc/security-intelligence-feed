@@ -9,6 +9,8 @@ description: 案件の依存関係（npm / Composer / PyPI）とランタイム�
 
 ## 手順
 
+`uname -s` が `MINGW`・`MSYS` で始まる（Windows の Git Bash）ときは、末尾の「Windows のとき」の読み替えに従う。それ以外は、この手順のとおり。
+
 1. キャッシュと実行するコードを準備する。
    0. **実行モードを決める**: `~/.config/security-intelligence/staff`（スタッフの導入手順 `docs/setup.md` で作る目印のファイル）があれば**スタッフ用**、なければ**配布先用**。
       - スタッフ用: 非公開側のキャッシュがない・`origin` が違う・`pull` に失敗してキャッシュにも `config/feed-code.json` がない・`commit` が未設定・その SHA を取得できない、のどれかなら、照合も export も**止めて**案内する（配布先用に切り替えない）。
@@ -67,3 +69,19 @@ description: 案件の依存関係（npm / Composer / PyPI）とランタイム�
    node <一時ディレクトリ>/src/cli/export-inventory.mjs --project-dir "<案件のルート>" --project <案件名> --out "<出力先>"
    ```
 6. 一時ディレクトリ（コードの展開先・フィードの展開先）は、手順の最後に消す。
+
+## Windows のとき（Git Bash）
+
+Claude Code の Bash ツールが Git for Windows の Bash で動いているときだけ、上の手順を次のように読み替える。PowerShell・コマンドプロンプトの手順はない。
+
+- **展開**: 手順1の2b と5の `git archive` は `git -c core.autocrlf=false -c core.eol=lf archive ...` にする（改行を LF に保つ）。展開先を含むシェルのパスは、すべて二重引用符で囲む（空白を含みうる）。
+- **スキャナ**: PATH から探さない。`"$HOME/.local/bin/osv-scanner.exe"` だけを使う。無ければ、手順1の7のとおり `docs/setup.md` の Windows の節を案内する（`--scanner` に渡すと CLI が sha256 を固定版と照合する。一致しなければ依存関係の照合は「照合不能」になる）。
+- **ホーム**: 引用符で囲むホーム配下のパスは `"$HOME/..."` と書く（`"~/..."` は展開されない）。
+- **パス**: Node に渡すパス（スクリプト、`--project-dir`・`--feed-dir`・`--osv-db-dir`・`--private-root`・`--scanner`）は、すべて `cygpath -am` で Windows の形にし、二重引用符で囲む。
+- **引数の変換を止める**: Node を起動するコマンドにだけ `MSYS2_ARG_CONV_EXCL='*'` を付ける（`--project /team/app` のような引数が書き換えられないため）。
+- **起動の場所**: 案件の絶対パスを先に確定し、コードの展開先への移動と起動を**サブシェルの中に閉じる**。手順6の一時ディレクトリの削除は、サブシェルを出てから行う（実行中のプロセスの作業ディレクトリは消せない）。
+
+  ```bash
+  PROJECT_WIN="$(cygpath -am "<案件のルート>")"
+  ( cd "<コードの一時ディレクトリ>" && MSYS2_ARG_CONV_EXCL='*' node "$(cygpath -am "<コードの一時ディレクトリ>/src/cli/security-check.mjs")" --project-dir "$PROJECT_WIN" --feed-dir "$(cygpath -am "<フィードの一時ディレクトリ>/data")" --feed-sha <手順1の2bのコミット> --code-sha <手順1の4のコミット> --osv-db-dir "$(cygpath -am "$HOME/.cache/security-intelligence-osv-db")" --scanner "$(cygpath -am "$HOME/.local/bin/osv-scanner.exe")" [--project <案件名>] [--pull-failed] --json )
+  ```

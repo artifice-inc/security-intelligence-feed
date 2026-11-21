@@ -36,7 +36,7 @@ CODE_DIR="$(mktemp -d)" && git clone --bare --quiet https://github.com/artifice-
 ## 2. プラグイン
 
 ```bash
-claude plugin marketplace add artifice-inc/security-intelligence-feed && claude plugin install security-check@security-intelligence-feed && claude plugin list
+CLAUDE="$(command -v claude || ls "$HOME/.local/bin/claude.exe" "$HOME/.local/bin/claude" 2>/dev/null | head -n 1)" && "$CLAUDE" plugin marketplace add artifice-inc/security-intelligence-feed && "$CLAUDE" plugin install security-check@security-intelligence-feed && "$CLAUDE" plugin list
 ```
 
 `security-check@security-intelligence-feed` が `enabled` と表示されれば成功です。起動中の Claude Code は再起動してください。

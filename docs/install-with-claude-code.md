@@ -39,7 +39,7 @@ Windows では、Claude Code の **Bash ツール**（Git for Windows の Bash�
 次を実行し、結果をユーザーに表で示す。
 
 ```bash
-uname -sm; sysctl -in hw.optional.arm64 2>/dev/null; node --version; git --version; claude --version; echo "$PATH" | tr ':' '\n' | grep -x "$HOME/.local/bin" || echo "~/.local/bin は PATH にない"
+uname -sm; sysctl -in hw.optional.arm64 2>/dev/null; node --version; git --version; CLAUDE="$(command -v claude || ls "$HOME/.local/bin/claude.exe" "$HOME/.local/bin/claude" 2>/dev/null | head -n 1)"; echo "claude: ${CLAUDE:-見つからない}"; [ -n "$CLAUDE" ] && "$CLAUDE" --version; echo "$PATH" | tr ':' '\n' | grep -x "$HOME/.local/bin" || echo "~/.local/bin は PATH にない"
 ```
 
 | 確かめること | 条件 | 満たさないとき |
@@ -47,8 +47,8 @@ uname -sm; sysctl -in hw.optional.arm64 2>/dev/null; node --version; git --versi
 | `uname -sm` | 対応表にある組み合わせ（Windows では `MINGW64_NT-...` と出る） | 対応外として止める。Windows で Git for Windows がなければ、ユーザーに導入を頼む |
 | `node --version` | v24 以上 | ユーザーに Node.js 24 以上の導入を頼む（nvm・Volta・公式インストーラのどれか、ユーザーが普段使うもの）。導入後にこのステップをやり直す |
 | `git --version` | 表示される | ユーザーに git の導入を頼む |
-| `claude --version` | 表示される | Claude Code の CLI が使えないので止める |
-| `~/.local/bin` | PATH にある | ステップ 1 の後に、ユーザーの了承を得てシェルの設定ファイル（`~/.zshrc` か `~/.bashrc`）に `export PATH="$HOME/.local/bin:$PATH"` を 1 行足す |
+| `claude`（Claude Code の CLI） | 見つかって版が表示される。PATH に無くても、`~/.local/bin/claude`（Windows は `claude.exe`）にあればよい（デスクトップアプリでは PATH に入っていないことが多い） | どちらにも無ければ止めて、ユーザーに Claude Code の CLI を公式の手順（https://code.claude.com/docs/en/setup ）で入れてもらう。ステップ 2 のプラグインの導入に使う |
+| `~/.local/bin` | PATH にある（Windows では不要） | macOS・Linux だけ：ステップ 1 の後に、ユーザーの了承を得てシェルの設定ファイル（`~/.zshrc` か `~/.bashrc`）に `export PATH="$HOME/.local/bin:$PATH"` を 1 行足す |
 
 ## ステップ 1：OSV-Scanner（固定版）を入れる
 
@@ -70,8 +70,10 @@ CODE_DIR="$(mktemp -d)" && git clone --bare --quiet https://github.com/artifice-
 
 ## ステップ 2：プラグインを入れる
 
+ステップ 0 で見つけた `claude` を使う。PATH に無い場合はフルパスのまま使い、PATH は変えない。
+
 ```bash
-claude plugin marketplace add artifice-inc/security-intelligence-feed && claude plugin install security-check@security-intelligence-feed && claude plugin list
+CLAUDE="$(command -v claude || ls "$HOME/.local/bin/claude.exe" "$HOME/.local/bin/claude" 2>/dev/null | head -n 1)" && "$CLAUDE" plugin marketplace add artifice-inc/security-intelligence-feed && "$CLAUDE" plugin install security-check@security-intelligence-feed && "$CLAUDE" plugin list
 ```
 
 `security-check@security-intelligence-feed` が `enabled` と表示されれば成功。
@@ -90,7 +92,7 @@ claude plugin marketplace add artifice-inc/security-intelligence-feed && claude 
 
 - [ ] `~/.local/bin/osv-scanner --version` が固定版の版を表示する
 - [ ] `command -v osv-scanner` が `~/.local/bin/osv-scanner` を指す（新しいシェルで。Windows では PATH の確認の代わりに、`~/.local/bin/osv-scanner.exe` の sha256 が固定版と一致し、そのうえで `--version` が固定版の版を表示すること）
-- [ ] `claude plugin list` に `security-check@security-intelligence-feed` が `enabled` で出る
+- [ ] `claude plugin list`（PATH に無ければ `"$HOME/.local/bin/claude" plugin list`）に `security-check@security-intelligence-feed` が `enabled` で出る
 - [ ] `~/.config/security-intelligence/staff` が**ない**
 
 ## うまくいかないとき
@@ -114,7 +116,7 @@ claude plugin marketplace add artifice-inc/security-intelligence-feed && claude 
 | `~/.cache/security-intelligence-osv-db` | OSV のデータベースのキャッシュ |
 | Claude Code の設定 | マーケットプレイス `security-intelligence-feed` と、プラグイン `security-check` |
 
-削除するときは、`claude plugin uninstall security-check@security-intelligence-feed` と `claude plugin marketplace remove security-intelligence-feed` を実行し、上の表のファイルとフォルダを消す。
+削除するときは、（ステップ 0 の `claude` を使って）`claude plugin uninstall security-check@security-intelligence-feed` と `claude plugin marketplace remove security-intelligence-feed` を実行し、上の表のファイルとフォルダを消す。
 
 ## このツールについて
 

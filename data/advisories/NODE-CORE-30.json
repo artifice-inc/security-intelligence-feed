@@ -1,0 +1,69 @@
+{
+  "key": "NODE-CORE-30",
+  "aliases": {
+    "cve": [],
+    "ghsa": [],
+    "other": [
+      "NODE-CORE-30"
+    ]
+  },
+  "status": "active",
+  "superseded_by": null,
+  "category": "runtime",
+  "ecosystem": "node",
+  "title": "NODE-CORE-30",
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "node",
+        "name": "node"
+      },
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "4.x || 5.x",
+          "patched": "^4.3.2 || ^5.7.1",
+          "fixed_versions": [
+            "4.3.2",
+            "5.7.1"
+          ]
+        }
+      ],
+      "versions": [],
+      "from_sources": [
+        "node-core:NODE-CORE-30"
+      ]
+    }
+  ],
+  "severity": {
+    "level": "unknown",
+    "cvss_v3": null,
+    "cvss_v4": null,
+    "source": "node-core"
+  },
+  "known_exploited": {
+    "kev": false,
+    "date_added": null
+  },
+  "epss": {
+    "score": null,
+    "percentile": null,
+    "date": null
+  },
+  "jp_alerts": [],
+  "sources": [
+    {
+      "name": "node-core",
+      "id": "NODE-CORE-30",
+      "url": "https://github.com/nodejs/node/pull/5507",
+      "published_at": null,
+      "source_modified_at": null,
+      "fetched_at": "2026-10-24T17:52:00Z",
+      "content_hash": "966c745aa4b78651618064cc561caa216d9b47d2",
+      "withdrawn_at": null
+    }
+  ],
+  "first_seen_at": "2026-10-24T17:52:00Z",
+  "history": [],
+  "verification_status": "source_structured"
+}

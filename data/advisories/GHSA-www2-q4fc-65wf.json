@@ -1,0 +1,141 @@
+{
+  "key": "GHSA-www2-q4fc-65wf",
+  "aliases": {
+    "cve": [],
+    "ghsa": [
+      "GHSA-www2-q4fc-65wf"
+    ],
+    "other": []
+  },
+  "status": "active",
+  "superseded_by": null,
+  "category": "runtime",
+  "ecosystem": "php",
+  "title": "Null byte termination in dns_get_record()",
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "php",
+        "name": ""
+      },
+      "ranges": [
+        {
+          "type": "PHP_BRANCH",
+          "branch": "8.1",
+          "fixed": "8.1.34"
+        }
+      ],
+      "versions": [],
+      "from_sources": [
+        "php-ghsa:GHSA-www2-q4fc-65wf"
+      ]
+    },
+    {
+      "package": {
+        "ecosystem": "php",
+        "name": ""
+      },
+      "ranges": [
+        {
+          "type": "PHP_BRANCH",
+          "branch": "8.5",
+          "fixed": "8.5.1"
+        }
+      ],
+      "versions": [],
+      "from_sources": [
+        "php-ghsa:GHSA-www2-q4fc-65wf"
+      ]
+    },
+    {
+      "package": {
+        "ecosystem": "php",
+        "name": ""
+      },
+      "ranges": [
+        {
+          "type": "PHP_BRANCH",
+          "branch": "8.2",
+          "fixed": "8.2.30"
+        }
+      ],
+      "versions": [],
+      "from_sources": [
+        "php-ghsa:GHSA-www2-q4fc-65wf"
+      ]
+    },
+    {
+      "package": {
+        "ecosystem": "php",
+        "name": ""
+      },
+      "ranges": [
+        {
+          "type": "PHP_BRANCH",
+          "branch": "8.3",
+          "fixed": "8.3.29"
+        }
+      ],
+      "versions": [],
+      "from_sources": [
+        "php-ghsa:GHSA-www2-q4fc-65wf"
+      ]
+    },
+    {
+      "package": {
+        "ecosystem": "php",
+        "name": ""
+      },
+      "ranges": [
+        {
+          "type": "PHP_BRANCH",
+          "branch": "8.4",
+          "fixed": "8.4.16"
+        }
+      ],
+      "versions": [],
+      "from_sources": [
+        "php-ghsa:GHSA-www2-q4fc-65wf"
+      ]
+    }
+  ],
+  "severity": {
+    "level": "low",
+    "cvss_v3": null,
+    "cvss_v4": null,
+    "source": "ghsa"
+  },
+  "known_exploited": {
+    "kev": false,
+    "date_added": null
+  },
+  "epss": {
+    "score": null,
+    "percentile": null,
+    "date": null
+  },
+  "jp_alerts": [],
+  "sources": [
+    {
+      "name": "php-ghsa",
+      "id": "GHSA-www2-q4fc-65wf",
+      "url": "https://github.com/php/php-src/security/advisories/GHSA-www2-q4fc-65wf",
+      "published_at": "2025-12-18T16:11:09Z",
+      "source_modified_at": "2025-12-18T16:11:09Z",
+      "fetched_at": "2026-10-25T12:34:54Z",
+      "content_hash": "92db4f6d69afce9d1a96df4afc1150c64b755cda7cb96fcf40e6938f64073f81",
+      "withdrawn_at": null
+    }
+  ],
+  "first_seen_at": "2026-10-24T17:52:00Z",
+  "history": [
+    {
+      "at": "2026-10-25T12:34:54Z",
+      "changes": [
+        "source_content"
+      ],
+      "significant": false
+    }
+  ],
+  "verification_status": "source_structured"
+}

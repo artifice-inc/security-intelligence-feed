@@ -1,0 +1,71 @@
+{
+  "key": "NODE-CORE-2",
+  "aliases": {
+    "cve": [],
+    "ghsa": [],
+    "other": [
+      "NODE-CORE-2"
+    ]
+  },
+  "status": "active",
+  "superseded_by": null,
+  "category": "runtime",
+  "ecosystem": "node",
+  "title": "DoS possible in V8 object lookup",
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "node",
+        "name": "node"
+      },
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "4.x || 5.x || 6.x || 7.x || 8.x",
+          "patched": "^4.8.4 || ^6.11.1 || ^7.10.1 || ^8.1.4",
+          "fixed_versions": [
+            "4.8.4",
+            "6.11.1",
+            "7.10.1",
+            "8.1.4"
+          ]
+        }
+      ],
+      "versions": [],
+      "from_sources": [
+        "node-core:NODE-CORE-2"
+      ]
+    }
+  ],
+  "severity": {
+    "level": "unknown",
+    "cvss_v3": null,
+    "cvss_v4": null,
+    "source": "node-core"
+  },
+  "known_exploited": {
+    "kev": false,
+    "date_added": null
+  },
+  "epss": {
+    "score": null,
+    "percentile": null,
+    "date": null
+  },
+  "jp_alerts": [],
+  "sources": [
+    {
+      "name": "node-core",
+      "id": "NODE-CORE-2",
+      "url": "https://github.com/nodejs/security-wg/blob/main/vuln/core/2.json",
+      "published_at": null,
+      "source_modified_at": null,
+      "fetched_at": "2026-10-24T17:52:00Z",
+      "content_hash": "0b72fc5d27d1bbfdcb14ff925c42606f8448506d",
+      "withdrawn_at": null
+    }
+  ],
+  "first_seen_at": "2026-10-24T17:52:00Z",
+  "history": [],
+  "verification_status": "source_structured"
+}

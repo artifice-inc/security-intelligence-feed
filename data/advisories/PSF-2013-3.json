@@ -1,0 +1,78 @@
+{
+  "key": "PSF-2013-3",
+  "aliases": {
+    "cve": [],
+    "ghsa": [],
+    "other": [
+      "PSF-2013-3"
+    ]
+  },
+  "status": "active",
+  "superseded_by": null,
+  "category": "runtime",
+  "ecosystem": "python",
+  "title": "CGI directory traversal (URL parsing)",
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "python",
+        "name": "python"
+      },
+      "ranges": [
+        {
+          "type": "PY_VERSIONS",
+          "affected": [
+            "0.9.8",
+            "0.9.9",
+            "1.0.1",
+            "1.0.2",
+            "1.1.1",
+            "1.5.1",
+            "1.5.2",
+            "3.1.1",
+            "3.1.2",
+            "3.1.3",
+            "3.1.4",
+            "3.1.5"
+          ],
+          "fixed": []
+        }
+      ],
+      "versions": [],
+      "from_sources": [
+        "python-psf:PSF-2013-3"
+      ]
+    }
+  ],
+  "severity": {
+    "level": null,
+    "cvss_v3": null,
+    "cvss_v4": null,
+    "source": null
+  },
+  "known_exploited": {
+    "kev": false,
+    "date_added": null
+  },
+  "epss": {
+    "score": null,
+    "percentile": null,
+    "date": null
+  },
+  "jp_alerts": [],
+  "sources": [
+    {
+      "name": "python-psf",
+      "id": "PSF-2013-3",
+      "url": "https://osv.dev/vulnerability/PSF-2013-3",
+      "published_at": "2013-10-29T00:00:00Z",
+      "source_modified_at": "2025-10-09T00:58:06.533370Z",
+      "fetched_at": "2026-11-19T06:02:21Z",
+      "content_hash": "7498dd63a967eb66ba1f872cb86e96d570be8a3be4b9ba63eff7b25c985be19b",
+      "withdrawn_at": null
+    }
+  ],
+  "first_seen_at": "2026-11-19T06:02:21Z",
+  "history": [],
+  "verification_status": "source_structured"
+}

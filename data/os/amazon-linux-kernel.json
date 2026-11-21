@@ -1,0 +1,3052 @@
+{
+  "updated_at": "2026-11-20T03:15:59Z",
+  "cursor": {
+    "modified_date": "2026-11-20",
+    "cve_id": "CVE-2026-99676"
+  },
+  "backfill_complete": true,
+  "last_success_date": "2026-11-21",
+  "retry": [],
+  "known_packages": [
+    "amzn1/kernel",
+    "amzn2/kernel",
+    "amzn2/kernel-livepatch-4.14.301-225.528@livepatch",
+    "amzn2/kernel-livepatch-4.14.304-226.531@livepatch",
+    "amzn2/kernel-livepatch-4.14.305-227.531@livepatch",
+    "amzn2/kernel-livepatch-4.14.336-257.562@livepatch",
+    "amzn2/kernel-livepatch-4.14.336-257.566@livepatch",
+    "amzn2/kernel-livepatch-4.14.336-257.568@livepatch",
+    "amzn2/kernel-livepatch-4.14.343-259.562@livepatch",
+    "amzn2/kernel-livepatch-4.14.343-260.564@livepatch",
+    "amzn2/kernel-livepatch-4.14.344-262.563@livepatch",
+    "amzn2/kernel-livepatch-4.14.345-262.561@livepatch",
+    "amzn2/kernel-livepatch-4.14.348-265.562@livepatch",
+    "amzn2/kernel-livepatch-4.14.348-265.565@livepatch",
+    "amzn2/kernel-livepatch-4.14.355-275.570@livepatch",
+    "amzn2/kernel-livepatch-4.14.355-275.572@livepatch",
+    "amzn2/kernel-livepatch-4.14.355-275.582@livepatch",
+    "amzn2/kernel-livepatch-4.14.355-275.591@livepatch",
+    "amzn2/kernel-livepatch-4.14.355-275.603@livepatch",
+    "amzn2/kernel-livepatch-4.14.355-276.618@livepatch",
+    "amzn2/kernel-livepatch-4.14.355-276.639@livepatch",
+    "amzn2/kernel-livepatch-4.14.355-277.643@livepatch",
+    "amzn2/kernel-livepatch-4.14.355-277.647@livepatch",
+    "amzn2/kernel-livepatch-4.14.355-280.651@livepatch",
+    "amzn2/kernel-livepatch-4.14.355-280.652@livepatch",
+    "amzn2/kernel-livepatch-4.14.355-280.664@livepatch",
+    "amzn2/kernel-livepatch-4.14.355-280.672@livepatch",
+    "amzn2/kernel-livepatch-4.14.355-280.679@livepatch",
+    "amzn2/kernel-livepatch-4.14.355-280.684@livepatch",
+    "amzn2/kernel-livepatch-4.14.355-280.695@livepatch",
+    "amzn2/kernel-livepatch-4.14.355-280.698@livepatch",
+    "amzn2/kernel-livepatch-5.10.157-139.675@livepatch",
+    "amzn2/kernel-livepatch-5.10.162-141.675@livepatch",
+    "amzn2/kernel-livepatch-5.10.165-143.735@livepatch",
+    "amzn2/kernel-livepatch-5.10.167-147.601@livepatch",
+    "amzn2/kernel-livepatch-5.10.173-154.642@livepatch",
+    "amzn2/kernel-livepatch-5.10.176-157.645@livepatch",
+    "amzn2/kernel-livepatch-5.10.177-158.645@livepatch",
+    "amzn2/kernel-livepatch-5.10.178-162.673@livepatch",
+    "amzn2/kernel-livepatch-5.10.179-166.674@livepatch",
+    "amzn2/kernel-livepatch-5.10.216-204.855@livepatch",
+    "amzn2/kernel-livepatch-5.10.217-205.860@livepatch",
+    "amzn2/kernel-livepatch-5.10.218-206.860@livepatch",
+    "amzn2/kernel-livepatch-5.10.218-208.862@livepatch",
+    "amzn2/kernel-livepatch-5.10.219-208.866@livepatch",
+    "amzn2/kernel-livepatch-5.10.220-209.867@livepatch",
+    "amzn2/kernel-livepatch-5.10.220-209.869@livepatch",
+    "amzn2/kernel-livepatch-5.10.223-211.872@livepatch",
+    "amzn2/kernel-livepatch-5.10.223-212.873@livepatch",
+    "amzn2/kernel-livepatch-5.10.224-212.876@livepatch",
+    "amzn2/kernel-livepatch-5.10.227-219.884@livepatch",
+    "amzn2/kernel-livepatch-5.10.228-219.884@livepatch",
+    "amzn2/kernel-livepatch-5.10.230-223.885@livepatch",
+    "amzn2/kernel-livepatch-5.10.233-223.887@livepatch",
+    "amzn2/kernel-livepatch-5.10.233-224.894@livepatch",
+    "amzn2/kernel-livepatch-5.10.234-225.895@livepatch",
+    "amzn2/kernel-livepatch-5.10.234-225.910@livepatch",
+    "amzn2/kernel-livepatch-5.10.234-225.917@livepatch",
+    "amzn2/kernel-livepatch-5.10.234-225.921@livepatch",
+    "amzn2/kernel-livepatch-5.10.236-227.928@livepatch",
+    "amzn2/kernel-livepatch-5.10.236-228.935@livepatch",
+    "amzn2/kernel-livepatch-5.10.237-230.948@livepatch",
+    "amzn2/kernel-livepatch-5.10.237-230.949@livepatch",
+    "amzn2/kernel-livepatch-5.10.238-231.953@livepatch",
+    "amzn2/kernel-livepatch-5.10.238-234.956@livepatch",
+    "amzn2/kernel-livepatch-5.10.239-236.958@livepatch",
+    "amzn2/kernel-livepatch-5.10.240-238.955@livepatch",
+    "amzn2/kernel-livepatch-5.10.240-238.959@livepatch",
+    "amzn2/kernel-livepatch-5.10.240-238.966@livepatch",
+    "amzn2/kernel-livepatch-5.10.242-239.961@livepatch",
+    "amzn2/kernel-livepatch-5.10.244-240.965@livepatch",
+    "amzn2/kernel-livepatch-5.10.244-240.970@livepatch",
+    "amzn2/kernel-livepatch-5.10.245-241.976@livepatch",
+    "amzn2/kernel-livepatch-5.10.245-245.983@livepatch",
+    "amzn2/kernel-livepatch-5.10.248-247.988@livepatch",
+    "amzn2/kernel-livepatch-5.10.251-248.983@livepatch",
+    "amzn2/kernel-livepatch-5.10.252-250.1005@livepatch",
+    "amzn2/kernel-livepatch-5.10.252-250.1016@livepatch",
+    "amzn2/kernel-livepatch-5.10.252-250.992@livepatch",
+    "amzn2/kernel-livepatch-5.10.253-251.1014@livepatch",
+    "amzn2/kernel-livepatch-5.10.253-252.1015@livepatch",
+    "amzn2/kernel-livepatch-5.10.253-252.1016@livepatch",
+    "amzn2/kernel-livepatch-5.10.82-83.359@livepatch",
+    "amzn2/kernel@kernel-5.10",
+    "amzn2/kernel@kernel-5.15",
+    "amzn2/kernel@kernel-5.4",
+    "amzn2023/kernel",
+    "amzn2023/kernel-livepatch-6.1.112-124.190",
+    "amzn2023/kernel-livepatch-6.1.115-126.197",
+    "amzn2023/kernel-livepatch-6.1.119-129.201",
+    "amzn2023/kernel-livepatch-6.1.12-19.43",
+    "amzn2023/kernel-livepatch-6.1.124-134.200",
+    "amzn2023/kernel-livepatch-6.1.127-135.201",
+    "amzn2023/kernel-livepatch-6.1.128-136.201",
+    "amzn2023/kernel-livepatch-6.1.130-139.222",
+    "amzn2023/kernel-livepatch-6.1.131-143.221",
+    "amzn2023/kernel-livepatch-6.1.132-147.221",
+    "amzn2023/kernel-livepatch-6.1.134-150.224",
+    "amzn2023/kernel-livepatch-6.1.134-152.225",
+    "amzn2023/kernel-livepatch-6.1.140-154.222",
+    "amzn2023/kernel-livepatch-6.1.141-155.222",
+    "amzn2023/kernel-livepatch-6.1.141-165.249",
+    "amzn2023/kernel-livepatch-6.1.141-167.250",
+    "amzn2023/kernel-livepatch-6.1.144-170.251",
+    "amzn2023/kernel-livepatch-6.1.147-172.259",
+    "amzn2023/kernel-livepatch-6.1.147-172.266",
+    "amzn2023/kernel-livepatch-6.1.148-173.267",
+    "amzn2023/kernel-livepatch-6.1.15-28.43",
+    "amzn2023/kernel-livepatch-6.1.150-174.273",
+    "amzn2023/kernel-livepatch-6.1.153-175.280",
+    "amzn2023/kernel-livepatch-6.1.155-176.282",
+    "amzn2023/kernel-livepatch-6.1.156-177.286",
+    "amzn2023/kernel-livepatch-6.1.158-178.288",
+    "amzn2023/kernel-livepatch-6.1.158-180.294",
+    "amzn2023/kernel-livepatch-6.1.163-186.299",
+    "amzn2023/kernel-livepatch-6.1.164-196.303",
+    "amzn2023/kernel-livepatch-6.1.166-197.305",
+    "amzn2023/kernel-livepatch-6.1.168-202.320",
+    "amzn2023/kernel-livepatch-6.1.168-203.330",
+    "amzn2023/kernel-livepatch-6.1.170-208.319",
+    "amzn2023/kernel-livepatch-6.1.170-210.320",
+    "amzn2023/kernel-livepatch-6.1.170-213.321",
+    "amzn2023/kernel-livepatch-6.1.172-216.329",
+    "amzn2023/kernel-livepatch-6.1.172-216.339",
+    "amzn2023/kernel-livepatch-6.1.174-217.345",
+    "amzn2023/kernel-livepatch-6.1.175-219.357",
+    "amzn2023/kernel-livepatch-6.1.175-219.359",
+    "amzn2023/kernel-livepatch-6.1.176-220.358",
+    "amzn2023/kernel-livepatch-6.1.176-220.360",
+    "amzn2023/kernel-livepatch-6.1.176-221.360",
+    "amzn2023/kernel-livepatch-6.1.176-221.367",
+    "amzn2023/kernel-livepatch-6.1.176-223.369",
+    "amzn2023/kernel-livepatch-6.1.177-224.371",
+    "amzn2023/kernel-livepatch-6.1.180-225.360",
+    "amzn2023/kernel-livepatch-6.1.182-227.378",
+    "amzn2023/kernel-livepatch-6.1.182-227.379",
+    "amzn2023/kernel-livepatch-6.1.186-228.374",
+    "amzn2023/kernel-livepatch-6.1.186-228.376",
+    "amzn2023/kernel-livepatch-6.1.188-233.385",
+    "amzn2023/kernel-livepatch-6.1.19-30.43",
+    "amzn2023/kernel-livepatch-6.1.21-1.45",
+    "amzn2023/kernel-livepatch-6.1.23-36.46",
+    "amzn2023/kernel-livepatch-6.1.25-37.47",
+    "amzn2023/kernel-livepatch-6.1.27-43.48",
+    "amzn2023/kernel-livepatch-6.1.29-47.49",
+    "amzn2023/kernel-livepatch-6.1.72-96.166",
+    "amzn2023/kernel-livepatch-6.1.75-99.163",
+    "amzn2023/kernel-livepatch-6.1.94-99.176",
+    "amzn2023/kernel-livepatch-6.1.96-102.177",
+    "amzn2023/kernel-livepatch-6.12.100-125.179",
+    "amzn2023/kernel-livepatch-6.12.103-127.188",
+    "amzn2023/kernel-livepatch-6.12.103-129.197",
+    "amzn2023/kernel-livepatch-6.12.110-135.201",
+    "amzn2023/kernel-livepatch-6.12.20-23.97",
+    "amzn2023/kernel-livepatch-6.12.22-27.96",
+    "amzn2023/kernel-livepatch-6.12.25-32.101",
+    "amzn2023/kernel-livepatch-6.12.29-33.102",
+    "amzn2023/kernel-livepatch-6.12.30-34.92",
+    "amzn2023/kernel-livepatch-6.12.31-35.92",
+    "amzn2023/kernel-livepatch-6.12.35-55.103",
+    "amzn2023/kernel-livepatch-6.12.37-61.105",
+    "amzn2023/kernel-livepatch-6.12.40-63.107",
+    "amzn2023/kernel-livepatch-6.12.40-63.114",
+    "amzn2023/kernel-livepatch-6.12.40-64.114",
+    "amzn2023/kernel-livepatch-6.12.46-66.121",
+    "amzn2023/kernel-livepatch-6.12.48-67.114",
+    "amzn2023/kernel-livepatch-6.12.53-69.119",
+    "amzn2023/kernel-livepatch-6.12.58-82.121",
+    "amzn2023/kernel-livepatch-6.12.63-84.121",
+    "amzn2023/kernel-livepatch-6.12.68-92.122",
+    "amzn2023/kernel-livepatch-6.12.73-95.123",
+    "amzn2023/kernel-livepatch-6.12.74-98.124",
+    "amzn2023/kernel-livepatch-6.12.77-99.140",
+    "amzn2023/kernel-livepatch-6.12.79-101.147",
+    "amzn2023/kernel-livepatch-6.12.80-105.147",
+    "amzn2023/kernel-livepatch-6.12.80-106.156",
+    "amzn2023/kernel-livepatch-6.12.83-111.159",
+    "amzn2023/kernel-livepatch-6.12.83-113.160",
+    "amzn2023/kernel-livepatch-6.12.83-115.161",
+    "amzn2023/kernel-livepatch-6.12.88-119.157",
+    "amzn2023/kernel-livepatch-6.12.88-119.160",
+    "amzn2023/kernel-livepatch-6.12.90-120.164",
+    "amzn2023/kernel-livepatch-6.12.92-122.166",
+    "amzn2023/kernel-livepatch-6.12.92-122.168",
+    "amzn2023/kernel-livepatch-6.12.94-123.174",
+    "amzn2023/kernel-livepatch-6.12.94-123.176",
+    "amzn2023/kernel-livepatch-6.12.94-123.180",
+    "amzn2023/kernel-livepatch-6.12.94-123.190",
+    "amzn2023/kernel-livepatch-6.12.94-123.192",
+    "amzn2023/kernel-livepatch-6.12.95-124.187",
+    "amzn2023/kernel-livepatch-6.18.15-14.217",
+    "amzn2023/kernel-livepatch-6.18.16-18.222",
+    "amzn2023/kernel-livepatch-6.18.20-20.229",
+    "amzn2023/kernel-livepatch-6.18.20-41.237",
+    "amzn2023/kernel-livepatch-6.18.25-52.107",
+    "amzn2023/kernel-livepatch-6.18.25-55.108",
+    "amzn2023/kernel-livepatch-6.18.25-57.109",
+    "amzn2023/kernel-livepatch-6.18.30-61.116",
+    "amzn2023/kernel-livepatch-6.18.30-61.119",
+    "amzn2023/kernel-livepatch-6.18.33-63.124",
+    "amzn2023/kernel-livepatch-6.18.35-68.127",
+    "amzn2023/kernel-livepatch-6.18.35-68.129",
+    "amzn2023/kernel-livepatch-6.18.36-69.134",
+    "amzn2023/kernel-livepatch-6.18.36-69.136",
+    "amzn2023/kernel-livepatch-6.18.36-69.138",
+    "amzn2023/kernel-livepatch-6.18.38-73.137",
+    "amzn2023/kernel-livepatch-6.18.38-76.139",
+    "amzn2023/kernel-livepatch-6.18.39-79.141",
+    "amzn2023/kernel-livepatch-6.18.41-94.142",
+    "amzn2023/kernel-livepatch-6.18.44-99.149",
+    "amzn2023/kernel-livepatch-6.18.48-107.148",
+    "amzn2023/kernel-livepatch-6.18.48-109.150",
+    "amzn2023/kernel-livepatch-6.18.51-120.162",
+    "amzn2023/kernel-livepatch-6.18.8-9.213",
+    "amzn2023/kernel6.12",
+    "amzn2023/kernel6.18",
+    "amzn2027/kernel7.1"
+  ],
+  "cves": [
+    {
+      "cve": "CVE-2018-14634",
+      "severity": "Important",
+      "cvss_vectors": [
+        "AV:L/AC:L/Au:N/C:C/I:C/A:C",
+        "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+      ],
+      "public_date": "2018-09-25",
+      "modified_date": "2018-10-10",
+      "kev": true,
+      "url": "https://explore.alas.aws.amazon.com/CVE-2018-14634.html",
+      "packages": [
+        {
+          "key": "amzn2/kernel",
+          "status": "Fixed",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2024-36971",
+      "severity": "Medium",
+      "cvss_vectors": [
+        "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+        "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H"
+      ],
+      "public_date": "2024-06-10",
+      "modified_date": "2024-08-29",
+      "kev": true,
+      "url": "https://explore.alas.aws.amazon.com/CVE-2024-36971.html",
+      "packages": [
+        {
+          "key": "amzn1/kernel",
+          "status": "NoFixPlanned",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2024-50302",
+      "severity": "Low",
+      "cvss_vectors": [
+        "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+        "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N"
+      ],
+      "public_date": "2024-11-19",
+      "modified_date": "2025-03-04",
+      "kev": true,
+      "url": "https://explore.alas.aws.amazon.com/CVE-2024-50302.html",
+      "packages": [
+        {
+          "key": "amzn1/kernel",
+          "status": "NoFixPlanned",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2024-53197",
+      "severity": "Medium",
+      "cvss_vectors": [
+        "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H"
+      ],
+      "public_date": "2024-12-27",
+      "modified_date": "2025-04-11",
+      "kev": true,
+      "url": "https://explore.alas.aws.amazon.com/CVE-2024-53197.html",
+      "packages": [
+        {
+          "key": "amzn1/kernel",
+          "status": "NoFixPlanned",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2024-58240",
+      "severity": "Important",
+      "cvss_vectors": [
+        "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L"
+      ],
+      "public_date": "2025-08-28",
+      "modified_date": "2025-09-10",
+      "kev": false,
+      "url": "https://explore.alas.aws.amazon.com/CVE-2024-58240.html",
+      "packages": [
+        {
+          "key": "amzn1/kernel",
+          "status": "NoFixPlanned",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.4",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2025-38352",
+      "severity": "Important",
+      "cvss_vectors": [
+        "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H"
+      ],
+      "public_date": "2025-07-22",
+      "modified_date": "2025-08-04",
+      "kev": true,
+      "url": "https://explore.alas.aws.amazon.com/CVE-2025-38352.html",
+      "packages": [
+        {
+          "key": "amzn1/kernel",
+          "status": "NoFixPlanned",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2025-38718",
+      "severity": "Important",
+      "cvss_vectors": [
+        "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      ],
+      "public_date": "2025-09-04",
+      "modified_date": "2025-09-10",
+      "kev": false,
+      "url": "https://explore.alas.aws.amazon.com/CVE-2025-38718.html",
+      "packages": [
+        {
+          "key": "amzn1/kernel",
+          "status": "NoFixPlanned",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2025-39697",
+      "severity": "Important",
+      "cvss_vectors": [
+        "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:H",
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      ],
+      "public_date": "2025-09-05",
+      "modified_date": "2025-09-10",
+      "kev": false,
+      "url": "https://explore.alas.aws.amazon.com/CVE-2025-39697.html",
+      "packages": [
+        {
+          "key": "amzn1/kernel",
+          "status": "NoFixPlanned",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.4",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2025-39964",
+      "severity": "Medium",
+      "cvss_vectors": [
+        "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H"
+      ],
+      "public_date": "2025-10-13",
+      "modified_date": "2026-05-06",
+      "kev": true,
+      "url": "https://explore.alas.aws.amazon.com/CVE-2025-39964.html",
+      "packages": [
+        {
+          "key": "amzn2/kernel",
+          "status": "NoFixPlanned",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.4",
+          "status": "NoFixPlanned",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2025-71085",
+      "severity": "Important",
+      "cvss_vectors": [
+        "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      ],
+      "public_date": "2026-01-13",
+      "modified_date": "2026-02-02",
+      "kev": false,
+      "url": "https://explore.alas.aws.amazon.com/CVE-2025-71085.html",
+      "packages": [
+        {
+          "key": "amzn2/kernel",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.4",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2026-22998",
+      "severity": "Important",
+      "cvss_vectors": [
+        "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:H",
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      ],
+      "public_date": "2026-01-25",
+      "modified_date": "2026-02-02",
+      "kev": false,
+      "url": "https://explore.alas.aws.amazon.com/CVE-2026-22998.html",
+      "packages": [
+        {
+          "key": "amzn2/kernel@kernel-5.10",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.4",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2026-43038",
+      "severity": "Important",
+      "cvss_vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:H"
+      ],
+      "public_date": "2026-05-01",
+      "modified_date": "2026-05-02",
+      "kev": false,
+      "url": "https://explore.alas.aws.amazon.com/CVE-2026-43038.html",
+      "packages": [
+        {
+          "key": "amzn2/kernel",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.4",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2026-43226",
+      "severity": "Important",
+      "cvss_vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      ],
+      "public_date": "2026-05-06",
+      "modified_date": "2026-05-08",
+      "kev": false,
+      "url": "https://explore.alas.aws.amazon.com/CVE-2026-43226.html",
+      "packages": [
+        {
+          "key": "amzn2/kernel",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.4",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2026-43230",
+      "severity": "Important",
+      "cvss_vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      ],
+      "public_date": "2026-05-06",
+      "modified_date": "2026-05-08",
+      "kev": false,
+      "url": "https://explore.alas.aws.amazon.com/CVE-2026-43230.html",
+      "packages": [
+        {
+          "key": "amzn2/kernel",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.4",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2026-43233",
+      "severity": "Important",
+      "cvss_vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:H"
+      ],
+      "public_date": "2026-05-06",
+      "modified_date": "2026-05-08",
+      "kev": false,
+      "url": "https://explore.alas.aws.amazon.com/CVE-2026-43233.html",
+      "packages": [
+        {
+          "key": "amzn2/kernel",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.4",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2026-45859",
+      "severity": "Important",
+      "cvss_vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      ],
+      "public_date": "2026-05-27",
+      "modified_date": "2026-06-15",
+      "kev": false,
+      "url": "https://explore.alas.aws.amazon.com/CVE-2026-45859.html",
+      "packages": [
+        {
+          "key": "amzn2/kernel@kernel-5.15",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2026-46043",
+      "severity": "Important",
+      "cvss_vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      ],
+      "public_date": "2026-05-27",
+      "modified_date": "2026-06-16",
+      "kev": false,
+      "url": "https://explore.alas.aws.amazon.com/CVE-2026-46043.html",
+      "packages": [
+        {
+          "key": "amzn2/kernel",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.4",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2026-46119",
+      "severity": "Important",
+      "cvss_vectors": [
+        "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:H"
+      ],
+      "public_date": "2026-05-28",
+      "modified_date": "2026-06-15",
+      "kev": false,
+      "url": "https://explore.alas.aws.amazon.com/CVE-2026-46119.html",
+      "packages": [
+        {
+          "key": "amzn2/kernel",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.4",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2026-46133",
+      "severity": "Important",
+      "cvss_vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      ],
+      "public_date": "2026-05-28",
+      "modified_date": "2026-06-15",
+      "kev": false,
+      "url": "https://explore.alas.aws.amazon.com/CVE-2026-46133.html",
+      "packages": [
+        {
+          "key": "amzn2/kernel",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.4",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2026-52957",
+      "severity": "Important",
+      "cvss_vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      ],
+      "public_date": "2026-06-24",
+      "modified_date": "2026-06-25",
+      "kev": false,
+      "url": "https://explore.alas.aws.amazon.com/CVE-2026-52957.html",
+      "packages": [
+        {
+          "key": "amzn2/kernel",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.4",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2026-52986",
+      "severity": "Important",
+      "cvss_vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      ],
+      "public_date": "2026-06-24",
+      "modified_date": "2026-06-26",
+      "kev": false,
+      "url": "https://explore.alas.aws.amazon.com/CVE-2026-52986.html",
+      "packages": [
+        {
+          "key": "amzn2/kernel",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.4",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2026-53176",
+      "severity": "Important",
+      "cvss_vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      ],
+      "public_date": "2026-06-25",
+      "modified_date": "2026-06-26",
+      "kev": false,
+      "url": "https://explore.alas.aws.amazon.com/CVE-2026-53176.html",
+      "packages": [
+        {
+          "key": "amzn2/kernel",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.4",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2026-53224",
+      "severity": "Important",
+      "cvss_vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:H"
+      ],
+      "public_date": "2026-06-25",
+      "modified_date": "2026-06-26",
+      "kev": false,
+      "url": "https://explore.alas.aws.amazon.com/CVE-2026-53224.html",
+      "packages": [
+        {
+          "key": "amzn2/kernel",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.15",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.4",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2026-53246",
+      "severity": "Important",
+      "cvss_vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      ],
+      "public_date": "2026-06-25",
+      "modified_date": "2026-06-26",
+      "kev": false,
+      "url": "https://explore.alas.aws.amazon.com/CVE-2026-53246.html",
+      "packages": [
+        {
+          "key": "amzn2/kernel",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.15",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.4",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2026-53266",
+      "severity": "Medium",
+      "cvss_vectors": [
+        "CVSS:3.1/AV:A/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N"
+      ],
+      "public_date": "2026-06-25",
+      "modified_date": "2026-09-25",
+      "kev": true,
+      "url": "https://explore.alas.aws.amazon.com/CVE-2026-53266.html",
+      "packages": [
+        {
+          "key": "amzn2/kernel@kernel-5.4",
+          "status": "NoFixPlanned",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2026-53392",
+      "severity": "Important",
+      "cvss_vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      ],
+      "public_date": "2026-07-19",
+      "modified_date": "2026-07-24",
+      "kev": false,
+      "url": "https://explore.alas.aws.amazon.com/CVE-2026-53392.html",
+      "packages": [
+        {
+          "key": "amzn2/kernel",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.4",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2026-63888",
+      "severity": "Important",
+      "cvss_vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:H"
+      ],
+      "public_date": "2026-07-19",
+      "modified_date": "2026-08-08",
+      "kev": false,
+      "url": "https://explore.alas.aws.amazon.com/CVE-2026-63888.html",
+      "packages": [
+        {
+          "key": "amzn2/kernel",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.4",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2026-64007",
+      "severity": "Important",
+      "cvss_vectors": [
+        "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
+      ],
+      "public_date": "2026-07-19",
+      "modified_date": "2026-07-24",
+      "kev": false,
+      "url": "https://explore.alas.aws.amazon.com/CVE-2026-64007.html",
+      "packages": [
+        {
+          "key": "amzn2/kernel",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.4",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2026-64320",
+      "severity": "Important",
+      "cvss_vectors": [
+        "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:H"
+      ],
+      "public_date": "2026-07-25",
+      "modified_date": "2026-08-08",
+      "kev": false,
+      "url": "https://explore.alas.aws.amazon.com/CVE-2026-64320.html",
+      "packages": [
+        {
+          "key": "amzn2/kernel",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.4",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2026-64448",
+      "severity": "Important",
+      "cvss_vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:H"
+      ],
+      "public_date": "2026-07-25",
+      "modified_date": "2026-08-04",
+      "kev": false,
+      "url": "https://explore.alas.aws.amazon.com/CVE-2026-64448.html",
+      "packages": [
+        {
+          "key": "amzn2/kernel",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.4",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2026-64534",
+      "severity": "Important",
+      "cvss_vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      ],
+      "public_date": "2026-07-27",
+      "modified_date": "2026-08-03",
+      "kev": false,
+      "url": "https://explore.alas.aws.amazon.com/CVE-2026-64534.html",
+      "packages": [
+        {
+          "key": "amzn2/kernel@kernel-5.4",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2026-64551",
+      "severity": "Important",
+      "cvss_vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+      ],
+      "public_date": "2026-07-27",
+      "modified_date": "2026-08-03",
+      "kev": false,
+      "url": "https://explore.alas.aws.amazon.com/CVE-2026-64551.html",
+      "packages": [
+        {
+          "key": "amzn2/kernel",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.4",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2026-68131",
+      "severity": "Important",
+      "cvss_vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      ],
+      "public_date": "2026-08-10",
+      "modified_date": "2026-08-11",
+      "kev": false,
+      "url": "https://explore.alas.aws.amazon.com/CVE-2026-68131.html",
+      "packages": [
+        {
+          "key": "amzn2/kernel@kernel-5.4",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2026-68155",
+      "severity": "Important",
+      "cvss_vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      ],
+      "public_date": "2026-08-10",
+      "modified_date": "2026-08-11",
+      "kev": false,
+      "url": "https://explore.alas.aws.amazon.com/CVE-2026-68155.html",
+      "packages": [
+        {
+          "key": "amzn2/kernel",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.4",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2026-68158",
+      "severity": "Important",
+      "cvss_vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:H"
+      ],
+      "public_date": "2026-08-10",
+      "modified_date": "2026-08-11",
+      "kev": false,
+      "url": "https://explore.alas.aws.amazon.com/CVE-2026-68158.html",
+      "packages": [
+        {
+          "key": "amzn2/kernel",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.4",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2026-68159",
+      "severity": "Important",
+      "cvss_vectors": [
+        "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:H"
+      ],
+      "public_date": "2026-08-10",
+      "modified_date": "2026-08-11",
+      "kev": false,
+      "url": "https://explore.alas.aws.amazon.com/CVE-2026-68159.html",
+      "packages": [
+        {
+          "key": "amzn2/kernel",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.4",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2026-68160",
+      "severity": "Important",
+      "cvss_vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      ],
+      "public_date": "2026-08-10",
+      "modified_date": "2026-08-11",
+      "kev": false,
+      "url": "https://explore.alas.aws.amazon.com/CVE-2026-68160.html",
+      "packages": [
+        {
+          "key": "amzn2/kernel",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.4",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2026-68299",
+      "severity": "Important",
+      "cvss_vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      ],
+      "public_date": "2026-08-10",
+      "modified_date": "2026-08-11",
+      "kev": false,
+      "url": "https://explore.alas.aws.amazon.com/CVE-2026-68299.html",
+      "packages": [
+        {
+          "key": "amzn2/kernel",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.4",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2026-72251",
+      "severity": "Important",
+      "cvss_vectors": [
+        "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:H"
+      ],
+      "public_date": "2026-08-15",
+      "modified_date": "2026-08-18",
+      "kev": false,
+      "url": "https://explore.alas.aws.amazon.com/CVE-2026-72251.html",
+      "packages": [
+        {
+          "key": "amzn2/kernel",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.4",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2026-72318",
+      "severity": "Important",
+      "cvss_vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:H"
+      ],
+      "public_date": "2026-08-15",
+      "modified_date": "2026-08-19",
+      "kev": false,
+      "url": "https://explore.alas.aws.amazon.com/CVE-2026-72318.html",
+      "packages": [
+        {
+          "key": "amzn2/kernel",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.10",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.15",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.4",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2026-72398",
+      "severity": "Important",
+      "cvss_vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      ],
+      "public_date": "2026-08-15",
+      "modified_date": "2026-08-18",
+      "kev": false,
+      "url": "https://explore.alas.aws.amazon.com/CVE-2026-72398.html",
+      "packages": [
+        {
+          "key": "amzn2/kernel",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.15",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.4",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2026-72413",
+      "severity": "Important",
+      "cvss_vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      ],
+      "public_date": "2026-08-15",
+      "modified_date": "2026-08-19",
+      "kev": false,
+      "url": "https://explore.alas.aws.amazon.com/CVE-2026-72413.html",
+      "packages": [
+        {
+          "key": "amzn2/kernel",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.15",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.4",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2026-72464",
+      "severity": "Important",
+      "cvss_vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      ],
+      "public_date": "2026-08-15",
+      "modified_date": "2026-08-18",
+      "kev": false,
+      "url": "https://explore.alas.aws.amazon.com/CVE-2026-72464.html",
+      "packages": [
+        {
+          "key": "amzn2/kernel@kernel-5.4",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2026-74281",
+      "severity": "Important",
+      "cvss_vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      ],
+      "public_date": "2026-08-15",
+      "modified_date": "2026-08-18",
+      "kev": false,
+      "url": "https://explore.alas.aws.amazon.com/CVE-2026-74281.html",
+      "packages": [
+        {
+          "key": "amzn2/kernel@kernel-5.4",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2026-74386",
+      "severity": "Important",
+      "cvss_vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      ],
+      "public_date": "2026-08-15",
+      "modified_date": "2026-08-19",
+      "kev": false,
+      "url": "https://explore.alas.aws.amazon.com/CVE-2026-74386.html",
+      "packages": [
+        {
+          "key": "amzn2/kernel@kernel-5.10",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.4",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2026-74394",
+      "severity": "Important",
+      "cvss_vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:H"
+      ],
+      "public_date": "2026-08-15",
+      "modified_date": "2026-08-18",
+      "kev": false,
+      "url": "https://explore.alas.aws.amazon.com/CVE-2026-74394.html",
+      "packages": [
+        {
+          "key": "amzn2/kernel@kernel-5.4",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2026-74556",
+      "severity": "Important",
+      "cvss_vectors": [
+        "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:H/A:H"
+      ],
+      "public_date": "2026-08-15",
+      "modified_date": "2026-08-20",
+      "kev": false,
+      "url": "https://explore.alas.aws.amazon.com/CVE-2026-74556.html",
+      "packages": [
+        {
+          "key": "amzn2/kernel",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.4",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2026-74569",
+      "severity": "Important",
+      "cvss_vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      ],
+      "public_date": "2026-08-15",
+      "modified_date": "2026-08-19",
+      "kev": false,
+      "url": "https://explore.alas.aws.amazon.com/CVE-2026-74569.html",
+      "packages": [
+        {
+          "key": "amzn2/kernel",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.4",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2026-74597",
+      "severity": "Important",
+      "cvss_vectors": [
+        "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:H"
+      ],
+      "public_date": "2026-08-22",
+      "modified_date": "2026-08-27",
+      "kev": false,
+      "url": "https://explore.alas.aws.amazon.com/CVE-2026-74597.html",
+      "packages": [
+        {
+          "key": "amzn2/kernel",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.4",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2026-74669",
+      "severity": "Important",
+      "cvss_vectors": [
+        "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
+      ],
+      "public_date": "2026-08-22",
+      "modified_date": "2026-08-28",
+      "kev": false,
+      "url": "https://explore.alas.aws.amazon.com/CVE-2026-74669.html",
+      "packages": [
+        {
+          "key": "amzn2/kernel",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.4",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2026-74704",
+      "severity": "Important",
+      "cvss_vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      ],
+      "public_date": "2026-08-22",
+      "modified_date": "2026-08-28",
+      "kev": false,
+      "url": "https://explore.alas.aws.amazon.com/CVE-2026-74704.html",
+      "packages": [
+        {
+          "key": "amzn2/kernel@kernel-5.4",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2026-74746",
+      "severity": "Important",
+      "cvss_vectors": [
+        "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
+      ],
+      "public_date": "2026-08-26",
+      "modified_date": "2026-09-01",
+      "kev": false,
+      "url": "https://explore.alas.aws.amazon.com/CVE-2026-74746.html",
+      "packages": [
+        {
+          "key": "amzn2/kernel@kernel-5.4",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2026-80789",
+      "severity": "Important",
+      "cvss_vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      ],
+      "public_date": "2026-09-04",
+      "modified_date": "2026-09-07",
+      "kev": false,
+      "url": "https://explore.alas.aws.amazon.com/CVE-2026-80789.html",
+      "packages": [
+        {
+          "key": "amzn2/kernel@kernel-5.10",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.4",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2026-89481",
+      "severity": "Important",
+      "cvss_vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+      ],
+      "public_date": "2026-09-11",
+      "modified_date": "2026-09-15",
+      "kev": false,
+      "url": "https://explore.alas.aws.amazon.com/CVE-2026-89481.html",
+      "packages": [
+        {
+          "key": "amzn2/kernel@kernel-5.10",
+          "status": "Fixed",
+          "advisory": "ALAS2KERNEL-5.10-2026-136",
+          "advisory_url": "https://alas.aws.amazon.com/AL2/ALAS2KERNEL-5.10-2026-136.html",
+          "released": "2026-10-28"
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.15",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.4",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2026-89529",
+      "severity": "Important",
+      "cvss_vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      ],
+      "public_date": "2026-09-11",
+      "modified_date": "2026-09-15",
+      "kev": false,
+      "url": "https://explore.alas.aws.amazon.com/CVE-2026-89529.html",
+      "packages": [
+        {
+          "key": "amzn2027/kernel7.1",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2026-89530",
+      "severity": "Important",
+      "cvss_vectors": [
+        "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
+      ],
+      "public_date": "2026-09-11",
+      "modified_date": "2026-09-17",
+      "kev": false,
+      "url": "https://explore.alas.aws.amazon.com/CVE-2026-89530.html",
+      "packages": [
+        {
+          "key": "amzn2/kernel@kernel-5.10",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.4",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2026-89648",
+      "severity": "Important",
+      "cvss_vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      ],
+      "public_date": "2026-09-11",
+      "modified_date": "2026-09-17",
+      "kev": false,
+      "url": "https://explore.alas.aws.amazon.com/CVE-2026-89648.html",
+      "packages": [
+        {
+          "key": "amzn2/kernel@kernel-5.10",
+          "status": "Fixed",
+          "advisory": "ALAS2KERNEL-5.10-2026-136",
+          "advisory_url": "https://alas.aws.amazon.com/AL2/ALAS2KERNEL-5.10-2026-136.html",
+          "released": "2026-10-28"
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.15",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2023/kernel",
+          "status": "Fixed",
+          "advisory": "ALAS2023-2026-3336",
+          "advisory_url": "https://alas.aws.amazon.com/AL2023/ALAS2023-2026-3336.html",
+          "released": "2026-10-29"
+        },
+        {
+          "key": "amzn2023/kernel6.12",
+          "status": "Fixed",
+          "advisory": "ALAS2023-2026-3335",
+          "advisory_url": "https://alas.aws.amazon.com/AL2023/ALAS2023-2026-3335.html",
+          "released": "2026-10-29"
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2026-89650",
+      "severity": "Important",
+      "cvss_vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      ],
+      "public_date": "2026-09-11",
+      "modified_date": "2026-09-17",
+      "kev": false,
+      "url": "https://explore.alas.aws.amazon.com/CVE-2026-89650.html",
+      "packages": [
+        {
+          "key": "amzn2/kernel",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.4",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2026-89652",
+      "severity": "Important",
+      "cvss_vectors": [
+        "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:H"
+      ],
+      "public_date": "2026-09-11",
+      "modified_date": "2026-09-15",
+      "kev": false,
+      "url": "https://explore.alas.aws.amazon.com/CVE-2026-89652.html",
+      "packages": [
+        {
+          "key": "amzn2/kernel",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.15",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.4",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2026-89968",
+      "severity": "Important",
+      "cvss_vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      ],
+      "public_date": "2026-09-16",
+      "modified_date": "2026-09-17",
+      "kev": false,
+      "url": "https://explore.alas.aws.amazon.com/CVE-2026-89968.html",
+      "packages": [
+        {
+          "key": "amzn2/kernel@kernel-5.10",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.4",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2026-90011",
+      "severity": "Important",
+      "cvss_vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:H"
+      ],
+      "public_date": "2026-09-16",
+      "modified_date": "2026-09-17",
+      "kev": false,
+      "url": "https://explore.alas.aws.amazon.com/CVE-2026-90011.html",
+      "packages": [
+        {
+          "key": "amzn2/kernel",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.4",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2026-90103",
+      "severity": "Important",
+      "cvss_vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      ],
+      "public_date": "2026-09-17",
+      "modified_date": "2026-09-18",
+      "kev": false,
+      "url": "https://explore.alas.aws.amazon.com/CVE-2026-90103.html",
+      "packages": [
+        {
+          "key": "amzn2/kernel",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.4",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2026-97557",
+      "severity": "Important",
+      "cvss_vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      ],
+      "public_date": "2026-09-25",
+      "modified_date": "2026-09-30",
+      "kev": false,
+      "url": "https://explore.alas.aws.amazon.com/CVE-2026-97557.html",
+      "packages": [
+        {
+          "key": "amzn2/kernel",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.10",
+          "status": "Fixed",
+          "advisory": "ALAS2KERNEL-5.10-2026-136",
+          "advisory_url": "https://alas.aws.amazon.com/AL2/ALAS2KERNEL-5.10-2026-136.html",
+          "released": "2026-10-28"
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.15",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.4",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2026-98056",
+      "severity": "Important",
+      "cvss_vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      ],
+      "public_date": "2026-09-25",
+      "modified_date": "2026-09-30",
+      "kev": false,
+      "url": "https://explore.alas.aws.amazon.com/CVE-2026-98056.html",
+      "packages": [
+        {
+          "key": "amzn2/kernel",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.10",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.15",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.4",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2023/kernel",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2026-98096",
+      "severity": "Important",
+      "cvss_vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:H"
+      ],
+      "public_date": "2026-09-25",
+      "modified_date": "2026-09-30",
+      "kev": false,
+      "url": "https://explore.alas.aws.amazon.com/CVE-2026-98096.html",
+      "packages": [
+        {
+          "key": "amzn2/kernel",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.15",
+          "status": "Fixed",
+          "advisory": "ALAS2KERNEL-5.15-2026-119",
+          "advisory_url": "https://alas.aws.amazon.com/AL2/ALAS2KERNEL-5.15-2026-119.html",
+          "released": "2026-10-24"
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.4",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2026-98167",
+      "severity": "Important",
+      "cvss_vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:H"
+      ],
+      "public_date": "2026-10-06",
+      "modified_date": "2026-10-07",
+      "kev": false,
+      "url": "https://explore.alas.aws.amazon.com/CVE-2026-98167.html",
+      "packages": [
+        {
+          "key": "amzn2/kernel@kernel-5.10",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.15",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.4",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2023/kernel",
+          "status": "Fixed",
+          "advisory": "ALAS2023-2026-3336",
+          "advisory_url": "https://alas.aws.amazon.com/AL2023/ALAS2023-2026-3336.html",
+          "released": "2026-10-29"
+        },
+        {
+          "key": "amzn2023/kernel6.12",
+          "status": "Fixed",
+          "advisory": "ALAS2023-2026-3335",
+          "advisory_url": "https://alas.aws.amazon.com/AL2023/ALAS2023-2026-3335.html",
+          "released": "2026-10-29"
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2026-98320",
+      "severity": "Important",
+      "cvss_vectors": [
+        "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:H"
+      ],
+      "public_date": "2026-10-06",
+      "modified_date": "2026-10-07",
+      "kev": false,
+      "url": "https://explore.alas.aws.amazon.com/CVE-2026-98320.html",
+      "packages": [
+        {
+          "key": "amzn2/kernel@kernel-5.10",
+          "status": "Fixed",
+          "advisory": "ALAS2KERNEL-5.10-2026-136",
+          "advisory_url": "https://alas.aws.amazon.com/AL2/ALAS2KERNEL-5.10-2026-136.html",
+          "released": "2026-10-28"
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.15",
+          "status": "Fixed",
+          "advisory": "ALAS2KERNEL-5.15-2026-119",
+          "advisory_url": "https://alas.aws.amazon.com/AL2/ALAS2KERNEL-5.15-2026-119.html",
+          "released": "2026-10-24"
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.4",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2023/kernel",
+          "status": "Fixed",
+          "advisory": "ALAS2023-2026-3336",
+          "advisory_url": "https://alas.aws.amazon.com/AL2023/ALAS2023-2026-3336.html",
+          "released": "2026-10-29"
+        },
+        {
+          "key": "amzn2023/kernel6.12",
+          "status": "Fixed",
+          "advisory": "ALAS2023-2026-3335",
+          "advisory_url": "https://alas.aws.amazon.com/AL2023/ALAS2023-2026-3335.html",
+          "released": "2026-10-29"
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2026-98358",
+      "severity": "Important",
+      "cvss_vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      ],
+      "public_date": "2026-10-06",
+      "modified_date": "2026-10-07",
+      "kev": false,
+      "url": "https://explore.alas.aws.amazon.com/CVE-2026-98358.html",
+      "packages": [
+        {
+          "key": "amzn2/kernel",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.10",
+          "status": "Fixed",
+          "advisory": "ALAS2KERNEL-5.10-2026-136",
+          "advisory_url": "https://alas.aws.amazon.com/AL2/ALAS2KERNEL-5.10-2026-136.html",
+          "released": "2026-10-28"
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.4",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2026-98365",
+      "severity": "Important",
+      "cvss_vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      ],
+      "public_date": "2026-10-06",
+      "modified_date": "2026-10-13",
+      "kev": false,
+      "url": "https://explore.alas.aws.amazon.com/CVE-2026-98365.html",
+      "packages": [
+        {
+          "key": "amzn2/kernel",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.10",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.4",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2026-98432",
+      "severity": "Important",
+      "cvss_vectors": [
+        "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
+      ],
+      "public_date": "2026-10-15",
+      "modified_date": "2026-10-29",
+      "kev": false,
+      "url": "https://explore.alas.aws.amazon.com/CVE-2026-98432.html",
+      "packages": [
+        {
+          "key": "amzn2/kernel",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.10",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.15",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.4",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2023/kernel",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2023/kernel6.12",
+          "status": "Fixed",
+          "advisory": "ALAS2023-2026-3335",
+          "advisory_url": "https://alas.aws.amazon.com/AL2023/ALAS2023-2026-3335.html",
+          "released": "2026-10-29"
+        },
+        {
+          "key": "amzn2023/kernel6.18",
+          "status": "Fixed",
+          "advisory": "ALAS2023-2026-3251",
+          "advisory_url": "https://alas.aws.amazon.com/AL2023/ALAS2023-2026-3251.html",
+          "released": "2026-10-24"
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2026-98479",
+      "severity": "Important",
+      "cvss_vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+      ],
+      "public_date": "2026-10-18",
+      "modified_date": "2026-10-22",
+      "kev": false,
+      "url": "https://explore.alas.aws.amazon.com/CVE-2026-98479.html",
+      "packages": [
+        {
+          "key": "amzn2/kernel",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.10",
+          "status": "Fixed",
+          "advisory": "ALAS2KERNEL-5.10-2026-136",
+          "advisory_url": "https://alas.aws.amazon.com/AL2/ALAS2KERNEL-5.10-2026-136.html",
+          "released": "2026-10-28"
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.15",
+          "status": "Fixed",
+          "advisory": "ALAS2KERNEL-5.15-2026-119",
+          "advisory_url": "https://alas.aws.amazon.com/AL2/ALAS2KERNEL-5.15-2026-119.html",
+          "released": "2026-10-24"
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.4",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2023/kernel",
+          "status": "Fixed",
+          "advisory": "ALAS2023-2026-3336",
+          "advisory_url": "https://alas.aws.amazon.com/AL2023/ALAS2023-2026-3336.html",
+          "released": "2026-10-29"
+        },
+        {
+          "key": "amzn2023/kernel6.12",
+          "status": "Fixed",
+          "advisory": "ALAS2023-2026-3335",
+          "advisory_url": "https://alas.aws.amazon.com/AL2023/ALAS2023-2026-3335.html",
+          "released": "2026-10-29"
+        },
+        {
+          "key": "amzn2023/kernel6.18",
+          "status": "Fixed",
+          "advisory": "ALAS2023-2026-3251",
+          "advisory_url": "https://alas.aws.amazon.com/AL2023/ALAS2023-2026-3251.html",
+          "released": "2026-10-24"
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2026-98490",
+      "severity": "Important",
+      "cvss_vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      ],
+      "public_date": "2026-10-18",
+      "modified_date": "2026-10-22",
+      "kev": false,
+      "url": "https://explore.alas.aws.amazon.com/CVE-2026-98490.html",
+      "packages": [
+        {
+          "key": "amzn2/kernel",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.10",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.15",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.4",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2023/kernel",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2023/kernel6.12",
+          "status": "Fixed",
+          "advisory": "ALAS2023-2026-3335",
+          "advisory_url": "https://alas.aws.amazon.com/AL2023/ALAS2023-2026-3335.html",
+          "released": "2026-10-29"
+        },
+        {
+          "key": "amzn2023/kernel6.18",
+          "status": "Fixed",
+          "advisory": "ALAS2023-2026-3251",
+          "advisory_url": "https://alas.aws.amazon.com/AL2023/ALAS2023-2026-3251.html",
+          "released": "2026-10-24"
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2026-98532",
+      "severity": "Important",
+      "cvss_vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      ],
+      "public_date": "2026-10-18",
+      "modified_date": "2026-10-21",
+      "kev": false,
+      "url": "https://explore.alas.aws.amazon.com/CVE-2026-98532.html",
+      "packages": [
+        {
+          "key": "amzn2/kernel",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.10",
+          "status": "Fixed",
+          "advisory": "ALAS2KERNEL-5.10-2026-136",
+          "advisory_url": "https://alas.aws.amazon.com/AL2/ALAS2KERNEL-5.10-2026-136.html",
+          "released": "2026-10-28"
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.15",
+          "status": "Fixed",
+          "advisory": "ALAS2KERNEL-5.15-2026-119",
+          "advisory_url": "https://alas.aws.amazon.com/AL2/ALAS2KERNEL-5.15-2026-119.html",
+          "released": "2026-10-24"
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.4",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2023/kernel",
+          "status": "Fixed",
+          "advisory": "ALAS2023-2026-3336",
+          "advisory_url": "https://alas.aws.amazon.com/AL2023/ALAS2023-2026-3336.html",
+          "released": "2026-10-29"
+        },
+        {
+          "key": "amzn2023/kernel6.12",
+          "status": "Fixed",
+          "advisory": "ALAS2023-2026-3335",
+          "advisory_url": "https://alas.aws.amazon.com/AL2023/ALAS2023-2026-3335.html",
+          "released": "2026-10-29"
+        },
+        {
+          "key": "amzn2023/kernel6.18",
+          "status": "Fixed",
+          "advisory": "ALAS2023-2026-3251",
+          "advisory_url": "https://alas.aws.amazon.com/AL2023/ALAS2023-2026-3251.html",
+          "released": "2026-10-24"
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2026-98548",
+      "severity": "Important",
+      "cvss_vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:H"
+      ],
+      "public_date": "2026-10-18",
+      "modified_date": "2026-10-24",
+      "kev": false,
+      "url": "https://explore.alas.aws.amazon.com/CVE-2026-98548.html",
+      "packages": [
+        {
+          "key": "amzn2/kernel",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.10",
+          "status": "Fixed",
+          "advisory": "ALAS2KERNEL-5.10-2026-136",
+          "advisory_url": "https://alas.aws.amazon.com/AL2/ALAS2KERNEL-5.10-2026-136.html",
+          "released": "2026-10-28"
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.15",
+          "status": "Fixed",
+          "advisory": "ALAS2KERNEL-5.15-2026-119",
+          "advisory_url": "https://alas.aws.amazon.com/AL2/ALAS2KERNEL-5.15-2026-119.html",
+          "released": "2026-10-24"
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.4",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2023/kernel",
+          "status": "Fixed",
+          "advisory": "ALAS2023-2026-3336",
+          "advisory_url": "https://alas.aws.amazon.com/AL2023/ALAS2023-2026-3336.html",
+          "released": "2026-10-29"
+        },
+        {
+          "key": "amzn2023/kernel6.12",
+          "status": "Fixed",
+          "advisory": "ALAS2023-2026-3335",
+          "advisory_url": "https://alas.aws.amazon.com/AL2023/ALAS2023-2026-3335.html",
+          "released": "2026-10-29"
+        },
+        {
+          "key": "amzn2023/kernel6.18",
+          "status": "Fixed",
+          "advisory": "ALAS2023-2026-3251",
+          "advisory_url": "https://alas.aws.amazon.com/AL2023/ALAS2023-2026-3251.html",
+          "released": "2026-10-24"
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2026-98550",
+      "severity": "Important",
+      "cvss_vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      ],
+      "public_date": "2026-10-18",
+      "modified_date": "2026-10-24",
+      "kev": false,
+      "url": "https://explore.alas.aws.amazon.com/CVE-2026-98550.html",
+      "packages": [
+        {
+          "key": "amzn2/kernel@kernel-5.10",
+          "status": "Fixed",
+          "advisory": "ALAS2KERNEL-5.10-2026-136",
+          "advisory_url": "https://alas.aws.amazon.com/AL2/ALAS2KERNEL-5.10-2026-136.html",
+          "released": "2026-10-28"
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.4",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2023/kernel",
+          "status": "Fixed",
+          "advisory": "ALAS2023-2026-3336",
+          "advisory_url": "https://alas.aws.amazon.com/AL2023/ALAS2023-2026-3336.html",
+          "released": "2026-10-29"
+        },
+        {
+          "key": "amzn2023/kernel6.12",
+          "status": "Fixed",
+          "advisory": "ALAS2023-2026-3335",
+          "advisory_url": "https://alas.aws.amazon.com/AL2023/ALAS2023-2026-3335.html",
+          "released": "2026-10-29"
+        },
+        {
+          "key": "amzn2023/kernel6.18",
+          "status": "Fixed",
+          "advisory": "ALAS2023-2026-3251",
+          "advisory_url": "https://alas.aws.amazon.com/AL2023/ALAS2023-2026-3251.html",
+          "released": "2026-10-24"
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2026-98573",
+      "severity": "Important",
+      "cvss_vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      ],
+      "public_date": "2026-10-18",
+      "modified_date": "2026-10-22",
+      "kev": false,
+      "url": "https://explore.alas.aws.amazon.com/CVE-2026-98573.html",
+      "packages": [
+        {
+          "key": "amzn2/kernel",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.10",
+          "status": "Fixed",
+          "advisory": "ALAS2KERNEL-5.10-2026-136",
+          "advisory_url": "https://alas.aws.amazon.com/AL2/ALAS2KERNEL-5.10-2026-136.html",
+          "released": "2026-10-28"
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.15",
+          "status": "Fixed",
+          "advisory": "ALAS2KERNEL-5.15-2026-119",
+          "advisory_url": "https://alas.aws.amazon.com/AL2/ALAS2KERNEL-5.15-2026-119.html",
+          "released": "2026-10-24"
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.4",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2023/kernel",
+          "status": "Fixed",
+          "advisory": "ALAS2023-2026-3336",
+          "advisory_url": "https://alas.aws.amazon.com/AL2023/ALAS2023-2026-3336.html",
+          "released": "2026-10-29"
+        },
+        {
+          "key": "amzn2023/kernel6.12",
+          "status": "Fixed",
+          "advisory": "ALAS2023-2026-3335",
+          "advisory_url": "https://alas.aws.amazon.com/AL2023/ALAS2023-2026-3335.html",
+          "released": "2026-10-29"
+        },
+        {
+          "key": "amzn2023/kernel6.18",
+          "status": "Fixed",
+          "advisory": "ALAS2023-2026-3251",
+          "advisory_url": "https://alas.aws.amazon.com/AL2023/ALAS2023-2026-3251.html",
+          "released": "2026-10-24"
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2026-98805",
+      "severity": "Important",
+      "cvss_vectors": [
+        "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N"
+      ],
+      "public_date": "2026-10-18",
+      "modified_date": "2026-10-24",
+      "kev": false,
+      "url": "https://explore.alas.aws.amazon.com/CVE-2026-98805.html",
+      "packages": [
+        {
+          "key": "amzn2/kernel@kernel-5.10",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2023/kernel",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2023/kernel6.12",
+          "status": "Fixed",
+          "advisory": "ALAS2023-2026-3335",
+          "advisory_url": "https://alas.aws.amazon.com/AL2023/ALAS2023-2026-3335.html",
+          "released": "2026-10-29"
+        },
+        {
+          "key": "amzn2023/kernel6.18",
+          "status": "Fixed",
+          "advisory": "ALAS2023-2026-3251",
+          "advisory_url": "https://alas.aws.amazon.com/AL2023/ALAS2023-2026-3251.html",
+          "released": "2026-10-24"
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2026-98857",
+      "severity": "Important",
+      "cvss_vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      ],
+      "public_date": "2026-10-18",
+      "modified_date": "2026-10-22",
+      "kev": false,
+      "url": "https://explore.alas.aws.amazon.com/CVE-2026-98857.html",
+      "packages": [
+        {
+          "key": "amzn2/kernel",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.10",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.15",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.4",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2023/kernel",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2023/kernel6.12",
+          "status": "Fixed",
+          "advisory": "ALAS2023-2026-3335",
+          "advisory_url": "https://alas.aws.amazon.com/AL2023/ALAS2023-2026-3335.html",
+          "released": "2026-10-29"
+        },
+        {
+          "key": "amzn2023/kernel6.18",
+          "status": "Fixed",
+          "advisory": "ALAS2023-2026-3251",
+          "advisory_url": "https://alas.aws.amazon.com/AL2023/ALAS2023-2026-3251.html",
+          "released": "2026-10-24"
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2026-99064",
+      "severity": "Important",
+      "cvss_vectors": [
+        "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:H/A:H"
+      ],
+      "public_date": "2026-10-23",
+      "modified_date": "2026-10-24",
+      "kev": false,
+      "url": "https://explore.alas.aws.amazon.com/CVE-2026-99064.html",
+      "packages": [
+        {
+          "key": "amzn2023/kernel6.12",
+          "status": "Fixed",
+          "advisory": "ALAS2023-2026-3335",
+          "advisory_url": "https://alas.aws.amazon.com/AL2023/ALAS2023-2026-3335.html",
+          "released": "2026-10-29"
+        },
+        {
+          "key": "amzn2023/kernel6.18",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2026-99128",
+      "severity": "Important",
+      "cvss_vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      ],
+      "public_date": "2026-10-28",
+      "modified_date": "2026-11-08",
+      "kev": false,
+      "url": "https://explore.alas.aws.amazon.com/CVE-2026-99128.html",
+      "packages": [
+        {
+          "key": "amzn2/kernel",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.10",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.15",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.4",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2023/kernel",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2023/kernel6.12",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2023/kernel6.18",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2026-99153",
+      "severity": "Important",
+      "cvss_vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:H"
+      ],
+      "public_date": "2026-10-28",
+      "modified_date": "2026-11-08",
+      "kev": false,
+      "url": "https://explore.alas.aws.amazon.com/CVE-2026-99153.html",
+      "packages": [
+        {
+          "key": "amzn2/kernel",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.10",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.15",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.4",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2023/kernel",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2023/kernel6.12",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2023/kernel6.18",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2026-99154",
+      "severity": "Important",
+      "cvss_vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      ],
+      "public_date": "2026-10-28",
+      "modified_date": "2026-11-09",
+      "kev": false,
+      "url": "https://explore.alas.aws.amazon.com/CVE-2026-99154.html",
+      "packages": [
+        {
+          "key": "amzn2/kernel",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.10",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.4",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2026-99288",
+      "severity": "Important",
+      "cvss_vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      ],
+      "public_date": "2026-11-10",
+      "modified_date": "2026-11-16",
+      "kev": false,
+      "url": "https://explore.alas.aws.amazon.com/CVE-2026-99288.html",
+      "packages": [
+        {
+          "key": "amzn2/kernel",
+          "status": "Fixed",
+          "advisory": "ALAS2-2026-4124",
+          "advisory_url": "https://alas.aws.amazon.com/AL2/ALAS2-2026-4124.html",
+          "released": "2026-11-17"
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.10",
+          "status": "Fixed",
+          "advisory": "ALAS2KERNEL-5.10-2026-139",
+          "advisory_url": "https://alas.aws.amazon.com/AL2/ALAS2KERNEL-5.10-2026-139.html",
+          "released": "2026-11-12"
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.15",
+          "status": "Fixed",
+          "advisory": "ALAS2KERNEL-5.15-2026-121",
+          "advisory_url": "https://alas.aws.amazon.com/AL2/ALAS2KERNEL-5.15-2026-121.html",
+          "released": "2026-11-12"
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.4",
+          "status": "Fixed",
+          "advisory": "ALAS2KERNEL-5.4-2026-138",
+          "advisory_url": "https://alas.aws.amazon.com/AL2/ALAS2KERNEL-5.4-2026-138.html",
+          "released": "2026-11-17"
+        },
+        {
+          "key": "amzn2023/kernel",
+          "status": "Fixed",
+          "advisory": "ALAS2023-2026-3455",
+          "advisory_url": "https://alas.aws.amazon.com/AL2023/ALAS2023-2026-3455.html",
+          "released": "2026-11-12"
+        },
+        {
+          "key": "amzn2023/kernel6.12",
+          "status": "Fixed",
+          "advisory": "ALAS2023-2026-3448",
+          "advisory_url": "https://alas.aws.amazon.com/AL2023/ALAS2023-2026-3448.html",
+          "released": "2026-11-12"
+        },
+        {
+          "key": "amzn2023/kernel6.18",
+          "status": "Fixed",
+          "advisory": "ALAS2023-2026-3477",
+          "advisory_url": "https://alas.aws.amazon.com/AL2023/ALAS2023-2026-3477.html",
+          "released": "2026-11-17"
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2026-99304",
+      "severity": "Important",
+      "cvss_vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      ],
+      "public_date": "2026-11-16",
+      "modified_date": "2026-11-19",
+      "kev": false,
+      "url": "https://explore.alas.aws.amazon.com/CVE-2026-99304.html",
+      "packages": [
+        {
+          "key": "amzn2/kernel",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.10",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.15",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2/kernel@kernel-5.4",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2023/kernel",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2023/kernel6.12",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2023/kernel6.18",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2026-99306",
+      "severity": "Important",
+      "cvss_vectors": [
+        "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      ],
+      "public_date": "2026-11-16",
+      "modified_date": "2026-11-19",
+      "kev": false,
+      "url": "https://explore.alas.aws.amazon.com/CVE-2026-99306.html",
+      "packages": [
+        {
+          "key": "amzn2/kernel@kernel-5.15",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2023/kernel",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2023/kernel6.12",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        },
+        {
+          "key": "amzn2023/kernel6.18",
+          "status": "PendingFix",
+          "advisory": null,
+          "advisory_url": null,
+          "released": null
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1274 @@
+{
+  "updated_at": "2026-11-20T16:09:55Z",
+  "items": [
+    {
+      "source": "jpcert",
+      "id": "at260033",
+      "title": "注意喚起: PHPにおける複数の脆弱性（CVE-2026-109618、CVE-2026-109619）に関する注意喚起  (更新)",
+      "link": "https://www.jpcert.or.jp/at/2026/at260033.html",
+      "date": "2026-11-20T13:40+09:00",
+      "cves": [
+        "CVE-2026-109618",
+        "CVE-2026-109619"
+      ],
+      "verification_status": "text_extracted",
+      "first_seen_at": "2026-10-24T17:52:00Z"
+    },
+    {
+      "source": "jvn",
+      "id": "JVN64740097",
+      "title": "SoftBank製Airターミナル6におけるOSコマンドインジェクションの脆弱性",
+      "link": "https://jvn.jp/jp/JVN64740097/",
+      "date": "2026-11-20T10:00:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-11-12T03:00:06Z"
+    },
+    {
+      "source": "jvn",
+      "id": "JVNVU92814490",
+      "title": "CISA ICS Advisory / ICS Medical Advisory（2026年11月19日）",
+      "link": "https://jvn.jp/vu/JVNVU92814490/",
+      "date": "2026-11-20T09:30:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-11-20T03:15:59Z"
+    },
+    {
+      "source": "jvn",
+      "id": "JVNVU98354779",
+      "title": "Siemens製品に対するアップデート（2026年11月）",
+      "link": "https://jvn.jp/vu/JVNVU98354779/",
+      "date": "2026-11-20T09:00:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-11-05T02:29:21Z"
+    },
+    {
+      "source": "ipa",
+      "id": "alert20261120.html",
+      "title": "PHPの脆弱性対策について（2026年11月）",
+      "link": "https://www.ipa.go.jp/security/security-alert/2026/alert20261120.html",
+      "date": "2026-11-20T00:00:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-11-20T03:15:59Z"
+    },
+    {
+      "source": "jvn",
+      "id": "JVN29068051",
+      "title": "ブラウザ拡張機能「Win Bird 授業支援」におけるクロスサイトスクリプティングの脆弱性",
+      "link": "https://jvn.jp/jp/JVN29068051/",
+      "date": "2026-11-19T14:00:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-11-19T06:02:21Z"
+    },
+    {
+      "source": "jvn",
+      "id": "JVN28897261",
+      "title": "複数のRuijie Networks製品におけるOSコマンドインジェクションの脆弱性",
+      "link": "https://jvn.jp/jp/JVN28897261/",
+      "date": "2026-11-19T12:00:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-11-19T03:29:16Z"
+    },
+    {
+      "source": "ipa",
+      "id": "alert20261119.html",
+      "title": "NGINXの複数の脆弱性対策について（CVE-2026-123007、CVE-2026-123633等）",
+      "link": "https://www.ipa.go.jp/security/security-alert/2026/alert20261119.html",
+      "date": "2026-11-19T00:00:00+09:00",
+      "cves": [
+        "CVE-2026-123007",
+        "CVE-2026-123633"
+      ],
+      "verification_status": "text_extracted",
+      "first_seen_at": "2026-11-19T16:33:51Z"
+    },
+    {
+      "source": "ipa",
+      "id": "pre-alert20261119.html",
+      "title": "【事前準備のお願い】PHPのセキュリティリリース公開予定について（11月）",
+      "link": "https://www.ipa.go.jp/security/security-alert/2026/pre-alert20261119.html",
+      "date": "2026-11-19T00:00:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-11-19T16:33:51Z"
+    },
+    {
+      "source": "jvn",
+      "id": "JVNVU99608534",
+      "title": "OpenJDKにおけるヒープベースのバッファオーバーフローの脆弱性",
+      "link": "https://jvn.jp/vu/JVNVU99608534/",
+      "date": "2026-11-18T14:00:15+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-11-18T03:42:53Z"
+    },
+    {
+      "source": "jvn",
+      "id": "JVNVU91196958",
+      "title": "ISC BINDにおける複数の脆弱性（2026年10月）",
+      "link": "https://jvn.jp/vu/JVNVU91196958/",
+      "date": "2026-11-18T14:00:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-10-24T17:52:00Z"
+    },
+    {
+      "source": "jvn",
+      "id": "JVN19906678",
+      "title": "Androidアプリ「宮内庁参観音声ガイド- 宮内庁公式アプリ」における複数の脆弱性",
+      "link": "https://jvn.jp/jp/JVN19906678/",
+      "date": "2026-11-18T12:00:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-11-18T03:42:53Z"
+    },
+    {
+      "source": "jpcert",
+      "id": "wr261118",
+      "title": "Weekly Report: 複数のマイクロソフト製品に脆弱性",
+      "link": "https://www.jpcert.or.jp/wr/2026/wr261118.html#25",
+      "date": "2026-11-18T09:15+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-11-18T03:42:53Z"
+    },
+    {
+      "source": "jvn",
+      "id": "JVNVU96847970",
+      "title": "OpenSSLにおける脆弱性に対するアップデート（2026年11月17日）",
+      "link": "https://jvn.jp/vu/JVNVU96847970/",
+      "date": "2026-11-18T09:00:15+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-11-18T03:42:53Z"
+    },
+    {
+      "source": "jvn",
+      "id": "JVNVU99888632",
+      "title": "CISA ICS Advisory / ICS Medical Advisory（2026年11月17日）",
+      "link": "https://jvn.jp/vu/JVNVU99888632/",
+      "date": "2026-11-18T09:00:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-11-18T03:42:53Z"
+    },
+    {
+      "source": "ipa",
+      "id": "1118-jre.html",
+      "title": "Oracle Java の脆弱性対策について(2026年11月)",
+      "link": "https://www.ipa.go.jp/security/security-alert/2026/1118-jre.html",
+      "date": "2026-11-18T00:00:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-11-18T16:27:45Z"
+    },
+    {
+      "source": "jvn",
+      "id": "JVN02242982",
+      "title": "プリザンターにおける複数の脆弱性",
+      "link": "https://jvn.jp/jp/JVN02242982/",
+      "date": "2026-11-17T15:00:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-11-17T16:53:36Z"
+    },
+    {
+      "source": "jvn",
+      "id": "JVNVU91615135",
+      "title": "エレコム製無線LANルータにおける複数の脆弱性",
+      "link": "https://jvn.jp/vu/JVNVU91615135/",
+      "date": "2026-11-17T14:45:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-11-17T16:53:36Z"
+    },
+    {
+      "source": "jvn",
+      "id": "JVNVU92504317",
+      "title": "エレコム製無線LANルータにおけるOSコマンドインジェクションの脆弱性",
+      "link": "https://jvn.jp/vu/JVNVU92504317/",
+      "date": "2026-11-17T14:30:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-11-17T16:53:36Z"
+    },
+    {
+      "source": "jvn",
+      "id": "JVNVU93605944",
+      "title": "複数製品におけるmacOS（APFS）とのUnicode正規化不整合によるファイルアクセス制限回避の脆弱性",
+      "link": "https://jvn.jp/vu/JVNVU93605944/",
+      "date": "2026-11-17T10:15:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-11-17T04:29:00Z"
+    },
+    {
+      "source": "jvn",
+      "id": "JVNVU97628215",
+      "title": "富士電機製TELLUSにおける複数の脆弱性（2026年11月）",
+      "link": "https://jvn.jp/vu/JVNVU97628215/",
+      "date": "2026-11-17T09:50:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-11-17T04:29:00Z"
+    },
+    {
+      "source": "jvn",
+      "id": "JVN76799957",
+      "title": "JetBrains製YouTrackにおけるクロスサイトスクリプティングの脆弱性",
+      "link": "https://jvn.jp/jp/JVN76799957/",
+      "date": "2026-11-13T12:00:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-11-13T15:24:15Z"
+    },
+    {
+      "source": "jvn",
+      "id": "JVNVU90821966",
+      "title": "CISA ICS Advisory / ICS Medical Advisory（2026年11月12日）",
+      "link": "https://jvn.jp/vu/JVNVU90821966/",
+      "date": "2026-11-13T11:00:40+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-11-13T02:37:47Z"
+    },
+    {
+      "source": "jvn",
+      "id": "JVNVU92656681",
+      "title": "TightVNCおよびUltraVNCのWindows Viewerにおけるヒープベースのバッファオーバーフローの脆弱性",
+      "link": "https://jvn.jp/vu/JVNVU92656681/",
+      "date": "2026-11-13T11:00:30+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-11-13T02:37:47Z"
+    },
+    {
+      "source": "jvn",
+      "id": "JVNVU95718857",
+      "title": "ImageMagickを利用したアプリケーションにおける任意ファイル読み書きの脆弱性",
+      "link": "https://jvn.jp/vu/JVNVU95718857/",
+      "date": "2026-11-13T11:00:20+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-11-13T02:37:47Z"
+    },
+    {
+      "source": "jvn",
+      "id": "JVNVU98641453",
+      "title": "PromZardにおけるリモートコード実行の脆弱性",
+      "link": "https://jvn.jp/vu/JVNVU98641453/",
+      "date": "2026-11-13T11:00:10+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-11-13T02:37:47Z"
+    },
+    {
+      "source": "jvn",
+      "id": "JVNVU99429639",
+      "title": "ComfyUIのComfyUI-Easy-Use拡張機能における認証不要のパストラバーサルの脆弱性",
+      "link": "https://jvn.jp/vu/JVNVU99429639/",
+      "date": "2026-11-13T11:00:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-11-13T02:37:47Z"
+    },
+    {
+      "source": "jvn",
+      "id": "JVNVU92635551",
+      "title": "KUSANAGIにおけるHTTPヘッダーインジェクションの脆弱性",
+      "link": "https://jvn.jp/vu/JVNVU92635551/",
+      "date": "2026-11-12T16:10:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-11-09T17:30:03Z"
+    },
+    {
+      "source": "jvn",
+      "id": "JVNVU97400824",
+      "title": "BrotliのC言語実装における境界外書き込みの脆弱性（CVE-2026-111497）",
+      "link": "https://jvn.jp/vu/JVNVU97400824/",
+      "date": "2026-11-12T13:40:00+09:00",
+      "cves": [
+        "CVE-2026-111497"
+      ],
+      "verification_status": "text_extracted",
+      "first_seen_at": "2026-10-26T14:16:43Z"
+    },
+    {
+      "source": "jvn",
+      "id": "JVNVU95523788",
+      "title": "三菱電機数値制御装置におけるサービス運用妨害（DoS）の脆弱性",
+      "link": "https://jvn.jp/vu/JVNVU95523788/",
+      "date": "2026-11-12T12:15:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-11-12T15:59:05Z"
+    },
+    {
+      "source": "jvn",
+      "id": "JVNVU90805396",
+      "title": "Apache HTTP Server 2.4における複数の脆弱性に対するアップデート（2026年11月11日）",
+      "link": "https://jvn.jp/vu/JVNVU90805396/",
+      "date": "2026-11-12T09:00:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-11-12T03:00:06Z"
+    },
+    {
+      "source": "jvn",
+      "id": "JVNVU93337738",
+      "title": "Intel製品に対するアップデート（2026年11月）",
+      "link": "https://jvn.jp/vu/JVNVU93337738/",
+      "date": "2026-11-11T14:15:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-11-11T15:13:11Z"
+    },
+    {
+      "source": "jvn",
+      "id": "JVNVU93068550",
+      "title": "Sleipnir Mobile for iPhone / iPadにおける不適切な証明書検証の脆弱性",
+      "link": "https://jvn.jp/vu/JVNVU93068550/",
+      "date": "2026-11-11T13:30:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-11-11T15:13:11Z"
+    },
+    {
+      "source": "jvn",
+      "id": "JVNVU99905564",
+      "title": "PHPにおける複数の任意のコードが実行可能な脆弱性（CVE-2026-109618、CVE-2026-109619）",
+      "link": "https://jvn.jp/vu/JVNVU99905564/",
+      "date": "2026-11-11T12:10:00+09:00",
+      "cves": [
+        "CVE-2026-109618",
+        "CVE-2026-109619"
+      ],
+      "verification_status": "text_extracted",
+      "first_seen_at": "2026-10-24T17:52:00Z"
+    },
+    {
+      "source": "jvn",
+      "id": "JVN11786640",
+      "title": "Movable Typeにおけるコードインジェクションの脆弱性",
+      "link": "https://jvn.jp/jp/JVN11786640/",
+      "date": "2026-11-11T12:00:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-11-11T15:13:11Z"
+    },
+    {
+      "source": "jpcert",
+      "id": "at260035",
+      "title": "注意喚起: 2026年11月マイクロソフトセキュリティ更新プログラムに関する注意喚起  (公開)",
+      "link": "https://www.jpcert.or.jp/at/2026/at260035.html",
+      "date": "2026-11-11T11:20+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-11-11T15:13:11Z"
+    },
+    {
+      "source": "jvn",
+      "id": "JVNVU92618679",
+      "title": "OpenSSLにおける脆弱性に対するアップデート（2026年11月10日）",
+      "link": "https://jvn.jp/vu/JVNVU92618679/",
+      "date": "2026-11-11T10:15:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-11-11T01:56:50Z"
+    },
+    {
+      "source": "jpcert",
+      "id": "wr261111",
+      "title": "Weekly Report: NCOが「個人情報の漏えい等につながる不正アクセスへの対策について - ウェブサイトやモバイルアプリに関する基本的な対策の徹底 -」を公開",
+      "link": "https://www.jpcert.or.jp/wr/2026/wr261111.html#14",
+      "date": "2026-11-11T09:07+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-11-11T01:56:50Z"
+    },
+    {
+      "source": "ipa",
+      "id": "1111-ms.html",
+      "title": "Microsoft 製品の脆弱性対策について(2026年11月)",
+      "link": "https://www.ipa.go.jp/security/security-alert/2026/1111-ms.html",
+      "date": "2026-11-11T00:00:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-11-11T15:13:11Z"
+    },
+    {
+      "source": "jvn",
+      "id": "JVNVU96830794",
+      "title": "FrodoBots EarthRover Mini+における複数の脆弱性",
+      "link": "https://jvn.jp/vu/JVNVU96830794/",
+      "date": "2026-11-10T09:30:15+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-11-10T04:07:57Z"
+    },
+    {
+      "source": "jvn",
+      "id": "JVNVU98836795",
+      "title": "PrestaShopのPerformance DebugモードにおけるPHPコードインジェクションの脆弱性",
+      "link": "https://jvn.jp/vu/JVNVU98836795/",
+      "date": "2026-11-10T09:30:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-11-10T04:07:57Z"
+    },
+    {
+      "source": "jvn",
+      "id": "JVN12040144",
+      "title": "Airbyteにおける任意のコードが実行可能な脆弱性",
+      "link": "https://jvn.jp/jp/JVN12040144/",
+      "date": "2026-11-10T09:00:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-11-04T15:27:11Z"
+    },
+    {
+      "source": "jvn",
+      "id": "JVN76179675",
+      "title": "SS1／SS1クラウドおよびそのODM製品rocoeyesにおける複数の脆弱性",
+      "link": "https://jvn.jp/jp/JVN76179675/",
+      "date": "2026-11-09T15:00:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-11-09T17:30:03Z"
+    },
+    {
+      "source": "jvn",
+      "id": "JVN89009783",
+      "title": "WebSAM WinShareにおける複数の脆弱性",
+      "link": "https://jvn.jp/jp/JVN89009783/",
+      "date": "2026-11-09T14:00:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-11-09T17:30:03Z"
+    },
+    {
+      "source": "jvn",
+      "id": "JVN56286875",
+      "title": "Effekseerにおける入力データ検証不備の脆弱性",
+      "link": "https://jvn.jp/jp/JVN56286875/",
+      "date": "2026-11-09T12:00:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-11-09T17:30:03Z"
+    },
+    {
+      "source": "jvn",
+      "id": "JVNVU93403064",
+      "title": "Webtop Media Transcoderにおける異なる領域間での不適切なリソースの移動の脆弱性",
+      "link": "https://jvn.jp/vu/JVNVU93403064/",
+      "date": "2026-11-09T11:00:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-11-09T17:30:03Z"
+    },
+    {
+      "source": "jvn",
+      "id": "JVN42011956",
+      "title": "Zabbix agentにおけるDLL読み込みに関する脆弱性",
+      "link": "https://jvn.jp/jp/JVN42011956/",
+      "date": "2026-11-09T10:15:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-11-09T01:44:20Z"
+    },
+    {
+      "source": "jvn",
+      "id": "JVNVU90841469",
+      "title": "CISA ICS Advisory / ICS Medical Advisory（2026年11月05日）",
+      "link": "https://jvn.jp/vu/JVNVU90841469/",
+      "date": "2026-11-06T09:30:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-11-06T02:27:16Z"
+    },
+    {
+      "source": "jvn",
+      "id": "JVN55454512",
+      "title": "SHIRASAGIにおける複数の脆弱性",
+      "link": "https://jvn.jp/jp/JVN55454512/",
+      "date": "2026-11-05T14:00:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-11-05T15:28:28Z"
+    },
+    {
+      "source": "jpcert",
+      "id": "wr261105",
+      "title": "Weekly Report: BrotliのC言語実装における境界外書き込みの脆弱性（CVE-2026-111497）に関する注意喚起",
+      "link": "https://www.jpcert.or.jp/wr/2026/wr261105.html#15",
+      "date": "2026-11-05T09:52+09:00",
+      "cves": [
+        "CVE-2026-111497"
+      ],
+      "verification_status": "text_extracted",
+      "first_seen_at": "2026-11-05T02:29:21Z"
+    },
+    {
+      "source": "jvn",
+      "id": "JVN46901199",
+      "title": "Hinemosにおける不適切な権限の割り当ての脆弱性",
+      "link": "https://jvn.jp/jp/JVN46901199/",
+      "date": "2026-11-04T16:00:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-11-04T15:27:11Z"
+    },
+    {
+      "source": "jvn",
+      "id": "JVN44272550",
+      "title": "複数のAkeeba製品におけるクロスサイトリクエストフォージェリの脆弱性",
+      "link": "https://jvn.jp/jp/JVN44272550/",
+      "date": "2026-11-04T12:00:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-11-04T15:27:11Z"
+    },
+    {
+      "source": "jvn",
+      "id": "JVNVU99859918",
+      "title": "INFINITT Healthcare製INFINITT PACS System Managerにおける複数の任意コード実行の脆弱性",
+      "link": "https://jvn.jp/vu/JVNVU99859918/",
+      "date": "2026-11-04T10:15:30+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-11-04T02:21:09Z"
+    },
+    {
+      "source": "jvn",
+      "id": "JVNVU92281274",
+      "title": "Androidアプリ「BaseChat - Audio Dating App」における複数の脆弱性",
+      "link": "https://jvn.jp/vu/JVNVU92281274/",
+      "date": "2026-11-04T10:15:15+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-11-04T02:21:09Z"
+    },
+    {
+      "source": "jvn",
+      "id": "JVNVU91151184",
+      "title": "CISA ICS Advisory / ICS Medical Advisory（2026年11月03日）",
+      "link": "https://jvn.jp/vu/JVNVU91151184/",
+      "date": "2026-11-04T10:15:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-11-04T02:21:09Z"
+    },
+    {
+      "source": "jvn",
+      "id": "JVN23328936",
+      "title": "Core TempのカーネルドライバにおけるIOCTLインタフェースに対するアクセス制御が不十分な脆弱性",
+      "link": "https://jvn.jp/jp/JVN23328936/",
+      "date": "2026-11-02T12:00:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-11-02T17:05:10Z"
+    },
+    {
+      "source": "jvn",
+      "id": "JVNVU90141693",
+      "title": "Siemens製品に対するアップデート（2026年10月）",
+      "link": "https://jvn.jp/vu/JVNVU90141693/",
+      "date": "2026-11-02T09:15:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-10-24T17:52:00Z"
+    },
+    {
+      "source": "jvn",
+      "id": "JVNVU93251594",
+      "title": "三菱電機製の複数製品における複数の脆弱性（2026-006）",
+      "link": "https://jvn.jp/vu/JVNVU93251594/",
+      "date": "2026-10-30T14:00:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-10-24T17:52:00Z"
+    },
+    {
+      "source": "jvn",
+      "id": "JVNVU95856220",
+      "title": "CISA ICS Advisory / ICS Medical Advisory（2026年10月29日）",
+      "link": "https://jvn.jp/vu/JVNVU95856220/",
+      "date": "2026-10-30T09:15:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-10-30T01:58:06Z"
+    },
+    {
+      "source": "jvn",
+      "id": "JVN82782759",
+      "title": "Apache Struts 2 RESTプラグインにおける、@StrutsParameterの制限が@JsonAnySetterに適用されない問題",
+      "link": "https://jvn.jp/jp/JVN82782759/",
+      "date": "2026-10-29T12:00:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-10-29T14:21:07Z"
+    },
+    {
+      "source": "jvn",
+      "id": "JVNVU91027179",
+      "title": "ヤマハ製NWR100における複数の脆弱性",
+      "link": "https://jvn.jp/vu/JVNVU91027179/",
+      "date": "2026-10-28T14:15:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-10-28T14:02:00Z"
+    },
+    {
+      "source": "jvn",
+      "id": "JVN23695234",
+      "title": "Yamaha LAN Monitor for WindowsのインストーラにおけるDLL読み込みに関する脆弱性",
+      "link": "https://jvn.jp/jp/JVN23695234/",
+      "date": "2026-10-28T14:00:15+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-10-28T14:02:00Z"
+    },
+    {
+      "source": "jvn",
+      "id": "JVN30675482",
+      "title": "ヤマハ製YMS-VPN8およびYMS-VPN8-CPにおける引用符で囲まれていないファイルパスの脆弱性",
+      "link": "https://jvn.jp/jp/JVN30675482/",
+      "date": "2026-10-28T14:00:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-10-28T14:02:00Z"
+    },
+    {
+      "source": "jpcert",
+      "id": "wr261028",
+      "title": "Weekly Report: JPCERT/CCが2026年7月から9月分の「JPCERT/CC 四半期レポート」を公開",
+      "link": "https://www.jpcert.or.jp/wr/2026/wr261028.html#15",
+      "date": "2026-10-28T09:07+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-10-28T01:23:31Z"
+    },
+    {
+      "source": "jvn",
+      "id": "JVNVU96093239",
+      "title": "CISA ICS Advisory / ICS Medical Advisory（2026年10月27日）",
+      "link": "https://jvn.jp/vu/JVNVU96093239/",
+      "date": "2026-10-28T09:00:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-10-28T01:23:31Z"
+    },
+    {
+      "source": "jvn",
+      "id": "JVN51223238",
+      "title": "GROWIにおける複数の脆弱性",
+      "link": "https://jvn.jp/jp/JVN51223238/",
+      "date": "2026-10-27T15:00:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-10-27T13:13:17Z"
+    },
+    {
+      "source": "jvn",
+      "id": "JVN90463048",
+      "title": "Sleipnir Mobile for Androidのユーザーインターフェースにおいて偽のアドレスバーなどを表示される脆弱性",
+      "link": "https://jvn.jp/jp/JVN90463048/",
+      "date": "2026-10-27T12:00:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-10-27T13:13:17Z"
+    },
+    {
+      "source": "jvn",
+      "id": "JVNVU90547696",
+      "title": "Fireblocks製mpc-libの強化導出（Hardened Derivation）処理における脆弱性",
+      "link": "https://jvn.jp/vu/JVNVU90547696/",
+      "date": "2026-10-27T10:30:15+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-10-27T13:13:17Z"
+    },
+    {
+      "source": "jvn",
+      "id": "JVNVU90363302",
+      "title": "COVESA vsomeipにおける過剰なメモリ割り当ての脆弱性",
+      "link": "https://jvn.jp/vu/JVNVU90363302/",
+      "date": "2026-10-27T10:30:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-10-27T13:13:17Z"
+    },
+    {
+      "source": "jpcert",
+      "id": "at260034",
+      "title": "注意喚起: BrotliのC言語実装における境界外書き込みの脆弱性（CVE-2026-111497）に関する注意喚起  (公開)",
+      "link": "https://www.jpcert.or.jp/at/2026/at260034.html",
+      "date": "2026-10-26T16:25+09:00",
+      "cves": [
+        "CVE-2026-111497"
+      ],
+      "verification_status": "text_extracted",
+      "first_seen_at": "2026-10-26T14:16:43Z"
+    },
+    {
+      "source": "jvn",
+      "id": "JVNVU96549652",
+      "title": "富士電機製V-SFTにおける複数の脆弱性（2026年10月）",
+      "link": "https://jvn.jp/vu/JVNVU96549652/",
+      "date": "2026-10-26T13:00:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-10-26T04:10:55Z"
+    },
+    {
+      "source": "jvn",
+      "id": "JVN75668103",
+      "title": "電子納品物検査支援システムにおけるインストール時の不適切なファイルアクセス権設定の脆弱性",
+      "link": "https://jvn.jp/jp/JVN75668103/",
+      "date": "2026-10-26T12:00:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-10-26T03:37:47Z"
+    },
+    {
+      "source": "jvn",
+      "id": "JVN82312317",
+      "title": "プリザンターのLDAP認証における認証不備の脆弱性",
+      "link": "https://jvn.jp/jp/JVN82312317/",
+      "date": "2026-10-23T15:00:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-10-24T17:52:00Z"
+    },
+    {
+      "source": "jpcert",
+      "id": "at260030",
+      "title": "注意喚起: 直近で相次いでいる国内組織における不正アクセスに関する注意喚起  (更新)",
+      "link": "https://www.jpcert.or.jp/at/2026/at260030.html",
+      "date": "2026-10-23T11:37+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-10-24T17:52:00Z"
+    },
+    {
+      "source": "jvn",
+      "id": "JVNVU98747108",
+      "title": "CISA ICS Advisory / ICS Medical Advisory（2026年10月22日）",
+      "link": "https://jvn.jp/vu/JVNVU98747108/",
+      "date": "2026-10-23T11:00:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-10-24T17:52:00Z"
+    },
+    {
+      "source": "jvn",
+      "id": "JVNVU91023667",
+      "title": "LIFF SDKにおけるクロスサイトスクリプティングの脆弱性",
+      "link": "https://jvn.jp/vu/JVNVU91023667/",
+      "date": "2026-10-22T10:00:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-10-24T17:52:00Z"
+    },
+    {
+      "source": "ipa",
+      "id": "alert20261022.html",
+      "title": "PHPの脆弱性対策について(CVE-2026-109618、CVE-2026-109619：PHP2shell)",
+      "link": "https://www.ipa.go.jp/security/security-alert/2026/alert20261022.html",
+      "date": "2026-10-22T00:00:00+09:00",
+      "cves": [
+        "CVE-2026-109618",
+        "CVE-2026-109619"
+      ],
+      "verification_status": "text_extracted",
+      "first_seen_at": "2026-10-24T17:52:00Z"
+    },
+    {
+      "source": "jvn",
+      "id": "JVNVU93110597",
+      "title": "Apache Tomcatにおける複数の脆弱性（2026年10月20日）",
+      "link": "https://jvn.jp/vu/JVNVU93110597/",
+      "date": "2026-10-21T09:30:30+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-10-24T17:52:00Z"
+    },
+    {
+      "source": "jvn",
+      "id": "JVNVU90998702",
+      "title": "CISA ICS Advisory / ICS Medical Advisory（2026年10月20日）",
+      "link": "https://jvn.jp/vu/JVNVU90998702/",
+      "date": "2026-10-21T09:30:15+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-10-24T17:52:00Z"
+    },
+    {
+      "source": "jvn",
+      "id": "JVNVU92078426",
+      "title": "Xerj Console APIにおける認証回避の脆弱性",
+      "link": "https://jvn.jp/vu/JVNVU92078426/",
+      "date": "2026-10-21T09:30:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-10-24T17:52:00Z"
+    },
+    {
+      "source": "jpcert",
+      "id": "wr261021",
+      "title": "Weekly Report: 複数のマイクロソフト製品に脆弱性",
+      "link": "https://www.jpcert.or.jp/wr/2026/wr261021.html#24",
+      "date": "2026-10-21T09:12+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-10-24T17:52:00Z"
+    },
+    {
+      "source": "ipa",
+      "id": "1021-jre.html",
+      "title": "Oracle Java の脆弱性対策について(2026年10月)",
+      "link": "https://www.ipa.go.jp/security/security-alert/2026/1021-jre.html",
+      "date": "2026-10-21T00:00:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-10-24T17:52:00Z"
+    },
+    {
+      "source": "ipa",
+      "id": "pre-alert20261021.html",
+      "title": "【事前準備のお願い】PHPのセキュリティリリース公開予定について",
+      "link": "https://www.ipa.go.jp/security/security-alert/2026/pre-alert20261021.html",
+      "date": "2026-10-21T00:00:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-10-24T17:52:00Z"
+    },
+    {
+      "source": "jvn",
+      "id": "JVN88864366",
+      "title": "アツミ電氣製DVRに利用可能な非公開機能を悪用される問題",
+      "link": "https://jvn.jp/jp/JVN88864366/",
+      "date": "2026-10-20T14:00:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-10-24T17:52:00Z"
+    },
+    {
+      "source": "jvn",
+      "id": "JVN33436631",
+      "title": "複数のLenovo製タブレットのAndroid Verified Boot機能において既知のテスト用鍵がそのまま使用されている問題",
+      "link": "https://jvn.jp/jp/JVN33436631/",
+      "date": "2026-10-20T12:00:15+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-10-24T17:52:00Z"
+    },
+    {
+      "source": "jvn",
+      "id": "JVN29783594",
+      "title": "UnRTFにおける境界外書き込みの脆弱性",
+      "link": "https://jvn.jp/jp/JVN29783594/",
+      "date": "2026-10-20T12:00:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-10-24T17:52:00Z"
+    },
+    {
+      "source": "jvn",
+      "id": "JVNVU93520490",
+      "title": "ヤマハ製VOCALOID6 Editorにおける外部エンティティ参照の不適切な制限の脆弱性",
+      "link": "https://jvn.jp/vu/JVNVU93520490/",
+      "date": "2026-10-19T10:00:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-10-24T17:52:00Z"
+    },
+    {
+      "source": "jvn",
+      "id": "JVNVU96928590",
+      "title": "CISA ICS Advisory / ICS Medical Advisory（2026年10月15日）",
+      "link": "https://jvn.jp/vu/JVNVU96928590/",
+      "date": "2026-10-16T09:15:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-10-24T17:52:00Z"
+    },
+    {
+      "source": "jvn",
+      "id": "JVN94004488",
+      "title": "「車検証閲覧アプリ」における送信データへの機微な情報の挿入の脆弱性",
+      "link": "https://jvn.jp/jp/JVN94004488/",
+      "date": "2026-10-15T14:00:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-10-24T17:52:00Z"
+    },
+    {
+      "source": "jvn",
+      "id": "JVN48627289",
+      "title": "スマートフォンアプリ「ハンドメイドマーケットアプリ - Creema（クリーマ）」におけるオープンリダイレクトの脆弱性",
+      "link": "https://jvn.jp/jp/JVN48627289/",
+      "date": "2026-10-15T12:00:30+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-10-24T17:52:00Z"
+    },
+    {
+      "source": "jvn",
+      "id": "JVN40460777",
+      "title": "スマートフォンアプリ「ゲオアプリ」における複数の脆弱性",
+      "link": "https://jvn.jp/jp/JVN40460777/",
+      "date": "2026-10-15T12:00:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-10-24T17:52:00Z"
+    },
+    {
+      "source": "jvn",
+      "id": "JVNVU95613365",
+      "title": "Google BoringSSL証明書検証における複数の名前制約回避の脆弱性",
+      "link": "https://jvn.jp/vu/JVNVU95613365/",
+      "date": "2026-10-15T10:30:30+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-10-24T17:52:00Z"
+    },
+    {
+      "source": "jvn",
+      "id": "JVNVU95474776",
+      "title": "複数のTLSライブラリにおける名前制約回避の問題",
+      "link": "https://jvn.jp/vu/JVNVU95474776/",
+      "date": "2026-10-15T10:30:15+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-10-24T17:52:00Z"
+    },
+    {
+      "source": "jpcert",
+      "id": "at260032",
+      "title": "注意喚起: SiteGuard Server EditionにおけるOSコマンドインジェクションの脆弱性（CVE-2026-106931）に関する注意喚起  (公開)",
+      "link": "https://www.jpcert.or.jp/at/2026/at260032.html",
+      "date": "2026-10-14T14:18+09:00",
+      "cves": [
+        "CVE-2026-106931"
+      ],
+      "verification_status": "text_extracted",
+      "first_seen_at": "2026-10-24T17:52:00Z"
+    },
+    {
+      "source": "jpcert",
+      "id": "at260031",
+      "title": "注意喚起: 2026年10月マイクロソフトセキュリティ更新プログラムに関する注意喚起  (公開)",
+      "link": "https://www.jpcert.or.jp/at/2026/at260031.html",
+      "date": "2026-10-14T11:25+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-10-24T17:52:00Z"
+    },
+    {
+      "source": "ipa",
+      "id": "1014-ms.html",
+      "title": "Microsoft 製品の脆弱性対策について(2026年10月)",
+      "link": "https://www.ipa.go.jp/security/security-alert/2026/1014-ms.html",
+      "date": "2026-10-14T00:00:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-10-24T17:52:00Z"
+    },
+    {
+      "source": "ipa",
+      "id": "alert20261009.html",
+      "title": "不正アクセスによる漏えい等の事案を踏まえ、速やかに実施すべき対策等について",
+      "link": "https://www.ipa.go.jp/security/security-alert/2026/alert20261009.html",
+      "date": "2026-10-09T00:00:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-10-24T17:52:00Z"
+    },
+    {
+      "source": "ipa",
+      "id": "20261007-jvn.html",
+      "title": "「Movable Type」における複数の脆弱性について（JVN#91153973）",
+      "link": "https://www.ipa.go.jp/security/security-alert/2026/20261007-jvn.html",
+      "date": "2026-10-07T00:00:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-10-24T17:52:00Z"
+    },
+    {
+      "source": "jpcert",
+      "id": "at260029",
+      "title": "注意喚起: NetScaler ADCおよびNetScaler Gatewayにおける複数の脆弱性（CVE-2026-88771、CVE-2026-88772等）に関する注意喚起  (更新)",
+      "link": "https://www.jpcert.or.jp/at/2026/at260029.html",
+      "date": "2026-10-02T14:15+09:00",
+      "cves": [
+        "CVE-2026-88771",
+        "CVE-2026-88772"
+      ],
+      "verification_status": "text_extracted",
+      "first_seen_at": "2026-10-24T17:52:00Z"
+    },
+    {
+      "source": "ipa",
+      "id": "alert20260928.html",
+      "title": "NetScaler ADCおよびNetScaler Gatewayの脆弱性について(CVE-2026-88771、CVE-2026-88772等)",
+      "link": "https://www.ipa.go.jp/security/security-alert/2026/alert20260928.html",
+      "date": "2026-09-28T00:00:00+09:00",
+      "cves": [
+        "CVE-2026-88771",
+        "CVE-2026-88772"
+      ],
+      "verification_status": "text_extracted",
+      "first_seen_at": "2026-10-24T17:52:00Z"
+    },
+    {
+      "source": "jpcert",
+      "id": "at260028",
+      "title": "注意喚起: F5 BIG-IP Access Policy Managerにおけるヒープベースのバッファオーバーフローの脆弱性（CVE-2026-94127）に関する注意喚起  (公開)",
+      "link": "https://www.jpcert.or.jp/at/2026/at260028.html",
+      "date": "2026-09-24T16:14+09:00",
+      "cves": [
+        "CVE-2026-94127"
+      ],
+      "verification_status": "text_extracted",
+      "first_seen_at": "2026-10-24T17:52:00Z"
+    },
+    {
+      "source": "ipa",
+      "id": "0909-adobereader.html",
+      "title": "Adobe Acrobat および Reader の脆弱性対策について(2026年9月)",
+      "link": "https://www.ipa.go.jp/security/security-alert/2026/0909-adobereader.html",
+      "date": "2026-09-09T00:00:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-10-24T17:52:00Z"
+    },
+    {
+      "source": "ipa",
+      "id": "0909-ms.html",
+      "title": "Microsoft 製品の脆弱性対策について(2026年9月)",
+      "link": "https://www.ipa.go.jp/security/security-alert/2026/0909-ms.html",
+      "date": "2026-09-09T00:00:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-10-24T17:52:00Z"
+    },
+    {
+      "source": "ipa",
+      "id": "0812-ms.html",
+      "title": "Microsoft 製品の脆弱性対策について(2026年8月)",
+      "link": "https://www.ipa.go.jp/security/security-alert/2026/0812-ms.html",
+      "date": "2026-08-12T00:00:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-10-24T17:52:00Z"
+    },
+    {
+      "source": "ipa",
+      "id": "0722-jre.html",
+      "title": "Oracle Java の脆弱性対策について(2026年7月)",
+      "link": "https://www.ipa.go.jp/security/security-alert/2026/0722-jre.html",
+      "date": "2026-07-22T00:00:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-10-24T17:52:00Z"
+    },
+    {
+      "source": "ipa",
+      "id": "alert20260722.html",
+      "title": "WordPressの脆弱性対策について(CVE-2026-60137、CVE-2026-63030：wp2shell)",
+      "link": "https://www.ipa.go.jp/security/security-alert/2026/alert20260722.html",
+      "date": "2026-07-22T00:00:00+09:00",
+      "cves": [
+        "CVE-2026-60137",
+        "CVE-2026-63030"
+      ],
+      "verification_status": "text_extracted",
+      "first_seen_at": "2026-10-24T17:52:00Z"
+    },
+    {
+      "source": "ipa",
+      "id": "0715-ms.html",
+      "title": "Microsoft 製品の脆弱性対策について(2026年7月)",
+      "link": "https://www.ipa.go.jp/security/security-alert/2026/0715-ms.html",
+      "date": "2026-07-15T00:00:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-10-24T17:52:00Z"
+    },
+    {
+      "source": "ipa",
+      "id": "win10_eos.html",
+      "title": "更新：Windows 10のサポート終了に伴う注意喚起",
+      "link": "https://www.ipa.go.jp/security/security-alert/2024/win10_eos.html",
+      "date": "2026-06-26T00:00:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-10-24T17:52:00Z"
+    },
+    {
+      "source": "ipa",
+      "id": "0610-adobereader.html",
+      "title": "Adobe Acrobat および Reader の脆弱性対策について(2026年6月)",
+      "link": "https://www.ipa.go.jp/security/security-alert/2026/0610-adobereader.html",
+      "date": "2026-06-10T00:00:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-10-24T17:52:00Z"
+    },
+    {
+      "source": "ipa",
+      "id": "0610-ms.html",
+      "title": "Microsoft 製品の脆弱性対策について(2026年6月)",
+      "link": "https://www.ipa.go.jp/security/security-alert/2026/0610-ms.html",
+      "date": "2026-06-10T00:00:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-10-24T17:52:00Z"
+    },
+    {
+      "source": "ipa",
+      "id": "alert20260610.html",
+      "title": "Check Point Software Technologies製品の脆弱性対策について(CVE-2026-50751)",
+      "link": "https://www.ipa.go.jp/security/security-alert/2026/alert20260610.html",
+      "date": "2026-06-10T00:00:00+09:00",
+      "cves": [
+        "CVE-2026-50751"
+      ],
+      "verification_status": "text_extracted",
+      "first_seen_at": "2026-10-24T17:52:00Z"
+    },
+    {
+      "source": "ipa",
+      "id": "0513-ms.html",
+      "title": "Microsoft 製品の脆弱性対策について(2026年5月)",
+      "link": "https://www.ipa.go.jp/security/security-alert/2026/0513-ms.html",
+      "date": "2026-05-13T00:00:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-10-24T17:52:00Z"
+    },
+    {
+      "source": "ipa",
+      "id": "20260513-jvn.html",
+      "title": "「GUARDIANWALL MailSuite」におけるスタックベースのバッファオーバーフローの脆弱性について（JVN#35567473）",
+      "link": "https://www.ipa.go.jp/security/security-alert/2026/20260513-jvn.html",
+      "date": "2026-05-13T00:00:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-10-24T17:52:00Z"
+    },
+    {
+      "source": "ipa",
+      "id": "alert20260508.html",
+      "title": "Palo Alto Networks製PAN-OSの脆弱性対策について(CVE-2026-0300)",
+      "link": "https://www.ipa.go.jp/security/security-alert/2026/alert20260508.html",
+      "date": "2026-05-08T00:00:00+09:00",
+      "cves": [
+        "CVE-2026-0300"
+      ],
+      "verification_status": "text_extracted",
+      "first_seen_at": "2026-10-24T17:52:00Z"
+    },
+    {
+      "source": "ipa",
+      "id": "alert20260501.html",
+      "title": "Linuxの脆弱性対策について(CVE-2026-31431、Copy Fail)",
+      "link": "https://www.ipa.go.jp/security/security-alert/2026/alert20260501.html",
+      "date": "2026-05-01T00:00:00+09:00",
+      "cves": [
+        "CVE-2026-31431"
+      ],
+      "verification_status": "text_extracted",
+      "first_seen_at": "2026-10-24T17:52:00Z"
+    },
+    {
+      "source": "ipa",
+      "id": "alert20251106.html",
+      "title": "更新：Cisco Secure Firewall ASAおよびCisco Secure FTDの脆弱性について (CVE-2025-20333等)",
+      "link": "https://www.ipa.go.jp/security/security-alert/2025/alert20251106.html",
+      "date": "2026-04-27T00:00:00+09:00",
+      "cves": [
+        "CVE-2025-20333"
+      ],
+      "verification_status": "text_extracted",
+      "first_seen_at": "2026-10-24T17:52:00Z"
+    },
+    {
+      "source": "ipa",
+      "id": "0422-jre.html",
+      "title": "Oracle Java の脆弱性対策について(2026年4月)",
+      "link": "https://www.ipa.go.jp/security/security-alert/2026/0422-jre.html",
+      "date": "2026-04-22T00:00:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-10-24T17:52:00Z"
+    },
+    {
+      "source": "ipa",
+      "id": "0415-adobereader.html",
+      "title": "Adobe Acrobat および Reader の脆弱性対策について(2026年4月)_2",
+      "link": "https://www.ipa.go.jp/security/security-alert/2026/0415-adobereader.html",
+      "date": "2026-04-15T00:00:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-10-24T17:52:00Z"
+    },
+    {
+      "source": "ipa",
+      "id": "0415-ms.html",
+      "title": "Microsoft 製品の脆弱性対策について(2026年4月)",
+      "link": "https://www.ipa.go.jp/security/security-alert/2026/0415-ms.html",
+      "date": "2026-04-15T00:00:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-10-24T17:52:00Z"
+    },
+    {
+      "source": "ipa",
+      "id": "0413-adobereader.html",
+      "title": "Adobe Acrobat および Reader の脆弱性対策について(2026年4月)",
+      "link": "https://www.ipa.go.jp/security/security-alert/2026/0413-adobereader.html",
+      "date": "2026-04-13T00:00:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-10-24T17:52:00Z"
+    },
+    {
+      "source": "ipa",
+      "id": "20260408-jvn.html",
+      "title": "「Movable Type」における複数の脆弱性について（JVN#66473735）",
+      "link": "https://www.ipa.go.jp/security/security-alert/2026/20260408-jvn.html",
+      "date": "2026-04-08T00:00:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-10-24T17:52:00Z"
+    },
+    {
+      "source": "ipa",
+      "id": "0311-adobereader.html",
+      "title": "Adobe Acrobat および Reader の脆弱性対策について(2026年3月)",
+      "link": "https://www.ipa.go.jp/security/security-alert/2025/0311-adobereader.html",
+      "date": "2026-03-11T00:00:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-10-24T17:52:00Z"
+    },
+    {
+      "source": "ipa",
+      "id": "0311-ms.html",
+      "title": "Microsoft 製品の脆弱性対策について(2026年3月)",
+      "link": "https://www.ipa.go.jp/security/security-alert/2025/0311-ms.html",
+      "date": "2026-03-11T00:00:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-10-24T17:52:00Z"
+    }
+  ]
+}

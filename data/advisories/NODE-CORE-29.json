@@ -1,0 +1,69 @@
+{
+  "key": "NODE-CORE-29",
+  "aliases": {
+    "cve": [],
+    "ghsa": [],
+    "other": [
+      "NODE-CORE-29"
+    ]
+  },
+  "status": "active",
+  "superseded_by": null,
+  "category": "runtime",
+  "ecosystem": "node",
+  "title": "buffer safeguard against accidental kNoZeroFill",
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "node",
+        "name": "node"
+      },
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "4.x || 5.x",
+          "patched": "^5.11.1 || ^4.4.4",
+          "fixed_versions": [
+            "5.11.1",
+            "4.4.4"
+          ]
+        }
+      ],
+      "versions": [],
+      "from_sources": [
+        "node-core:NODE-CORE-29"
+      ]
+    }
+  ],
+  "severity": {
+    "level": "unknown",
+    "cvss_v3": null,
+    "cvss_v4": null,
+    "source": "node-core"
+  },
+  "known_exploited": {
+    "kev": false,
+    "date_added": null
+  },
+  "epss": {
+    "score": null,
+    "percentile": null,
+    "date": null
+  },
+  "jp_alerts": [],
+  "sources": [
+    {
+      "name": "node-core",
+      "id": "NODE-CORE-29",
+      "url": "https://github.com/nodejs/security-wg/blob/main/vuln/core/29.json",
+      "published_at": null,
+      "source_modified_at": null,
+      "fetched_at": "2026-10-24T17:52:00Z",
+      "content_hash": "f8857c946e45690dad4ceb6d69577e8f4934ad53",
+      "withdrawn_at": null
+    }
+  ],
+  "first_seen_at": "2026-10-24T17:52:00Z",
+  "history": [],
+  "verification_status": "source_structured"
+}

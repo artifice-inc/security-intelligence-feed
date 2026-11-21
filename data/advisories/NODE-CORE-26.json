@@ -1,0 +1,69 @@
+{
+  "key": "NODE-CORE-26",
+  "aliases": {
+    "cve": [],
+    "ghsa": [],
+    "other": [
+      "NODE-CORE-26"
+    ]
+  },
+  "status": "active",
+  "superseded_by": null,
+  "category": "runtime",
+  "ecosystem": "node",
+  "title": "security flaw in the use of npm authentication tokens in HTTP requests",
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "node",
+        "name": "node"
+      },
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "5.x || 4.x",
+          "patched": "^5.10.0 || 4.4.2",
+          "fixed_versions": [
+            "5.10.0",
+            "4.4.2"
+          ]
+        }
+      ],
+      "versions": [],
+      "from_sources": [
+        "node-core:NODE-CORE-26"
+      ]
+    }
+  ],
+  "severity": {
+    "level": "unknown",
+    "cvss_v3": null,
+    "cvss_v4": null,
+    "source": "node-core"
+  },
+  "known_exploited": {
+    "kev": false,
+    "date_added": null
+  },
+  "epss": {
+    "score": null,
+    "percentile": null,
+    "date": null
+  },
+  "jp_alerts": [],
+  "sources": [
+    {
+      "name": "node-core",
+      "id": "NODE-CORE-26",
+      "url": "https://github.com/npm/node/pull/6",
+      "published_at": null,
+      "source_modified_at": null,
+      "fetched_at": "2026-10-24T17:52:00Z",
+      "content_hash": "efcb4cfda8c571eb3de17dbfc67b14048cd9261d",
+      "withdrawn_at": null
+    }
+  ],
+  "first_seen_at": "2026-10-24T17:52:00Z",
+  "history": [],
+  "verification_status": "source_structured"
+}

@@ -1,0 +1,411 @@
+{
+  "updated_at": "2026-11-20T19:24:13Z",
+  "items": [
+    {
+      "id": "2026-195-aws",
+      "title": "CVE-2026-130901 - Improper limitation of a pathname to a restricted directory in Amazon awslabs.document-loader-mcp-server",
+      "url": "https://aws.amazon.com/security/security-bulletins/2026-195-aws/",
+      "rss_pub_date": "2026-11-20T18:45:40Z",
+      "cves": [
+        "CVE-2026-130901"
+      ],
+      "first_seen_at": "2026-11-20T19:24:13Z",
+      "last_changed_at": null
+    },
+    {
+      "id": "2026-194-aws",
+      "title": "CVE-2026-133199 - Incorrect privilege assignment on reused e-mail addresses or group names in AWS ssosync",
+      "url": "https://aws.amazon.com/security/security-bulletins/2026-194-aws/",
+      "rss_pub_date": "2026-11-20T16:41:29Z",
+      "cves": [
+        "CVE-2026-133199"
+      ],
+      "first_seen_at": "2026-11-20T19:24:13Z",
+      "last_changed_at": null
+    },
+    {
+      "id": "2026-193-aws",
+      "title": "CVE-2026-132825 and related issues – Ruby regular expression engine and string case conversion",
+      "url": "https://aws.amazon.com/security/security-bulletins/2026-193-aws/",
+      "rss_pub_date": "2026-11-19T23:06:34Z",
+      "cves": [
+        "CVE-2026-132825"
+      ],
+      "first_seen_at": "2026-11-20T19:24:13Z",
+      "last_changed_at": null
+    },
+    {
+      "id": "2026-192-aws",
+      "title": "Issue with nginx HTTP/2 Implementation",
+      "url": "https://aws.amazon.com/security/security-bulletins/2026-192-aws/",
+      "rss_pub_date": "2026-11-19T22:48:05Z",
+      "cves": [],
+      "first_seen_at": "2026-11-20T19:24:13Z",
+      "last_changed_at": null
+    },
+    {
+      "id": "2026-191-aws",
+      "title": "CVE-2026-132607 - GCM authentication tag length downgrade in Amazon S3 Encryption Client for PHP",
+      "url": "https://aws.amazon.com/security/security-bulletins/2026-191-aws/",
+      "rss_pub_date": "2026-11-19T21:46:07Z",
+      "cves": [
+        "CVE-2026-132607"
+      ],
+      "first_seen_at": "2026-11-20T19:24:13Z",
+      "last_changed_at": null
+    },
+    {
+      "id": "2026-190-aws",
+      "title": "PHP Foundation Security Releases – November 19, 2026",
+      "url": "https://aws.amazon.com/security/security-bulletins/2026-190-aws/",
+      "rss_pub_date": "2026-11-19T18:30:09Z",
+      "cves": [],
+      "first_seen_at": "2026-11-20T19:24:13Z",
+      "last_changed_at": null
+    },
+    {
+      "id": "2026-189-aws",
+      "title": "CVE-2026-114938 - OpenJDK Base64 Decoder Intrinsic Out-of-Bounds Write Issue",
+      "url": "https://aws.amazon.com/security/security-bulletins/2026-189-aws/",
+      "rss_pub_date": "2026-11-19T03:02:28Z",
+      "cves": [
+        "CVE-2026-114938"
+      ],
+      "first_seen_at": "2026-11-20T19:24:13Z",
+      "last_changed_at": null
+    },
+    {
+      "id": "2026-188-aws",
+      "title": "CVE-2026-130638 - Path traversal in the object detection dataset preparation tool in AutoGluon MultiModal",
+      "url": "https://aws.amazon.com/security/security-bulletins/2026-188-aws/",
+      "rss_pub_date": "2026-11-18T18:18:11Z",
+      "cves": [
+        "CVE-2026-130638"
+      ],
+      "first_seen_at": "2026-11-20T19:24:13Z",
+      "last_changed_at": null
+    },
+    {
+      "id": "2026-187-aws",
+      "title": "CVE-2026-130622 and CVE-2026-130623 - Incorrect authorization in credential loading and handling for namespace-scoped issuers in AWS Private CA Connector for Kubernetes (aws-privateca-issuer)",
+      "url": "https://aws.amazon.com/security/security-bulletins/2026-187-aws/",
+      "rss_pub_date": "2026-11-17T20:11:26Z",
+      "cves": [
+        "CVE-2026-130622",
+        "CVE-2026-130623"
+      ],
+      "first_seen_at": "2026-11-20T19:24:13Z",
+      "last_changed_at": null
+    },
+    {
+      "id": "2026-186-aws",
+      "title": "CVE-2026-130621- Time-of-check time-of-use race condition in the port selection in AWS efs-utils",
+      "url": "https://aws.amazon.com/security/security-bulletins/2026-186-aws/",
+      "rss_pub_date": "2026-11-17T19:18:32Z",
+      "cves": [
+        "CVE-2026-130621"
+      ],
+      "first_seen_at": "2026-11-20T19:24:13Z",
+      "last_changed_at": null
+    },
+    {
+      "id": "2026-185-aws",
+      "title": "CVE-2026-126681 - Improper restriction of intended endpoints in AWS Labs Timestream for InfluxDB MCP Server",
+      "url": "https://aws.amazon.com/security/security-bulletins/2026-185-aws/",
+      "rss_pub_date": "2026-11-16T21:03:04Z",
+      "cves": [
+        "CVE-2026-126681"
+      ],
+      "first_seen_at": "2026-11-20T19:24:13Z",
+      "last_changed_at": null
+    },
+    {
+      "id": "2026-184-aws",
+      "title": "CVE-2026-126816 - Path traversal and arbitrary file write in the cost report generator of aws-pricing-mcp-server",
+      "url": "https://aws.amazon.com/security/security-bulletins/2026-184-aws/",
+      "rss_pub_date": "2026-11-16T20:12:51Z",
+      "cves": [
+        "CVE-2026-126816"
+      ],
+      "first_seen_at": "2026-11-20T19:24:13Z",
+      "last_changed_at": null
+    },
+    {
+      "id": "2026-183-aws",
+      "title": "CVE-2026-129266 - Arbitrary local file read via unvalidated resource location in model archive metadata in Deep Java Library",
+      "url": "https://aws.amazon.com/security/security-bulletins/2026-183-aws/",
+      "rss_pub_date": "2026-11-16T18:37:04Z",
+      "cves": [
+        "CVE-2026-129266"
+      ],
+      "first_seen_at": "2026-11-20T19:24:13Z",
+      "last_changed_at": null
+    },
+    {
+      "id": "2026-182-aws",
+      "title": "CVE-2026-126793 - Privilege escalation in Aurora PostgreSQL dialect detection in AWS Advanced Go Wrapper",
+      "url": "https://aws.amazon.com/security/security-bulletins/2026-182-aws/",
+      "rss_pub_date": "2026-11-12T21:11:28Z",
+      "cves": [
+        "CVE-2026-126793"
+      ],
+      "first_seen_at": "2026-11-20T19:24:13Z",
+      "last_changed_at": null
+    },
+    {
+      "id": "2026-181-aws",
+      "title": "CVE-2026-127119 - Unverified ownership of the default EMR cluster log location in AWS SDK for pandas",
+      "url": "https://aws.amazon.com/security/security-bulletins/2026-181-aws/",
+      "rss_pub_date": "2026-11-12T19:07:08Z",
+      "cves": [
+        "CVE-2026-127119"
+      ],
+      "first_seen_at": "2026-11-20T19:24:13Z",
+      "last_changed_at": null
+    },
+    {
+      "id": "2026-180-aws",
+      "title": "CVE-2026-125926 - Server-side request forgery in the server registration and update API in mcp-gateway-registry",
+      "url": "https://aws.amazon.com/security/security-bulletins/2026-180-aws/",
+      "rss_pub_date": "2026-11-11T21:04:56Z",
+      "cves": [
+        "CVE-2026-125926"
+      ],
+      "first_seen_at": "2026-11-20T19:24:13Z",
+      "last_changed_at": null
+    },
+    {
+      "id": "2026-179-aws",
+      "title": "CVE-2026-100307 - Missing authorization on the external management API in mcp-gateway-registry enables privilege escalation to registry administrator",
+      "url": "https://aws.amazon.com/security/security-bulletins/2026-179-aws/",
+      "rss_pub_date": "2026-11-11T21:03:02Z",
+      "cves": [
+        "CVE-2026-100307"
+      ],
+      "first_seen_at": "2026-11-20T19:24:13Z",
+      "last_changed_at": null
+    },
+    {
+      "id": "2026-178-aws",
+      "title": "CVE-2026-124848 - Incorrect default permissions on session transcripts and prompt history in Kiro CLI",
+      "url": "https://aws.amazon.com/security/security-bulletins/2026-178-aws/",
+      "rss_pub_date": "2026-11-10T20:05:36Z",
+      "cves": [
+        "CVE-2026-124848"
+      ],
+      "first_seen_at": "2026-11-20T19:24:13Z",
+      "last_changed_at": null
+    },
+    {
+      "id": "2026-177-aws",
+      "title": "CVE-2026-126087 - Untrusted search path in OpenJD Sessions for Python and the AWS Deadline Cloud worker agent",
+      "url": "https://aws.amazon.com/security/security-bulletins/2026-177-aws/",
+      "rss_pub_date": "2026-11-10T18:53:11Z",
+      "cves": [
+        "CVE-2026-126087"
+      ],
+      "first_seen_at": "2026-11-20T19:24:13Z",
+      "last_changed_at": null
+    },
+    {
+      "id": "2026-176-aws",
+      "title": "CVE-2026-125271 - AWS API MCP Server Security Policy Bypass via Incorrect Operation Name Normalization",
+      "url": "https://aws.amazon.com/security/security-bulletins/2026-176-aws/",
+      "rss_pub_date": "2026-11-10T16:42:37Z",
+      "cves": [
+        "CVE-2026-125271"
+      ],
+      "first_seen_at": "2026-11-20T19:24:13Z",
+      "last_changed_at": null
+    },
+    {
+      "id": "2026-175-aws",
+      "title": "CVE-2026-124034, CVE-2026-124035: Issues with Amazon Braket SDK",
+      "url": "https://aws.amazon.com/security/security-bulletins/2026-175-aws/",
+      "rss_pub_date": "2026-11-09T22:42:12Z",
+      "cves": [
+        "CVE-2026-124034",
+        "CVE-2026-124035"
+      ],
+      "first_seen_at": "2026-11-20T19:24:13Z",
+      "last_changed_at": null
+    },
+    {
+      "id": "2026-174-aws",
+      "title": "CVE-2026-124033 - Relative path traversal in the log export commands in AWS ParallelCluster CLI",
+      "url": "https://aws.amazon.com/security/security-bulletins/2026-174-aws/",
+      "rss_pub_date": "2026-11-09T21:12:17Z",
+      "cves": [
+        "CVE-2026-124033"
+      ],
+      "first_seen_at": "2026-11-20T19:24:13Z",
+      "last_changed_at": null
+    },
+    {
+      "id": "2026-166-aws",
+      "title": "CVE-2026-119923 and CVE-2026-119924: Issues with Babelfish for Aurora PostgreSQL",
+      "url": "https://aws.amazon.com/security/security-bulletins/2026-166-aws/",
+      "rss_pub_date": "2026-11-06T19:03:08Z",
+      "cves": [
+        "CVE-2026-119923",
+        "CVE-2026-119924"
+      ],
+      "first_seen_at": "2026-11-20T19:24:13Z",
+      "last_changed_at": null
+    },
+    {
+      "id": "2026-173-aws",
+      "title": "CVE-2026-122193 - Issue with Trusted Remote Execution Setup Guide - OS command injection in the example SSM documents in Trusted Remote Execution (REX)",
+      "url": "https://aws.amazon.com/security/security-bulletins/2026-173-aws/",
+      "rss_pub_date": "2026-11-06T17:19:55Z",
+      "cves": [
+        "CVE-2026-122193"
+      ],
+      "first_seen_at": "2026-11-20T19:24:13Z",
+      "last_changed_at": null
+    },
+    {
+      "id": "2026-172-aws",
+      "title": "CVE-2026-109518 - APT package manager that affects Ubuntu and Debian operating systems",
+      "url": "https://aws.amazon.com/security/security-bulletins/2026-172-aws/",
+      "rss_pub_date": "2026-11-06T04:00:35Z",
+      "cves": [
+        "CVE-2026-109518"
+      ],
+      "first_seen_at": "2026-11-20T19:24:13Z",
+      "last_changed_at": null
+    },
+    {
+      "id": "2026-171-aws",
+      "title": "CVE-2026-119083 - GluonTS arbitrary file write during archive extraction",
+      "url": "https://aws.amazon.com/security/security-bulletins/2026-171-aws/",
+      "rss_pub_date": "2026-11-05T16:43:41Z",
+      "cves": [
+        "CVE-2026-119083"
+      ],
+      "first_seen_at": "2026-11-20T19:24:13Z",
+      "last_changed_at": null
+    },
+    {
+      "id": "2026-170-aws",
+      "title": "CVE-2026-122266 - Improper isolation of shared resources in aws-network-policy-agent in Amazon EKS",
+      "url": "https://aws.amazon.com/security/security-bulletins/2026-170-aws/",
+      "rss_pub_date": "2026-11-04T21:53:42Z",
+      "cves": [
+        "CVE-2026-122266"
+      ],
+      "first_seen_at": "2026-11-20T19:24:13Z",
+      "last_changed_at": null
+    },
+    {
+      "id": "2026-169-aws",
+      "title": "CVE-2026-122192 - Guest Access to Firecracker Process Memory After a Failed Memory Discard",
+      "url": "https://aws.amazon.com/security/security-bulletins/2026-169-aws/",
+      "rss_pub_date": "2026-11-04T19:40:33Z",
+      "cves": [
+        "CVE-2026-122192"
+      ],
+      "first_seen_at": "2026-11-20T19:24:13Z",
+      "last_changed_at": null
+    },
+    {
+      "id": "2026-168-aws",
+      "title": "CVE-2026-119084 - Remote Code Execution via Unsafe Class Loading in Amazon Redshift JDBC Driver Connection Parameters",
+      "url": "https://aws.amazon.com/security/security-bulletins/2026-168-aws/",
+      "rss_pub_date": "2026-11-03T21:35:57Z",
+      "cves": [
+        "CVE-2026-119084"
+      ],
+      "first_seen_at": "2026-11-20T19:24:13Z",
+      "last_changed_at": null
+    },
+    {
+      "id": "2026-167-aws",
+      "title": "CVE-2026-121652 - Stored cross-site scripting (XSS) in AWS Amplify maplibre-gl-js-amplify popup rendering",
+      "url": "https://aws.amazon.com/security/security-bulletins/2026-167-aws/",
+      "rss_pub_date": "2026-11-03T19:22:49Z",
+      "cves": [
+        "CVE-2026-121652"
+      ],
+      "first_seen_at": "2026-11-20T19:24:13Z",
+      "last_changed_at": null
+    },
+    {
+      "id": "2026-165-aws",
+      "title": "CVE-2026-119922 - Babelfish for PostgreSQL Privilege Escalation",
+      "url": "https://aws.amazon.com/security/security-bulletins/2026-165-aws/",
+      "rss_pub_date": "2026-11-03T18:26:54Z",
+      "cves": [
+        "CVE-2026-119922"
+      ],
+      "first_seen_at": "2026-11-20T19:24:13Z",
+      "last_changed_at": null
+    },
+    {
+      "id": "2026-164-aws",
+      "title": "CVE-2026-116635 - Improper limitation of a pathname to a restricted directory in the deployment status component of the AWS Serverless MCP Server",
+      "url": "https://aws.amazon.com/security/security-bulletins/2026-164-aws/",
+      "rss_pub_date": "2026-11-02T21:46:43Z",
+      "cves": [
+        "CVE-2026-116635"
+      ],
+      "first_seen_at": "2026-11-20T19:24:13Z",
+      "last_changed_at": null
+    },
+    {
+      "id": "2026-163-aws",
+      "title": "CVE-2026-120497 - Stored cross-site scripting in the HTML report generator of aidlc-traceability in AWS AI-DLC Workflows",
+      "url": "https://aws.amazon.com/security/security-bulletins/2026-163-aws/",
+      "rss_pub_date": "2026-11-02T19:21:06Z",
+      "cves": [
+        "CVE-2026-120497"
+      ],
+      "first_seen_at": "2026-11-20T19:24:13Z",
+      "last_changed_at": null
+    },
+    {
+      "id": "2026-162-aws",
+      "title": "CVE-2026-119085 - Template injection in the publishing component of Virtual Engineering Workbench",
+      "url": "https://aws.amazon.com/security/security-bulletins/2026-162-aws/",
+      "rss_pub_date": "2026-11-02T17:41:34Z",
+      "cves": [
+        "CVE-2026-119085"
+      ],
+      "first_seen_at": "2026-11-20T19:24:13Z",
+      "last_changed_at": null
+    },
+    {
+      "id": "2026-161-aws",
+      "title": "CVE-2026-119301 - Improper neutralization of quoting syntax in Apache Iceberg SQL identifier generation in AWS SDK for pandas",
+      "url": "https://aws.amazon.com/security/security-bulletins/2026-161-aws/",
+      "rss_pub_date": "2026-11-02T16:40:57Z",
+      "cves": [
+        "CVE-2026-119301"
+      ],
+      "first_seen_at": "2026-11-20T19:24:13Z",
+      "last_changed_at": null
+    },
+    {
+      "id": "2026-160-aws",
+      "title": "CVE-2026-98432 - Linux kernel IPv4 TCP use-after-free Issue",
+      "url": "https://aws.amazon.com/security/security-bulletins/2026-160-aws/",
+      "rss_pub_date": "2026-10-31T05:21:49Z",
+      "cves": [
+        "CVE-2026-98432"
+      ],
+      "first_seen_at": "2026-11-20T19:24:13Z",
+      "last_changed_at": null
+    },
+    {
+      "id": "2026-159-aws",
+      "title": "CVE-2026-119117 - Insertion of sensitive information into a log file and process argument list in the Amazon Kinesis Producer Library for Java",
+      "url": "https://aws.amazon.com/security/security-bulletins/2026-159-aws/",
+      "rss_pub_date": "2026-10-30T18:18:40Z",
+      "cves": [
+        "CVE-2026-119117"
+      ],
+      "first_seen_at": "2026-11-20T19:24:13Z",
+      "last_changed_at": null
+    }
+  ]
+}

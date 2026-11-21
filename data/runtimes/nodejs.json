@@ -1,0 +1,5751 @@
+{
+  "runtime": "nodejs",
+  "updated_at": "2026-11-19T16:33:51Z",
+  "branches": [
+    {
+      "branch": "1",
+      "state": "eol",
+      "security_support_end": null,
+      "is_eol": true,
+      "latest_version": "1.8.4"
+    },
+    {
+      "branch": "2",
+      "state": "eol",
+      "security_support_end": null,
+      "is_eol": true,
+      "latest_version": "2.5.0"
+    },
+    {
+      "branch": "3",
+      "state": "eol",
+      "security_support_end": null,
+      "is_eol": true,
+      "latest_version": "3.3.1"
+    },
+    {
+      "branch": "4",
+      "state": "eol",
+      "security_support_end": "2018-04-30",
+      "is_eol": true,
+      "latest_version": "4.9.1"
+    },
+    {
+      "branch": "5",
+      "state": "eol",
+      "security_support_end": "2016-06-30",
+      "is_eol": true,
+      "latest_version": "5.12.0"
+    },
+    {
+      "branch": "6",
+      "state": "eol",
+      "security_support_end": "2019-04-30",
+      "is_eol": true,
+      "latest_version": "6.17.1"
+    },
+    {
+      "branch": "7",
+      "state": "eol",
+      "security_support_end": "2017-06-30",
+      "is_eol": true,
+      "latest_version": "7.10.1"
+    },
+    {
+      "branch": "8",
+      "state": "eol",
+      "security_support_end": "2019-12-31",
+      "is_eol": true,
+      "latest_version": "8.17.0"
+    },
+    {
+      "branch": "9",
+      "state": "eol",
+      "security_support_end": "2018-06-30",
+      "is_eol": true,
+      "latest_version": "9.11.2"
+    },
+    {
+      "branch": "10",
+      "state": "eol",
+      "security_support_end": "2021-04-30",
+      "is_eol": true,
+      "latest_version": "10.24.1"
+    },
+    {
+      "branch": "11",
+      "state": "eol",
+      "security_support_end": "2019-06-30",
+      "is_eol": true,
+      "latest_version": "11.15.0"
+    },
+    {
+      "branch": "12",
+      "state": "eol",
+      "security_support_end": "2022-04-30",
+      "is_eol": true,
+      "latest_version": "12.22.12"
+    },
+    {
+      "branch": "13",
+      "state": "eol",
+      "security_support_end": "2020-06-01",
+      "is_eol": true,
+      "latest_version": "13.14.0"
+    },
+    {
+      "branch": "14",
+      "state": "eol",
+      "security_support_end": "2023-04-30",
+      "is_eol": true,
+      "latest_version": "14.21.3"
+    },
+    {
+      "branch": "15",
+      "state": "eol",
+      "security_support_end": "2021-06-01",
+      "is_eol": true,
+      "latest_version": "15.14.0"
+    },
+    {
+      "branch": "16",
+      "state": "eol",
+      "security_support_end": "2023-09-11",
+      "is_eol": true,
+      "latest_version": "16.20.2"
+    },
+    {
+      "branch": "17",
+      "state": "eol",
+      "security_support_end": "2022-06-01",
+      "is_eol": true,
+      "latest_version": "17.9.1"
+    },
+    {
+      "branch": "18",
+      "state": "eol",
+      "security_support_end": "2025-04-30",
+      "is_eol": true,
+      "latest_version": "18.20.8"
+    },
+    {
+      "branch": "19",
+      "state": "eol",
+      "security_support_end": "2023-06-01",
+      "is_eol": true,
+      "latest_version": "19.9.0"
+    },
+    {
+      "branch": "20",
+      "state": "eol",
+      "security_support_end": "2026-04-30",
+      "is_eol": true,
+      "latest_version": "20.20.2"
+    },
+    {
+      "branch": "21",
+      "state": "eol",
+      "security_support_end": "2024-06-01",
+      "is_eol": true,
+      "latest_version": "21.7.3"
+    },
+    {
+      "branch": "22",
+      "state": "lts",
+      "security_support_end": "2027-04-30",
+      "is_eol": false,
+      "latest_version": "22.23.5"
+    },
+    {
+      "branch": "23",
+      "state": "eol",
+      "security_support_end": "2025-06-01",
+      "is_eol": true,
+      "latest_version": "23.11.1"
+    },
+    {
+      "branch": "24",
+      "state": "lts",
+      "security_support_end": "2028-04-30",
+      "is_eol": false,
+      "latest_version": "24.22.3"
+    },
+    {
+      "branch": "25",
+      "state": "eol",
+      "security_support_end": "2026-06-01",
+      "is_eol": true,
+      "latest_version": "25.9.0"
+    },
+    {
+      "branch": "26",
+      "state": "lts",
+      "security_support_end": "2029-04-30",
+      "is_eol": false,
+      "latest_version": "26.13.1"
+    }
+  ],
+  "advisories": [
+    {
+      "key": "CVE-2015-3193",
+      "aliases": [
+        "CVE-2015-3193",
+        "NODE-CORE-36"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "5.x || 4.x",
+          "patched": "^5.1.1 || ^4.2.3",
+          "fixed_versions": [
+            "5.1.1",
+            "4.2.3"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "4.2.3",
+        "5.1.1"
+      ],
+      "source_urls": [
+        "http://openssl.org/news/secadv/20151203.txt"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2015-3194",
+      "aliases": [
+        "CVE-2015-3194",
+        "NODE-CORE-37"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "5.x || 4.x",
+          "patched": "^5.1.1 || ^4.2.3",
+          "fixed_versions": [
+            "5.1.1",
+            "4.2.3"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "4.2.3",
+        "5.1.1"
+      ],
+      "source_urls": [
+        "https://github.com/nodejs/node/pull/4134"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2015-6764",
+      "aliases": [
+        "CVE-2015-6764",
+        "NODE-CORE-35"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "5.x || 4.x",
+          "patched": "^5.1.1 || ^4.2.3",
+          "fixed_versions": [
+            "5.1.1",
+            "4.2.3"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "4.2.3",
+        "5.1.1"
+      ],
+      "source_urls": [
+        "https://github.com/nodejs/security-wg/blob/main/vuln/core/35.json"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2015-7384",
+      "aliases": [
+        "CVE-2015-7384",
+        "NODE-CORE-40"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "4.x",
+          "patched": "^4.1.2",
+          "fixed_versions": [
+            "4.1.2"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "4.1.2"
+      ],
+      "source_urls": [
+        "https://github.com/nodejs/node/pull/3128"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2015-8027",
+      "aliases": [
+        "CVE-2015-8027",
+        "NODE-CORE-34"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "5.x || 4.x",
+          "patched": "^5.1.1 || ^4.2.3",
+          "fixed_versions": [
+            "5.1.1",
+            "4.2.3"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "4.2.3",
+        "5.1.1"
+      ],
+      "source_urls": [
+        "https://github.com/nodejs/security-wg/blob/main/vuln/core/34.json"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2016-0702",
+      "aliases": [
+        "CVE-2016-0702",
+        "NODE-CORE-32"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "4.x || 5.x",
+          "patched": "^4.3.2 || ^5.7.1",
+          "fixed_versions": [
+            "4.3.2",
+            "5.7.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "4.3.2",
+        "5.7.1"
+      ],
+      "source_urls": [
+        "https://ssrg.nicta.com.au/projects/TS/cachebleed"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2016-0797",
+      "aliases": [
+        "CVE-2016-0797",
+        "NODE-CORE-31"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "4.x || 5.x",
+          "patched": "^4.3.2 || ^5.7.1",
+          "fixed_versions": [
+            "4.3.2",
+            "5.7.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "4.3.2",
+        "5.7.1"
+      ],
+      "source_urls": [
+        "https://github.com/nodejs/node/pull/5507"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2016-1669",
+      "aliases": [
+        "CVE-2016-1669",
+        "NODE-CORE-24"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": ">=6.0.0 <6.2.0 || 5.x || 4.x",
+          "patched": "^4.4.6 || ^5.12.0",
+          "fixed_versions": [
+            "4.4.6",
+            "5.12.0"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "4.4.6",
+        "5.12.0"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/june-2016-security-releases"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2016-2086",
+      "aliases": [
+        "CVE-2016-2086",
+        "NODE-CORE-27"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "5.x || 4.x",
+          "patched": "^5.6.0 || ^4.3.0",
+          "fixed_versions": [
+            "5.6.0",
+            "4.3.0"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "4.3.0",
+        "5.6.0"
+      ],
+      "source_urls": [
+        "https://github.com/nodejs/security-wg/blob/main/vuln/core/27.json"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2016-2105",
+      "aliases": [
+        "CVE-2016-2105",
+        "NODE-CORE-23"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "4.x || 5.x || 6.x",
+          "patched": "^4.4.4 || ^5.11.1 || ^6.1.0",
+          "fixed_versions": [
+            "4.4.4",
+            "5.11.1",
+            "6.1.0"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "4.4.4",
+        "5.11.1",
+        "6.1.0"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/openssl-may-2016/#cve-2016-2107-padding-oracle-in-aes-ni-cbc-mac-check"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2016-2107",
+      "aliases": [
+        "CVE-2016-2107",
+        "NODE-CORE-22"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "4.x || 5.x || 6.x",
+          "patched": "^4.4.4 || ^5.11.1 || ^6.1.0",
+          "fixed_versions": [
+            "4.4.4",
+            "5.11.1",
+            "6.1.0"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "4.4.4",
+        "5.11.1",
+        "6.1.0"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/openssl-may-2016/#cve-2016-2107-padding-oracle-in-aes-ni-cbc-mac-check"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2016-2178",
+      "aliases": [
+        "CVE-2016-2178",
+        "NODE-CORE-15"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "6.x || 5.x || 4.x",
+          "patched": "^6.7.0 || ^4.6.0",
+          "fixed_versions": [
+            "6.7.0",
+            "4.6.0"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "4.6.0",
+        "6.7.0"
+      ],
+      "source_urls": [
+        "https://github.com/nodejs/node/pull/8714"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2016-2183",
+      "aliases": [
+        "CVE-2016-2183",
+        "NODE-CORE-13",
+        "PSF-2016-4"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "6.x || 5.x || 4.x",
+          "patched": "^6.7.0 || ^4.6.0",
+          "fixed_versions": [
+            "6.7.0",
+            "4.6.0"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "4.6.0",
+        "6.7.0"
+      ],
+      "source_urls": [
+        "https://github.com/nodejs/node/pull/8714",
+        "https://osv.dev/vulnerability/PSF-2016-4"
+      ],
+      "published_at": "2016-09-01T00:00:00Z"
+    },
+    {
+      "key": "CVE-2016-2216",
+      "aliases": [
+        "CVE-2016-2216",
+        "NODE-CORE-28"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "5.x || 4.x",
+          "patched": "^5.6.0 || ^4.3.0",
+          "fixed_versions": [
+            "5.6.0",
+            "4.3.0"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "4.3.0",
+        "5.6.0"
+      ],
+      "source_urls": [
+        "https://github.com/nodejs/security-wg/blob/main/vuln/core/28.json"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2016-5172",
+      "aliases": [
+        "CVE-2016-5172",
+        "NODE-CORE-10"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "6.x",
+          "patched": "^6.9.0",
+          "fixed_versions": [
+            "6.9.0"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "6.9.0"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/october-2016-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2016-5180",
+      "aliases": [
+        "CVE-2016-5180",
+        "NODE-CORE-8"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "0.10.x || 0.12.x || 4.x",
+          "patched": "^0.10.48 || ^0.12.17 || ^4.6.1",
+          "fixed_versions": [
+            "0.10.48",
+            "0.12.17",
+            "4.6.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "0.10.48",
+        "0.12.17",
+        "4.6.1"
+      ],
+      "source_urls": [
+        "https://c-ares.haxx.se/adv_20160929.html"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2016-5325",
+      "aliases": [
+        "CVE-2016-5325",
+        "NODE-CORE-18"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "6.x || 4.x || 5.x",
+          "patched": "^6.7.0 || ^4.6.0",
+          "fixed_versions": [
+            "6.7.0",
+            "4.6.0"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "4.6.0",
+        "6.7.0"
+      ],
+      "source_urls": [
+        "https://github.com/nodejs/node-private/pull/60"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2016-6303",
+      "aliases": [
+        "CVE-2016-6303",
+        "NODE-CORE-14"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "6.x || 5.x || 4.x",
+          "patched": "^6.7.0 || ^4.6.0",
+          "fixed_versions": [
+            "6.7.0",
+            "4.6.0"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "4.6.0",
+        "6.7.0"
+      ],
+      "source_urls": [
+        "https://github.com/nodejs/node/pull/8714"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2016-6304",
+      "aliases": [
+        "CVE-2016-6304",
+        "NODE-CORE-12"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "6.x || 5.x || 4.x",
+          "patched": "^6.7.0 || ^4.6.0",
+          "fixed_versions": [
+            "6.7.0",
+            "4.6.0"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "4.6.0",
+        "6.7.0"
+      ],
+      "source_urls": [
+        "https://github.com/nodejs/node/pull/8714"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2016-6306",
+      "aliases": [
+        "CVE-2016-6306",
+        "NODE-CORE-16"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "6.x || 5.x || 4.x",
+          "patched": "^6.7.0 || ^4.6.0",
+          "fixed_versions": [
+            "6.7.0",
+            "4.6.0"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "4.6.0",
+        "6.7.0"
+      ],
+      "source_urls": [
+        "https://github.com/nodejs/node/pull/8714"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2016-7055",
+      "aliases": [
+        "CVE-2016-7055",
+        "NODE-CORE-5"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "4.x || 5.x || 6.x || 7.x",
+          "patched": "^4.7.3 || ^6.9.5 || ^7.5.0",
+          "fixed_versions": [
+            "4.7.3",
+            "6.9.5",
+            "7.5.0"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "4.7.3",
+        "6.9.5",
+        "7.5.0"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/openssl-january-2017/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2016-7099",
+      "aliases": [
+        "CVE-2016-7099",
+        "NODE-CORE-19"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "6.x || 4.x || 5.x",
+          "patched": "^6.7.0 || ^4.6.0",
+          "fixed_versions": [
+            "6.7.0",
+            "4.6.0"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "4.6.0",
+        "6.7.0"
+      ],
+      "source_urls": [
+        "https://github.com/nodejs/node/commit/743f0c9164"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2016-9551",
+      "aliases": [
+        "CVE-2016-9551",
+        "NODE-CORE-6"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "^7.1.0",
+          "patched": "^7.2.0",
+          "fixed_versions": [
+            "7.2.0"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "7.2.0"
+      ],
+      "source_urls": [
+        "https://github.com/nodejs/node/pull/9647"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2016-9840",
+      "aliases": [
+        "CVE-2016-9840",
+        "CVE-2016-9841",
+        "CVE-2016-9842",
+        "CVE-2016-9843",
+        "NODE-CORE-7",
+        "PSF-2017-2",
+        "PSF-2017-3",
+        "PSF-2017-4",
+        "PSF-2017-5"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "4.x || 5.x || 6.x || 7.x",
+          "patched": "^4.8.2 || ^6.10.2 || ^7.6.0",
+          "fixed_versions": [
+            "4.8.2",
+            "6.10.2",
+            "7.6.0"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "4.8.2",
+        "6.10.2",
+        "7.6.0"
+      ],
+      "source_urls": [
+        "https://github.com/madler/zlib/commit/d1d577490c15a0c6862473d7576352a9f18ef811",
+        "https://osv.dev/vulnerability/PSF-2017-2",
+        "https://osv.dev/vulnerability/PSF-2017-3",
+        "https://osv.dev/vulnerability/PSF-2017-4",
+        "https://osv.dev/vulnerability/PSF-2017-5"
+      ],
+      "published_at": "2017-05-23T03:56:00Z"
+    },
+    {
+      "key": "CVE-2017-1000381",
+      "aliases": [
+        "CVE-2017-1000381",
+        "NODE-CORE-1"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "8.x || 7.x || 4.x || 6.x || 5.x",
+          "patched": "^8.1.4 || ^7.10.1 || ^4.8.4 || ^6.11.1",
+          "fixed_versions": [
+            "8.1.4",
+            "7.10.1",
+            "4.8.4",
+            "6.11.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "4.8.4",
+        "6.11.1",
+        "7.10.1",
+        "8.1.4"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/july-2017-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2017-14849",
+      "aliases": [
+        "CVE-2017-14849",
+        "NODE-CORE-42"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "8.5.0",
+          "patched": "^8.6.0",
+          "fixed_versions": [
+            "8.6.0"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "8.6.0"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/september-2017-path-validation/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2017-14919",
+      "aliases": [
+        "CVE-2017-14919",
+        "NODE-CORE-43"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "^4.8.2 || ^6.10.2  || 8.x",
+          "patched": "^4.8.5 || ^6.11.5 || ^8.8.0",
+          "fixed_versions": [
+            "4.8.5",
+            "6.11.5",
+            "8.8.0"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "4.8.5",
+        "6.11.5",
+        "8.8.0"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/oct-2017-dos/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2017-15896",
+      "aliases": [
+        "CVE-2017-15896",
+        "NODE-CORE-44"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "4.x || 6.x  || 8.x || 9.x",
+          "patched": "^4.8.7 || ^6.12.2 || ^8.9.3 || ^9.2.1",
+          "fixed_versions": [
+            "4.8.7",
+            "6.12.2",
+            "8.9.3",
+            "9.2.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "4.8.7",
+        "6.12.2",
+        "8.9.3",
+        "9.2.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/december-2017-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2017-15897",
+      "aliases": [
+        "CVE-2017-15897",
+        "NODE-CORE-45"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "8.x || 9.x",
+          "patched": "^8.9.3 || ^9.2.1",
+          "fixed_versions": [
+            "8.9.3",
+            "9.2.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "8.9.3",
+        "9.2.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/december-2017-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2017-3731",
+      "aliases": [
+        "CVE-2017-3731",
+        "NODE-CORE-3"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "4.x || 5.x || 6.x || 7.x",
+          "patched": "^4.7.3 || ^6.9.5 || ^7.5.0",
+          "fixed_versions": [
+            "4.7.3",
+            "6.9.5",
+            "7.5.0"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "4.7.3",
+        "6.9.5",
+        "7.5.0"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/openssl-january-2017/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2017-3732",
+      "aliases": [
+        "CVE-2017-3732",
+        "NODE-CORE-4"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "4.x || 5.x || 6.x || 7.x",
+          "patched": "^4.7.3 || ^6.9.5 || ^7.5.0",
+          "fixed_versions": [
+            "4.7.3",
+            "6.9.5",
+            "7.5.0"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "4.7.3",
+        "6.9.5",
+        "7.5.0"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/openssl-january-2017/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2018-12115",
+      "aliases": [
+        "CVE-2018-12115",
+        "NODE-CORE-54"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "<= 10",
+          "patched": "^6.14.4 || ^8.11.4 || >= 10.9.0",
+          "fixed_versions": [
+            "6.14.4",
+            "8.11.4",
+            "10.9.0"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "10.9.0",
+        "6.14.4",
+        "8.11.4"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/august-2018-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2018-12116",
+      "aliases": [
+        "CVE-2018-12116",
+        "NODE-CORE-55"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "6.x || 8.x",
+          "patched": "^6.15.0 || ^8.14.0",
+          "fixed_versions": [
+            "6.15.0",
+            "8.14.0"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "6.15.0",
+        "8.14.0"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/november-2018-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2018-12120",
+      "aliases": [
+        "CVE-2018-12120",
+        "NODE-CORE-56"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "6.x || 8.x",
+          "patched": "^6.15.0 || ^8.14.0",
+          "fixed_versions": [
+            "6.15.0",
+            "8.14.0"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "6.15.0",
+        "8.14.0"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/november-2018-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2018-12121",
+      "aliases": [
+        "CVE-2018-12121",
+        "NODE-CORE-57"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "6.x || 8.x || 10.x || 11.x",
+          "patched": "^6.15.0 || ^8.14.0 || ^10.14.0 || ^11.3.0",
+          "fixed_versions": [
+            "6.15.0",
+            "8.14.0",
+            "10.14.0",
+            "11.3.0"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "10.14.0",
+        "11.3.0",
+        "6.15.0",
+        "8.14.0"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/november-2018-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2018-12122",
+      "aliases": [
+        "CVE-2018-12122",
+        "NODE-CORE-58"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "6.x || 8.x || 10.x || 11.x",
+          "patched": "^6.15.0 || ^8.14.0 || ^10.14.0 || ^11.3.0",
+          "fixed_versions": [
+            "6.15.0",
+            "8.14.0",
+            "10.14.0",
+            "11.3.0"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "10.14.0",
+        "11.3.0",
+        "6.15.0",
+        "8.14.0"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/november-2018-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2018-12123",
+      "aliases": [
+        "CVE-2018-12123",
+        "NODE-CORE-59"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "6.x || 8.x || 10.x || 11.x",
+          "patched": "^6.15.0 || ^8.14.0 || ^10.14.0 || ^11.3.0",
+          "fixed_versions": [
+            "6.15.0",
+            "8.14.0",
+            "10.14.0",
+            "11.3.0"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "10.14.0",
+        "11.3.0",
+        "6.15.0",
+        "8.14.0"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/november-2018-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2018-7158",
+      "aliases": [
+        "CVE-2018-7158",
+        "NODE-CORE-46"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "4.x",
+          "patched": "^4.9.0",
+          "fixed_versions": [
+            "4.9.0"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "4.9.0"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/march-2018-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2018-7159",
+      "aliases": [
+        "CVE-2018-7159",
+        "NODE-CORE-47"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "4.x || 6.x || 8.x || 9.x",
+          "patched": "^4.9.0 || ^6.14.0 || ^8.11.0 || ^9.10.0",
+          "fixed_versions": [
+            "4.9.0",
+            "6.14.0",
+            "8.11.0",
+            "9.10.0"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "4.9.0",
+        "6.14.0",
+        "8.11.0",
+        "9.10.0"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/march-2018-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2018-7160",
+      "aliases": [
+        "CVE-2018-7160",
+        "NODE-CORE-48"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "6.x || 8.x || 9.x",
+          "patched": "^6.14.0 || ^8.11.0 || ^9.10.0",
+          "fixed_versions": [
+            "6.14.0",
+            "8.11.0",
+            "9.10.0"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "6.14.0",
+        "8.11.0",
+        "9.10.0"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/march-2018-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2018-7161",
+      "aliases": [
+        "CVE-2018-7161",
+        "NODE-CORE-49"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "8.x || 9.x || 10.x",
+          "patched": "^8.11.3 || ^9.11.2 || ^10.4.1",
+          "fixed_versions": [
+            "8.11.3",
+            "9.11.2",
+            "10.4.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "10.4.1",
+        "8.11.3",
+        "9.11.2"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/june-2018-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2018-7162",
+      "aliases": [
+        "CVE-2018-7162",
+        "NODE-CORE-50"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "9.x || 10.x",
+          "patched": "^9.11.2 || ^10.4.1",
+          "fixed_versions": [
+            "9.11.2",
+            "10.4.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "10.4.1",
+        "9.11.2"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/june-2018-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2018-7164",
+      "aliases": [
+        "CVE-2018-7164",
+        "NODE-CORE-51"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "9.7.x || 10.x",
+          "patched": "^9.11.2 || ^10.4.1",
+          "fixed_versions": [
+            "9.11.2",
+            "10.4.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "10.4.1",
+        "9.11.2"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/june-2018-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2018-7166",
+      "aliases": [
+        "CVE-2018-7166",
+        "NODE-CORE-53"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "10.x",
+          "patched": ">= 10.9.0",
+          "fixed_versions": [
+            "10.9.0"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "10.9.0"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/august-2018-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2018-7167",
+      "aliases": [
+        "CVE-2018-7167",
+        "NODE-CORE-52"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "6.x || 8.x || 9.x",
+          "patched": "^6.14.3 || ^8.11.3 || ^9.11.2",
+          "fixed_versions": [
+            "6.14.3",
+            "8.11.3",
+            "9.11.2"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "6.14.3",
+        "8.11.3",
+        "9.11.2"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/june-2018-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2019-15604",
+      "aliases": [
+        "CVE-2019-15604",
+        "NODE-CORE-63"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "10.x || 12.x || 13.x",
+          "patched": "^10.19.0 || ^12.15.0 || ^13.8.0",
+          "fixed_versions": [
+            "10.19.0",
+            "12.15.0",
+            "13.8.0"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "10.19.0",
+        "12.15.0",
+        "13.8.0"
+      ],
+      "source_urls": [
+        "https://hackerone.com/reports/746733"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2019-15605",
+      "aliases": [
+        "CVE-2019-15605",
+        "NODE-CORE-64"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "10.x || 12.x || 13.x",
+          "patched": "^10.19.0 || ^12.15.0 || ^13.8.0",
+          "fixed_versions": [
+            "10.19.0",
+            "12.15.0",
+            "13.8.0"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "10.19.0",
+        "12.15.0",
+        "13.8.0"
+      ],
+      "source_urls": [
+        "https://hackerone.com/reports/735748"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2019-15606",
+      "aliases": [
+        "CVE-2019-15606",
+        "NODE-CORE-65"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "10.x || 12.x || 13.x",
+          "patched": "^10.19.0 || ^12.15.0 || ^13.8.0",
+          "fixed_versions": [
+            "10.19.0",
+            "12.15.0",
+            "13.8.0"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "10.19.0",
+        "12.15.0",
+        "13.8.0"
+      ],
+      "source_urls": [
+        "https://hackerone.com/reports/730779"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2019-5737",
+      "aliases": [
+        "CVE-2019-5737",
+        "NODE-CORE-60"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "6.x || 8.x || 10.x || 11.x",
+          "patched": "^6.17.0 || ^8.15.1 || ^10.15.2 || ^11.10.1",
+          "fixed_versions": [
+            "6.17.0",
+            "8.15.1",
+            "10.15.2",
+            "11.10.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "10.15.2",
+        "11.10.1",
+        "6.17.0",
+        "8.15.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/february-2019-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2019-5739",
+      "aliases": [
+        "CVE-2019-5739",
+        "NODE-CORE-61"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "6.x",
+          "patched": "^6.17.0",
+          "fixed_versions": [
+            "6.17.0"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "6.17.0"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/february-2019-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2019-9511",
+      "aliases": [
+        "CVE-2019-9511",
+        "CVE-2019-9512",
+        "CVE-2019-9513",
+        "CVE-2019-9514",
+        "CVE-2019-9515",
+        "CVE-2019-9516",
+        "CVE-2019-9517",
+        "CVE-2019-9518",
+        "NODE-CORE-62"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "8.x || 10.x || 12.x",
+          "patched": "^8.16.1 || ^10.16.3 || ^12.8.1",
+          "fixed_versions": [
+            "8.16.1",
+            "10.16.3",
+            "12.8.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "10.16.3",
+        "12.8.1",
+        "8.16.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/aug-2019-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2020-1971",
+      "aliases": [
+        "CVE-2020-1971",
+        "NODE-CORE-72"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "10.x || 12.x || 14.x || 15.x",
+          "patched": "^10.23.1 || ^12.20.1 || ^14.15.4 || ^15.5.0",
+          "fixed_versions": [
+            "10.23.1",
+            "12.20.1",
+            "14.15.4",
+            "15.5.0"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "10.23.1",
+        "12.20.1",
+        "14.15.4",
+        "15.5.0"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/january-2021-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2020-7774",
+      "aliases": [
+        "CVE-2020-7774",
+        "NODE-CORE-78"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": " 10.x || 12.x || 14.x",
+          "patched": " ^10.24.1 || ^12.22.1 || ^14.16.1",
+          "fixed_versions": [
+            "10.24.1",
+            "12.22.1",
+            "14.16.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "10.24.1",
+        "12.22.1",
+        "14.16.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/april-2021-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2020-8201",
+      "aliases": [
+        "CVE-2020-8201",
+        "NODE-CORE-66"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "12.x || 14.x",
+          "patched": "^12.18.4 || ^14.11.0",
+          "fixed_versions": [
+            "12.18.4",
+            "14.11.0"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "12.18.4",
+        "14.11.0"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/september-2020-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2020-8251",
+      "aliases": [
+        "CVE-2020-8251",
+        "NODE-CORE-67"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "14.x",
+          "patched": "^14.11.0",
+          "fixed_versions": [
+            "14.11.0"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "14.11.0"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/september-2020-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2020-8252",
+      "aliases": [
+        "CVE-2020-8252",
+        "NODE-CORE-68"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "10.x || 12.x || 14.x",
+          "patched": "^10.22.1 || ^12.18.4 || ^14.9.0",
+          "fixed_versions": [
+            "10.22.1",
+            "12.18.4",
+            "14.9.0"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "10.22.1",
+        "12.18.4",
+        "14.9.0"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/september-2020-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2020-8265",
+      "aliases": [
+        "CVE-2020-8265",
+        "NODE-CORE-70"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "10.x || 12.x || 14.x || 15.x",
+          "patched": "^10.23.1 || ^12.20.1 || ^14.15.4 || ^15.5.1",
+          "fixed_versions": [
+            "10.23.1",
+            "12.20.1",
+            "14.15.4",
+            "15.5.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "10.23.1",
+        "12.20.1",
+        "14.15.4",
+        "15.5.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/january-2021-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2020-8277",
+      "aliases": [
+        "CVE-2020-8277",
+        "NODE-CORE-69"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": " 12.x || 14.x || 15.x",
+          "patched": " ^12.19.1 || ^14.15.1 || 15.2.1",
+          "fixed_versions": [
+            "12.19.1",
+            "14.15.1",
+            "15.2.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "12.19.1",
+        "14.15.1",
+        "15.2.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/november-2020-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2020-8287",
+      "aliases": [
+        "CVE-2020-8287",
+        "NODE-CORE-71"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "10.x || 12.x || 14.x || 15.x",
+          "patched": "^10.23.1 || ^12.20.1 || ^14.15.4 || ^15.5.1",
+          "fixed_versions": [
+            "10.23.1",
+            "12.20.1",
+            "14.15.4",
+            "15.5.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "10.23.1",
+        "12.20.1",
+        "14.15.4",
+        "15.5.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/january-2021-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2021-22883",
+      "aliases": [
+        "CVE-2021-22883",
+        "NODE-CORE-73"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": " 10.x || 12.x || 14.x || 15.x",
+          "patched": " ^10.24.0 || ^12.21.0 || ^14.16.0 || ^15.10.0",
+          "fixed_versions": [
+            "10.24.0",
+            "12.21.0",
+            "14.16.0",
+            "15.10.0"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "10.24.0",
+        "12.21.0",
+        "14.16.0",
+        "15.10.0"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/february-2021-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2021-22884",
+      "aliases": [
+        "CVE-2021-22884",
+        "NODE-CORE-74"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": " 10.x || 12.x || 14.x || 15.x",
+          "patched": " ^10.24.0 || ^12.21.0 || ^14.16.0 || ^15.10.0",
+          "fixed_versions": [
+            "10.24.0",
+            "12.21.0",
+            "14.16.0",
+            "15.10.0"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "10.24.0",
+        "12.21.0",
+        "14.16.0",
+        "15.10.0"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/february-2021-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2021-22918",
+      "aliases": [
+        "CVE-2021-22918",
+        "NODE-CORE-83"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": " 12.x || 14.x || 16.x",
+          "patched": " ^12.22.2 || ^14.17.2 || ^16.4.1",
+          "fixed_versions": [
+            "12.22.2",
+            "14.17.2",
+            "16.4.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "12.22.2",
+        "14.17.2",
+        "16.4.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/july-2021-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2021-22921",
+      "aliases": [
+        "CVE-2021-22921",
+        "NODE-CORE-80"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": " 12.x || 14.x || 16.x",
+          "patched": " ^12.22.2 || ^14.17.2 || ^16.4.1",
+          "fixed_versions": [
+            "12.22.2",
+            "14.17.2",
+            "16.4.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "12.22.2",
+        "14.17.2",
+        "16.4.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/july-2021-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2021-22930",
+      "aliases": [
+        "CVE-2021-22930",
+        "NODE-CORE-79"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": " 12.x || 14.x || 16.x",
+          "patched": " ^12.22.4 || ^14.17.4 || ^16.6.0",
+          "fixed_versions": [
+            "12.22.4",
+            "14.17.4",
+            "16.6.0"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "12.22.4",
+        "14.17.4",
+        "16.6.0"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/july-2021-security-releases-2/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2021-22931",
+      "aliases": [
+        "CVE-2021-22931",
+        "NODE-CORE-84"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "12.x || 14.x || 16.x",
+          "patched": "^12.22.5 || ^14.17.5 || ^16.6.2",
+          "fixed_versions": [
+            "12.22.5",
+            "14.17.5",
+            "16.6.2"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "12.22.5",
+        "14.17.5",
+        "16.6.2"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/aug-2021-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2021-22939",
+      "aliases": [
+        "CVE-2021-22939",
+        "NODE-CORE-86"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "12.x || 14.x || 16.x",
+          "patched": "^12.22.5 || ^14.17.5 || ^16.6.2",
+          "fixed_versions": [
+            "12.22.5",
+            "14.17.5",
+            "16.6.2"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "12.22.5",
+        "14.17.5",
+        "16.6.2"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/aug-2021-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2021-22940",
+      "aliases": [
+        "CVE-2021-22940",
+        "NODE-CORE-85"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "12.x || 14.x || 16.x",
+          "patched": "^12.22.5 || ^14.17.5 || ^16.6.2",
+          "fixed_versions": [
+            "12.22.5",
+            "14.17.5",
+            "16.6.2"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "12.22.5",
+        "14.17.5",
+        "16.6.2"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/aug-2021-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2021-22959",
+      "aliases": [
+        "CVE-2021-22959",
+        "CVE-2021-22960",
+        "NODE-CORE-88"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "12.x || 14.x || 16.x",
+          "patched": " ^12.22.7 || ^14.18.1 || ^16.11.1",
+          "fixed_versions": [
+            "12.22.7",
+            "14.18.1",
+            "16.11.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "12.22.7",
+        "14.18.1",
+        "16.11.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/oct-2021-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2021-23362",
+      "aliases": [
+        "CVE-2021-23362",
+        "NODE-CORE-82"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": " 12.x",
+          "patched": " ^12.22.2",
+          "fixed_versions": [
+            "12.22.2"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "12.22.2"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/july-2021-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2021-23840",
+      "aliases": [
+        "CVE-2021-23840",
+        "NODE-CORE-75"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": " 10.x || 12.x || 14.x || 15.x",
+          "patched": " ^10.24.0 || ^12.21.0 || ^14.16.0 || ^15.10.0",
+          "fixed_versions": [
+            "10.24.0",
+            "12.21.0",
+            "14.16.0",
+            "15.10.0"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "10.24.0",
+        "12.21.0",
+        "14.16.0",
+        "15.10.0"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/february-2021-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2021-27290",
+      "aliases": [
+        "CVE-2021-27290",
+        "NODE-CORE-81"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": " 12.x",
+          "patched": " ^12.22.2",
+          "fixed_versions": [
+            "12.22.2"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "12.22.2"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/july-2021-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2021-3449",
+      "aliases": [
+        "CVE-2021-3449",
+        "NODE-CORE-77"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": " 10.x || 12.x || 14.x || 15.x",
+          "patched": " ^10.24.1 || ^12.22.1 || ^14.16.1 || ^15.14.0",
+          "fixed_versions": [
+            "10.24.1",
+            "12.22.1",
+            "14.16.1",
+            "15.14.0"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "10.24.1",
+        "12.22.1",
+        "14.16.1",
+        "15.14.0"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/april-2021-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2021-3450",
+      "aliases": [
+        "CVE-2021-3450",
+        "NODE-CORE-76"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": " 10.x || 12.x || 14.x || 15.x",
+          "patched": " ^10.24.1 || ^12.22.1 || ^14.16.1 || ^15.14.0",
+          "fixed_versions": [
+            "10.24.1",
+            "12.22.1",
+            "14.16.1",
+            "15.14.0"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "10.24.1",
+        "12.22.1",
+        "14.16.1",
+        "15.14.0"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/april-2021-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2021-37701",
+      "aliases": [
+        "CVE-2021-37701",
+        "CVE-2021-37712",
+        "CVE-2021-37713",
+        "CVE-2021-39134",
+        "CVE-2021-39135",
+        "NODE-CORE-87"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": " 12.x || 14.x",
+          "patched": " ^12.22.6 || ^14.17.6",
+          "fixed_versions": [
+            "12.22.6",
+            "14.17.6"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "12.22.6",
+        "14.17.6"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/aug-2021-security-releases2/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2021-44531",
+      "aliases": [
+        "CVE-2021-44531",
+        "NODE-CORE-89"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "12.x || 14.x || 16.x || 17.x",
+          "patched": "^12.22.9 || ^14.18.3 || ^16.13.2 || ^17.3.1",
+          "fixed_versions": [
+            "12.22.9",
+            "14.18.3",
+            "16.13.2",
+            "17.3.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "12.22.9",
+        "14.18.3",
+        "16.13.2",
+        "17.3.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/jan-2022-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2021-44532",
+      "aliases": [
+        "CVE-2021-44532",
+        "NODE-CORE-90"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "12.x || 14.x || 16.x || 17.x",
+          "patched": "^12.22.9 || ^14.18.3 || ^16.13.2 || ^17.3.1",
+          "fixed_versions": [
+            "12.22.9",
+            "14.18.3",
+            "16.13.2",
+            "17.3.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "12.22.9",
+        "14.18.3",
+        "16.13.2",
+        "17.3.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/jan-2022-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2021-44533",
+      "aliases": [
+        "CVE-2021-44533",
+        "NODE-CORE-91"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "12.x || 14.x || 16.x || 17.x",
+          "patched": "^12.22.9 || ^14.18.3 || ^16.13.2 || ^17.3.1",
+          "fixed_versions": [
+            "12.22.9",
+            "14.18.3",
+            "16.13.2",
+            "17.3.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "12.22.9",
+        "14.18.3",
+        "16.13.2",
+        "17.3.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/jan-2022-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2022-0778",
+      "aliases": [
+        "CVE-2022-0778",
+        "NODE-CORE-93"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "12.x || 14.x || 16.x || 17.x",
+          "patched": "^12.22.11 || ^14.19.1 || ^16.14.2 || ^17.7.2",
+          "fixed_versions": [
+            "12.22.11",
+            "14.19.1",
+            "16.14.2",
+            "17.7.2"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "12.22.11",
+        "14.19.1",
+        "16.14.2",
+        "17.7.2"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/mar-2022-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2022-21824",
+      "aliases": [
+        "CVE-2022-21824",
+        "NODE-CORE-92"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "12.x || 14.x || 16.x || 17.x",
+          "patched": "^12.22.9 || ^14.18.3 || ^16.13.2 || ^17.3.1",
+          "fixed_versions": [
+            "12.22.9",
+            "14.18.3",
+            "16.13.2",
+            "17.3.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "12.22.9",
+        "14.18.3",
+        "16.13.2",
+        "17.3.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/jan-2022-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2022-32212",
+      "aliases": [
+        "CVE-2022-32212",
+        "NODE-CORE-96"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "14.x || 16.x || 18.x",
+          "patched": "^14.20.1 || ^16.17.1 || ^18.9.1",
+          "fixed_versions": [
+            "14.20.1",
+            "16.17.1",
+            "18.9.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "14.20.1",
+        "16.17.1",
+        "18.9.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/september-2022-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2022-32213",
+      "aliases": [
+        "CVE-2022-32213",
+        "NODE-CORE-97"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "14.x || 16.x || 18.x",
+          "patched": "^14.20.1 || ^16.17.1 || ^18.9.1",
+          "fixed_versions": [
+            "14.20.1",
+            "16.17.1",
+            "18.9.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "14.20.1",
+        "16.17.1",
+        "18.9.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/september-2022-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2022-32214",
+      "aliases": [
+        "CVE-2022-32214",
+        "NODE-CORE-95"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "14.x || 16.x || 18.x",
+          "patched": "^14.20.0 || ^16.20.0 || ^18.5.0",
+          "fixed_versions": [
+            "14.20.0",
+            "16.20.0",
+            "18.5.0"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "14.20.0",
+        "16.20.0",
+        "18.5.0"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/july-2022-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2022-32215",
+      "aliases": [
+        "CVE-2022-32215",
+        "NODE-CORE-94"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "14.x || 16.x || 18.x",
+          "patched": "^14.20.1 || ^16.17.1 || ^18.9.1",
+          "fixed_versions": [
+            "14.20.1",
+            "16.17.1",
+            "18.9.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "14.20.1",
+        "16.17.1",
+        "18.9.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/september-2022-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2022-32222",
+      "aliases": [
+        "CVE-2022-32222",
+        "NODE-CORE-99"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "14.x || 16.x || 18.x",
+          "patched": "^14.20.0 || ^16.20.0 || ^18.9.1",
+          "fixed_versions": [
+            "14.20.0",
+            "16.20.0",
+            "18.9.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "14.20.0",
+        "16.20.0",
+        "18.9.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/september-2022-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2022-32223",
+      "aliases": [
+        "CVE-2022-32223",
+        "NODE-CORE-98"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "14.x || 16.x || 18.x",
+          "patched": "^14.20.0 || ^16.20.0 || ^18.5.0",
+          "fixed_versions": [
+            "14.20.0",
+            "16.20.0",
+            "18.5.0"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "14.20.0",
+        "16.20.0",
+        "18.5.0"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/july-2022-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2022-35255",
+      "aliases": [
+        "CVE-2022-35255",
+        "NODE-CORE-101"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "18.x",
+          "patched": "^18.9.1",
+          "fixed_versions": [
+            "18.9.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "18.9.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/september-2022-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2022-35256",
+      "aliases": [
+        "CVE-2022-35256",
+        "NODE-CORE-100"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "14.x || 16.x || 18.x",
+          "patched": "^14.20.1 || ^16.17.1 || ^18.9.1",
+          "fixed_versions": [
+            "14.20.1",
+            "16.17.1",
+            "18.9.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "14.20.1",
+        "16.17.1",
+        "18.9.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/september-2022-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2022-43548",
+      "aliases": [
+        "CVE-2022-43548",
+        "NODE-CORE-102"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "14.x || 16.x || 18.x || 19.x",
+          "patched": "^14.21.1 || ^16.18.1 || ^18.12.1 || ^19.0.1",
+          "fixed_versions": [
+            "14.21.1",
+            "16.18.1",
+            "18.12.1",
+            "19.0.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "14.21.1",
+        "16.18.1",
+        "18.12.1",
+        "19.0.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/november-2022-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2023-23918",
+      "aliases": [
+        "CVE-2023-23918",
+        "NODE-CORE-103"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "14.x || 16.x || 18.x || 19.x",
+          "patched": "^14.21.3 || ^16.19.1 || ^18.14.1 || ^19.6.1",
+          "fixed_versions": [
+            "14.21.3",
+            "16.19.1",
+            "18.14.1",
+            "19.6.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "14.21.3",
+        "16.19.1",
+        "18.14.1",
+        "19.6.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/february-2023-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2023-23919",
+      "aliases": [
+        "CVE-2023-23919",
+        "NODE-CORE-104"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "14.x || 16.x || 18.x || 19.x",
+          "patched": "^14.21.3 || ^16.19.1 || ^18.14.1 || ^19.2.0",
+          "fixed_versions": [
+            "14.21.3",
+            "16.19.1",
+            "18.14.1",
+            "19.2.0"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "14.21.3",
+        "16.19.1",
+        "18.14.1",
+        "19.2.0"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/february-2023-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2023-23920",
+      "aliases": [
+        "CVE-2023-23920",
+        "NODE-CORE-107"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "14.x || 16.x || 18.x || 19.x",
+          "patched": "^14.21.3 || ^16.19.1 || ^18.14.1 || ^19.6.1",
+          "fixed_versions": [
+            "14.21.3",
+            "16.19.1",
+            "18.14.1",
+            "19.6.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "14.21.3",
+        "16.19.1",
+        "18.14.1",
+        "19.6.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/february-2023-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2023-23936",
+      "aliases": [
+        "CVE-2023-23936",
+        "NODE-CORE-105"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "14.x || 16.x || 18.x || 19.x",
+          "patched": "^14.21.3 || ^16.19.1 || ^18.14.1 || ^19.6.1",
+          "fixed_versions": [
+            "14.21.3",
+            "16.19.1",
+            "18.14.1",
+            "19.6.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "14.21.3",
+        "16.19.1",
+        "18.14.1",
+        "19.6.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/february-2023-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2023-24807",
+      "aliases": [
+        "CVE-2023-24807",
+        "NODE-CORE-106"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "14.x || 16.x || 18.x || 19.x",
+          "patched": "^14.21.3 || ^16.19.1 || ^18.14.1 || ^19.6.1",
+          "fixed_versions": [
+            "14.21.3",
+            "16.19.1",
+            "18.14.1",
+            "19.6.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "14.21.3",
+        "16.19.1",
+        "18.14.1",
+        "19.6.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/february-2023-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2023-30581",
+      "aliases": [
+        "CVE-2023-30581",
+        "NODE-CORE-108"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "16.x || 18.x || 20.x",
+          "patched": "^16.20.1 || ^18.16.1 || ^20.3.1",
+          "fixed_versions": [
+            "16.20.1",
+            "18.16.1",
+            "20.3.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "16.20.1",
+        "18.16.1",
+        "20.3.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/june-2023-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2023-30582",
+      "aliases": [
+        "CVE-2023-30582",
+        "NODE-CORE-109"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "20.x",
+          "patched": "^20.3.1",
+          "fixed_versions": [
+            "20.3.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "20.3.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/june-2023-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2023-30583",
+      "aliases": [
+        "CVE-2023-30583",
+        "NODE-CORE-110"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "20.x",
+          "patched": "^20.3.1",
+          "fixed_versions": [
+            "20.3.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "20.3.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/june-2023-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2023-30584",
+      "aliases": [
+        "CVE-2023-30584",
+        "NODE-CORE-111"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "20.x",
+          "patched": "^20.3.1",
+          "fixed_versions": [
+            "20.3.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "20.3.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/june-2023-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2023-30585",
+      "aliases": [
+        "CVE-2023-30585",
+        "NODE-CORE-112"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "16.x || 18.x || 20.x",
+          "patched": "^16.20.1 || ^18.16.1 || ^20.3.1",
+          "fixed_versions": [
+            "16.20.1",
+            "18.16.1",
+            "20.3.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "16.20.1",
+        "18.16.1",
+        "20.3.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/june-2023-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2023-30586",
+      "aliases": [
+        "CVE-2023-30586",
+        "NODE-CORE-113"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "20.x",
+          "patched": "^20.3.1",
+          "fixed_versions": [
+            "20.3.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "20.3.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/june-2023-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2023-30587",
+      "aliases": [
+        "CVE-2023-30587",
+        "NODE-CORE-114"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "20.x",
+          "patched": "^20.3.1",
+          "fixed_versions": [
+            "20.3.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "20.3.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/june-2023-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2023-30588",
+      "aliases": [
+        "CVE-2023-30588",
+        "NODE-CORE-116"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "16.x || 18.x || 20.x",
+          "patched": "^16.20.1 || ^18.16.1 || ^20.3.1",
+          "fixed_versions": [
+            "16.20.1",
+            "18.16.1",
+            "20.3.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "16.20.1",
+        "18.16.1",
+        "20.3.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/june-2023-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2023-30589",
+      "aliases": [
+        "CVE-2023-30589",
+        "NODE-CORE-115"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "16.x || 18.x || 20.x",
+          "patched": "^16.20.1 || ^18.16.1 || ^20.3.1",
+          "fixed_versions": [
+            "16.20.1",
+            "18.16.1",
+            "20.3.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "16.20.1",
+        "18.16.1",
+        "20.3.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/june-2023-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2023-30590",
+      "aliases": [
+        "CVE-2023-30590",
+        "NODE-CORE-117"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "16.x || 18.x || 20.x",
+          "patched": "^16.20.1 || ^18.16.1 || ^20.3.1",
+          "fixed_versions": [
+            "16.20.1",
+            "18.16.1",
+            "20.3.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "16.20.1",
+        "18.16.1",
+        "20.3.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/june-2023-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2023-32002",
+      "aliases": [
+        "CVE-2023-32002",
+        "NODE-CORE-118"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "16.x || 18.x || 20.x",
+          "patched": "^16.20.2 || ^18.17.1 || ^20.5.1",
+          "fixed_versions": [
+            "16.20.2",
+            "18.17.1",
+            "20.5.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "16.20.2",
+        "18.17.1",
+        "20.5.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/august-2023-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2023-32003",
+      "aliases": [
+        "CVE-2023-32003",
+        "NODE-CORE-124"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "20.x",
+          "patched": "^20.5.1",
+          "fixed_versions": [
+            "20.5.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "20.5.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/august-2023-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2023-32004",
+      "aliases": [
+        "CVE-2023-32004",
+        "NODE-CORE-119"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "20.x",
+          "patched": "^20.5.1",
+          "fixed_versions": [
+            "20.5.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "20.5.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/august-2023-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2023-32005",
+      "aliases": [
+        "CVE-2023-32005",
+        "NODE-CORE-123"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "20.x",
+          "patched": "^20.5.1",
+          "fixed_versions": [
+            "20.5.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "20.5.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/august-2023-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2023-32006",
+      "aliases": [
+        "CVE-2023-32006",
+        "NODE-CORE-121"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "16.x || 18.x || 20.x",
+          "patched": "^16.20.2 || ^18.17.1 || ^20.5.1",
+          "fixed_versions": [
+            "16.20.2",
+            "18.17.1",
+            "20.5.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "16.20.2",
+        "18.17.1",
+        "20.5.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/august-2023-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2023-32558",
+      "aliases": [
+        "CVE-2023-32558",
+        "NODE-CORE-120"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "20.x",
+          "patched": "^20.5.1",
+          "fixed_versions": [
+            "20.5.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "20.5.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/august-2023-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2023-32559",
+      "aliases": [
+        "CVE-2023-32559",
+        "NODE-CORE-122"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "16.x || 18.x || 20.x",
+          "patched": "^16.20.2 || ^18.17.1 || ^20.5.1",
+          "fixed_versions": [
+            "16.20.2",
+            "18.17.1",
+            "20.5.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "16.20.2",
+        "18.17.1",
+        "20.5.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/august-2023-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2023-38552",
+      "aliases": [
+        "CVE-2023-38552",
+        "NODE-CORE-129"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "18.x || 20.x",
+          "patched": "^18.18.2 || ^20.8.1",
+          "fixed_versions": [
+            "18.18.2",
+            "20.8.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "18.18.2",
+        "20.8.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/october-2023-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2023-39331",
+      "aliases": [
+        "CVE-2023-39331",
+        "NODE-CORE-127"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "20.x",
+          "patched": "^20.8.1",
+          "fixed_versions": [
+            "20.8.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "20.8.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/october-2023-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2023-39332",
+      "aliases": [
+        "CVE-2023-39332",
+        "NODE-CORE-128"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "20.x",
+          "patched": "^20.8.1",
+          "fixed_versions": [
+            "20.8.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "20.8.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/october-2023-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2023-39333",
+      "aliases": [
+        "CVE-2023-39333",
+        "NODE-CORE-130"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "18.x || 20.x",
+          "patched": "^18.18.2 || ^20.8.1",
+          "fixed_versions": [
+            "18.18.2",
+            "20.8.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "18.18.2",
+        "20.8.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/october-2023-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2023-44487",
+      "aliases": [
+        "CVE-2023-44487",
+        "NODE-CORE-126"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "18.x || 20.x",
+          "patched": "^18.18.2 || ^20.8.1",
+          "fixed_versions": [
+            "18.18.2",
+            "20.8.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "18.18.2",
+        "20.8.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/october-2023-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2023-45143",
+      "aliases": [
+        "CVE-2023-45143",
+        "NODE-CORE-125"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "18.x || 20.x",
+          "patched": "^18.18.2 || ^20.8.1",
+          "fixed_versions": [
+            "18.18.2",
+            "20.8.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "18.18.2",
+        "20.8.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/october-2023-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2023-46809",
+      "aliases": [
+        "CVE-2023-46809",
+        "NODE-CORE-131"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "18.x || 20.x || 21.x",
+          "patched": "^18.19.1 || ^20.11.1 || ^21.6.2",
+          "fixed_versions": [
+            "18.19.1",
+            "20.11.1",
+            "21.6.2"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "18.19.1",
+        "20.11.1",
+        "21.6.2"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/february-2024-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2024-21890",
+      "aliases": [
+        "CVE-2024-21890",
+        "NODE-CORE-133"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "20.x || 21.x",
+          "patched": "^20.11.1 || ^21.6.2",
+          "fixed_versions": [
+            "20.11.1",
+            "21.6.2"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "20.11.1",
+        "21.6.2"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/february-2024-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2024-21891",
+      "aliases": [
+        "CVE-2024-21891",
+        "NODE-CORE-132"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "20.x || 21.x",
+          "patched": "^20.11.1 || ^21.6.2",
+          "fixed_versions": [
+            "20.11.1",
+            "21.6.2"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "20.11.1",
+        "21.6.2"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/february-2024-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2024-21892",
+      "aliases": [
+        "CVE-2024-21892",
+        "NODE-CORE-134"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "18.x || 20.x || 21.x",
+          "patched": "^18.19.1 || ^20.11.1 || ^21.6.2",
+          "fixed_versions": [
+            "18.19.1",
+            "20.11.1",
+            "21.6.2"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "18.19.1",
+        "20.11.1",
+        "21.6.2"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/february-2024-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2024-21896",
+      "aliases": [
+        "CVE-2024-21896",
+        "NODE-CORE-136"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "20.x || 21.x",
+          "patched": "^20.11.1 || ^21.6.2",
+          "fixed_versions": [
+            "20.11.1",
+            "21.6.2"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "20.11.1",
+        "21.6.2"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/february-2024-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2024-22017",
+      "aliases": [
+        "CVE-2024-22017",
+        "NODE-CORE-137"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "20.x || 21.x",
+          "patched": "^20.11.1 || ^21.6.2",
+          "fixed_versions": [
+            "20.11.1",
+            "21.6.2"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "20.11.1",
+        "21.6.2"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/february-2024-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2024-22018",
+      "aliases": [
+        "CVE-2024-22018",
+        "NODE-CORE-144"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "20.x || 22.x",
+          "patched": "^20.15.1 || ^22.4.1",
+          "fixed_versions": [
+            "20.15.1",
+            "22.4.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "20.15.1",
+        "22.4.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/july-2024-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2024-22019",
+      "aliases": [
+        "CVE-2024-22019",
+        "NODE-CORE-135"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "18.x || 20.x || 21.x",
+          "patched": "^18.19.1 || ^20.11.1 || ^21.6.2",
+          "fixed_versions": [
+            "18.19.1",
+            "20.11.1",
+            "21.6.2"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "18.19.1",
+        "20.11.1",
+        "21.6.2"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/february-2024-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2024-22020",
+      "aliases": [
+        "CVE-2024-22020",
+        "NODE-CORE-145"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "18.x || 20.x || 22.x",
+          "patched": "^18.20.4 || ^20.15.1 || ^22.4.1",
+          "fixed_versions": [
+            "18.20.4",
+            "20.15.1",
+            "22.4.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "18.20.4",
+        "20.15.1",
+        "22.4.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/july-2024-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2024-22025",
+      "aliases": [
+        "CVE-2024-22025",
+        "NODE-CORE-138"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "18.x || 20.x || 21.x",
+          "patched": "^18.19.1 || ^20.11.1 || ^21.6.2",
+          "fixed_versions": [
+            "18.19.1",
+            "20.11.1",
+            "21.6.2"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "18.19.1",
+        "20.11.1",
+        "21.6.2"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/february-2024-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2024-27980",
+      "aliases": [
+        "CVE-2024-27980",
+        "NODE-CORE-141",
+        "NODE-CORE-150"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "18.x || 20.x || 21.x",
+          "patched": "^18.20.2 || ^20.12.2 || ^21.7.3",
+          "fixed_versions": [
+            "18.20.2",
+            "20.12.2",
+            "21.7.3"
+          ]
+        },
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "18.x || 20.x || 21.x",
+          "patched": "^18.20.2 || ^20.12.2 || ^21.7.3",
+          "fixed_versions": [
+            "18.20.2",
+            "20.12.2",
+            "21.7.3"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "18.20.2",
+        "20.12.2",
+        "21.7.3"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/april-2024-security-releases-2",
+        "https://nodejs.org/en/blog/vulnerability/april-2024-security-releases-2"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2024-27982",
+      "aliases": [
+        "CVE-2024-27982",
+        "NODE-CORE-140"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "18.x || 20.x || 21.x",
+          "patched": "^18.20.1 || ^20.12.1 || ^21.7.2",
+          "fixed_versions": [
+            "18.20.1",
+            "20.12.1",
+            "21.7.2"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "18.20.1",
+        "20.12.1",
+        "21.7.2"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/april-2024-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2024-27983",
+      "aliases": [
+        "CVE-2024-27983",
+        "NODE-CORE-139"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "18.x || 20.x || 21.x",
+          "patched": "^18.20.1 || ^20.12.1 || ^21.7.2",
+          "fixed_versions": [
+            "18.20.1",
+            "20.12.1",
+            "21.7.2"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "18.20.1",
+        "20.12.1",
+        "21.7.2"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/april-2024-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2024-36137",
+      "aliases": [
+        "CVE-2024-36137",
+        "NODE-CORE-142"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "20.x || 22.x",
+          "patched": "^20.15.1 || ^22.4.1",
+          "fixed_versions": [
+            "20.15.1",
+            "22.4.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "20.15.1",
+        "22.4.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/july-2024-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2024-36138",
+      "aliases": [
+        "CVE-2024-36138",
+        "NODE-CORE-143"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "18.x || 20.x || 22.x",
+          "patched": "^18.20.4 || ^20.15.1 || ^22.4.1",
+          "fixed_versions": [
+            "18.20.4",
+            "20.15.1",
+            "22.4.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "18.20.4",
+        "20.15.1",
+        "22.4.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/july-2024-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2024-37372",
+      "aliases": [
+        "CVE-2024-37372",
+        "NODE-CORE-146"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "20.x || 22.x",
+          "patched": "^20.15.1 || ^22.4.1",
+          "fixed_versions": [
+            "20.15.1",
+            "22.4.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "20.15.1",
+        "22.4.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/july-2024-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2025-23083",
+      "aliases": [
+        "CVE-2025-23083",
+        "NODE-CORE-147"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "20.x || 22.x || 23.x",
+          "patched": "^20.18.2 || ^22.13.1 || ^23.6.1",
+          "fixed_versions": [
+            "20.18.2",
+            "22.13.1",
+            "23.6.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "20.18.2",
+        "22.13.1",
+        "23.6.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/january-2025-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2025-23084",
+      "aliases": [
+        "CVE-2025-23084",
+        "NODE-CORE-148"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "18.x || 20.x || 22.x || 23.x",
+          "patched": "^18.20.6 || ^20.18.2 || ^22.13.1 || ^23.6.1",
+          "fixed_versions": [
+            "18.20.6",
+            "20.18.2",
+            "22.13.1",
+            "23.6.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "18.20.6",
+        "20.18.2",
+        "22.13.1",
+        "23.6.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/january-2025-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2025-23085",
+      "aliases": [
+        "CVE-2025-23085",
+        "NODE-CORE-149"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "18.x || 20.x || 22.x || 23.x",
+          "patched": "^18.20.6 || ^20.18.2 || ^22.13.1 || ^23.6.1",
+          "fixed_versions": [
+            "18.20.6",
+            "20.18.2",
+            "22.13.1",
+            "23.6.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "18.20.6",
+        "20.18.2",
+        "22.13.1",
+        "23.6.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/january-2025-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2025-23165",
+      "aliases": [
+        "CVE-2025-23165",
+        "NODE-CORE-151"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "20.x || 22.x",
+          "patched": "^20.19.2 || ^22.15.1",
+          "fixed_versions": [
+            "20.19.2",
+            "22.15.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "20.19.2",
+        "22.15.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/may-2025-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2025-23166",
+      "aliases": [
+        "CVE-2025-23166",
+        "NODE-CORE-152"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "20.x || 22.x || 23.x || 24.x",
+          "patched": "^20.19.2 || ^22.15.1 || ^23.11.1 || ^24.0.2",
+          "fixed_versions": [
+            "20.19.2",
+            "22.15.1",
+            "23.11.1",
+            "24.0.2"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "20.19.2",
+        "22.15.1",
+        "23.11.1",
+        "24.0.2"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/may-2025-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2025-23167",
+      "aliases": [
+        "CVE-2025-23167",
+        "NODE-CORE-153"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "20.x",
+          "patched": "^20.19.2",
+          "fixed_versions": [
+            "20.19.2"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "20.19.2"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/may-2025-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2025-27209",
+      "aliases": [
+        "CVE-2025-27209",
+        "NODE-CORE-155"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "24.x",
+          "patched": "^24.4.1",
+          "fixed_versions": [
+            "24.4.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "24.4.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/july-2025-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2025-27210",
+      "aliases": [
+        "CVE-2025-27210",
+        "NODE-CORE-154"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "20.x || 22.x || 24.x",
+          "patched": "^20.19.4 || ^22.17.1 || ^24.4.1",
+          "fixed_versions": [
+            "20.19.4",
+            "22.17.1",
+            "24.4.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "20.19.4",
+        "22.17.1",
+        "24.4.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/july-2025-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2025-55130",
+      "aliases": [
+        "CVE-2025-55130",
+        "NODE-CORE-156"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "20.x || 22.x || 24.x || 25.x",
+          "patched": "^20.20.0 || ^22.22.0 || ^24.13.0 || ^25.3.0",
+          "fixed_versions": [
+            "20.20.0",
+            "22.22.0",
+            "24.13.0",
+            "25.3.0"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "20.20.0",
+        "22.22.0",
+        "24.13.0",
+        "25.3.0"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/december-2025-security-releases"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2025-55131",
+      "aliases": [
+        "CVE-2025-55131",
+        "NODE-CORE-157"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "20.x || 22.x || 24.x || 25.x",
+          "patched": "^20.20.0 || ^22.22.0 || ^24.13.0 || ^25.3.0",
+          "fixed_versions": [
+            "20.20.0",
+            "22.22.0",
+            "24.13.0",
+            "25.3.0"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "20.20.0",
+        "22.22.0",
+        "24.13.0",
+        "25.3.0"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/december-2025-security-releases"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2025-55132",
+      "aliases": [
+        "CVE-2025-55132",
+        "NODE-CORE-158"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "20.x || 22.x || 24.x || 25.x",
+          "patched": "^20.20.0 || ^22.22.0 || ^24.13.0 || ^25.3.0",
+          "fixed_versions": [
+            "20.20.0",
+            "22.22.0",
+            "24.13.0",
+            "25.3.0"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "20.20.0",
+        "22.22.0",
+        "24.13.0",
+        "25.3.0"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/december-2025-security-releases"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2025-59464",
+      "aliases": [
+        "CVE-2025-59464",
+        "NODE-CORE-159"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "20.x || 22.x || 24.x",
+          "patched": "^20.20.0 || ^22.22.0 || ^24.13.0",
+          "fixed_versions": [
+            "20.20.0",
+            "22.22.0",
+            "24.13.0"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "20.20.0",
+        "22.22.0",
+        "24.13.0"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/december-2025-security-releases"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2025-59465",
+      "aliases": [
+        "CVE-2025-59465",
+        "NODE-CORE-160"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "20.x || 22.x || 24.x || 25.x",
+          "patched": "^20.20.0 || ^22.22.0 || ^24.13.0 || ^25.3.0",
+          "fixed_versions": [
+            "20.20.0",
+            "22.22.0",
+            "24.13.0",
+            "25.3.0"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "20.20.0",
+        "22.22.0",
+        "24.13.0",
+        "25.3.0"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/december-2025-security-releases"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2025-59466",
+      "aliases": [
+        "CVE-2025-59466",
+        "NODE-CORE-161"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "20.x || 22.x || 24.x || 25.x",
+          "patched": "^20.20.0 || ^22.22.0 || ^24.13.0 || ^25.3.0",
+          "fixed_versions": [
+            "20.20.0",
+            "22.22.0",
+            "24.13.0",
+            "25.3.0"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "20.20.0",
+        "22.22.0",
+        "24.13.0",
+        "25.3.0"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/december-2025-security-releases"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2026-105481",
+      "aliases": [
+        "CVE-2026-105481",
+        "NODE-CORE-195"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "22.x || 24.x || 26.x",
+          "patched": "^22.23.4 || ^24.22.1 || ^26.12.1",
+          "fixed_versions": [
+            "22.23.4",
+            "24.22.1",
+            "26.12.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "22.23.4",
+        "24.22.1",
+        "26.12.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/october-2026-security-releases"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2026-105482",
+      "aliases": [
+        "CVE-2026-105482",
+        "NODE-CORE-196"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "22.x || 24.x || 26.x",
+          "patched": "^22.23.4 || ^24.22.1 || ^26.12.1",
+          "fixed_versions": [
+            "22.23.4",
+            "24.22.1",
+            "26.12.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "22.23.4",
+        "24.22.1",
+        "26.12.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/october-2026-security-releases"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2026-105483",
+      "aliases": [
+        "CVE-2026-105483",
+        "NODE-CORE-197"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "24.x || 26.x",
+          "patched": "^24.22.1 || ^26.12.1",
+          "fixed_versions": [
+            "24.22.1",
+            "26.12.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "24.22.1",
+        "26.12.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/october-2026-security-releases"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2026-106069",
+      "aliases": [
+        "CVE-2026-106069",
+        "NODE-CORE-198"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "22.x || 24.x || 26.x",
+          "patched": "^22.23.4 || ^24.22.1 || ^26.12.1",
+          "fixed_versions": [
+            "22.23.4",
+            "24.22.1",
+            "26.12.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "22.23.4",
+        "24.22.1",
+        "26.12.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/october-2026-security-releases"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2026-106070",
+      "aliases": [
+        "CVE-2026-106070",
+        "NODE-CORE-199"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "26.x",
+          "patched": "^26.12.1",
+          "fixed_versions": [
+            "26.12.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "26.12.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/october-2026-security-releases"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2026-106071",
+      "aliases": [
+        "CVE-2026-106071",
+        "NODE-CORE-200"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "26.x",
+          "patched": "^26.12.1",
+          "fixed_versions": [
+            "26.12.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "26.12.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/october-2026-security-releases"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2026-106072",
+      "aliases": [
+        "CVE-2026-106072",
+        "NODE-CORE-201"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "22.x || 24.x || 26.x",
+          "patched": "^22.23.4 || ^24.22.1 || ^26.12.1",
+          "fixed_versions": [
+            "22.23.4",
+            "24.22.1",
+            "26.12.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "22.23.4",
+        "24.22.1",
+        "26.12.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/october-2026-security-releases"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2026-106073",
+      "aliases": [
+        "CVE-2026-106073",
+        "NODE-CORE-202"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "22.x || 24.x || 26.x",
+          "patched": "^22.23.4 || ^24.22.1 || ^26.12.1",
+          "fixed_versions": [
+            "22.23.4",
+            "24.22.1",
+            "26.12.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "22.23.4",
+        "24.22.1",
+        "26.12.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/october-2026-security-releases"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2026-106074",
+      "aliases": [
+        "CVE-2026-106074",
+        "NODE-CORE-203"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "22.x || 24.x || 26.x",
+          "patched": "^22.23.4 || ^24.22.1 || ^26.12.1",
+          "fixed_versions": [
+            "22.23.4",
+            "24.22.1",
+            "26.12.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "22.23.4",
+        "24.22.1",
+        "26.12.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/october-2026-security-releases"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2026-111497",
+      "aliases": [
+        "CVE-2026-111497",
+        "NODE-CORE-204"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "22.x || 24.x || 26.x",
+          "patched": "^22.23.4 || ^24.22.1 || ^26.12.1",
+          "fixed_versions": [
+            "22.23.4",
+            "24.22.1",
+            "26.12.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "22.23.4",
+        "24.22.1",
+        "26.12.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/october-2026-security-releases"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2026-21636",
+      "aliases": [
+        "CVE-2026-21636",
+        "NODE-CORE-162"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "25.x",
+          "patched": "^25.3.0",
+          "fixed_versions": [
+            "25.3.0"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "25.3.0"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/december-2025-security-releases"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2026-21637",
+      "aliases": [
+        "CVE-2026-21637",
+        "NODE-CORE-163"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "20.x || 22.x || 24.x || 25.x",
+          "patched": "^20.20.2 || ^22.22.2 || ^24.14.1 || ^25.8.2",
+          "fixed_versions": [
+            "20.20.2",
+            "22.22.2",
+            "24.14.1",
+            "25.8.2"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "20.20.2",
+        "22.22.2",
+        "24.14.1",
+        "25.8.2"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/march-2026-security-releases"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2026-21710",
+      "aliases": [
+        "CVE-2026-21710",
+        "NODE-CORE-164"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "20.x || 22.x || 24.x || 25.x",
+          "patched": "^20.20.2 || ^22.22.2 || ^24.14.1 || ^25.8.2",
+          "fixed_versions": [
+            "20.20.2",
+            "22.22.2",
+            "24.14.1",
+            "25.8.2"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "20.20.2",
+        "22.22.2",
+        "24.14.1",
+        "25.8.2"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/march-2026-security-releases"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2026-21711",
+      "aliases": [
+        "CVE-2026-21711",
+        "NODE-CORE-165"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "25.x",
+          "patched": "^25.8.2",
+          "fixed_versions": [
+            "25.8.2"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "25.8.2"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/march-2026-security-releases"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2026-21712",
+      "aliases": [
+        "CVE-2026-21712",
+        "NODE-CORE-166"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "24.x || 25.x",
+          "patched": "^24.14.1 || ^25.8.2",
+          "fixed_versions": [
+            "24.14.1",
+            "25.8.2"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "24.14.1",
+        "25.8.2"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/march-2026-security-releases"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2026-21713",
+      "aliases": [
+        "CVE-2026-21713",
+        "NODE-CORE-167"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "20.x || 22.x || 24.x || 25.x",
+          "patched": "^20.20.2 || ^22.22.2 || ^24.14.1 || ^25.8.2",
+          "fixed_versions": [
+            "20.20.2",
+            "22.22.2",
+            "24.14.1",
+            "25.8.2"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "20.20.2",
+        "22.22.2",
+        "24.14.1",
+        "25.8.2"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/march-2026-security-releases"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2026-21714",
+      "aliases": [
+        "CVE-2026-21714",
+        "NODE-CORE-168"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "20.x || 22.x || 24.x || 25.x",
+          "patched": "^20.20.2 || ^22.22.2 || ^24.14.1 || ^25.8.2",
+          "fixed_versions": [
+            "20.20.2",
+            "22.22.2",
+            "24.14.1",
+            "25.8.2"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "20.20.2",
+        "22.22.2",
+        "24.14.1",
+        "25.8.2"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/march-2026-security-releases"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2026-21715",
+      "aliases": [
+        "CVE-2026-21715",
+        "NODE-CORE-169"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "20.x || 22.x || 24.x || 25.x",
+          "patched": "^20.20.2 || ^22.22.2 || ^24.14.1 || ^25.8.2",
+          "fixed_versions": [
+            "20.20.2",
+            "22.22.2",
+            "24.14.1",
+            "25.8.2"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "20.20.2",
+        "22.22.2",
+        "24.14.1",
+        "25.8.2"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/march-2026-security-releases"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2026-21716",
+      "aliases": [
+        "CVE-2026-21716",
+        "NODE-CORE-170"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "20.x || 22.x || 24.x || 25.x",
+          "patched": "^20.20.2 || ^22.22.2 || ^24.14.1 || ^25.8.2",
+          "fixed_versions": [
+            "20.20.2",
+            "22.22.2",
+            "24.14.1",
+            "25.8.2"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "20.20.2",
+        "22.22.2",
+        "24.14.1",
+        "25.8.2"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/march-2026-security-releases"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2026-21717",
+      "aliases": [
+        "CVE-2026-21717",
+        "NODE-CORE-171"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "20.x || 22.x || 24.x || 25.x",
+          "patched": "^20.20.2 || ^22.22.2 || ^24.14.1 || ^25.8.2",
+          "fixed_versions": [
+            "20.20.2",
+            "22.22.2",
+            "24.14.1",
+            "25.8.2"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "20.20.2",
+        "22.22.2",
+        "24.14.1",
+        "25.8.2"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/march-2026-security-releases"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2026-48615",
+      "aliases": [
+        "CVE-2026-48615",
+        "NODE-CORE-172"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "22.x || 24.x || 26.x",
+          "patched": "^22.23.0 || ^24.17.0 || ^26.3.1",
+          "fixed_versions": [
+            "22.23.0",
+            "24.17.0",
+            "26.3.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "22.23.0",
+        "24.17.0",
+        "26.3.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/june-2026-security-releases"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2026-48617",
+      "aliases": [
+        "CVE-2026-48617",
+        "NODE-CORE-173"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "22.x || 24.x || 26.x",
+          "patched": "^22.23.0 || ^24.17.0 || ^26.3.1",
+          "fixed_versions": [
+            "22.23.0",
+            "24.17.0",
+            "26.3.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "22.23.0",
+        "24.17.0",
+        "26.3.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/june-2026-security-releases"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2026-48618",
+      "aliases": [
+        "CVE-2026-48618",
+        "NODE-CORE-174"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "22.x || 24.x || 26.x",
+          "patched": "^22.23.0 || ^24.17.0 || ^26.3.1",
+          "fixed_versions": [
+            "22.23.0",
+            "24.17.0",
+            "26.3.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "22.23.0",
+        "24.17.0",
+        "26.3.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/june-2026-security-releases"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2026-48619",
+      "aliases": [
+        "CVE-2026-48619",
+        "NODE-CORE-175"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "22.x || 24.x || 26.x",
+          "patched": "^22.23.0 || ^24.17.0 || ^26.3.1",
+          "fixed_versions": [
+            "22.23.0",
+            "24.17.0",
+            "26.3.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "22.23.0",
+        "24.17.0",
+        "26.3.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/june-2026-security-releases"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2026-48928",
+      "aliases": [
+        "CVE-2026-48928",
+        "NODE-CORE-177"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "22.x || 24.x || 26.x",
+          "patched": "^22.23.0 || ^24.17.0 || ^26.3.1",
+          "fixed_versions": [
+            "22.23.0",
+            "24.17.0",
+            "26.3.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "22.23.0",
+        "24.17.0",
+        "26.3.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/june-2026-security-releases"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2026-48930",
+      "aliases": [
+        "CVE-2026-48930",
+        "NODE-CORE-178"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "22.x || 24.x || 26.x",
+          "patched": "^22.23.0 || ^24.17.0 || ^26.3.1",
+          "fixed_versions": [
+            "22.23.0",
+            "24.17.0",
+            "26.3.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "22.23.0",
+        "24.17.0",
+        "26.3.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/june-2026-security-releases"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2026-48931",
+      "aliases": [
+        "CVE-2026-48931",
+        "NODE-CORE-182"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "22.x || 24.x || 26.x",
+          "patched": "^22.23.0 || ^24.17.0 || ^26.3.1",
+          "fixed_versions": [
+            "22.23.0",
+            "24.17.0",
+            "26.3.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "22.23.0",
+        "24.17.0",
+        "26.3.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/june-2026-security-releases"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2026-48933",
+      "aliases": [
+        "CVE-2026-48933",
+        "NODE-CORE-183"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "22.x || 24.x || 26.x",
+          "patched": "^22.23.0 || ^24.17.0 || ^26.3.1",
+          "fixed_versions": [
+            "22.23.0",
+            "24.17.0",
+            "26.3.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "22.23.0",
+        "24.17.0",
+        "26.3.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/june-2026-security-releases"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2026-48934",
+      "aliases": [
+        "CVE-2026-48934",
+        "NODE-CORE-179"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "22.x || 24.x || 26.x",
+          "patched": "^22.23.0 || ^24.17.0 || ^26.3.1",
+          "fixed_versions": [
+            "22.23.0",
+            "24.17.0",
+            "26.3.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "22.23.0",
+        "24.17.0",
+        "26.3.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/june-2026-security-releases"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2026-48935",
+      "aliases": [
+        "CVE-2026-48935",
+        "NODE-CORE-180"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "22.x || 24.x || 26.x",
+          "patched": "^22.23.0 || ^24.17.0 || ^26.3.1",
+          "fixed_versions": [
+            "22.23.0",
+            "24.17.0",
+            "26.3.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "22.23.0",
+        "24.17.0",
+        "26.3.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/june-2026-security-releases"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2026-48936",
+      "aliases": [
+        "CVE-2026-48936",
+        "NODE-CORE-181"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "26.x",
+          "patched": "^26.3.1",
+          "fixed_versions": [
+            "26.3.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "26.3.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/june-2026-security-releases"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2026-48937",
+      "aliases": [
+        "CVE-2026-48937",
+        "NODE-CORE-176"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "22.x || 24.x",
+          "patched": "^22.23.0 || ^24.17.0",
+          "fixed_versions": [
+            "22.23.0",
+            "24.17.0"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "22.23.0",
+        "24.17.0"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/june-2026-security-releases"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2026-56846",
+      "aliases": [
+        "CVE-2026-56846",
+        "NODE-CORE-184"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "22.x || 24.x",
+          "patched": "^22.23.2 || ^24.18.1",
+          "fixed_versions": [
+            "22.23.2",
+            "24.18.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "22.23.2",
+        "24.18.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/july-2026-security-releases"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2026-56847",
+      "aliases": [
+        "CVE-2026-56847",
+        "NODE-CORE-185"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "22.x || 24.x || 26.x",
+          "patched": "^22.23.2 || ^24.18.1 || ^26.5.1",
+          "fixed_versions": [
+            "22.23.2",
+            "24.18.1",
+            "26.5.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "22.23.2",
+        "24.18.1",
+        "26.5.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/july-2026-security-releases"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2026-56848",
+      "aliases": [
+        "CVE-2026-56848",
+        "NODE-CORE-186"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "22.x || 24.x || 26.x",
+          "patched": "^22.23.2 || ^24.18.1 || ^26.5.1",
+          "fixed_versions": [
+            "22.23.2",
+            "24.18.1",
+            "26.5.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "22.23.2",
+        "24.18.1",
+        "26.5.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/july-2026-security-releases"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2026-56850",
+      "aliases": [
+        "CVE-2026-56850",
+        "NODE-CORE-187"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "22.x || 24.x || 26.x",
+          "patched": "^22.23.2 || ^24.18.1 || ^26.5.1",
+          "fixed_versions": [
+            "22.23.2",
+            "24.18.1",
+            "26.5.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "22.23.2",
+        "24.18.1",
+        "26.5.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/july-2026-security-releases"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2026-58039",
+      "aliases": [
+        "CVE-2026-58039",
+        "NODE-CORE-188"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "22.x || 24.x || 26.x",
+          "patched": "^22.23.2 || ^24.18.1 || ^26.5.1",
+          "fixed_versions": [
+            "22.23.2",
+            "24.18.1",
+            "26.5.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "22.23.2",
+        "24.18.1",
+        "26.5.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/july-2026-security-releases"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2026-58040",
+      "aliases": [
+        "CVE-2026-58040",
+        "NODE-CORE-189"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "22.x || 24.x || 26.x",
+          "patched": "^22.23.2 || ^24.18.1 || ^26.5.1",
+          "fixed_versions": [
+            "22.23.2",
+            "24.18.1",
+            "26.5.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "22.23.2",
+        "24.18.1",
+        "26.5.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/july-2026-security-releases"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2026-58041",
+      "aliases": [
+        "CVE-2026-58041",
+        "NODE-CORE-190"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "24.x || 26.x",
+          "patched": "^24.18.1 || ^26.5.1",
+          "fixed_versions": [
+            "24.18.1",
+            "26.5.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "24.18.1",
+        "26.5.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/july-2026-security-releases"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2026-58042",
+      "aliases": [
+        "CVE-2026-58042",
+        "NODE-CORE-191"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "22.x || 24.x || 26.x",
+          "patched": "^22.23.2 || ^24.18.1 || ^26.5.1",
+          "fixed_versions": [
+            "22.23.2",
+            "24.18.1",
+            "26.5.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "22.23.2",
+        "24.18.1",
+        "26.5.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/july-2026-security-releases"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2026-58043",
+      "aliases": [
+        "CVE-2026-58043",
+        "NODE-CORE-192"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "22.x || 24.x || 26.x",
+          "patched": "^22.23.2 || ^24.18.1 || ^26.5.1",
+          "fixed_versions": [
+            "22.23.2",
+            "24.18.1",
+            "26.5.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "22.23.2",
+        "24.18.1",
+        "26.5.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/july-2026-security-releases"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2026-58044",
+      "aliases": [
+        "CVE-2026-58044",
+        "NODE-CORE-193"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "22.x || 24.x || 26.x",
+          "patched": "^22.23.2 || ^24.18.1 || ^26.5.1",
+          "fixed_versions": [
+            "22.23.2",
+            "24.18.1",
+            "26.5.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "22.23.2",
+        "24.18.1",
+        "26.5.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/july-2026-security-releases"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2026-58045",
+      "aliases": [
+        "CVE-2026-58045",
+        "NODE-CORE-194"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "22.x || 24.x || 26.x",
+          "patched": "^22.23.2 || ^24.18.1 || ^26.5.1",
+          "fixed_versions": [
+            "22.23.2",
+            "24.18.1",
+            "26.5.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "22.23.2",
+        "24.18.1",
+        "26.5.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/july-2026-security-releases"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "NODE-CORE-11",
+      "aliases": [
+        "NODE-CORE-11"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "6.x",
+          "patched": "^6.9.0",
+          "fixed_versions": [
+            "6.9.0"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "6.9.0"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/october-2016-security-releases/"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "NODE-CORE-17",
+      "aliases": [
+        "NODE-CORE-17"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "6.x",
+          "patched": "^6.7.0",
+          "fixed_versions": [
+            "6.7.0"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "6.7.0"
+      ],
+      "source_urls": [
+        "https://github.com/nodejs/node-private/pull/73"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "NODE-CORE-2",
+      "aliases": [
+        "NODE-CORE-2"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "4.x || 5.x || 6.x || 7.x || 8.x",
+          "patched": "^4.8.4 || ^6.11.1 || ^7.10.1 || ^8.1.4",
+          "fixed_versions": [
+            "4.8.4",
+            "6.11.1",
+            "7.10.1",
+            "8.1.4"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "4.8.4",
+        "6.11.1",
+        "7.10.1",
+        "8.1.4"
+      ],
+      "source_urls": [
+        "https://github.com/nodejs/security-wg/blob/main/vuln/core/2.json"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "NODE-CORE-20",
+      "aliases": [
+        "NODE-CORE-20"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "6.x || 4.x",
+          "patched": "^6.7.0 || ^4.6.0",
+          "fixed_versions": [
+            "6.7.0",
+            "4.6.0"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "4.6.0",
+        "6.7.0"
+      ],
+      "source_urls": [
+        "https://github.com/nodejs/node-private/pull/73"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "NODE-CORE-21",
+      "aliases": [
+        "NODE-CORE-21"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "6.x || 5.x || 4.x",
+          "patched": "^6.2.1 || ^4.5.0",
+          "fixed_versions": [
+            "6.2.1",
+            "4.5.0"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "4.5.0",
+        "6.2.1"
+      ],
+      "source_urls": [
+        "https://github.com/nodejs/node/issues/7047#issuecomment-222393982"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "NODE-CORE-25",
+      "aliases": [
+        "NODE-CORE-25"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "5.x || 4.x || 6.x",
+          "patched": "^5.12.0 || ^4.5.0 || ^6.2.1",
+          "fixed_versions": [
+            "5.12.0",
+            "4.5.0",
+            "6.2.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "4.5.0",
+        "5.12.0",
+        "6.2.1"
+      ],
+      "source_urls": [
+        "https://github.com/nodejs/node/pull/7562"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "NODE-CORE-26",
+      "aliases": [
+        "NODE-CORE-26"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "5.x || 4.x",
+          "patched": "^5.10.0 || 4.4.2",
+          "fixed_versions": [
+            "5.10.0",
+            "4.4.2"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "4.4.2",
+        "5.10.0"
+      ],
+      "source_urls": [
+        "https://github.com/npm/node/pull/6"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "NODE-CORE-29",
+      "aliases": [
+        "NODE-CORE-29"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "4.x || 5.x",
+          "patched": "^5.11.1 || ^4.4.4",
+          "fixed_versions": [
+            "5.11.1",
+            "4.4.4"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "4.4.4",
+        "5.11.1"
+      ],
+      "source_urls": [
+        "https://github.com/nodejs/security-wg/blob/main/vuln/core/29.json"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "NODE-CORE-30",
+      "aliases": [
+        "NODE-CORE-30"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "4.x || 5.x",
+          "patched": "^4.3.2 || ^5.7.1",
+          "fixed_versions": [
+            "4.3.2",
+            "5.7.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "4.3.2",
+        "5.7.1"
+      ],
+      "source_urls": [
+        "https://github.com/nodejs/node/pull/5507"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "NODE-CORE-33",
+      "aliases": [
+        "NODE-CORE-33"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "4.x || 5.x",
+          "patched": "^5.6.0 || ^4.3.0",
+          "fixed_versions": [
+            "5.6.0",
+            "4.3.0"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "4.3.0",
+        "5.6.0"
+      ],
+      "source_urls": [
+        "https://github.com/nodejs/security-wg/blob/main/vuln/core/33.json"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "NODE-CORE-38",
+      "aliases": [
+        "NODE-CORE-38"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "4.x || 6.x",
+          "patched": "^4.7.2 || ^6.9.4",
+          "fixed_versions": [
+            "4.7.2",
+            "6.9.4"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "4.7.2",
+        "6.9.4"
+      ],
+      "source_urls": [
+        "https://github.com/nodejs/security-wg/blob/main/vuln/core/38.json"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "NODE-CORE-39",
+      "aliases": [
+        "NODE-CORE-39"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "4.x",
+          "patched": "^4.1.1",
+          "fixed_versions": [
+            "4.1.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "4.1.1"
+      ],
+      "source_urls": [
+        "https://github.com/nodejs/node/pull/2931"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "NODE-CORE-41",
+      "aliases": [
+        "NODE-CORE-41"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "4.x",
+          "patched": "^4.1.1",
+          "fixed_versions": [
+            "4.1.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "4.1.1"
+      ],
+      "source_urls": [
+        "https://github.com/nodejs/node/pull/2945"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "NODE-CORE-9",
+      "aliases": [
+        "NODE-CORE-9"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "6.x",
+          "patched": "^6.9.0",
+          "fixed_versions": [
+            "6.9.0"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "6.9.0"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/october-2016-security-releases/"
+      ],
+      "published_at": null
+    }
+  ]
+}

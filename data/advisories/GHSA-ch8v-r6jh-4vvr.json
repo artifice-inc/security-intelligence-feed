@@ -1,0 +1,124 @@
+{
+  "key": "GHSA-ch8v-r6jh-4vvr",
+  "aliases": {
+    "cve": [],
+    "ghsa": [
+      "GHSA-ch8v-r6jh-4vvr"
+    ],
+    "other": []
+  },
+  "status": "active",
+  "superseded_by": null,
+  "category": "runtime",
+  "ecosystem": "php",
+  "title": "ext/filter: encode 0xFF in FILTER_SANITIZE_ENCODED",
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "php",
+        "name": "ext-filter"
+      },
+      "ranges": [
+        {
+          "type": "PHP_BRANCH",
+          "branch": "8.2",
+          "fixed": "8.2.34"
+        }
+      ],
+      "versions": [],
+      "from_sources": [
+        "php-ghsa:GHSA-ch8v-r6jh-4vvr"
+      ]
+    },
+    {
+      "package": {
+        "ecosystem": "php",
+        "name": "ext-filter"
+      },
+      "ranges": [
+        {
+          "type": "PHP_BRANCH",
+          "branch": "8.3",
+          "fixed": "8.3.35"
+        }
+      ],
+      "versions": [],
+      "from_sources": [
+        "php-ghsa:GHSA-ch8v-r6jh-4vvr"
+      ]
+    },
+    {
+      "package": {
+        "ecosystem": "php",
+        "name": "ext-filter"
+      },
+      "ranges": [
+        {
+          "type": "PHP_BRANCH",
+          "branch": "8.4",
+          "fixed": "8.4.25"
+        }
+      ],
+      "versions": [],
+      "from_sources": [
+        "php-ghsa:GHSA-ch8v-r6jh-4vvr"
+      ]
+    },
+    {
+      "package": {
+        "ecosystem": "php",
+        "name": "ext-filter"
+      },
+      "ranges": [
+        {
+          "type": "PHP_BRANCH",
+          "branch": "8.5",
+          "fixed": "8.5.10"
+        }
+      ],
+      "versions": [],
+      "from_sources": [
+        "php-ghsa:GHSA-ch8v-r6jh-4vvr"
+      ]
+    }
+  ],
+  "severity": {
+    "level": "low",
+    "cvss_v3": null,
+    "cvss_v4": null,
+    "source": "ghsa"
+  },
+  "known_exploited": {
+    "kev": false,
+    "date_added": null
+  },
+  "epss": {
+    "score": null,
+    "percentile": null,
+    "date": null
+  },
+  "jp_alerts": [],
+  "sources": [
+    {
+      "name": "php-ghsa",
+      "id": "GHSA-ch8v-r6jh-4vvr",
+      "url": "https://github.com/php/php-src/security/advisories/GHSA-ch8v-r6jh-4vvr",
+      "published_at": "2026-09-24T10:07:15Z",
+      "source_modified_at": "2026-09-24T10:07:15Z",
+      "fetched_at": "2026-10-25T12:34:54Z",
+      "content_hash": "da1432a425d4301d348a8c6343d784674888fb3bd5cd2525c8a348aac557af62",
+      "withdrawn_at": null
+    }
+  ],
+  "first_seen_at": "2026-10-24T17:52:00Z",
+  "history": [
+    {
+      "at": "2026-10-25T12:34:54Z",
+      "changes": [
+        "source_content"
+      ],
+      "significant": false
+    }
+  ],
+  "verification_status": "source_structured"
+}

@@ -1,0 +1,107 @@
+{
+  "key": "GHSA-4w77-75f9-2c8w",
+  "aliases": {
+    "cve": [],
+    "ghsa": [
+      "GHSA-4w77-75f9-2c8w"
+    ],
+    "other": []
+  },
+  "status": "active",
+  "superseded_by": null,
+  "category": "runtime",
+  "ecosystem": "php",
+  "title": "Heap-Use-After-Free in sapi_read_post_data Processing in CLI SAPI Interface",
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "php",
+        "name": ""
+      },
+      "ranges": [
+        {
+          "type": "PHP_BRANCH",
+          "branch": "8.2",
+          "fixed": "8.2.26"
+        }
+      ],
+      "versions": [],
+      "from_sources": [
+        "php-ghsa:GHSA-4w77-75f9-2c8w"
+      ]
+    },
+    {
+      "package": {
+        "ecosystem": "php",
+        "name": ""
+      },
+      "ranges": [
+        {
+          "type": "PHP_BRANCH",
+          "branch": "8.3",
+          "fixed": "8.3.14"
+        }
+      ],
+      "versions": [],
+      "from_sources": [
+        "php-ghsa:GHSA-4w77-75f9-2c8w"
+      ]
+    },
+    {
+      "package": {
+        "ecosystem": "php",
+        "name": ""
+      },
+      "ranges": [
+        {
+          "type": "PHP_BRANCH",
+          "branch": "8.1",
+          "fixed": "8.1.31"
+        }
+      ],
+      "versions": [],
+      "from_sources": [
+        "php-ghsa:GHSA-4w77-75f9-2c8w"
+      ]
+    }
+  ],
+  "severity": {
+    "level": "low",
+    "cvss_v3": null,
+    "cvss_v4": null,
+    "source": "ghsa"
+  },
+  "known_exploited": {
+    "kev": false,
+    "date_added": null
+  },
+  "epss": {
+    "score": null,
+    "percentile": null,
+    "date": null
+  },
+  "jp_alerts": [],
+  "sources": [
+    {
+      "name": "php-ghsa",
+      "id": "GHSA-4w77-75f9-2c8w",
+      "url": "https://github.com/php/php-src/security/advisories/GHSA-4w77-75f9-2c8w",
+      "published_at": "2024-11-21T18:15:01Z",
+      "source_modified_at": "2024-11-21T18:15:01Z",
+      "fetched_at": "2026-10-25T12:34:54Z",
+      "content_hash": "214e615d330aa6e2c2ac69f0b34d185e729955ea77554f29685946ea5f3eba16",
+      "withdrawn_at": null
+    }
+  ],
+  "first_seen_at": "2026-10-24T17:52:00Z",
+  "history": [
+    {
+      "at": "2026-10-25T12:34:54Z",
+      "changes": [
+        "source_content"
+      ],
+      "significant": false
+    }
+  ],
+  "verification_status": "source_structured"
+}

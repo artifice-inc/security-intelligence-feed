@@ -5,7 +5,7 @@
     "cve_id": "CVE-2026-99676"
   },
   "backfill_complete": true,
-  "last_success_date": "2026-11-21",
+  "last_success_date": "2026-11-22",
   "retry": [],
   "known_packages": [
     "amzn1/kernel",

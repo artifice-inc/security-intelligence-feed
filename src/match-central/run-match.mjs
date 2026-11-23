@@ -64,6 +64,7 @@ export async function runMatch({ privateRoot, projectsConfig, feedUrl, now, deps
     url: feedUrl, lastValidatedSha: previousState?.last_validated?.sha ?? null, needles: needlesFromPrivateConfig({ projectsConfig, central }), workDir: path.join(workDir, 'feed'),
   });
   outcome.feedMode = feed.mode;
+  const judgedAt = (deps.clock?.() ?? new Date()).toISOString(); // 取得中に公開された新しい枠を弾かないよう、取得直後の時刻で判定する
   const degraded = feed.mode === 'degraded';
   const feedData = degraded ? null : loadData(feed.dataDir);
   const kev = degraded ? null : readJsonIfExists(path.join(feed.dataDir, 'kev.json'));
@@ -96,8 +97,8 @@ export async function runMatch({ privateRoot, projectsConfig, feedUrl, now, deps
   const index = buildAdvisoryIndex(combineAdvisoryViews({ publicAdvisories: feedData?.advisories ?? [], privateAdvisories: [...advisories.values()] }));
 
   // 5: 予定枠の判定と、前回との統合
-  const judged = judgeSlots({ feedMode: feed.mode, feedHealth, kev, epssHigh, now, thresholds, schedule });
-  const signals = feedSignals({ kev, epssHigh, feedMode: feed.mode, targetSlot: judged.targetSlot, feedHealth, now, thresholds, schedule });
+  const judged = judgeSlots({ feedMode: feed.mode, feedHealth, kev, epssHigh, now: judgedAt, thresholds, schedule });
+  const signals = feedSignals({ kev, epssHigh, feedMode: feed.mode, targetSlot: judged.targetSlot, latestSlot: judged.latestSlot, feedHealth, now: judgedAt, thresholds, schedule });
   const extraErrors = Object.fromEntries(projectsConfig.projects.map((p) => [p.project, judged.extraErrors]));
   const { findings, inventories } = finalizeProjects({
     runs, data, index, sourceResults: judged.sourceResults, extraErrors, osvMeta, osvFetchedThisRun, packagistFullSyncAt: feedData?.packagist?.full_sync_at ?? null,

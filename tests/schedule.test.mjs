@@ -3,26 +3,27 @@ import assert from 'node:assert/strict';
 import { lastDueTime, nextScheduledTime, isCentralStale, toUtcCron, slotOf } from '../src/lib/schedule.mjs';
 import { loadSchedule } from '../src/lib/config.mjs';
 
-const schedule = loadSchedule(); // JST 07:17 / 16:17、猶予120分
+const schedule = loadSchedule(); // JST 07:17 / 16:17、猶予720分
 const at = (iso) => new Date(iso);
 
 test('猶予の境界±1分で直近の予定時刻が切り替わる', () => {
-  // 07:17 JST = 22:17Z。猶予終了は 09:17 JST = 00:17Z
-  assert.equal(lastDueTime(schedule, at('2026-10-25T00:16:00Z')).toISOString(), '2026-10-24T07:17:00.000Z');
-  assert.equal(lastDueTime(schedule, at('2026-10-25T00:17:00Z')).toISOString(), '2026-10-24T22:17:00.000Z');
-  assert.equal(lastDueTime(schedule, at('2026-10-25T00:18:00Z')).toISOString(), '2026-10-24T22:17:00.000Z');
+  // 07:17 JST = 22:17Z。猶予終了は 19:17 JST = 10:17Z
+  assert.equal(lastDueTime(schedule, at('2026-10-25T10:16:00Z')).toISOString(), '2026-10-24T07:17:00.000Z');
+  assert.equal(lastDueTime(schedule, at('2026-10-25T10:17:00Z')).toISOString(), '2026-10-24T22:17:00.000Z');
+  assert.equal(lastDueTime(schedule, at('2026-10-25T10:18:00Z')).toISOString(), '2026-10-24T22:17:00.000Z');
 });
 
 test('夜間の15時間の間隔では正常な成功を stale にしない（試験10b）', () => {
-  // 16:17 JST の回が 16:30 JST に成功。翌 07:17 JST+猶予の手前（09:00 JST）まで stale ではない
+  // 16:17 JST の回が 16:30 JST に成功。翌 07:17 JST+猶予の手前（19:00 JST）まで stale ではない
   const lastSuccess = '2026-10-24T07:30:00Z';
   assert.equal(isCentralStale(lastSuccess, schedule, at('2026-10-24T23:59:00Z')).stale, false);
 });
 
 test('予定時刻から猶予を過ぎても成功がなければ stale', () => {
   const lastSuccess = '2026-10-24T07:30:00Z';
-  assert.equal(isCentralStale(lastSuccess, schedule, at('2026-10-25T00:30:00Z')).stale, true);
-  assert.equal(isCentralStale(null, schedule, at('2026-10-25T00:30:00Z')).stale, true);
+  assert.equal(isCentralStale(lastSuccess, schedule, at('2026-10-25T10:16:00Z')).stale, false);
+  assert.equal(isCentralStale(lastSuccess, schedule, at('2026-10-25T10:17:00Z')).stale, true);
+  assert.equal(isCentralStale(null, schedule, at('2026-10-25T10:30:00Z')).stale, true);
 });
 
 test('日をまたぐ場合の次の予定時刻', () => {

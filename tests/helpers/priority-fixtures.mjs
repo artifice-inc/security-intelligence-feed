@@ -2,6 +2,7 @@ import { feedSignals } from '../../src/match/priority-inputs.mjs';
 import { assembleItems, buildAdvisoryIndex } from '../../src/match/assemble.mjs';
 import { mergeFindings } from '../../src/match/findings-merge.mjs';
 import { reconcileIssues } from '../../src/publish/issues-reconcile.mjs';
+import { requiredSlot, slotOf } from '../../src/lib/schedule.mjs';
 import { loadSchedule } from '../../src/lib/config.mjs';
 import { FakeGitHub } from './fake-github.mjs';
 
@@ -22,8 +23,8 @@ export function makeSignals({ kev = [], epssRows = [], epss = 'fresh', feedMode 
   return feedSignals({
     kev: { fetched_at: FETCHED, ok: true, records: kev.map((cveID) => ({ cveID })) },
     epssHigh: { fetched_at: fetchedAt, ok: epss === 'fresh', threshold: epssThreshold, records: epssRows.map(([cve, percentile]) => ({ cve, epss: 0.5, percentile })) },
-    feedMode, targetSlot: SLOT, now: NOW, thresholds, schedule: SCHEDULE,
-    feedHealth: { sources: { kev: healthEntry(true, FETCHED), epss: healthEntry(epss === 'fresh', fetchedAt) } },
+    feedMode, targetSlot: requiredSlot(SCHEDULE, NOW), latestSlot: slotOf(SCHEDULE, NOW), now: NOW, thresholds, schedule: SCHEDULE,
+    feedHealth: { run_slot: SLOT, sources: { kev: healthEntry(true, FETCHED), epss: healthEntry(epss === 'fresh', fetchedAt) } },
   });
 }
 

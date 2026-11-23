@@ -26,7 +26,7 @@ test('国内の注意喚起: 同じフィードを2回使っても重複せず�
 test('公開側の収集が遅れた枠（run_slot が古い）: scan_errors に feed が入り、検証を通って partial のままコミットされる', async () => {
   const h = makeMatchHarness();
   h.state.vulns = [VULN];
-  const out = await h.match({ feedOptions: { health: { run_slot: '2026-11-21T07:17Z' } } });
+  const out = await h.match({ feedOptions: { health: { run_slot: '2026-11-20T22:17Z' } } });
   assert.equal(out.status, 'partial');
   assert.equal(out.committed, true);
   const errors = h.readOut(`findings/${PROJECT}.json`).scan_errors;

@@ -41,6 +41,15 @@ CLAUDE="$(command -v claude || ls "$HOME/.local/bin/claude.exe" "$HOME/.local/bi
 
 `security-check@security-intelligence-feed` が `enabled` と表示されれば成功です。起動中の Claude Code は再起動してください。
 
+導入済みの環境の更新は、`docs/install-with-claude-code.md` の「導入済みの環境を更新する」を参照してください。
+
 ## 3. 使い方
 
 案件のフォルダで Claude Code を起動し、`/security-check` を実行します。キャッシュ（コードとフィード）は `SKILL.md` の手順が自動で用意・更新します。
+
+## 定期実行の遅れについて
+
+- 収集は 07:17・16:17 JST の予定ですが、GitHub の都合で数時間（実測で最大10時間程度）遅れることがあります。これは不具合ではありません。
+- 止まっていると判断する基準は `/security-check` と同じです。`health.json` の `last_success_at` が未記録、または「予定時刻＋`grace_minutes`（12時間）を過ぎた直近の予定時刻」より前であることです。収集の開始が猶予の中でも、成功したフィードの公開が猶予を過ぎれば、その間は警告が出ます。
+- `run_slot` は失敗した回でも進みます。「収集が実行されたか」の確認には使えますが、「成功しているか」の判定には使えません。
+- 自前で監視する場合も、予定時刻の直後に判定しないでください。

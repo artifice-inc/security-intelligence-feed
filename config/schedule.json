@@ -1,1 +1,1 @@
-{ "timezone": "Asia/Tokyo", "times": ["07:17", "16:17"], "grace_minutes": 120, "match_offset_minutes": 30 }
+{ "timezone": "Asia/Tokyo", "times": ["07:17", "16:17"], "grace_minutes": 720, "match_offset_minutes": 30 }

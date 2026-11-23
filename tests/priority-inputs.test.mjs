@@ -1,11 +1,14 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { listConfirmed, epssState, feedSignals } from '../src/match/priority-inputs.mjs';
+import { requiredSlot, slotOf } from '../src/lib/schedule.mjs';
 import { makeSignals, assemble, detection, advisory, runTwoRounds, ctxOf, storedItem, SCHEDULE, THRESHOLDS, SLOT, FETCHED, NOW } from './helpers/priority-fixtures.mjs';
 
-const health = (overrides = {}) => ({ sources: { epss: { last_attempt_slot: SLOT, last_success_at: FETCHED, last_attempt_ok: true, ...overrides } } });
+const LOWER = requiredSlot(SCHEDULE, NOW);
+const UPPER = slotOf(SCHEDULE, NOW);
+const health = (overrides = {}, runSlot = SLOT) => ({ run_slot: runSlot, sources: { epss: { last_attempt_slot: SLOT, last_success_at: FETCHED, last_attempt_ok: true, ...overrides } } });
 const list = (overrides = {}) => ({ fetched_at: FETCHED, ok: true, threshold: 0.5, records: [], ...overrides });
-const confirmed = (l, h = health(), feedMode = 'latest') => listConfirmed({ name: 'epss', list: l, feedMode, targetSlot: SLOT, feedHealth: h, schedule: SCHEDULE });
+const confirmed = (l, h = health(), feedMode = 'latest') => listConfirmed({ name: 'epss', list: l, feedMode, targetSlot: LOWER, latestSlot: UPPER, feedHealth: h, schedule: SCHEDULE });
 
 test('listConfirmed: その枠の成功した試行の一覧だけが true。日時が読めない・NEVER・別の枠・取得時刻の不一致・latest 以外は false（例外にしない）', () => {
   assert.equal(confirmed(list()), true);
@@ -20,7 +23,7 @@ test('listConfirmed: その枠の成功した試行の一覧だけが true。日
 });
 
 test('epssState: fresh・previous・expired（期限切れ・ファイルなし・矛盾・NEVER）', () => {
-  const state = (l, h = health()) => epssState({ epssHigh: l, feedMode: 'latest', targetSlot: SLOT, feedHealth: h, now: NOW, thresholds: THRESHOLDS, schedule: SCHEDULE });
+  const state = (l, h = health()) => epssState({ epssHigh: l, feedMode: 'latest', targetSlot: LOWER, latestSlot: UPPER, feedHealth: h, now: NOW, thresholds: THRESHOLDS, schedule: SCHEDULE });
   assert.equal(state(list()), 'fresh');
   assert.equal(state(list({ threshold: 0.99 })), 'previous', '一覧が消費側の閾値を網羅しない');
   const failed = list({ ok: false, fetched_at: '2026-11-21T00:20:00Z' });
@@ -29,6 +32,30 @@ test('epssState: fresh・previous・expired（期限切れ・ファイルなし�
   assert.equal(state(list({ ok: false, fetched_at: '2026-11-10T00:00:00Z' }), health({ last_attempt_ok: false, last_success_at: '2026-11-10T00:00:00Z' })), 'expired');
   assert.equal(state(null), 'expired');
   assert.equal(state(list({ ok: false, fetched_at: '1970-01-01T00:00:00Z' })), 'expired');
+});
+
+test('条件H: run_slot がない・上限より後・予定にない試行の枠・run_slot より新しい試行の枠は確認できず、EPSS は expired', () => {
+  const state = (l, h) => epssState({ epssHigh: l, feedMode: 'latest', targetSlot: LOWER, latestSlot: UPPER, feedHealth: h, now: NOW, thresholds: THRESHOLDS, schedule: SCHEDULE });
+  const noRunSlot = health();
+  delete noRunSlot.run_slot;
+  assert.equal(confirmed(list(), noRunSlot), false);
+  assert.equal(state(list(), noRunSlot), 'expired');
+  assert.equal(confirmed(list(), health({}, '2026-11-21T22:17Z')), false, 'run_slot が上限より後');
+  assert.equal(state(list(), health({}, '2026-11-21T22:17Z')), 'expired');
+  assert.equal(confirmed(list(), health({}, '2026-11-20T22:17Z')), false, '試行の枠が run_slot より新しい');
+  const odd = list({ ok: false });
+  assert.equal(state(odd, health({ last_attempt_ok: false, last_attempt_slot: '2026-11-21T07:18Z', last_success_at: odd.fetched_at })), 'expired', '予定にない試行の枠');
+  assert.equal(listConfirmed({ name: 'epss', list: list(), feedMode: 'latest', targetSlot: LOWER, feedHealth: health(), schedule: SCHEDULE }), false, 'latestSlot がなければ fail-closed');
+});
+
+test('下限より前の実在する枠でも、整合した一覧は previous。確認済み（fresh）にはならない', () => {
+  const previousAt = '2026-11-20T00:00:00Z';
+  const slot = slotOf(SCHEDULE, previousAt);
+  assert.ok(slot < LOWER);
+  const h = health({ last_attempt_slot: slot, last_success_at: previousAt }, slot);
+  assert.equal(confirmed(list({ fetched_at: previousAt }), h), false);
+  const state = epssState({ epssHigh: list({ fetched_at: previousAt }), feedMode: 'latest', targetSlot: LOWER, latestSlot: UPPER, feedHealth: h, now: NOW, thresholds: THRESHOLDS, schedule: SCHEDULE });
+  assert.equal(state, 'previous');
 });
 
 test('isEpssHigh は消費する側の閾値で判定する（公開側 0.90・非公開側 0.95、百分位 0.92 は fresh のとき上位でない）。expired は一覧の行も使わない', () => {
@@ -41,7 +68,7 @@ test('isEpssHigh は消費する側の閾値で判定する（公開側 0.90・�
   const previous = makeSignals({ epssRows: [['CVE-9', 0.99]], epss: 'previous' });
   assert.equal(previous.isEpssHigh(['CVE-9']), true);
   assert.equal(previous.isEpssHigh(['CVE-8']), null);
-  assert.equal(feedSignals({ kev: null, epssHigh: null, feedMode: 'latest', targetSlot: SLOT, feedHealth: null, now: NOW, thresholds: THRESHOLDS, schedule: SCHEDULE }).isKev(['CVE-1']), false);
+  assert.equal(feedSignals({ kev: null, epssHigh: null, feedMode: 'latest', targetSlot: LOWER, latestSlot: UPPER, feedHealth: null, now: NOW, thresholds: THRESHOLDS, schedule: SCHEDULE }).isKev(['CVE-1']), false);
 });
 
 test('CVE と GHSA で別々に検出した同じ脆弱性は1項目。GHSA だけを検出し CVE が索引にしかない KEV の脆弱性は P0', () => {

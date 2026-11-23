@@ -69,6 +69,21 @@ export function slotOf(schedule, now) {
   return slot.toISOString().slice(0, 16) + 'Z';
 }
 
+// 受け入れる最も古い予定枠（猶予を過ぎた直近の予定時刻）。isCentralStale と同じ下限
+export function requiredSlot(schedule, now) {
+  return lastDueTime(schedule, now).toISOString().slice(0, 16) + 'Z';
+}
+
+const SLOT_PATTERN = /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}Z$/;
+
+// 予定枠の条件S：形が正しく、設定上に実在し、lower 以上 upper 以下。満たさなければ例外にせず false
+export function isAcceptableSlot(schedule, slot, { lower, upper } = {}) {
+  if (![slot, lower, upper].every((s) => typeof s === 'string' && SLOT_PATTERN.test(s))) return false;
+  const at = Date.parse(slot);
+  if (!Number.isFinite(at) || slotOf(schedule, at) !== slot) return false;
+  return slot >= lower && slot <= upper; // この形なら文字列比較と時刻比較が一致する
+}
+
 // ワークフローの cron（UTC）用。分が揃っていない予定は表現できないのでエラーにする。offsetMinutes は非公開側の遅らせ分
 export function toUtcCron(schedule, referenceDate = new Date(), { offsetMinutes = 0 } = {}) {
   const slots = scheduledTimesAround(schedule, referenceDate)

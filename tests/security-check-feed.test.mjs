@@ -77,11 +77,11 @@ test('--osv-db-dir がなければ新しい経路は始まらない（CLI は終
 test('フィードは検証を通るが run_slot が古い／必須の情報源が枠で失敗: 結果は出るが complete: false', async () => {
   const stale = setup();
   const healthFile = path.join(stale.feedDir, 'health.json');
-  writeJson(healthFile, { ...JSON.parse(readFileSync(healthFile, 'utf8')), run_slot: '2026-11-21T07:17Z' });
+  writeJson(healthFile, { ...JSON.parse(readFileSync(healthFile, 'utf8')), run_slot: '2026-11-20T22:17Z' });
   const old = await stale.run();
   assert.equal(old.results.length, 1);
   assert.equal(old.local_scan.complete, false);
-  assert.ok(old.local_scan.reasons.some((r) => r.includes('予定枠')));
+  assert.ok(old.local_scan.reasons.some((r) => r.includes('猶予')));
   assert.notEqual(old.provenance.feed_version, null);
 
   const php = setup({ files: { 'composer.lock': '{"packages":[]}', 'composer.json': '{}', '.security/stack.yml': 'runtimes:\n  php: "8.3.10"\n' }, ecosystems: ['npm', 'Packagist'], vulns: [], feedOptions: { failing: ['php-ghsa'] } });

@@ -4,7 +4,7 @@ import { validateFeed } from '../feed/validate-feed.mjs';
 import { judgeSlots } from '../match-central/slot-judgement.mjs';
 import { requiredSources } from '../match/scan-status.mjs';
 import { feedSignals, kevConfirmed } from '../match/priority-inputs.mjs';
-import { slotOf } from '../lib/schedule.mjs';
+import { slotOf, requiredSlot } from '../lib/schedule.mjs';
 
 export const DEGRADED_REASON = '公開フィードを使えないため照合が不完全です';
 export const readJson = (file) => (existsSync(file) ? JSON.parse(readFileSync(file, 'utf8')) : null);
@@ -43,9 +43,8 @@ export function loadLocalFeed({ feedDir, noFeed }) {
 
 // 優先度の入力（signals）・照合が不完全な理由（scan_errors）・出力に載せる KEV/EPSS の状態を決める。slot-judgement と同じ判定
 export function judgeLocalFeed({ feed, inventory, thresholds, schedule, nowIso }) {
-  const targetSlot = slotOf(schedule, nowIso);
   if (feed.mode === 'degraded') {
-    const base = feedSignals({ kev: null, epssHigh: null, feedMode: 'degraded', targetSlot, feedHealth: null, now: nowIso, thresholds, schedule });
+    const base = feedSignals({ kev: null, epssHigh: null, feedMode: 'degraded', targetSlot: requiredSlot(schedule, nowIso), latestSlot: slotOf(schedule, nowIso), feedHealth: null, now: nowIso, thresholds, schedule });
     return {
       signals: { ...base, isKev: () => null }, // 縮退では KEV を確かめられない
       errors: [{ kind: 'feed', target: 'feed', message: feed.reason }], reasons: [DEGRADED_REASON],
@@ -53,7 +52,8 @@ export function judgeLocalFeed({ feed, inventory, thresholds, schedule, nowIso }
     };
   }
   const judged = judgeSlots({ feedMode: 'latest', feedHealth: feed.health, kev: feed.kev, epssHigh: feed.epssHigh, now: nowIso, thresholds, schedule });
-  const context = { feedMode: 'latest', targetSlot, feedHealth: feed.health, schedule };
+  const { targetSlot, latestSlot } = judged;
+  const context = { feedMode: 'latest', targetSlot, latestSlot, feedHealth: feed.health, schedule };
   const signals = feedSignals({ kev: feed.kev, epssHigh: feed.epssHigh, ...context, now: nowIso, thresholds });
   const errors = [...judged.extraErrors];
   for (const name of requiredSources(inventory)) {

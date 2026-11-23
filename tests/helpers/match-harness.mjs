@@ -87,7 +87,7 @@ export function makeMatchHarness({ privateThresholds = {}, projects = sampleProj
     publish: (feedOptions = {}) => feed.publish(makeFeedData({ now: NOW, ...feedOptions })),
     async match({ now = NOW, feedOptions = {}, feedUrl = feed.url, deps = {} } = {}) {
       if (feedOptions !== false) harness.lastSha = feed.publish(makeFeedData({ now, ...feedOptions }));
-      return runMatch({ privateRoot: base.central.root, projectsConfig: base.projectsConfig, feedUrl, now, deps: { ...base.deps, ...deps }, env });
+      return runMatch({ privateRoot: base.central.root, projectsConfig: base.projectsConfig, feedUrl, now, deps: { ...base.deps, clock: () => new Date(now), ...deps }, env });
     },
     runCentralAt: (now) => runCentral({ rootDir: base.central.root, projectsConfig: base.projectsConfig, now, deps: base.deps, env: base.env }),
     readOut: (rel) => JSON.parse(readFileSync(path.join(base.central.root, 'data', rel), 'utf8')),

@@ -24,7 +24,8 @@ test('全情報源が枠で成功: すべて ok で feed のエラーなし', ()
   const result = judge(feedOf());
   assert.deepEqual(failedNames(result), []);
   assert.deepEqual(result.extraErrors, []);
-  assert.equal(result.targetSlot, SLOT);
+  assert.equal(result.targetSlot, '2026-11-21T07:17Z', '下限は猶予内の前の枠');
+  assert.equal(result.latestSlot, SLOT);
 });
 
 test('個別の失敗: php-ghsa だけ・epss だけが失敗として出る（health にない情報源も失敗）', () => {
@@ -69,7 +70,7 @@ test('restored・degraded・run_slot が古い: 全情報源が失敗で、feed 
   assert.equal(restored.extraErrors[0].kind, 'feed');
   const degraded = judge({ feedHealth: null, kev: null, epssHigh: null }, 'degraded');
   assert.equal(failedNames(degraded).length, SOURCE_NAMES.length);
-  const old = judge(feedOf({ health: { run_slot: '2026-11-21T07:17Z' } }));
+  const old = judge(feedOf({ health: { run_slot: '2026-11-20T22:17Z' } }));
   assert.equal(old.extraErrors.length, 1);
 });
 

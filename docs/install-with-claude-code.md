@@ -118,6 +118,16 @@ CLAUDE="$(command -v claude || ls "$HOME/.local/bin/claude.exe" "$HOME/.local/bi
 
 削除するときは、（ステップ 0 の `claude` を使って）`claude plugin uninstall security-check@security-intelligence-feed` と `claude plugin marketplace remove security-intelligence-feed` を実行し、上の表のファイルとフォルダを消す。
 
+## 導入済みの環境を更新する
+
+**初回の導入では、この節は実行しない。** 導入済みの環境で、プラグインの版が上がったとき（例：0.7.0 から 0.8.0）は、次を実行し、Claude Code を再起動する。更新しないと、`SKILL.md` の変更（警告の文言など）は反映されない。
+
+```bash
+CLAUDE="$(command -v claude || ls "$HOME/.local/bin/claude.exe" "$HOME/.local/bin/claude" 2>/dev/null | head -n 1)" && "$CLAUDE" plugin marketplace update security-intelligence-feed && "$CLAUDE" plugin update security-check@security-intelligence-feed && "$CLAUDE" plugin list
+```
+
+`claude plugin list` に出る `security-check@security-intelligence-feed` の版が `0.8.0` になっていれば成功。
+
 ## このツールについて
 
 - 案件の lockfile（npm・Composer・PyPI）とランタイム（PHP・Node.js・Python）の版を、手元で公開の脆弱性情報と照合し、日本語でレポートする。

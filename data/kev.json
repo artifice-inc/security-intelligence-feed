@@ -1,7 +1,7 @@
 {
-  "fetched_at": "2026-11-23T02:53:16Z",
+  "fetched_at": "2026-11-23T19:18:47Z",
   "ok": true,
-  "catalog_version": "2026.11.20",
+  "catalog_version": "2026.11.23",
   "records": [
     {
       "cveID": "CVE-2026-129448",
@@ -36,7 +36,7 @@
       "vendorProject": "Synology",
       "product": "DiskStation Manager (DSM)",
       "dateAdded": "2026-11-18",
-      "knownRansomwareCampaignUse": "Unknown"
+      "knownRansomwareCampaignUse": "Known"
     },
     {
       "cveID": "CVE-2026-40217",

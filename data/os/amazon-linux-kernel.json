@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-11-20T03:15:59Z",
+  "updated_at": "2026-11-23T02:53:16Z",
   "cursor": {
     "modified_date": "2026-11-20",
     "cve_id": "CVE-2026-99676"
   },
   "backfill_complete": true,
-  "last_success_date": "2026-11-22",
+  "last_success_date": "2026-11-23",
   "retry": [],
   "known_packages": [
     "amzn1/kernel",
@@ -1996,13 +1996,6 @@
           "released": null
         },
         {
-          "key": "amzn2/kernel@kernel-5.15",
-          "status": "Fixed",
-          "advisory": "ALAS2KERNEL-5.15-2026-119",
-          "advisory_url": "https://alas.aws.amazon.com/AL2/ALAS2KERNEL-5.15-2026-119.html",
-          "released": "2026-10-24"
-        },
-        {
           "key": "amzn2/kernel@kernel-5.4",
           "status": "PendingFix",
           "advisory": null,
@@ -2076,13 +2069,6 @@
           "advisory": "ALAS2KERNEL-5.10-2026-136",
           "advisory_url": "https://alas.aws.amazon.com/AL2/ALAS2KERNEL-5.10-2026-136.html",
           "released": "2026-10-28"
-        },
-        {
-          "key": "amzn2/kernel@kernel-5.15",
-          "status": "Fixed",
-          "advisory": "ALAS2KERNEL-5.15-2026-119",
-          "advisory_url": "https://alas.aws.amazon.com/AL2/ALAS2KERNEL-5.15-2026-119.html",
-          "released": "2026-10-24"
         },
         {
           "key": "amzn2/kernel@kernel-5.4",
@@ -2227,13 +2213,6 @@
           "advisory": "ALAS2023-2026-3335",
           "advisory_url": "https://alas.aws.amazon.com/AL2023/ALAS2023-2026-3335.html",
           "released": "2026-10-29"
-        },
-        {
-          "key": "amzn2023/kernel6.18",
-          "status": "Fixed",
-          "advisory": "ALAS2023-2026-3251",
-          "advisory_url": "https://alas.aws.amazon.com/AL2023/ALAS2023-2026-3251.html",
-          "released": "2026-10-24"
         }
       ]
     },
@@ -2263,13 +2242,6 @@
           "released": "2026-10-28"
         },
         {
-          "key": "amzn2/kernel@kernel-5.15",
-          "status": "Fixed",
-          "advisory": "ALAS2KERNEL-5.15-2026-119",
-          "advisory_url": "https://alas.aws.amazon.com/AL2/ALAS2KERNEL-5.15-2026-119.html",
-          "released": "2026-10-24"
-        },
-        {
           "key": "amzn2/kernel@kernel-5.4",
           "status": "PendingFix",
           "advisory": null,
@@ -2289,13 +2261,6 @@
           "advisory": "ALAS2023-2026-3335",
           "advisory_url": "https://alas.aws.amazon.com/AL2023/ALAS2023-2026-3335.html",
           "released": "2026-10-29"
-        },
-        {
-          "key": "amzn2023/kernel6.18",
-          "status": "Fixed",
-          "advisory": "ALAS2023-2026-3251",
-          "advisory_url": "https://alas.aws.amazon.com/AL2023/ALAS2023-2026-3251.html",
-          "released": "2026-10-24"
         }
       ]
     },
@@ -2351,13 +2316,6 @@
           "advisory": "ALAS2023-2026-3335",
           "advisory_url": "https://alas.aws.amazon.com/AL2023/ALAS2023-2026-3335.html",
           "released": "2026-10-29"
-        },
-        {
-          "key": "amzn2023/kernel6.18",
-          "status": "Fixed",
-          "advisory": "ALAS2023-2026-3251",
-          "advisory_url": "https://alas.aws.amazon.com/AL2023/ALAS2023-2026-3251.html",
-          "released": "2026-10-24"
         }
       ]
     },
@@ -2387,13 +2345,6 @@
           "released": "2026-10-28"
         },
         {
-          "key": "amzn2/kernel@kernel-5.15",
-          "status": "Fixed",
-          "advisory": "ALAS2KERNEL-5.15-2026-119",
-          "advisory_url": "https://alas.aws.amazon.com/AL2/ALAS2KERNEL-5.15-2026-119.html",
-          "released": "2026-10-24"
-        },
-        {
           "key": "amzn2/kernel@kernel-5.4",
           "status": "PendingFix",
           "advisory": null,
@@ -2413,13 +2364,6 @@
           "advisory": "ALAS2023-2026-3335",
           "advisory_url": "https://alas.aws.amazon.com/AL2023/ALAS2023-2026-3335.html",
           "released": "2026-10-29"
-        },
-        {
-          "key": "amzn2023/kernel6.18",
-          "status": "Fixed",
-          "advisory": "ALAS2023-2026-3251",
-          "advisory_url": "https://alas.aws.amazon.com/AL2023/ALAS2023-2026-3251.html",
-          "released": "2026-10-24"
         }
       ]
     },
@@ -2449,13 +2393,6 @@
           "released": "2026-10-28"
         },
         {
-          "key": "amzn2/kernel@kernel-5.15",
-          "status": "Fixed",
-          "advisory": "ALAS2KERNEL-5.15-2026-119",
-          "advisory_url": "https://alas.aws.amazon.com/AL2/ALAS2KERNEL-5.15-2026-119.html",
-          "released": "2026-10-24"
-        },
-        {
           "key": "amzn2/kernel@kernel-5.4",
           "status": "PendingFix",
           "advisory": null,
@@ -2475,13 +2412,6 @@
           "advisory": "ALAS2023-2026-3335",
           "advisory_url": "https://alas.aws.amazon.com/AL2023/ALAS2023-2026-3335.html",
           "released": "2026-10-29"
-        },
-        {
-          "key": "amzn2023/kernel6.18",
-          "status": "Fixed",
-          "advisory": "ALAS2023-2026-3251",
-          "advisory_url": "https://alas.aws.amazon.com/AL2023/ALAS2023-2026-3251.html",
-          "released": "2026-10-24"
         }
       ]
     },
@@ -2523,13 +2453,6 @@
           "advisory": "ALAS2023-2026-3335",
           "advisory_url": "https://alas.aws.amazon.com/AL2023/ALAS2023-2026-3335.html",
           "released": "2026-10-29"
-        },
-        {
-          "key": "amzn2023/kernel6.18",
-          "status": "Fixed",
-          "advisory": "ALAS2023-2026-3251",
-          "advisory_url": "https://alas.aws.amazon.com/AL2023/ALAS2023-2026-3251.html",
-          "released": "2026-10-24"
         }
       ]
     },
@@ -2559,13 +2482,6 @@
           "released": "2026-10-28"
         },
         {
-          "key": "amzn2/kernel@kernel-5.15",
-          "status": "Fixed",
-          "advisory": "ALAS2KERNEL-5.15-2026-119",
-          "advisory_url": "https://alas.aws.amazon.com/AL2/ALAS2KERNEL-5.15-2026-119.html",
-          "released": "2026-10-24"
-        },
-        {
           "key": "amzn2/kernel@kernel-5.4",
           "status": "PendingFix",
           "advisory": null,
@@ -2585,13 +2501,6 @@
           "advisory": "ALAS2023-2026-3335",
           "advisory_url": "https://alas.aws.amazon.com/AL2023/ALAS2023-2026-3335.html",
           "released": "2026-10-29"
-        },
-        {
-          "key": "amzn2023/kernel6.18",
-          "status": "Fixed",
-          "advisory": "ALAS2023-2026-3251",
-          "advisory_url": "https://alas.aws.amazon.com/AL2023/ALAS2023-2026-3251.html",
-          "released": "2026-10-24"
         }
       ]
     },
@@ -2626,13 +2535,6 @@
           "advisory": "ALAS2023-2026-3335",
           "advisory_url": "https://alas.aws.amazon.com/AL2023/ALAS2023-2026-3335.html",
           "released": "2026-10-29"
-        },
-        {
-          "key": "amzn2023/kernel6.18",
-          "status": "Fixed",
-          "advisory": "ALAS2023-2026-3251",
-          "advisory_url": "https://alas.aws.amazon.com/AL2023/ALAS2023-2026-3251.html",
-          "released": "2026-10-24"
         }
       ]
     },
@@ -2688,13 +2590,6 @@
           "advisory": "ALAS2023-2026-3335",
           "advisory_url": "https://alas.aws.amazon.com/AL2023/ALAS2023-2026-3335.html",
           "released": "2026-10-29"
-        },
-        {
-          "key": "amzn2023/kernel6.18",
-          "status": "Fixed",
-          "advisory": "ALAS2023-2026-3251",
-          "advisory_url": "https://alas.aws.amazon.com/AL2023/ALAS2023-2026-3251.html",
-          "released": "2026-10-24"
         }
       ]
     },

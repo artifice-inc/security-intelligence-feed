@@ -1,6 +1,38 @@
 {
-  "updated_at": "2026-11-20T16:09:55Z",
+  "updated_at": "2026-11-24T06:08:38Z",
   "items": [
+    {
+      "source": "jvn",
+      "id": "JVN84156789",
+      "title": "Zoraxyにおける複数の脆弱性",
+      "link": "https://jvn.jp/jp/JVN84156789/",
+      "date": "2026-11-24T12:00:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-11-24T06:08:38Z"
+    },
+    {
+      "source": "jvn",
+      "id": "JVNVU98354779",
+      "title": "Siemens製品に対するアップデート（2026年11月）",
+      "link": "https://jvn.jp/vu/JVNVU98354779/",
+      "date": "2026-11-24T09:00:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-11-05T02:29:21Z"
+    },
+    {
+      "source": "ipa",
+      "id": "alert20261124.html",
+      "title": "VMware製品の脆弱性対策について(CVE-2026-123890)",
+      "link": "https://www.ipa.go.jp/security/security-alert/2026/alert20261124.html",
+      "date": "2026-11-24T00:00:00+09:00",
+      "cves": [
+        "CVE-2026-123890"
+      ],
+      "verification_status": "text_extracted",
+      "first_seen_at": "2026-11-24T06:08:38Z"
+    },
     {
       "source": "jpcert",
       "id": "at260033",
@@ -33,16 +65,6 @@
       "cves": [],
       "verification_status": "needs_review",
       "first_seen_at": "2026-11-20T03:15:59Z"
-    },
-    {
-      "source": "jvn",
-      "id": "JVNVU98354779",
-      "title": "Siemens製品に対するアップデート（2026年11月）",
-      "link": "https://jvn.jp/vu/JVNVU98354779/",
-      "date": "2026-11-20T09:00:00+09:00",
-      "cves": [],
-      "verification_status": "needs_review",
-      "first_seen_at": "2026-11-05T02:29:21Z"
     },
     {
       "source": "ipa",

@@ -1,6 +1,28 @@
 {
-  "updated_at": "2026-11-20T19:24:13Z",
+  "updated_at": "2026-11-24T06:08:38Z",
   "items": [
+    {
+      "id": "2026-197-aws",
+      "title": "CVE-2026-134069 - Use of a default cryptographic key in the instance registration of Amazon SSM Agent on AWS Windows Server AMIs",
+      "url": "https://aws.amazon.com/security/security-bulletins/2026-197-aws/",
+      "rss_pub_date": "2026-11-23T21:54:18Z",
+      "cves": [
+        "CVE-2026-134069"
+      ],
+      "first_seen_at": "2026-11-24T06:08:38Z",
+      "last_changed_at": null
+    },
+    {
+      "id": "2026-196-aws",
+      "title": "CVE-2026-134056 - Out-of-bounds write in padded block cipher decryption in AWS-LC",
+      "url": "https://aws.amazon.com/security/security-bulletins/2026-196-aws/",
+      "rss_pub_date": "2026-11-23T20:29:41Z",
+      "cves": [
+        "CVE-2026-134056"
+      ],
+      "first_seen_at": "2026-11-24T06:08:38Z",
+      "last_changed_at": null
+    },
     {
       "id": "2026-195-aws",
       "title": "CVE-2026-130901 - Improper limitation of a pathname to a restricted directory in Amazon awslabs.document-loader-mcp-server",

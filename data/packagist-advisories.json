@@ -1,6 +1,6 @@
 {
   "full_sync_at": "2026-11-22T02:18:44Z",
-  "updated_since": 1795500218,
+  "updated_since": 1795546298,
   "advisories": {
     "PKSA-138c-dqwc-4pfb": {
       "packageName": "magento/product-community-edition",
@@ -142,6 +142,20 @@
         }
       ]
     },
+    "PKSA-1pxf-pdc4-1ff4": {
+      "packageName": "web-token/jwt-experimental",
+      "affectedVersions": "<3.4.11|>=4.0.0,<4.0.8|>=4.1.0,<4.1.10|>=4.2.0,<4.2.4",
+      "cve": null,
+      "title": "AES-GCM decryption accepts any authentication tag length: a holder of one valid JWE can brute force a 1-byte tag in at most 256 requests and rewrite the plaintext",
+      "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-j265-mg9q-wpv9",
+      "reportedAt": "2026-10-30 20:37:54",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-token/jwt-experimental/GHSA-j265-mg9q-wpv9.yaml"
+        }
+      ]
+    },
     "PKSA-1pxk-pvfd-vt8h": {
       "packageName": "contao/core-bundle",
       "affectedVersions": ">=5.3.0,<5.3.54|>=5.4.0,<5.7.17|>=6.0.0,<6.0.6",
@@ -153,6 +167,20 @@
         {
           "name": "FriendsOfPHP/security-advisories",
           "remoteId": "contao/core-bundle/2026-11-11-10.yaml"
+        }
+      ]
+    },
+    "PKSA-1syt-87gb-gmwr": {
+      "packageName": "spomky-labs/pki-framework",
+      "affectedVersions": "<1.6.2",
+      "cve": null,
+      "title": "Name constraints are never enforced during certification path validation",
+      "link": "https://github.com/Spomky-Labs/pki-framework/security/advisories/GHSA-3p3r-m556-g5px",
+      "reportedAt": "2026-09-07 20:09:59",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "spomky-labs/pki-framework/GHSA-3p3r-m556-g5px.yaml"
         }
       ]
     },
@@ -195,6 +223,20 @@
         {
           "name": "FriendsOfPHP/security-advisories",
           "remoteId": "apache-solr-for-typo3/solr/CVE-2026-56096.yaml"
+        }
+      ]
+    },
+    "PKSA-21wq-3n3p-5h6b": {
+      "packageName": "web-auth/webauthn-framework",
+      "affectedVersions": ">=2.1.0,<5.3.13",
+      "cve": null,
+      "title": "StringStream::read() allocates the length declared by CBOR data before checking it (denial of service)",
+      "link": "https://github.com/web-auth/webauthn-framework/security/advisories/GHSA-rxc4-cg58-jrpw",
+      "reportedAt": "2026-11-17 19:20:46",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-auth/webauthn-framework/GHSA-rxc4-cg58-jrpw.yaml"
         }
       ]
     },
@@ -268,6 +310,48 @@
         }
       ]
     },
+    "PKSA-274g-2cxk-72nf": {
+      "packageName": "web-token/jwt-framework",
+      "affectedVersions": "<3.4.13|>=4.0.0,<4.0.9|>=4.1.0,<4.1.11|>=4.2.0,<4.2.6",
+      "cve": null,
+      "title": "JWS and JWE serializers decode attacker-controlled JSON without bounds before verification (CPU and memory denial of service)",
+      "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-2xq2-pp89-x7fr",
+      "reportedAt": "2026-11-08 10:24:28",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-token/jwt-framework/GHSA-2xq2-pp89-x7fr.yaml"
+        }
+      ]
+    },
+    "PKSA-27d3-gd7x-1vn4": {
+      "packageName": "flowd/phirewall-preset-owasp-crs",
+      "affectedVersions": ">=0.1.0,<0.11.1",
+      "cve": null,
+      "title": "OWASP CRS @rx rules can be bypassed by inserting a newline (see GHSA-mq54-wr53-ff9q)",
+      "link": "https://github.com/flowd/phirewall-src/security/advisories/GHSA-mq54-wr53-ff9q",
+      "reportedAt": "2026-11-24 00:00:00",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "flowd/phirewall-preset-owasp-crs/2026-11-24-1.yaml"
+        }
+      ]
+    },
+    "PKSA-2b4f-stn9-2hjs": {
+      "packageName": "web-token/jwt-framework",
+      "affectedVersions": "<3.4.13|>=4.0.0,<4.0.9|>=4.1.0,<4.1.11|>=4.2.0,<4.2.6",
+      "cve": null,
+      "title": "AES key wrapping accepts oct keys shorter than the algorithm key size and pads them with zero bytes: an empty key wraps every CEK under an all-zero key",
+      "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-4mxj-75j2-j8hc",
+      "reportedAt": "2026-11-08 10:34:16",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-token/jwt-framework/GHSA-4mxj-75j2-j8hc.yaml"
+        }
+      ]
+    },
     "PKSA-2bc7-7mnn-h1fk": {
       "packageName": "magento/product-community-edition",
       "affectedVersions": ">=2.1,<2.1.18|>=2.2,<2.2.9|>=2.3,<2.3.2",
@@ -282,6 +366,48 @@
         }
       ]
     },
+    "PKSA-2fr2-krtt-sm6z": {
+      "packageName": "web-token/jwt-encryption-algorithm-rsa",
+      "affectedVersions": "<=3.2.10",
+      "cve": null,
+      "title": "RSA-OAEP accepts an encrypted key made of several RSA blocks, enabling recovery of another JWE's content encryption key through a decryption oracle",
+      "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-wwcr-82mc-w3pw",
+      "reportedAt": "2026-11-24 00:00:00",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-token/jwt-encryption-algorithm-rsa/GHSA-wwcr-82mc-w3pw.yaml"
+        }
+      ]
+    },
+    "PKSA-2h5m-mtv3-857q": {
+      "packageName": "web-auth/webauthn-lib",
+      "affectedVersions": ">=3.0.0,<5.3.13",
+      "cve": null,
+      "title": "Metadata status report check reads a single report and ignores REVOKED",
+      "link": "https://github.com/web-auth/webauthn-framework/security/advisories/GHSA-p8cj-mmjr-5c2m",
+      "reportedAt": "2026-11-17 19:20:46",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-auth/webauthn-lib/GHSA-p8cj-mmjr-5c2m.yaml"
+        }
+      ]
+    },
+    "PKSA-2j9c-3mdb-h2kj": {
+      "packageName": "web-auth/metadata-service",
+      "affectedVersions": ">=3.0.0,<4.9.0",
+      "cve": null,
+      "title": "Metadata status report check reads a single report and ignores REVOKED",
+      "link": "https://github.com/web-auth/webauthn-framework/security/advisories/GHSA-p8cj-mmjr-5c2m",
+      "reportedAt": "2026-11-24 00:00:00",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-auth/metadata-service/GHSA-p8cj-mmjr-5c2m.yaml"
+        }
+      ]
+    },
     "PKSA-2nc4-qstv-j2k4": {
       "packageName": "in2code/femanager",
       "affectedVersions": ">=13.0.0,<13.3.5|>=8.0.0,<8.4.2|>=7.0.0,<7.5.5|<6.4.5",
@@ -293,6 +419,20 @@
         {
           "name": "FriendsOfPHP/security-advisories",
           "remoteId": "in2code/femanager/CVE-2026-77134.yaml"
+        }
+      ]
+    },
+    "PKSA-2pdq-p3wk-d4bg": {
+      "packageName": "spomky-labs/pki-framework",
+      "affectedVersions": "<1.6.2",
+      "cve": null,
+      "title": "Unbounded recursion in the ASN.1/DER decoder causes a stack-exhaustion crash (SIGSEGV)",
+      "link": "https://github.com/Spomky-Labs/pki-framework/security/advisories/GHSA-xjj7-24gw-437v",
+      "reportedAt": "2026-09-07 19:53:44",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "spomky-labs/pki-framework/GHSA-xjj7-24gw-437v.yaml"
         }
       ]
     },
@@ -366,6 +506,20 @@
         }
       ]
     },
+    "PKSA-2xyw-sdzb-ywxg": {
+      "packageName": "twig/twig",
+      "affectedVersions": ">=3.23.0,<3.31.1",
+      "cve": "CVE-2026-133765",
+      "title": "CVE-2026-133765: Sandbox `__toString()` policy bypass via assignment and destructuring expressions",
+      "link": "https://symfony.com/cve-2026-133765",
+      "reportedAt": "2026-11-24 12:48:46",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "twig/twig/CVE-2026-133765.yaml"
+        }
+      ]
+    },
     "PKSA-2zm6-dttg-zzbh": {
       "packageName": "wallabag/tcpdf",
       "affectedVersions": "<6.2.22",
@@ -408,6 +562,20 @@
         }
       ]
     },
+    "PKSA-3216-bpzk-td7p": {
+      "packageName": "web-auth/webauthn-framework",
+      "affectedVersions": ">=3.0.0,<5.3.13",
+      "cve": null,
+      "title": "Metadata status report check reads a single report and ignores REVOKED",
+      "link": "https://github.com/web-auth/webauthn-framework/security/advisories/GHSA-p8cj-mmjr-5c2m",
+      "reportedAt": "2026-11-17 19:20:46",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-auth/webauthn-framework/GHSA-p8cj-mmjr-5c2m.yaml"
+        }
+      ]
+    },
     "PKSA-32dn-k7sj-x6b5": {
       "packageName": "amphp/http-server",
       "affectedVersions": ">=3.0.0-beta1,<3.4.4|>=2.0.0-rc1,<2.1.10",
@@ -433,6 +601,20 @@
         {
           "name": "FriendsOfPHP/security-advisories",
           "remoteId": "paragonie/sodium_compat/2026-08-18.yaml"
+        }
+      ]
+    },
+    "PKSA-334s-8tms-ycxf": {
+      "packageName": "web-token/jwt-framework",
+      "affectedVersions": ">=0.5.0,<3.4.13|>=4.0.0,<4.0.9|>=4.1.0,<4.1.11|>=4.2.0,<4.2.6",
+      "cve": null,
+      "title": "JWE and JWS loaders try every recipient or signature of a token, so a small token multiplies the PBES2 iteration cap (denial of service)",
+      "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-3vqw-452c-g726",
+      "reportedAt": "2026-11-08 10:28:25",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-token/jwt-framework/GHSA-3vqw-452c-g726.yaml"
         }
       ]
     },
@@ -464,6 +646,62 @@
         }
       ]
     },
+    "PKSA-371z-bxbd-7k8g": {
+      "packageName": "spomky-labs/pki-framework",
+      "affectedVersions": "<1.6.2",
+      "cve": null,
+      "title": "Certificate serial numbers default to 0 and withRandomSerialNumber() yields under 64 bits of entropy",
+      "link": "https://github.com/Spomky-Labs/pki-framework/security/advisories/GHSA-8qrh-8g3j-pxvv",
+      "reportedAt": "2026-09-07 21:17:22",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "spomky-labs/pki-framework/GHSA-8qrh-8g3j-pxvv.yaml"
+        }
+      ]
+    },
+    "PKSA-379s-tfg2-bwm7": {
+      "packageName": "web-token/jwt-encryption-algorithm-aesgcm",
+      "affectedVersions": "<=3.2.10",
+      "cve": null,
+      "title": "AES-GCM decryption accepts any authentication tag length: a holder of one valid JWE can brute force a 1-byte tag in at most 256 requests and rewrite the plaintext",
+      "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-j265-mg9q-wpv9",
+      "reportedAt": "2026-11-24 00:00:00",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-token/jwt-encryption-algorithm-aesgcm/GHSA-j265-mg9q-wpv9.yaml"
+        }
+      ]
+    },
+    "PKSA-37sx-zwbt-2zkn": {
+      "packageName": "web-token/jwt-library",
+      "affectedVersions": "<3.4.12|>=4.0.0,<4.0.8|>=4.1.0,<4.1.10|>=4.2.0,<4.2.4",
+      "cve": null,
+      "title": "ECDH-ES derives at most 256 bits of key material: with A256CBC-HS512 the content is encrypted under an all-zero AES key and anyone holding the token can read it",
+      "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-5pj7-wx9m-cjh6",
+      "reportedAt": "2026-10-30 21:59:07",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-token/jwt-library/GHSA-5pj7-wx9m-cjh6.yaml"
+        }
+      ]
+    },
+    "PKSA-3ddj-mtt1-bg82": {
+      "packageName": "silverstripe/template-engine",
+      "affectedVersions": "<1.0.3",
+      "cve": null,
+      "title": "SS-2026-008 - Unauthenticated RCE via form submissions",
+      "link": "https://www.silverstripe.org/download/security-releases/ss-2026-008",
+      "reportedAt": "2026-11-23 21:07:53",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "silverstripe/template-engine/SS-2026-008.yaml"
+        }
+      ]
+    },
     "PKSA-3fqv-nq39-s3wg": {
       "packageName": "contao/contao",
       "affectedVersions": ">=4.0.0,<5.3.50|>=5.4.0,<5.7.12",
@@ -475,6 +713,20 @@
         {
           "name": "FriendsOfPHP/security-advisories",
           "remoteId": "contao/contao/CVE-2026-107845.yaml"
+        }
+      ]
+    },
+    "PKSA-3gcq-s37q-5wps": {
+      "packageName": "symfony/ux-icons",
+      "affectedVersions": ">=2.17.0,<2.36.3|>=3.0.0,<3.8.1",
+      "cve": "CVE-2026-133775",
+      "title": "CVE-2026-133775: XSS in symfony/ux-icons via Scripts Nested in SVG Style Elements: Incomplete Fix for CVE-2026-55877",
+      "link": "https://symfony.com/cve-2026-133775",
+      "reportedAt": "2026-11-24 07:14:17",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "symfony/ux-icons/CVE-2026-133775.yaml"
         }
       ]
     },
@@ -503,6 +755,20 @@
         {
           "name": "FriendsOfPHP/security-advisories",
           "remoteId": "yiisoft/yii2-gii/CVE-2015-3397.yaml"
+        }
+      ]
+    },
+    "PKSA-3k36-7sgf-2j1h": {
+      "packageName": "spomky-labs/pki-framework",
+      "affectedVersions": "<1.6.2",
+      "cve": null,
+      "title": "The MAX_PATHS bound never fires when no path reaches a trust anchor, so 7 KB of certificates costs minutes of CPU",
+      "link": "https://github.com/Spomky-Labs/pki-framework/security/advisories/GHSA-rfxw-c9pp-xvfw",
+      "reportedAt": "2026-09-08 05:31:02",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "spomky-labs/pki-framework/GHSA-rfxw-c9pp-xvfw.yaml"
         }
       ]
     },
@@ -576,6 +842,34 @@
         }
       ]
     },
+    "PKSA-3yvx-trwt-wx7f": {
+      "packageName": "web-auth/webauthn-lib",
+      "affectedVersions": ">=4.9.0,<5.3.13",
+      "cve": null,
+      "title": "FidoAllianceCompliantMetadataService accepts a metadata BLOB that does not chain to a trust anchor",
+      "link": "https://github.com/web-auth/webauthn-framework/security/advisories/GHSA-p653-gg6c-rrjw",
+      "reportedAt": "2026-11-17 19:19:48",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-auth/webauthn-lib/GHSA-p653-gg6c-rrjw.yaml"
+        }
+      ]
+    },
+    "PKSA-455j-x2ky-s2n8": {
+      "packageName": "symfony/filesystem",
+      "affectedVersions": ">=5.4.0,<5.4.56|>=6.0.0,<6.1.0|>=6.1.0,<6.2.0|>=6.2.0,<6.3.0|>=6.3.0,<6.4.0|>=6.4.0,<6.4.50|>=7.0.0,<7.1.0|>=7.1.0,<7.2.0|>=7.2.0,<7.3.0|>=7.3.0,<7.4.0|>=7.4.0,<7.4.23|>=8.0.0,<8.1.0|>=8.1.0,<8.1.11",
+      "cve": "CVE-2026-135803",
+      "title": "CVE-2026-135803: Filesystem Path Treats Any Prefix Before \"://\" as a Root, Letting Paths Escape Their Base Directory",
+      "link": "https://symfony.com/cve-2026-135803",
+      "reportedAt": "2026-11-04 10:45:07",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "symfony/filesystem/CVE-2026-135803.yaml"
+        }
+      ]
+    },
     "PKSA-486n-vypc-8bw8": {
       "packageName": "magento/product-community-edition",
       "affectedVersions": ">=2.2,<2.2.10|>=2.3,<2.3.2-p2",
@@ -643,6 +937,20 @@
         {
           "name": "FriendsOfPHP/security-advisories",
           "remoteId": "sylius/sylius/GHSA-qf53-r587-295p.yaml"
+        }
+      ]
+    },
+    "PKSA-4jc4-zmvb-njr2": {
+      "packageName": "symfony/ux-live-component",
+      "affectedVersions": ">=2.7.0,<2.36.3|>=3.0.0,<3.8.1",
+      "cve": "CVE-2026-133778",
+      "title": "CVE-2026-133778: Live Components Configured With a Custom Route Can Still Be Reached Through the Default Route",
+      "link": "https://symfony.com/cve-2026-133778",
+      "reportedAt": "2026-11-24 07:14:17",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "symfony/ux-live-component/CVE-2026-133778.yaml"
         }
       ]
     },
@@ -716,6 +1024,34 @@
         }
       ]
     },
+    "PKSA-51gj-rh5j-ynzs": {
+      "packageName": "web-auth/webauthn-framework",
+      "affectedVersions": ">=4.9.0,<5.3.13",
+      "cve": null,
+      "title": "SimpleFakeCredentialGenerator decoys can be told apart from real credentials, allowing username enumeration",
+      "link": "https://github.com/web-auth/webauthn-framework/security/advisories/GHSA-8gvp-8vj9-p3q7",
+      "reportedAt": "2026-11-17 19:20:46",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-auth/webauthn-framework/GHSA-8gvp-8vj9-p3q7.yaml"
+        }
+      ]
+    },
+    "PKSA-56hc-n44r-kn1v": {
+      "packageName": "web-auth/cose-lib",
+      "affectedVersions": "<4.7.2",
+      "cve": null,
+      "title": "CPU exhaustion through oversized attacker-supplied RSA keys in COSE signature verification",
+      "link": "https://github.com/web-auth/cose-lib/security/advisories/GHSA-9v8c-2mgr-qvx3",
+      "reportedAt": "2026-09-10 16:46:32",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-auth/cose-lib/GHSA-9v8c-2mgr-qvx3.yaml"
+        }
+      ]
+    },
     "PKSA-5751-tp49-g4f1": {
       "packageName": "magento/product-community-edition",
       "affectedVersions": ">=2.2,<2.2.10|>=2.3,<2.3.2-p2",
@@ -758,6 +1094,20 @@
         }
       ]
     },
+    "PKSA-5gwb-v1k5-zpm9": {
+      "packageName": "web-token/jwt-library",
+      "affectedVersions": "<3.4.13|>=4.0.0,<4.0.9|>=4.1.0,<4.1.11|>=4.2.0,<4.2.6",
+      "cve": null,
+      "title": "JWE and JWS loaders try every recipient or signature of a token, so a small token multiplies the PBES2 iteration cap (denial of service)",
+      "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-3vqw-452c-g726",
+      "reportedAt": "2026-11-08 10:28:25",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-token/jwt-library/GHSA-3vqw-452c-g726.yaml"
+        }
+      ]
+    },
     "PKSA-5h54-h95w-n92h": {
       "packageName": "typo3/cms-install",
       "affectedVersions": ">=14.0.0,<14.3.12|>=13.0.0,<13.4.40|>=12.0.0,<12.4.52|>=11.0.0,<11.5.57|>=10.0.0,<10.4.63",
@@ -783,6 +1133,20 @@
         {
           "name": "FriendsOfPHP/security-advisories",
           "remoteId": "magento/magento1ce/CVE-2019-7887.yaml"
+        }
+      ]
+    },
+    "PKSA-5pvf-njh6-dbvd": {
+      "packageName": "web-token/jwt-library",
+      "affectedVersions": "<3.4.13|>=4.0.0,<4.0.9|>=4.1.0,<4.1.11|>=4.2.0,<4.2.6",
+      "cve": null,
+      "title": "RSA private key recoverable through a timing side channel in RSA-OAEP and RSA1_5 decryption",
+      "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-2qpx-pwmq-r27r",
+      "reportedAt": "2026-11-08 09:42:11",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-token/jwt-library/GHSA-2qpx-pwmq-r27r.yaml"
         }
       ]
     },
@@ -940,6 +1304,20 @@
         }
       ]
     },
+    "PKSA-69c5-tcwb-tc69": {
+      "packageName": "symfony/json-path",
+      "affectedVersions": ">=7.3.0,<7.4.0|>=7.4.0,<7.4.23|>=8.0.0,<8.1.0|>=8.1.0,<8.1.11",
+      "cve": "CVE-2026-135804",
+      "title": "CVE-2026-135804: Incomplete Fix for CVE-2026-45756: JsonPath Queries Can Still Hold a Process Through search(), match() and Chained Filters",
+      "link": "https://symfony.com/cve-2026-135804",
+      "reportedAt": "2026-11-04 11:26:51",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "symfony/json-path/CVE-2026-135804.yaml"
+        }
+      ]
+    },
     "PKSA-6bs9-m3c2-gy1z": {
       "packageName": "symbiote/silverstripe-advancedworkflow",
       "affectedVersions": "<6.4.6|>=7.0.0,<7.2.4",
@@ -1021,6 +1399,34 @@
         {
           "name": "FriendsOfPHP/security-advisories",
           "remoteId": "magento/magento1ce/CVE-2019-7911.yaml"
+        }
+      ]
+    },
+    "PKSA-6pzp-56x9-ffnd": {
+      "packageName": "web-token/jwt-framework",
+      "affectedVersions": "<3.4.13|>=4.0.0,<4.0.9|>=4.1.0,<4.1.11|>=4.2.0,<4.2.6",
+      "cve": null,
+      "title": "RSA keys of any size are accepted: a key chosen by the sender of a token costs seconds of CPU per operation (RSA-PSS and RSA encryption, and every RSA algorithm without GMP)",
+      "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-96f8-m4jr-72xj",
+      "reportedAt": "2026-11-08 10:20:11",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-token/jwt-framework/GHSA-96f8-m4jr-72xj.yaml"
+        }
+      ]
+    },
+    "PKSA-6q5t-h783-x1rw": {
+      "packageName": "web-auth/webauthn-framework",
+      "affectedVersions": ">=4.9.0,<5.3.10",
+      "cve": null,
+      "title": "Assertion options return an empty allowCredentials for accounts without credentials, allowing username enumeration",
+      "link": "https://github.com/web-auth/webauthn-framework/security/advisories/GHSA-pm4w-cq4x-rv8q",
+      "reportedAt": "2026-10-31 12:44:21",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-auth/webauthn-framework/GHSA-pm4w-cq4x-rv8q.yaml"
         }
       ]
     },
@@ -1164,6 +1570,20 @@
         }
       ]
     },
+    "PKSA-74bq-dbsv-yp32": {
+      "packageName": "spomky-labs/pki-framework",
+      "affectedVersions": "<1.6.2",
+      "cve": null,
+      "title": "An unsupported critical extension in an attribute certificate is ignored, so the issuer's restrictions are silently discarded",
+      "link": "https://github.com/Spomky-Labs/pki-framework/security/advisories/GHSA-6pj8-5pjp-gj6w",
+      "reportedAt": "2026-09-08 05:58:33",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "spomky-labs/pki-framework/GHSA-6pj8-5pjp-gj6w.yaml"
+        }
+      ]
+    },
     "PKSA-74k9-z9w2-8c6x": {
       "packageName": "magento/magento1ce",
       "affectedVersions": "<1.9.3.9",
@@ -1192,6 +1612,34 @@
         }
       ]
     },
+    "PKSA-76qc-694m-3qzq": {
+      "packageName": "web-token/jwt-library",
+      "affectedVersions": "<3.4.13|>=4.0.0,<4.0.9|>=4.1.0,<4.1.11|>=4.2.0,<4.2.6",
+      "cve": null,
+      "title": "AES key wrapping accepts oct keys shorter than the algorithm key size and pads them with zero bytes: an empty key wraps every CEK under an all-zero key",
+      "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-4mxj-75j2-j8hc",
+      "reportedAt": "2026-11-08 10:34:16",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-token/jwt-library/GHSA-4mxj-75j2-j8hc.yaml"
+        }
+      ]
+    },
+    "PKSA-7876-kkht-w93s": {
+      "packageName": "spomky-labs/pki-framework",
+      "affectedVersions": "<1.6.2",
+      "cve": null,
+      "title": "Distinguished name comparison is defeated by the ASN.1 string type and by invisible characters, and made to collide by lossy transcoding",
+      "link": "https://github.com/Spomky-Labs/pki-framework/security/advisories/GHSA-2rhj-2r69-j232",
+      "reportedAt": "2026-09-08 05:30:19",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "spomky-labs/pki-framework/GHSA-2rhj-2r69-j232.yaml"
+        }
+      ]
+    },
     "PKSA-78dg-trm7-sxrm": {
       "packageName": "magento/magento1ce",
       "affectedVersions": ">=1,<1.9.4.2",
@@ -1217,6 +1665,34 @@
         {
           "name": "FriendsOfPHP/security-advisories",
           "remoteId": "sylius/sylius/GHSA-v78h-66q4-h9px.yaml"
+        }
+      ]
+    },
+    "PKSA-7jj5-ctpm-wc51": {
+      "packageName": "web-auth/webauthn-framework",
+      "affectedVersions": ">=4.0.0,<5.3.13",
+      "cve": null,
+      "title": "RequestBodyUserEntityGuesser lets users add passkeys to other accounts",
+      "link": "https://github.com/web-auth/webauthn-framework/security/advisories/GHSA-3chw-82qh-p72w",
+      "reportedAt": "2026-11-17 18:44:35",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-auth/webauthn-framework/GHSA-3chw-82qh-p72w.yaml"
+        }
+      ]
+    },
+    "PKSA-7khn-c6ky-f3tv": {
+      "packageName": "web-token/jwt-framework",
+      "affectedVersions": "<3.4.13|>=4.0.0,<4.0.9|>=4.1.0,<4.1.11|>=4.2.0,<4.2.6",
+      "cve": null,
+      "title": "RSA-OAEP accepts an encrypted key made of several RSA blocks, enabling recovery of another JWE's content encryption key through a decryption oracle",
+      "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-wwcr-82mc-w3pw",
+      "reportedAt": "2026-11-08 10:18:12",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-token/jwt-framework/GHSA-wwcr-82mc-w3pw.yaml"
         }
       ]
     },
@@ -1262,6 +1738,20 @@
         }
       ]
     },
+    "PKSA-7kvy-dxs4-nbjt": {
+      "packageName": "web-auth/webauthn-symfony-bundle",
+      "affectedVersions": ">=4.0.0,<5.3.13",
+      "cve": null,
+      "title": "Default client override policy lets the client waive the attestation that a creation profile requests",
+      "link": "https://github.com/web-auth/webauthn-framework/security/advisories/GHSA-473f-pfcw-p4h2",
+      "reportedAt": "2026-11-17 19:20:46",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-auth/webauthn-symfony-bundle/GHSA-473f-pfcw-p4h2.yaml"
+        }
+      ]
+    },
     "PKSA-7mmw-kzc6-42zn": {
       "packageName": "magento/product-community-edition",
       "affectedVersions": ">=2.2,<2.2.10|>=2.3,<2.3.2-p2",
@@ -1304,6 +1794,20 @@
         }
       ]
     },
+    "PKSA-7qvf-nf2z-q2tv": {
+      "packageName": "web-token/jwt-library",
+      "affectedVersions": ">=4.2.1,<4.2.6",
+      "cve": null,
+      "title": "Rejected JWE tokens write decryption keys into exception stack traces (4.2.1 to 4.2.5)",
+      "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-7hp7-mg7x-hww4",
+      "reportedAt": "2026-11-08 11:32:34",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-token/jwt-library/GHSA-7hp7-mg7x-hww4.yaml"
+        }
+      ]
+    },
     "PKSA-7v7q-qgdw-m2kg": {
       "packageName": "magento/product-community-edition",
       "affectedVersions": ">=2.2,<2.2.10|>=2.3,<2.3.2-p2",
@@ -1343,6 +1847,20 @@
         {
           "name": "FriendsOfPHP/security-advisories",
           "remoteId": "magento/magento1ee/CVE-2019-8123.yaml"
+        }
+      ]
+    },
+    "PKSA-7x41-jjrb-4gs2": {
+      "packageName": "web-auth/metadata-service",
+      "affectedVersions": ">=4.1.0,<4.9.0",
+      "cve": null,
+      "title": "Attestation certificates sent as PEM text allow forged packed/TPM attestations and an unauthenticated denial of service",
+      "link": "https://github.com/web-auth/webauthn-framework/security/advisories/GHSA-c9p6-r72h-rp3x",
+      "reportedAt": "2026-11-24 00:00:00",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-auth/metadata-service/GHSA-c9p6-r72h-rp3x.yaml"
         }
       ]
     },
@@ -1427,6 +1945,20 @@
         {
           "name": "FriendsOfPHP/security-advisories",
           "remoteId": "silverstripe/userforms/SS-2026-001.yaml"
+        }
+      ]
+    },
+    "PKSA-84zn-r2ts-xfyv": {
+      "packageName": "spomky-labs/otphp",
+      "affectedVersions": ">=11.4.0,<11.4.4|>=11.5.0,<11.5.1",
+      "cve": null,
+      "title": "Label validation accepts an encoded colon at the start of the account name",
+      "link": "https://github.com/Spomky-Labs/otphp/security/advisories/GHSA-h38w-h2gf-6qv2",
+      "reportedAt": "2026-11-07 16:52:51",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "spomky-labs/otphp/GHSA-h38w-h2gf-6qv2.yaml"
         }
       ]
     },
@@ -1528,6 +2060,20 @@
         }
       ]
     },
+    "PKSA-8kjb-9y3c-jxsg": {
+      "packageName": "web-auth/webauthn-symfony-bundle",
+      "affectedVersions": ">=4.9.0,<5.3.10",
+      "cve": null,
+      "title": "Assertion options return an empty allowCredentials for accounts without credentials, allowing username enumeration",
+      "link": "https://github.com/web-auth/webauthn-framework/security/advisories/GHSA-pm4w-cq4x-rv8q",
+      "reportedAt": "2026-10-31 12:44:21",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-auth/webauthn-symfony-bundle/GHSA-pm4w-cq4x-rv8q.yaml"
+        }
+      ]
+    },
     "PKSA-8kx7-m8rq-4d5v": {
       "packageName": "contao/contao",
       "affectedVersions": ">=4.9.0,<5.3.54|>=5.4.0,<5.7.17|>=6.0.0,<6.0.6",
@@ -1567,6 +2113,34 @@
         {
           "name": "FriendsOfPHP/security-advisories",
           "remoteId": "magento/product-community-edition/CVE-2019-8130.yaml"
+        }
+      ]
+    },
+    "PKSA-8q9p-nqf2-p48x": {
+      "packageName": "web-auth/webauthn-framework",
+      "affectedVersions": ">=3.0.0,<5.3.13",
+      "cve": null,
+      "title": "CheckMetadataStatement skips the attestation trust path verification under the null AAGUID",
+      "link": "https://github.com/web-auth/webauthn-framework/security/advisories/GHSA-2jv3-c2vg-rhc4",
+      "reportedAt": "2026-11-17 19:20:45",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-auth/webauthn-framework/GHSA-2jv3-c2vg-rhc4.yaml"
+        }
+      ]
+    },
+    "PKSA-8r9t-y5kj-mfrc": {
+      "packageName": "web-auth/webauthn-framework",
+      "affectedVersions": ">=4.0.0,<5.3.13",
+      "cve": null,
+      "title": "Attestation certificates sent as PEM text allow forged packed/TPM attestations and an unauthenticated denial of service",
+      "link": "https://github.com/web-auth/webauthn-framework/security/advisories/GHSA-c9p6-r72h-rp3x",
+      "reportedAt": "2026-11-17 19:20:45",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-auth/webauthn-framework/GHSA-c9p6-r72h-rp3x.yaml"
         }
       ]
     },
@@ -1665,6 +2239,20 @@
         {
           "name": "FriendsOfPHP/security-advisories",
           "remoteId": "magento/product-community-edition/CVE-2019-7935.yaml"
+        }
+      ]
+    },
+    "PKSA-92zd-2szp-yd79": {
+      "packageName": "spomky-labs/cbor-php",
+      "affectedVersions": "<3.3.4",
+      "cve": null,
+      "title": "Map keys are stored as native PHP array offsets, causing an uncaught TypeError and silent key collisions",
+      "link": "https://github.com/Spomky-Labs/cbor-php/security/advisories/GHSA-388j-mw2g-rx5f",
+      "reportedAt": "2026-08-31 18:59:12",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "spomky-labs/cbor-php/GHSA-388j-mw2g-rx5f.yaml"
         }
       ]
     },
@@ -1850,6 +2438,20 @@
         }
       ]
     },
+    "PKSA-9sgw-jdpv-rzn8": {
+      "packageName": "flowd/phirewall",
+      "affectedVersions": ">=0.1.0,<0.11.1",
+      "cve": null,
+      "title": "Path-based rules can be bypassed with percent-encoded or dot-segment paths (see GHSA-39c4-6228-r74h)",
+      "link": "https://github.com/flowd/phirewall-src/security/advisories/GHSA-39c4-6228-r74h",
+      "reportedAt": "2026-11-24 00:00:00",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "flowd/phirewall/2026-11-24-1.yaml"
+        }
+      ]
+    },
     "PKSA-9sn2-q7r2-mv6m": {
       "packageName": "magento/magento1ee",
       "affectedVersions": ">=1.9.0.0,<1.14.4.0",
@@ -1920,6 +2522,48 @@
         }
       ]
     },
+    "PKSA-b47r-zdq6-95zf": {
+      "packageName": "silverstripe/framework",
+      "affectedVersions": "<4.13.45|>=5.0.0,<5.0.24|>=5.1.0,<5.1.24|>=5.2.0,<5.2.23|>=5.3.0,<5.3.24|>=5.4.0,<5.4.31|>=6.0.0,<6.0.17|>=6.1.0,<6.1.17|>=6.2.0,<6.2.15|>=6.3.0,<6.3.10",
+      "cve": null,
+      "title": "SS-2026-009 - Login bypass for accounts without a password",
+      "link": "https://www.silverstripe.org/download/security-releases/ss-2026-009",
+      "reportedAt": "2026-11-23 21:11:56",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "silverstripe/framework/SS-2026-009.yaml"
+        }
+      ]
+    },
+    "PKSA-b4zz-m1qm-d4rq": {
+      "packageName": "web-token/jwt-library",
+      "affectedVersions": "<3.4.13|>=4.0.0,<4.0.9|>=4.1.0,<4.1.11|>=4.2.0,<4.2.6",
+      "cve": null,
+      "title": "ECDH-ES: an oversized \"epk\" coordinate costs seconds to minutes of CPU per token when PHP has no GMP extension",
+      "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-wwq7-mh3q-hwrh",
+      "reportedAt": "2026-11-08 10:17:46",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-token/jwt-library/GHSA-wwq7-mh3q-hwrh.yaml"
+        }
+      ]
+    },
+    "PKSA-b5y2-7yg9-tztk": {
+      "packageName": "web-token/jwt-framework",
+      "affectedVersions": "<3.4.12|>=4.0.0,<4.0.8|>=4.1.0,<4.1.10|>=4.2.0,<4.2.4",
+      "cve": null,
+      "title": "ECDH-ES derives at most 256 bits of key material: with A256CBC-HS512 the content is encrypted under an all-zero AES key and anyone holding the token can read it",
+      "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-5pj7-wx9m-cjh6",
+      "reportedAt": "2026-10-30 21:59:07",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-token/jwt-framework/GHSA-5pj7-wx9m-cjh6.yaml"
+        }
+      ]
+    },
     "PKSA-b657-vnvm-qnk7": {
       "packageName": "mediaessenz/mail",
       "affectedVersions": ">=4.0.0,<4.2.0|<3.12.5",
@@ -1976,6 +2620,62 @@
         }
       ]
     },
+    "PKSA-b7yd-vc3m-dv17": {
+      "packageName": "twig/html-extra",
+      "affectedVersions": ">=3.12.0,<3.31.1",
+      "cve": "CVE-2026-133769",
+      "title": "CVE-2026-133769: Sandbox property allow-list bypass via `html_cva()` variant values",
+      "link": "https://symfony.com/cve-2026-133769",
+      "reportedAt": "2026-11-24 12:48:46",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "twig/html-extra/CVE-2026-133769.yaml"
+        }
+      ]
+    },
+    "PKSA-b9ry-rdbq-rgzj": {
+      "packageName": "web-token/jwt-encryption-algorithm-aesgcmkw",
+      "affectedVersions": "<=3.2.10",
+      "cve": null,
+      "title": "AES key wrapping accepts oct keys shorter than the algorithm key size and pads them with zero bytes: an empty key wraps every CEK under an all-zero key",
+      "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-4mxj-75j2-j8hc",
+      "reportedAt": "2026-11-24 00:00:00",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-token/jwt-encryption-algorithm-aesgcmkw/GHSA-4mxj-75j2-j8hc.yaml"
+        }
+      ]
+    },
+    "PKSA-bb65-v6wq-5kyw": {
+      "packageName": "symfony/symfony",
+      "affectedVersions": ">=5.4.0,<5.4.56|>=6.0.0,<6.1.0|>=6.1.0,<6.2.0|>=6.2.0,<6.3.0|>=6.3.0,<6.4.0|>=6.4.0,<6.4.50|>=7.0.0,<7.1.0|>=7.1.0,<7.2.0|>=7.2.0,<7.3.0|>=7.3.0,<7.4.0|>=7.4.0,<7.4.23|>=8.0.0,<8.1.0|>=8.1.0,<8.1.11",
+      "cve": "CVE-2026-135803",
+      "title": "CVE-2026-135803: Filesystem Path Treats Any Prefix Before \"://\" as a Root, Letting Paths Escape Their Base Directory",
+      "link": "https://symfony.com/cve-2026-135803",
+      "reportedAt": "2026-11-04 10:45:07",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "symfony/symfony/CVE-2026-135803.yaml"
+        }
+      ]
+    },
+    "PKSA-bbfy-2xqm-gd8t": {
+      "packageName": "web-auth/webauthn-framework",
+      "affectedVersions": ">=5.3.0,<5.3.15",
+      "cve": null,
+      "title": "webauthn-stimulus registration and authentication controllers send the PRF extension results to the server",
+      "link": "https://github.com/web-auth/webauthn-framework/security/advisories/GHSA-79w9-wmw2-9hh3",
+      "reportedAt": "2026-11-19 11:21:48",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-auth/webauthn-framework/GHSA-79w9-wmw2-9hh3.yaml"
+        }
+      ]
+    },
     "PKSA-bdyk-ggk4-5v4w": {
       "packageName": "contao/contao",
       "affectedVersions": ">=5.3.0,<5.3.54|>=5.4.0,<5.7.17|>=6.0.0,<6.0.6",
@@ -2018,6 +2718,20 @@
         }
       ]
     },
+    "PKSA-bj3k-h5z5-tvfw": {
+      "packageName": "spomky-labs/pki-framework",
+      "affectedVersions": "<1.6.2",
+      "cve": null,
+      "title": "ECDSA signature values are re-encoded before verification, so one certificate has an unlimited supply of accepted byte encodings",
+      "link": "https://github.com/Spomky-Labs/pki-framework/security/advisories/GHSA-mx53-vr97-rxr2",
+      "reportedAt": "2026-09-08 05:46:40",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "spomky-labs/pki-framework/GHSA-mx53-vr97-rxr2.yaml"
+        }
+      ]
+    },
     "PKSA-bm6c-1d7t-rxwt": {
       "packageName": "magento/product-community-edition",
       "affectedVersions": ">=2.2,<2.2.10|>=2.3,<2.3.2-p2",
@@ -2043,6 +2757,20 @@
         {
           "name": "FriendsOfPHP/security-advisories",
           "remoteId": "contao/contao/2026-11-11-8.yaml"
+        }
+      ]
+    },
+    "PKSA-bpbq-3qw4-gysg": {
+      "packageName": "web-token/jwt-encryption-algorithm-rsa",
+      "affectedVersions": "<=3.2.10",
+      "cve": null,
+      "title": "RSA keys of any size are accepted: a key chosen by the sender of a token costs seconds of CPU per operation (RSA-PSS and RSA encryption, and every RSA algorithm without GMP)",
+      "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-96f8-m4jr-72xj",
+      "reportedAt": "2026-11-24 00:00:00",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-token/jwt-encryption-algorithm-rsa/GHSA-96f8-m4jr-72xj.yaml"
         }
       ]
     },
@@ -2116,6 +2844,20 @@
         }
       ]
     },
+    "PKSA-bsdb-5gyd-5jjd": {
+      "packageName": "mini4work/webserver",
+      "affectedVersions": ">=0.0.1,<1.2.0",
+      "cve": null,
+      "title": "Stalled HTTP/2 responses can exhaust a worker's response capacity",
+      "link": "https://gitlab.com/mini4work/webserver/-/blob/1.5.3/docs/security/http2-stalled-responses.md",
+      "reportedAt": "2026-11-22 00:00:00",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "mini4work/webserver/2026-11-22-2.yaml"
+        }
+      ]
+    },
     "PKSA-bv4c-sd28-fj2h": {
       "packageName": "magento/product-community-edition",
       "affectedVersions": ">=2.2,<2.2.10|>=2.3,<2.3.2-p2",
@@ -2172,6 +2914,20 @@
         }
       ]
     },
+    "PKSA-c3hv-564s-bd1r": {
+      "packageName": "web-token/jwt-experimental",
+      "affectedVersions": ">=4.2.1,<4.2.6",
+      "cve": null,
+      "title": "Rejected JWE tokens write decryption keys into exception stack traces (4.2.1 to 4.2.5)",
+      "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-7hp7-mg7x-hww4",
+      "reportedAt": "2026-11-08 11:32:34",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-token/jwt-experimental/GHSA-7hp7-mg7x-hww4.yaml"
+        }
+      ]
+    },
     "PKSA-c41s-14xm-vp1c": {
       "packageName": "magento/magento1ce",
       "affectedVersions": ">=1,<1.9.4.2",
@@ -2200,6 +2956,62 @@
         }
       ]
     },
+    "PKSA-c746-frv8-jmkr": {
+      "packageName": "web-token/jwt-framework",
+      "affectedVersions": ">=4.2.1,<4.2.6",
+      "cve": null,
+      "title": "Rejected JWE tokens write decryption keys into exception stack traces (4.2.1 to 4.2.5)",
+      "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-7hp7-mg7x-hww4",
+      "reportedAt": "2026-11-08 11:32:34",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-token/jwt-framework/GHSA-7hp7-mg7x-hww4.yaml"
+        }
+      ]
+    },
+    "PKSA-c76f-qj77-78p2": {
+      "packageName": "web-token/jwt-library",
+      "affectedVersions": "<3.4.13|>=4.0.0,<4.0.9|>=4.1.0,<4.1.11|>=4.2.0,<4.2.6",
+      "cve": null,
+      "title": "JWS and JWE serializers decode attacker-controlled JSON without bounds before verification (CPU and memory denial of service)",
+      "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-2xq2-pp89-x7fr",
+      "reportedAt": "2026-11-08 10:24:28",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-token/jwt-library/GHSA-2xq2-pp89-x7fr.yaml"
+        }
+      ]
+    },
+    "PKSA-c7jr-4kfb-716k": {
+      "packageName": "web-token/jwt-experimental",
+      "affectedVersions": "<3.4.13|>=4.0.0,<4.0.9|>=4.1.0,<4.1.11|>=4.2.0,<4.2.6",
+      "cve": null,
+      "title": "AES key wrapping accepts oct keys shorter than the algorithm key size and pads them with zero bytes: an empty key wraps every CEK under an all-zero key",
+      "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-4mxj-75j2-j8hc",
+      "reportedAt": "2026-11-08 10:34:16",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-token/jwt-experimental/GHSA-4mxj-75j2-j8hc.yaml"
+        }
+      ]
+    },
+    "PKSA-c85n-85w3-2frw": {
+      "packageName": "web-token/jwt-encryption",
+      "affectedVersions": "<=3.2.10",
+      "cve": null,
+      "title": "Direct encryption (dir) does not check the key size: with a key of half the required size, AES-CBC-HMAC content is encrypted under an all-zero AES key and anyone holding the token can read it",
+      "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-jc6j-46g2-xwqc",
+      "reportedAt": "2026-11-24 00:00:00",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-token/jwt-encryption/GHSA-jc6j-46g2-xwqc.yaml"
+        }
+      ]
+    },
     "PKSA-c8kp-f3wr-5vmd": {
       "packageName": "typo3/cms-impexp",
       "affectedVersions": ">=14.0.0,<14.3.12|>=13.0.0,<13.4.40|>=12.0.0,<12.4.52|>=11.0.0,<11.5.57|>=10.0.0,<10.4.63",
@@ -2211,6 +3023,20 @@
         {
           "name": "FriendsOfPHP/security-advisories",
           "remoteId": "typo3/cms-impexp/CVE-2026-119621.yaml"
+        }
+      ]
+    },
+    "PKSA-cc3j-tk8g-4j9v": {
+      "packageName": "web-auth/webauthn-lib",
+      "affectedVersions": ">=4.9.0,<5.3.13",
+      "cve": null,
+      "title": "SimpleFakeCredentialGenerator decoys can be told apart from real credentials, allowing username enumeration",
+      "link": "https://github.com/web-auth/webauthn-framework/security/advisories/GHSA-8gvp-8vj9-p3q7",
+      "reportedAt": "2026-11-17 19:20:46",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-auth/webauthn-lib/GHSA-8gvp-8vj9-p3q7.yaml"
         }
       ]
     },
@@ -2256,6 +3082,34 @@
         }
       ]
     },
+    "PKSA-cdnr-zkdb-szxk": {
+      "packageName": "spomky-labs/pki-framework",
+      "affectedVersions": "<1.6.2",
+      "cve": null,
+      "title": "A second [3] extensions element in tbsCertificate silently replaces the first, hiding basicConstraints and keyUsage",
+      "link": "https://github.com/Spomky-Labs/pki-framework/security/advisories/GHSA-9hcj-84c7-2pj8",
+      "reportedAt": "2026-09-08 05:30:11",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "spomky-labs/pki-framework/GHSA-9hcj-84c7-2pj8.yaml"
+        }
+      ]
+    },
+    "PKSA-cf7q-r73j-15x5": {
+      "packageName": "web-token/jwt-library",
+      "affectedVersions": "<3.4.13|>=4.0.0,<4.0.9|>=4.1.0,<4.1.11|>=4.2.0,<4.2.6",
+      "cve": null,
+      "title": "RSA-OAEP accepts an encrypted key made of several RSA blocks, enabling recovery of another JWE's content encryption key through a decryption oracle",
+      "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-wwcr-82mc-w3pw",
+      "reportedAt": "2026-11-08 10:18:12",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-token/jwt-library/GHSA-wwcr-82mc-w3pw.yaml"
+        }
+      ]
+    },
     "PKSA-cfg5-wpq5-ktbn": {
       "packageName": "pagarme/pagarme-php",
       "affectedVersions": ">=0.0.0,<3.0.0",
@@ -2267,6 +3121,20 @@
         {
           "name": "FriendsOfPHP/security-advisories",
           "remoteId": "pagarme/pagarme-php/2017-11-20.yaml"
+        }
+      ]
+    },
+    "PKSA-cjgd-k5dd-fhwh": {
+      "packageName": "web-token/jwt-encryption",
+      "affectedVersions": "<=3.2.10",
+      "cve": null,
+      "title": "dir, ECDH-ES and ECDH-SS accept a non-empty JWE Encrypted Key, so token strings are malleable",
+      "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-5cc5-v8qv-6cw7",
+      "reportedAt": "2026-11-24 00:00:00",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-token/jwt-encryption/GHSA-5cc5-v8qv-6cw7.yaml"
         }
       ]
     },
@@ -2284,6 +3152,20 @@
         }
       ]
     },
+    "PKSA-cn74-5mmr-kbwj": {
+      "packageName": "spomky-labs/pki-framework",
+      "affectedVersions": "<1.6.2",
+      "cve": null,
+      "title": "KeyUsage and reasonFlags bits are read from the wrong end of an over-long BIT STRING, so keyCertSign can be forged",
+      "link": "https://github.com/Spomky-Labs/pki-framework/security/advisories/GHSA-gjx8-fvx6-qg7q",
+      "reportedAt": "2026-09-08 05:29:58",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "spomky-labs/pki-framework/GHSA-gjx8-fvx6-qg7q.yaml"
+        }
+      ]
+    },
     "PKSA-cq99-bswg-h27z": {
       "packageName": "typo3/cms-backend",
       "affectedVersions": ">=14.0.0,<14.3.12|>=13.0.0,<13.4.40|>=12.0.0,<12.4.52|>=11.0.0,<11.5.57|>=10.0.0,<10.4.63",
@@ -2295,6 +3177,34 @@
         {
           "name": "FriendsOfPHP/security-advisories",
           "remoteId": "typo3/cms-backend/CVE-2026-119622.yaml"
+        }
+      ]
+    },
+    "PKSA-cqwb-x2mv-br99": {
+      "packageName": "spomky-labs/cbor-php",
+      "affectedVersions": "<3.3.4",
+      "cve": null,
+      "title": "Unbounded exponent in BigFloat and DecimalFraction tags allows uncatchable memory exhaustion",
+      "link": "https://github.com/Spomky-Labs/cbor-php/security/advisories/GHSA-pf28-pvhp-7mm5",
+      "reportedAt": "2026-08-31 18:59:08",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "spomky-labs/cbor-php/GHSA-pf28-pvhp-7mm5.yaml"
+        }
+      ]
+    },
+    "PKSA-cr5v-ftj9-8tdr": {
+      "packageName": "symfony/ux-icons",
+      "affectedVersions": ">=2.36.1,<2.36.3|>=3.2.0,<3.8.1",
+      "cve": "CVE-2026-133779",
+      "title": "CVE-2026-133779: XSS in symfony/ux-icons via Attribute Names That the Sanitizer Reads Differently Than Browsers: Incomplete Fix for CVE-2026-55877",
+      "link": "https://symfony.com/cve-2026-133779",
+      "reportedAt": "2026-11-24 07:14:17",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "symfony/ux-icons/CVE-2026-133779.yaml"
         }
       ]
     },
@@ -2340,6 +3250,20 @@
         }
       ]
     },
+    "PKSA-cv54-xbhk-nng3": {
+      "packageName": "web-token/jwt-signature",
+      "affectedVersions": "<=3.2.10",
+      "cve": null,
+      "title": "JWS and JWE serializers decode attacker-controlled JSON without bounds before verification (CPU and memory denial of service)",
+      "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-2xq2-pp89-x7fr",
+      "reportedAt": "2026-11-24 00:00:00",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-token/jwt-signature/GHSA-2xq2-pp89-x7fr.yaml"
+        }
+      ]
+    },
     "PKSA-cw9y-qzfq-3wb4": {
       "packageName": "contao/core-bundle",
       "affectedVersions": ">=4.0.0,<5.3.54|>=5.4.0,<5.7.17|>=6.0.0,<6.0.6",
@@ -2365,6 +3289,34 @@
         {
           "name": "FriendsOfPHP/security-advisories",
           "remoteId": "magento/magento1ce/2018-11-28.yaml"
+        }
+      ]
+    },
+    "PKSA-cxq1-7yc3-35nm": {
+      "packageName": "spomky-labs/pki-framework",
+      "affectedVersions": "<1.6.2",
+      "cve": null,
+      "title": "Name constraints are evaded by names the matcher does not canonicalise: a trailing dot, and URIs PHP parses differently from browsers",
+      "link": "https://github.com/Spomky-Labs/pki-framework/security/advisories/GHSA-mh5j-7xj5-9h45",
+      "reportedAt": "2026-09-08 05:30:44",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "spomky-labs/pki-framework/GHSA-mh5j-7xj5-9h45.yaml"
+        }
+      ]
+    },
+    "PKSA-cy7y-6y48-x5cc": {
+      "packageName": "web-token/jwt-encryption-algorithm-aeskw",
+      "affectedVersions": "<=3.2.10",
+      "cve": null,
+      "title": "AES key wrapping accepts oct keys shorter than the algorithm key size and pads them with zero bytes: an empty key wraps every CEK under an all-zero key",
+      "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-4mxj-75j2-j8hc",
+      "reportedAt": "2026-11-24 00:00:00",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-token/jwt-encryption-algorithm-aeskw/GHSA-4mxj-75j2-j8hc.yaml"
         }
       ]
     },
@@ -2578,6 +3530,20 @@
         }
       ]
     },
+    "PKSA-dq27-x2jc-ksbp": {
+      "packageName": "twig/twig",
+      "affectedVersions": ">=3.21.0,<3.31.1",
+      "cve": "CVE-2026-133763",
+      "title": "CVE-2026-133763: Sandbox `__toString()` policy bypass via the `is true` test",
+      "link": "https://symfony.com/cve-2026-133763",
+      "reportedAt": "2026-11-24 12:48:46",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "twig/twig/CVE-2026-133763.yaml"
+        }
+      ]
+    },
     "PKSA-dqsr-ww5g-22vs": {
       "packageName": "magento/magento1ce",
       "affectedVersions": ">=1,<1.9.4.2",
@@ -2617,6 +3583,20 @@
         {
           "name": "FriendsOfPHP/security-advisories",
           "remoteId": "contao/contao/CVE-2026-107843.yaml"
+        }
+      ]
+    },
+    "PKSA-dtyd-1vf2-gvmh": {
+      "packageName": "web-token/jwt-framework",
+      "affectedVersions": "<3.4.13|>=4.0.0,<4.0.9|>=4.1.0,<4.1.11|>=4.2.0,<4.2.6",
+      "cve": null,
+      "title": "dir, ECDH-ES and ECDH-SS accept a non-empty JWE Encrypted Key, so token strings are malleable",
+      "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-5cc5-v8qv-6cw7",
+      "reportedAt": "2026-11-08 10:14:12",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-token/jwt-framework/GHSA-5cc5-v8qv-6cw7.yaml"
         }
       ]
     },
@@ -2690,6 +3670,48 @@
         }
       ]
     },
+    "PKSA-f652-rtjq-ksry": {
+      "packageName": "web-auth/webauthn-lib",
+      "affectedVersions": ">=3.0.0,<5.3.13",
+      "cve": null,
+      "title": "CheckMetadataStatement skips the attestation trust path verification under the null AAGUID",
+      "link": "https://github.com/web-auth/webauthn-framework/security/advisories/GHSA-2jv3-c2vg-rhc4",
+      "reportedAt": "2026-11-17 19:20:45",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-auth/webauthn-lib/GHSA-2jv3-c2vg-rhc4.yaml"
+        }
+      ]
+    },
+    "PKSA-f6gy-fhxc-y5sv": {
+      "packageName": "web-token/jwt-signature",
+      "affectedVersions": "<=3.2.10",
+      "cve": null,
+      "title": "Denial of service: parsing a JWS in the JSON General serialization takes a time quadratic in its number of signatures",
+      "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-jgv7-g4jg-6hqv",
+      "reportedAt": "2026-11-24 00:00:00",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-token/jwt-signature/GHSA-jgv7-g4jg-6hqv.yaml"
+        }
+      ]
+    },
+    "PKSA-f6p8-f4dm-swn4": {
+      "packageName": "spomky-labs/pki-framework",
+      "affectedVersions": "<1.6.2",
+      "cve": null,
+      "title": "Missing loop detection in CertificationPathBuilder allows memory exhaustion with two crafted certificates",
+      "link": "https://github.com/Spomky-Labs/pki-framework/security/advisories/GHSA-c67f-8q64-6hxh",
+      "reportedAt": "2026-09-07 20:34:54",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "spomky-labs/pki-framework/GHSA-c67f-8q64-6hxh.yaml"
+        }
+      ]
+    },
     "PKSA-f71z-v9q1-dw86": {
       "packageName": "easycorp/easyadmin-bundle",
       "affectedVersions": ">=4.24.0,<4.29.17|>=5.0.0,<5.10.2",
@@ -2701,6 +3723,34 @@
         {
           "name": "FriendsOfPHP/security-advisories",
           "remoteId": "easycorp/easyadmin-bundle/GHSA-79rr-99xc-qph7.yaml"
+        }
+      ]
+    },
+    "PKSA-fbrt-y53f-d6st": {
+      "packageName": "web-token/jwt-encryption",
+      "affectedVersions": "<1.2.0",
+      "cve": null,
+      "title": "AES-GCM decryption accepts any authentication tag length: a holder of one valid JWE can brute force a 1-byte tag in at most 256 requests and rewrite the plaintext",
+      "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-j265-mg9q-wpv9",
+      "reportedAt": "2026-11-24 00:00:00",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-token/jwt-encryption/GHSA-j265-mg9q-wpv9.yaml"
+        }
+      ]
+    },
+    "PKSA-fbxf-rqk7-hwmk": {
+      "packageName": "spomky-labs/pki-framework",
+      "affectedVersions": "<1.6.2",
+      "cve": null,
+      "title": "MD4, MD5 and SHA-1 certificate signatures are accepted with no way to restrict the algorithm set",
+      "link": "https://github.com/Spomky-Labs/pki-framework/security/advisories/GHSA-5gp6-jr6q-ffx7",
+      "reportedAt": "2026-09-07 21:06:44",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "spomky-labs/pki-framework/GHSA-5gp6-jr6q-ffx7.yaml"
         }
       ]
     },
@@ -2757,6 +3807,34 @@
         {
           "name": "FriendsOfPHP/security-advisories",
           "remoteId": "jayanta/laravel-threat-detection/2026-09-29-3.yaml"
+        }
+      ]
+    },
+    "PKSA-fv5q-2gfz-mq1n": {
+      "packageName": "spomky-labs/pki-framework",
+      "affectedVersions": "<1.6.2",
+      "cve": null,
+      "title": "Unrecognized critical certificate extensions are silently ignored during path validation",
+      "link": "https://github.com/Spomky-Labs/pki-framework/security/advisories/GHSA-v76j-9ghr-85fr",
+      "reportedAt": "2026-09-07 20:03:46",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "spomky-labs/pki-framework/GHSA-v76j-9ghr-85fr.yaml"
+        }
+      ]
+    },
+    "PKSA-fvpj-qtjy-j3br": {
+      "packageName": "web-token/jwt-core",
+      "affectedVersions": "<=3.2.10",
+      "cve": null,
+      "title": "RSA private key recoverable through a timing side channel in RSA-OAEP and RSA1_5 decryption",
+      "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-2qpx-pwmq-r27r",
+      "reportedAt": "2026-11-24 00:00:00",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-token/jwt-core/GHSA-2qpx-pwmq-r27r.yaml"
         }
       ]
     },
@@ -2827,6 +3905,20 @@
         {
           "name": "FriendsOfPHP/security-advisories",
           "remoteId": "symfony/filesystem/2026-11-04-18.yaml"
+        }
+      ]
+    },
+    "PKSA-gcd3-fs43-g6p9": {
+      "packageName": "web-token/jwt-encryption",
+      "affectedVersions": "<1.2.0",
+      "cve": null,
+      "title": "AES key wrapping accepts oct keys shorter than the algorithm key size and pads them with zero bytes: an empty key wraps every CEK under an all-zero key",
+      "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-4mxj-75j2-j8hc",
+      "reportedAt": "2026-11-24 00:00:00",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-token/jwt-encryption/GHSA-4mxj-75j2-j8hc.yaml"
         }
       ]
     },
@@ -3068,6 +4160,20 @@
         }
       ]
     },
+    "PKSA-h9nt-bq88-c5qm": {
+      "packageName": "web-token/jwt-library",
+      "affectedVersions": "<3.4.13|>=4.0.0,<4.0.9|>=4.1.0,<4.1.11|>=4.2.0,<4.2.6",
+      "cve": null,
+      "title": "Denial of service: parsing a JWS in the JSON General serialization takes a time quadratic in its number of signatures",
+      "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-jgv7-g4jg-6hqv",
+      "reportedAt": "2026-11-08 10:31:05",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-token/jwt-library/GHSA-jgv7-g4jg-6hqv.yaml"
+        }
+      ]
+    },
     "PKSA-hb8b-2qmh-yv87": {
       "packageName": "yiisoft/yii2",
       "affectedVersions": "<2.0.12.1|>=2.0.13,<2.0.13.2|>=2.0.14,<2.0.15",
@@ -3079,6 +4185,34 @@
         {
           "name": "FriendsOfPHP/security-advisories",
           "remoteId": "yiisoft/yii2/CVE-2018-7269.yaml"
+        }
+      ]
+    },
+    "PKSA-hh72-nt3p-hqck": {
+      "packageName": "spomky-labs/pki-framework",
+      "affectedVersions": "<1.6.2",
+      "cve": null,
+      "title": "The certificate policy tree grows multiplicatively per certificate, so a signed chain from a delegated sub-CA exhausts memory",
+      "link": "https://github.com/Spomky-Labs/pki-framework/security/advisories/GHSA-34rx-vp5j-q2wr",
+      "reportedAt": "2026-09-08 05:46:49",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "spomky-labs/pki-framework/GHSA-34rx-vp5j-q2wr.yaml"
+        }
+      ]
+    },
+    "PKSA-hjpc-r7p2-zyfx": {
+      "packageName": "twig/twig",
+      "affectedVersions": ">=1.0.0,<2.0.0|>=2.0.0,<3.0.0|>=3.0.0,<3.31.1",
+      "cve": "CVE-2026-133767",
+      "title": "CVE-2026-133767: Sandbox allow-list and `__toString()` bypass via a dynamic `embed` parent expression",
+      "link": "https://symfony.com/cve-2026-133767",
+      "reportedAt": "2026-11-24 12:48:46",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "twig/twig/CVE-2026-133767.yaml"
         }
       ]
     },
@@ -3096,6 +4230,34 @@
         }
       ]
     },
+    "PKSA-hn33-6cqt-4fmk": {
+      "packageName": "web-token/jwt-framework",
+      "affectedVersions": "<3.4.13|>=4.0.0,<4.0.9|>=4.1.0,<4.1.11|>=4.2.0,<4.2.6",
+      "cve": null,
+      "title": "RSA private key recoverable through a timing side channel in RSA-OAEP and RSA1_5 decryption",
+      "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-2qpx-pwmq-r27r",
+      "reportedAt": "2026-11-08 09:42:11",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-token/jwt-framework/GHSA-2qpx-pwmq-r27r.yaml"
+        }
+      ]
+    },
+    "PKSA-hn7c-cnny-jr72": {
+      "packageName": "spomky-labs/otphp",
+      "affectedVersions": ">=11.4.0,<11.4.4|>=11.5.0,<11.5.1",
+      "cve": null,
+      "title": "TOTP::expiresIn() throws an uncaught TypeError for a provisioning URI with a future epoch and a very large period",
+      "link": "https://github.com/Spomky-Labs/otphp/security/advisories/GHSA-4v5c-4hwq-6f6m",
+      "reportedAt": "2026-11-07 16:52:51",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "spomky-labs/otphp/GHSA-4v5c-4hwq-6f6m.yaml"
+        }
+      ]
+    },
     "PKSA-hnhn-9jwb-8jkz": {
       "packageName": "zendframework/zend-ldap",
       "affectedVersions": ">=2.0.0,<2.0.99|>=2.1.0,<2.1.99|>=2.2.0,<2.2.8|>=2.3.0,<2.3.3",
@@ -3107,6 +4269,20 @@
         {
           "name": "FriendsOfPHP/security-advisories",
           "remoteId": "zendframework/zend-ldap/CVE-2014-8088.yaml"
+        }
+      ]
+    },
+    "PKSA-hs2m-ms65-2zgg": {
+      "packageName": "twig/twig",
+      "affectedVersions": ">=1.0.0,<2.0.0|>=2.0.0,<3.0.0|>=3.0.0,<3.31.0",
+      "cve": "CVE-2026-133771",
+      "title": "CVE-2026-133771: Missing autoescaping for a variable named like a macro import alias of another scope",
+      "link": "https://symfony.com/cve-2026-133771",
+      "reportedAt": "2026-11-23 16:31:37",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "twig/twig/CVE-2026-133771.yaml"
         }
       ]
     },
@@ -3135,6 +4311,34 @@
         {
           "name": "FriendsOfPHP/security-advisories",
           "remoteId": "magento/product-community-edition/CVE-2019-7875.yaml"
+        }
+      ]
+    },
+    "PKSA-hyt6-3qsc-nfjv": {
+      "packageName": "web-auth/webauthn-framework",
+      "affectedVersions": ">=1.2.0,<5.3.13",
+      "cve": null,
+      "title": "Symfony bundle: user verification bypass with a challenge issued by another endpoint",
+      "link": "https://github.com/web-auth/webauthn-framework/security/advisories/GHSA-g9ff-w9h6-7ff3",
+      "reportedAt": "2026-11-17 19:20:46",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-auth/webauthn-framework/GHSA-g9ff-w9h6-7ff3.yaml"
+        }
+      ]
+    },
+    "PKSA-hz9x-zf4z-41zg": {
+      "packageName": "spomky-labs/pki-framework",
+      "affectedVersions": "<1.6.2",
+      "cve": null,
+      "title": "A few kilobytes of crafted DER cost minutes of CPU: unbounded quadratic accumulation in tag numbers, OID sub-identifiers and REAL mantissas",
+      "link": "https://github.com/Spomky-Labs/pki-framework/security/advisories/GHSA-v473-mx2x-xqpv",
+      "reportedAt": "2026-09-08 05:36:24",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "spomky-labs/pki-framework/GHSA-v473-mx2x-xqpv.yaml"
         }
       ]
     },
@@ -3208,6 +4412,20 @@
         }
       ]
     },
+    "PKSA-j78x-bbgt-7dfv": {
+      "packageName": "spomky-labs/pki-framework",
+      "affectedVersions": "<1.6.2",
+      "cve": null,
+      "title": "PEM_REGEX backtracks cubically, so 4 KB of text costs more CPU than parsing thousands of real certificates",
+      "link": "https://github.com/Spomky-Labs/pki-framework/security/advisories/GHSA-x673-qv99-7268",
+      "reportedAt": "2026-09-08 05:58:42",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "spomky-labs/pki-framework/GHSA-x673-qv99-7268.yaml"
+        }
+      ]
+    },
     "PKSA-j7f2-fsqf-djzr": {
       "packageName": "jweiland/events2",
       "affectedVersions": "<8.6.3|>=9.0.0,<9.4.2|>=10.0.0,<10.2.12",
@@ -3236,6 +4454,20 @@
         }
       ]
     },
+    "PKSA-j9d9-j4ns-73qk": {
+      "packageName": "web-token/jwt-framework",
+      "affectedVersions": ">=2.2.0,<3.4.13|>=4.0.0,<4.0.9|>=4.1.0,<4.1.11|>=4.2.0,<4.2.6",
+      "cve": null,
+      "title": "ECDH-ES: an oversized \"epk\" coordinate costs seconds to minutes of CPU per token when PHP has no GMP extension",
+      "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-wwq7-mh3q-hwrh",
+      "reportedAt": "2026-11-08 10:17:46",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-token/jwt-framework/GHSA-wwq7-mh3q-hwrh.yaml"
+        }
+      ]
+    },
     "PKSA-jbgd-4zf8-h9d7": {
       "packageName": "magento/product-community-edition",
       "affectedVersions": ">=2.1,<2.1.18|>=2.2,<2.2.9|>=2.3,<2.3.2",
@@ -3247,6 +4479,20 @@
         {
           "name": "FriendsOfPHP/security-advisories",
           "remoteId": "magento/product-community-edition/CVE-2019-7895.yaml"
+        }
+      ]
+    },
+    "PKSA-jdk3-2scw-7rg5": {
+      "packageName": "flowd/phirewall",
+      "affectedVersions": ">=0.1.0,<0.6.0",
+      "cve": null,
+      "title": "OWASP CRS @rx rules can be bypassed by inserting a newline (see GHSA-mq54-wr53-ff9q)",
+      "link": "https://github.com/flowd/phirewall-src/security/advisories/GHSA-mq54-wr53-ff9q",
+      "reportedAt": "2026-11-24 00:00:00",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "flowd/phirewall/2026-11-24-2.yaml"
         }
       ]
     },
@@ -3264,6 +4510,20 @@
         }
       ]
     },
+    "PKSA-jhd5-yhxv-hhfg": {
+      "packageName": "symfony/symfony",
+      "affectedVersions": ">=7.3.0,<7.4.0|>=7.4.0,<7.4.23|>=8.0.0,<8.1.0|>=8.1.0,<8.1.11",
+      "cve": "CVE-2026-135804",
+      "title": "CVE-2026-135804: Incomplete Fix for CVE-2026-45756: JsonPath Queries Can Still Hold a Process Through search(), match() and Chained Filters",
+      "link": "https://symfony.com/cve-2026-135804",
+      "reportedAt": "2026-11-04 11:26:51",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "symfony/symfony/CVE-2026-135804.yaml"
+        }
+      ]
+    },
     "PKSA-jhz1-6w4h-z694": {
       "packageName": "magento/product-community-edition",
       "affectedVersions": ">=2.2,<2.2.10|>=2.3,<2.3.2-p2",
@@ -3275,6 +4535,20 @@
         {
           "name": "FriendsOfPHP/security-advisories",
           "remoteId": "magento/product-community-edition/CVE-2019-8134.yaml"
+        }
+      ]
+    },
+    "PKSA-jtyg-xcfb-tz6y": {
+      "packageName": "web-token/jwt-signature",
+      "affectedVersions": "<2.0.4",
+      "cve": null,
+      "title": "RSA keys of any size are accepted: a key chosen by the sender of a token costs seconds of CPU per operation (RSA-PSS and RSA encryption, and every RSA algorithm without GMP)",
+      "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-96f8-m4jr-72xj",
+      "reportedAt": "2026-11-24 00:00:00",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-token/jwt-signature/GHSA-96f8-m4jr-72xj.yaml"
         }
       ]
     },
@@ -3306,6 +4580,34 @@
         }
       ]
     },
+    "PKSA-jvyz-5vhm-1zbn": {
+      "packageName": "web-token/jwt-signature",
+      "affectedVersions": ">=0.5.0,<=3.2.10",
+      "cve": null,
+      "title": "JWE and JWS loaders try every recipient or signature of a token, so a small token multiplies the PBES2 iteration cap (denial of service)",
+      "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-3vqw-452c-g726",
+      "reportedAt": "2026-11-24 00:00:00",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-token/jwt-signature/GHSA-3vqw-452c-g726.yaml"
+        }
+      ]
+    },
+    "PKSA-jwdx-f1bs-4j5r": {
+      "packageName": "spomky-labs/pki-framework",
+      "affectedVersions": "<1.6.2",
+      "cve": null,
+      "title": "Signature is verified over a re-encoded TBSCertificate, making certificates malleable",
+      "link": "https://github.com/Spomky-Labs/pki-framework/security/advisories/GHSA-f28f-xc9q-m482",
+      "reportedAt": "2026-09-07 20:48:23",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "spomky-labs/pki-framework/GHSA-f28f-xc9q-m482.yaml"
+        }
+      ]
+    },
     "PKSA-jx7x-rkr7-n2tb": {
       "packageName": "ameos/ameos_filemanager",
       "affectedVersions": "<3.1.3",
@@ -3331,6 +4633,20 @@
         {
           "name": "FriendsOfPHP/security-advisories",
           "remoteId": "magento/product-community-edition/CVE-2019-7853.yaml"
+        }
+      ]
+    },
+    "PKSA-jy43-r7wq-rrvj": {
+      "packageName": "spomky-labs/cbor-php",
+      "affectedVersions": "<3.3.5",
+      "cve": null,
+      "title": "Denial of service and error-contract escapes when decoding hostile CBOR (quadratic map normalize, tag 4/5 key memory exhaustion, bignum base conversion, ValueError/RuntimeException from decode)",
+      "link": "https://github.com/Spomky-Labs/cbor-php/security/advisories/GHSA-jfrf-557c-963v",
+      "reportedAt": "2026-09-10 08:30:21",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "spomky-labs/cbor-php/GHSA-jfrf-557c-963v.yaml"
         }
       ]
     },
@@ -3362,6 +4678,20 @@
         }
       ]
     },
+    "PKSA-k38w-253z-y23x": {
+      "packageName": "spomky-labs/pki-framework",
+      "affectedVersions": "<1.6.2",
+      "cve": null,
+      "title": "iPAddress GeneralNames silently encode a different address, turning an IPv6 name constraint into a wildcard IPv4 constraint",
+      "link": "https://github.com/Spomky-Labs/pki-framework/security/advisories/GHSA-6chf-2x6r-fjhg",
+      "reportedAt": "2026-09-08 05:30:53",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "spomky-labs/pki-framework/GHSA-6chf-2x6r-fjhg.yaml"
+        }
+      ]
+    },
     "PKSA-k85c-bn9b-kh93": {
       "packageName": "magento/product-community-edition",
       "affectedVersions": ">=2.2,<2.2.10|>=2.3,<2.3.2-p2",
@@ -3373,6 +4703,20 @@
         {
           "name": "FriendsOfPHP/security-advisories",
           "remoteId": "magento/product-community-edition/CVE-2019-8093.yaml"
+        }
+      ]
+    },
+    "PKSA-k9x8-rxqp-rkb4": {
+      "packageName": "twig/twig",
+      "affectedVersions": ">=3.15.0,<3.31.0",
+      "cve": "CVE-2026-133772",
+      "title": "CVE-2026-133772: Sandbox Tag Allow-List Bypass via the Branch of a `guard` Tag That Isn't Selected",
+      "link": "https://symfony.com/cve-2026-133772",
+      "reportedAt": "2026-11-23 16:31:37",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "twig/twig/CVE-2026-133772.yaml"
         }
       ]
     },
@@ -3432,6 +4776,20 @@
         }
       ]
     },
+    "PKSA-kq2c-rbmw-6m5k": {
+      "packageName": "web-token/jwt-encryption",
+      "affectedVersions": "<=3.2.10",
+      "cve": null,
+      "title": "JWS and JWE serializers decode attacker-controlled JSON without bounds before verification (CPU and memory denial of service)",
+      "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-2xq2-pp89-x7fr",
+      "reportedAt": "2026-11-24 00:00:00",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-token/jwt-encryption/GHSA-2xq2-pp89-x7fr.yaml"
+        }
+      ]
+    },
     "PKSA-kq76-qzx4-zwwk": {
       "packageName": "jweiland/telephonedirectory",
       "affectedVersions": "<4.1.1|>=5.0.0,<5.0.1|>=6.0.0,<6.2.0",
@@ -3443,6 +4801,34 @@
         {
           "name": "FriendsOfPHP/security-advisories",
           "remoteId": "jweiland/telephonedirectory/CVE-2026-77140.yaml"
+        }
+      ]
+    },
+    "PKSA-ktqk-pv7f-ynkv": {
+      "packageName": "web-auth/webauthn-lib",
+      "affectedVersions": ">=4.0.0,<5.3.13",
+      "cve": null,
+      "title": "Attestation certificates sent as PEM text allow forged packed/TPM attestations and an unauthenticated denial of service",
+      "link": "https://github.com/web-auth/webauthn-framework/security/advisories/GHSA-c9p6-r72h-rp3x",
+      "reportedAt": "2026-11-17 19:20:45",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-auth/webauthn-lib/GHSA-c9p6-r72h-rp3x.yaml"
+        }
+      ]
+    },
+    "PKSA-kvts-8m6v-1yz7": {
+      "packageName": "web-token/jwt-core",
+      "affectedVersions": "<=3.2.10",
+      "cve": null,
+      "title": "RSA keys of any size are accepted: a key chosen by the sender of a token costs seconds of CPU per operation (RSA-PSS and RSA encryption, and every RSA algorithm without GMP)",
+      "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-96f8-m4jr-72xj",
+      "reportedAt": "2026-11-24 00:00:00",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-token/jwt-core/GHSA-96f8-m4jr-72xj.yaml"
         }
       ]
     },
@@ -3474,6 +4860,20 @@
         }
       ]
     },
+    "PKSA-kzyj-5m8s-k43j": {
+      "packageName": "twig/markdown-extra",
+      "affectedVersions": ">=2.0.0,<3.0.0|>=3.0.0,<3.31.1",
+      "cve": "CVE-2026-133773",
+      "title": "CVE-2026-133773: Unbounded Converter Memoisation in twig/markdown-extra Keyed on Template-Controlled Options",
+      "link": "https://symfony.com/cve-2026-133773",
+      "reportedAt": "2026-11-24 12:48:46",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "twig/markdown-extra/CVE-2026-133773.yaml"
+        }
+      ]
+    },
     "PKSA-m1mn-d52b-bcqs": {
       "packageName": "sylius/sylius",
       "affectedVersions": ">=1.9.0,<1.10.0|>=1.10.0,<1.11.0|>=1.11.0,<1.12.0|>=1.12.0,<1.13.0|>=1.13.0,<1.14.0|>=1.14.0,<1.14.21|>=2.0.0,<2.1.0|>=2.1.0,<2.1.17|>=2.2.0,<2.2.12|>=2.3.0,<2.3.2",
@@ -3485,6 +4885,20 @@
         {
           "name": "FriendsOfPHP/security-advisories",
           "remoteId": "sylius/sylius/GHSA-5mpg-w6q2-2vrw.yaml"
+        }
+      ]
+    },
+    "PKSA-m23n-1z6m-hzcv": {
+      "packageName": "web-auth/webauthn-framework",
+      "affectedVersions": ">=3.0.0,<5.3.15",
+      "cve": null,
+      "title": "Client override of authenticatorAttachment or residentKey resets the user verification of a creation profile to preferred",
+      "link": "https://github.com/web-auth/webauthn-framework/security/advisories/GHSA-2989-5cjp-qc2p",
+      "reportedAt": "2026-11-19 10:15:40",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-auth/webauthn-framework/GHSA-2989-5cjp-qc2p.yaml"
         }
       ]
     },
@@ -3516,6 +4930,20 @@
         }
       ]
     },
+    "PKSA-m9bc-sj5r-v5ry": {
+      "packageName": "web-auth/webauthn-symfony-bundle",
+      "affectedVersions": ">=1.2.0,<5.3.13",
+      "cve": null,
+      "title": "Symfony bundle: user verification bypass with a challenge issued by another endpoint",
+      "link": "https://github.com/web-auth/webauthn-framework/security/advisories/GHSA-g9ff-w9h6-7ff3",
+      "reportedAt": "2026-11-17 19:20:46",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-auth/webauthn-symfony-bundle/GHSA-g9ff-w9h6-7ff3.yaml"
+        }
+      ]
+    },
     "PKSA-mdq4-51ck-6kdq": {
       "packageName": "laravel/framework",
       "affectedVersions": ">=9.0.0,<10.0.0|>=10.0.0,<11.0.0|>=11.0.0,<12.0.0|>=12.0.0,<12.60.0|>=13.0.0,<13.10.0",
@@ -3541,6 +4969,20 @@
         {
           "name": "FriendsOfPHP/security-advisories",
           "remoteId": "magento/product-community-edition/CVE-2019-8149.yaml"
+        }
+      ]
+    },
+    "PKSA-mfk7-7n9q-vfyt": {
+      "packageName": "symfony/http-foundation",
+      "affectedVersions": ">=5.4.50,<5.4.56|>=6.4.29,<6.4.50|>=7.3.7,<7.4.0|>=7.4.0,<7.4.23|>=8.0.0,<8.1.0|>=8.1.0,<8.1.11",
+      "cve": "CVE-2026-135801",
+      "title": "CVE-2026-135801: Path Rules Enforced in Front of PHP Can Be Bypassed by Appending the Path to the Script Name",
+      "link": "https://symfony.com/cve-2026-135801",
+      "reportedAt": "2026-11-04 10:45:07",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "symfony/http-foundation/CVE-2026-135801.yaml"
         }
       ]
     },
@@ -3597,6 +5039,20 @@
         {
           "name": "FriendsOfPHP/security-advisories",
           "remoteId": "theonedemon/phpwhois/CVE-2015-5243.yaml"
+        }
+      ]
+    },
+    "PKSA-mstn-ywch-n48d": {
+      "packageName": "web-auth/webauthn-lib",
+      "affectedVersions": ">=2.1.0,<5.3.13",
+      "cve": null,
+      "title": "StringStream::read() allocates the length declared by CBOR data before checking it (denial of service)",
+      "link": "https://github.com/web-auth/webauthn-framework/security/advisories/GHSA-rxc4-cg58-jrpw",
+      "reportedAt": "2026-11-17 19:20:46",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-auth/webauthn-lib/GHSA-rxc4-cg58-jrpw.yaml"
         }
       ]
     },
@@ -3754,6 +5210,20 @@
         }
       ]
     },
+    "PKSA-ncw3-rqxv-cmqp": {
+      "packageName": "spomky-labs/pki-framework",
+      "affectedVersions": "<1.6.2",
+      "cve": null,
+      "title": "Attribute certificate signatures are exempt from the configured signature algorithm and RSA key size policy",
+      "link": "https://github.com/Spomky-Labs/pki-framework/security/advisories/GHSA-85g4-f9rx-c6ww",
+      "reportedAt": "2026-09-08 05:46:17",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "spomky-labs/pki-framework/GHSA-85g4-f9rx-c6ww.yaml"
+        }
+      ]
+    },
     "PKSA-ndff-wyg7-66xc": {
       "packageName": "magento/product-community-edition",
       "affectedVersions": ">=2.1,<2.1.16|>=2.2,<2.2.7",
@@ -3765,6 +5235,62 @@
         {
           "name": "FriendsOfPHP/security-advisories",
           "remoteId": "magento/product-community-edition/2018-11-28.yaml"
+        }
+      ]
+    },
+    "PKSA-nf11-tzdy-csc5": {
+      "packageName": "spomky-labs/cbor-php",
+      "affectedVersions": "<3.3.4",
+      "cve": null,
+      "title": "Hostile input raises exceptions outside the documented error contract (64-bit headers, assert() used as validation)",
+      "link": "https://github.com/Spomky-Labs/cbor-php/security/advisories/GHSA-pjwm-422x-vvh5",
+      "reportedAt": "2026-08-31 18:59:25",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "spomky-labs/cbor-php/GHSA-pjwm-422x-vvh5.yaml"
+        }
+      ]
+    },
+    "PKSA-nf6j-vdvf-v8vb": {
+      "packageName": "spomky-labs/pki-framework",
+      "affectedVersions": "<1.6.2",
+      "cve": null,
+      "title": "Malformed ASN.1 input raises a TypeError that escapes catch(Exception), crashing the caller",
+      "link": "https://github.com/Spomky-Labs/pki-framework/security/advisories/GHSA-jj8p-rwmj-6rjj",
+      "reportedAt": "2026-09-07 21:06:09",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "spomky-labs/pki-framework/GHSA-jj8p-rwmj-6rjj.yaml"
+        }
+      ]
+    },
+    "PKSA-ng2g-3kzx-gsmy": {
+      "packageName": "web-token/jwt-signature-algorithm-rsa",
+      "affectedVersions": "<=3.2.10",
+      "cve": null,
+      "title": "RSA keys of any size are accepted: a key chosen by the sender of a token costs seconds of CPU per operation (RSA-PSS and RSA encryption, and every RSA algorithm without GMP)",
+      "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-96f8-m4jr-72xj",
+      "reportedAt": "2026-11-24 00:00:00",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-token/jwt-signature-algorithm-rsa/GHSA-96f8-m4jr-72xj.yaml"
+        }
+      ]
+    },
+    "PKSA-ngbc-rdcc-6xrn": {
+      "packageName": "web-token/jwt-library",
+      "affectedVersions": "<3.4.13|>=4.0.0,<4.0.9|>=4.1.0,<4.1.11|>=4.2.0,<4.2.6",
+      "cve": null,
+      "title": "Direct encryption (dir) does not check the key size: with a key of half the required size, AES-CBC-HMAC content is encrypted under an all-zero AES key and anyone holding the token can read it",
+      "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-jc6j-46g2-xwqc",
+      "reportedAt": "2026-11-08 10:33:52",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-token/jwt-library/GHSA-jc6j-46g2-xwqc.yaml"
         }
       ]
     },
@@ -3922,6 +5448,20 @@
         }
       ]
     },
+    "PKSA-p2hx-jnrs-13pj": {
+      "packageName": "mini4work/webserver",
+      "affectedVersions": ">=0.1.0,<1.2.0",
+      "cve": null,
+      "title": "HTTP/3 session initialization failure can stop the quiche serving process",
+      "link": "https://gitlab.com/mini4work/webserver/-/blob/1.5.3/docs/security/http3-quiche-session-initialization.md",
+      "reportedAt": "2026-11-22 00:00:00",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "mini4work/webserver/2026-11-22-1.yaml"
+        }
+      ]
+    },
     "PKSA-p394-c8hq-prwn": {
       "packageName": "magento/product-community-edition",
       "affectedVersions": ">=2.2,<2.2.10|>=2.3,<2.3.2-p2",
@@ -4006,6 +5546,34 @@
         }
       ]
     },
+    "PKSA-p9f6-mxdz-cqjt": {
+      "packageName": "web-token/jwt-library",
+      "affectedVersions": "<3.4.13|>=4.0.0,<4.0.9|>=4.1.0,<4.1.11|>=4.2.0,<4.2.6",
+      "cve": null,
+      "title": "RSA keys of any size are accepted: a key chosen by the sender of a token costs seconds of CPU per operation (RSA-PSS and RSA encryption, and every RSA algorithm without GMP)",
+      "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-96f8-m4jr-72xj",
+      "reportedAt": "2026-11-08 10:20:11",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-token/jwt-library/GHSA-96f8-m4jr-72xj.yaml"
+        }
+      ]
+    },
+    "PKSA-p9yd-17ns-8fmj": {
+      "packageName": "web-auth/cose-lib",
+      "affectedVersions": ">=2.1.0,<4.7.2",
+      "cve": null,
+      "title": "Ed25519 private key recovery when EdDSA::sign() is given a public key inconsistent with the private seed",
+      "link": "https://github.com/web-auth/cose-lib/security/advisories/GHSA-h7p4-6f74-7w4g",
+      "reportedAt": "2026-09-10 14:28:29",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-auth/cose-lib/GHSA-h7p4-6f74-7w4g.yaml"
+        }
+      ]
+    },
     "PKSA-pcvm-mkvz-dp3g": {
       "packageName": "magento/magento1ee",
       "affectedVersions": ">=1.9.0.0,<1.14.4.1",
@@ -4045,6 +5613,34 @@
         {
           "name": "FriendsOfPHP/security-advisories",
           "remoteId": "silverstripe/framework/CVE-2021-25817.yaml"
+        }
+      ]
+    },
+    "PKSA-pkw5-3qxt-b654": {
+      "packageName": "twig/twig",
+      "affectedVersions": ">=3.28.0,<3.31.1",
+      "cve": "CVE-2026-133766",
+      "title": "CVE-2026-133766: Sandbox `__toString()` policy bypass via spread arguments",
+      "link": "https://symfony.com/cve-2026-133766",
+      "reportedAt": "2026-11-24 12:48:46",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "twig/twig/CVE-2026-133766.yaml"
+        }
+      ]
+    },
+    "PKSA-ppp2-xpxb-kkjv": {
+      "packageName": "web-token/jwt-encryption-algorithm-experimental",
+      "affectedVersions": "<=3.2.10",
+      "cve": null,
+      "title": "AES key wrapping accepts oct keys shorter than the algorithm key size and pads them with zero bytes: an empty key wraps every CEK under an all-zero key",
+      "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-4mxj-75j2-j8hc",
+      "reportedAt": "2026-11-24 00:00:00",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-token/jwt-encryption-algorithm-experimental/GHSA-4mxj-75j2-j8hc.yaml"
         }
       ]
     },
@@ -4174,6 +5770,34 @@
         }
       ]
     },
+    "PKSA-q4rr-c5vh-f3tc": {
+      "packageName": "web-auth/metadata-service",
+      "affectedVersions": ">=4.0.0,<4.9.0",
+      "cve": null,
+      "title": "FidoAllianceCompliantMetadataService accepts a metadata BLOB that does not chain to a trust anchor",
+      "link": "https://github.com/web-auth/webauthn-framework/security/advisories/GHSA-p653-gg6c-rrjw",
+      "reportedAt": "2026-11-24 00:00:00",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-auth/metadata-service/GHSA-p653-gg6c-rrjw.yaml"
+        }
+      ]
+    },
+    "PKSA-q7jt-dsmx-j2vm": {
+      "packageName": "web-token/jwt-framework",
+      "affectedVersions": "<3.4.13|>=4.0.0,<4.0.9|>=4.1.0,<4.1.11|>=4.2.0,<4.2.6",
+      "cve": null,
+      "title": "Denial of service: parsing a JWS in the JSON General serialization takes a time quadratic in its number of signatures",
+      "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-jgv7-g4jg-6hqv",
+      "reportedAt": "2026-11-08 10:31:05",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-token/jwt-framework/GHSA-jgv7-g4jg-6hqv.yaml"
+        }
+      ]
+    },
     "PKSA-q9xv-m6s5-t82x": {
       "packageName": "contao/core-bundle",
       "affectedVersions": ">=4.0.0,<5.3.54|>=5.4.0,<5.7.17|>=6.0.0,<6.0.6",
@@ -4258,6 +5882,20 @@
         }
       ]
     },
+    "PKSA-qgp8-6q73-5w6n": {
+      "packageName": "symfony/http-foundation",
+      "affectedVersions": ">=2.0.0,<2.1.0|>=2.1.0,<2.2.0|>=2.2.0,<2.3.0|>=2.3.0,<2.4.0|>=2.4.0,<2.5.0|>=2.5.0,<2.6.0|>=2.6.0,<2.7.0|>=2.7.0,<2.8.0|>=2.8.0,<3.0.0|>=3.0.0,<3.1.0|>=3.1.0,<3.2.0|>=3.2.0,<3.3.0|>=3.3.0,<3.4.0|>=3.4.0,<4.0.0|>=4.0.0,<4.1.0|>=4.1.0,<4.2.0|>=4.2.0,<4.3.0|>=4.3.0,<4.4.0|>=4.4.0,<5.0.0|>=5.0.0,<5.1.0|>=5.1.0,<5.2.0|>=5.2.0,<5.3.0|>=5.3.0,<5.4.0|>=5.4.0,<5.4.56|>=6.0.0,<6.1.0|>=6.1.0,<6.2.0|>=6.2.0,<6.3.0|>=6.3.0,<6.4.0|>=6.4.0,<6.4.50|>=7.0.0,<7.1.0|>=7.1.0,<7.2.0|>=7.2.0,<7.3.0|>=7.3.0,<7.4.0|>=7.4.0,<7.4.23|>=8.0.0,<8.1.0|>=8.1.0,<8.1.11",
+      "cve": "CVE-2026-135802",
+      "title": "CVE-2026-135802: Generated URLs Can Point to a Host Chosen by the Client",
+      "link": "https://symfony.com/cve-2026-135802",
+      "reportedAt": "2026-11-04 10:45:07",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "symfony/http-foundation/CVE-2026-135802.yaml"
+        }
+      ]
+    },
     "PKSA-qhwt-xm13-c263": {
       "packageName": "magento/product-community-edition",
       "affectedVersions": ">=2.2,<2.2.10|>=2.3,<2.3.2-p2",
@@ -4283,6 +5921,20 @@
         {
           "name": "FriendsOfPHP/security-advisories",
           "remoteId": "magento/product-community-edition/CVE-2019-7940.yaml"
+        }
+      ]
+    },
+    "PKSA-qm23-x2v1-psp2": {
+      "packageName": "web-token/jwt-encryption-algorithm-aesgcmkw",
+      "affectedVersions": "<=3.2.10",
+      "cve": null,
+      "title": "AES-GCM decryption accepts any authentication tag length: a holder of one valid JWE can brute force a 1-byte tag in at most 256 requests and rewrite the plaintext",
+      "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-j265-mg9q-wpv9",
+      "reportedAt": "2026-11-24 00:00:00",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-token/jwt-encryption-algorithm-aesgcmkw/GHSA-j265-mg9q-wpv9.yaml"
         }
       ]
     },
@@ -4328,6 +5980,20 @@
         }
       ]
     },
+    "PKSA-qqv5-p1pp-1m81": {
+      "packageName": "web-auth/webauthn-symfony-bundle",
+      "affectedVersions": ">=5.2.1,<5.3.13",
+      "cve": null,
+      "title": "WebauthnPassport ignores the firewall's user provider, allowing impersonation",
+      "link": "https://github.com/web-auth/webauthn-framework/security/advisories/GHSA-4485-9q39-m27g",
+      "reportedAt": "2026-11-17 19:20:46",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-auth/webauthn-symfony-bundle/GHSA-4485-9q39-m27g.yaml"
+        }
+      ]
+    },
     "PKSA-qrw8-twh8-c9t6": {
       "packageName": "symfony/symfony",
       "affectedVersions": ">=7.3.0,<7.4.0|>=7.4.0,<7.4.23|>=8.0.0,<8.1.0|>=8.1.0,<8.1.11",
@@ -4339,6 +6005,20 @@
         {
           "name": "FriendsOfPHP/security-advisories",
           "remoteId": "symfony/symfony/2026-11-04-20.yaml"
+        }
+      ]
+    },
+    "PKSA-qsdp-jtc5-2hfd": {
+      "packageName": "web-auth/webauthn-stimulus",
+      "affectedVersions": ">=5.3.0,<5.3.15",
+      "cve": null,
+      "title": "webauthn-stimulus registration and authentication controllers send the PRF extension results to the server",
+      "link": "https://github.com/web-auth/webauthn-framework/security/advisories/GHSA-79w9-wmw2-9hh3",
+      "reportedAt": "2026-11-19 11:21:48",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-auth/webauthn-stimulus/GHSA-79w9-wmw2-9hh3.yaml"
         }
       ]
     },
@@ -4384,6 +6064,34 @@
         }
       ]
     },
+    "PKSA-qvy4-78gb-5hms": {
+      "packageName": "symfony/ux-live-component",
+      "affectedVersions": ">=2.5.0,<2.36.3|>=3.0.0,<3.8.1",
+      "cve": "CVE-2026-133774",
+      "title": "CVE-2026-133774: Authorization bypass in symfony/ux-live-component via an empty batch action request",
+      "link": "https://symfony.com/cve-2026-133774",
+      "reportedAt": "2026-11-24 07:14:17",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "symfony/ux-live-component/CVE-2026-133774.yaml"
+        }
+      ]
+    },
+    "PKSA-qz4d-2sqn-xnx1": {
+      "packageName": "spomky-labs/pki-framework",
+      "affectedVersions": "<1.6.2",
+      "cve": null,
+      "title": "Comparing a multi-valued RDN re-encodes and re-parses both names, so a 14 KB certificate costs 0.3 s per name comparison",
+      "link": "https://github.com/Spomky-Labs/pki-framework/security/advisories/GHSA-894f-9q28-7w2x",
+      "reportedAt": "2026-09-08 05:58:45",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "spomky-labs/pki-framework/GHSA-894f-9q28-7w2x.yaml"
+        }
+      ]
+    },
     "PKSA-qzkx-mfzr-b1gq": {
       "packageName": "sylius/sylius",
       "affectedVersions": ">=2.0.0,<2.1.0|>=2.1.0,<2.1.17|>=2.2.0,<2.2.12|>=2.3.0,<2.3.2",
@@ -4395,6 +6103,20 @@
         {
           "name": "FriendsOfPHP/security-advisories",
           "remoteId": "sylius/sylius/GHSA-cqw6-3fwg-cfv4.yaml"
+        }
+      ]
+    },
+    "PKSA-r2r5-6x3d-nz2p": {
+      "packageName": "symfony/ux-icons",
+      "affectedVersions": ">=2.36.1,<2.36.3|>=3.2.0,<3.8.1",
+      "cve": "CVE-2026-133776",
+      "title": "CVE-2026-133776: XSS in symfony/ux-icons via Text That Sanitized Icons Contain Unescaped: Incomplete Fix for CVE-2026-55877",
+      "link": "https://symfony.com/cve-2026-133776",
+      "reportedAt": "2026-11-24 07:14:17",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "symfony/ux-icons/CVE-2026-133776.yaml"
         }
       ]
     },
@@ -4454,6 +6176,20 @@
         }
       ]
     },
+    "PKSA-rc8n-37yg-d17w": {
+      "packageName": "spomky-labs/pki-framework",
+      "affectedVersions": "<1.6.2",
+      "cve": null,
+      "title": "CertificationPath::validate() silently treats the first certificate of the chain as the trust anchor",
+      "link": "https://github.com/Spomky-Labs/pki-framework/security/advisories/GHSA-mxjh-6r54-88x9",
+      "reportedAt": "2026-09-07 20:26:55",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "spomky-labs/pki-framework/GHSA-mxjh-6r54-88x9.yaml"
+        }
+      ]
+    },
     "PKSA-rcyx-cgtp-wmy7": {
       "packageName": "magento/product-community-edition",
       "affectedVersions": ">=2.2,<2.2.10|>=2.3,<2.3.2-p2",
@@ -4479,6 +6215,20 @@
         {
           "name": "FriendsOfPHP/security-advisories",
           "remoteId": "contao/contao/CVE-2026-104882.yaml"
+        }
+      ]
+    },
+    "PKSA-rhby-2sxb-g49m": {
+      "packageName": "web-token/jwt-encryption",
+      "affectedVersions": ">=0.5.0,<=3.2.10",
+      "cve": null,
+      "title": "JWE and JWS loaders try every recipient or signature of a token, so a small token multiplies the PBES2 iteration cap (denial of service)",
+      "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-3vqw-452c-g726",
+      "reportedAt": "2026-11-24 00:00:00",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-token/jwt-encryption/GHSA-3vqw-452c-g726.yaml"
         }
       ]
     },
@@ -4535,6 +6285,20 @@
         {
           "name": "FriendsOfPHP/security-advisories",
           "remoteId": "magento/product-community-edition/CVE-2019-7887.yaml"
+        }
+      ]
+    },
+    "PKSA-rnqk-thjg-kbsv": {
+      "packageName": "web-token/jwt-library",
+      "affectedVersions": "<3.4.11|>=4.0.0,<4.0.8|>=4.1.0,<4.1.10|>=4.2.0,<4.2.4",
+      "cve": null,
+      "title": "AES-GCM decryption accepts any authentication tag length: a holder of one valid JWE can brute force a 1-byte tag in at most 256 requests and rewrite the plaintext",
+      "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-j265-mg9q-wpv9",
+      "reportedAt": "2026-10-30 20:35:44",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-token/jwt-library/GHSA-j265-mg9q-wpv9.yaml"
         }
       ]
     },
@@ -4622,6 +6386,34 @@
         }
       ]
     },
+    "PKSA-s1p1-ntwn-t9ty": {
+      "packageName": "web-token/jwt-library",
+      "affectedVersions": "<3.4.13|>=4.0.0,<4.0.9|>=4.1.0,<4.1.11|>=4.2.0,<4.2.6",
+      "cve": null,
+      "title": "dir, ECDH-ES and ECDH-SS accept a non-empty JWE Encrypted Key, so token strings are malleable",
+      "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-5cc5-v8qv-6cw7",
+      "reportedAt": "2026-11-08 10:14:12",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-token/jwt-library/GHSA-5cc5-v8qv-6cw7.yaml"
+        }
+      ]
+    },
+    "PKSA-s1rk-rr3g-xvgz": {
+      "packageName": "web-token/jwt-encryption-algorithm-ecdh-es",
+      "affectedVersions": ">=2.2.0,<=3.2.10",
+      "cve": null,
+      "title": "ECDH-ES: an oversized \"epk\" coordinate costs seconds to minutes of CPU per token when PHP has no GMP extension",
+      "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-wwq7-mh3q-hwrh",
+      "reportedAt": "2026-11-24 00:00:00",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-token/jwt-encryption-algorithm-ecdh-es/GHSA-wwq7-mh3q-hwrh.yaml"
+        }
+      ]
+    },
     "PKSA-s2r2-2fn9-rh92": {
       "packageName": "magento/product-community-edition",
       "affectedVersions": ">=2.1,<2.1.18|>=2.2,<2.2.9|>=2.3,<2.3.2",
@@ -4647,6 +6439,20 @@
         {
           "name": "FriendsOfPHP/security-advisories",
           "remoteId": "sgalinski/sg-cookie-optin/CVE-2026-112064.yaml"
+        }
+      ]
+    },
+    "PKSA-s3y4-b4tj-26mt": {
+      "packageName": "web-auth/webauthn-framework",
+      "affectedVersions": ">=4.0.0,<5.3.13",
+      "cve": null,
+      "title": "FidoAllianceCompliantMetadataService accepts a metadata BLOB that does not chain to a trust anchor",
+      "link": "https://github.com/web-auth/webauthn-framework/security/advisories/GHSA-p653-gg6c-rrjw",
+      "reportedAt": "2026-11-17 19:19:48",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-auth/webauthn-framework/GHSA-p653-gg6c-rrjw.yaml"
         }
       ]
     },
@@ -4678,6 +6484,20 @@
         }
       ]
     },
+    "PKSA-s6q7-rmbr-xh1z": {
+      "packageName": "symfony/symfony",
+      "affectedVersions": ">=2.0.0,<2.1.0|>=2.1.0,<2.2.0|>=2.2.0,<2.3.0|>=2.3.0,<2.4.0|>=2.4.0,<2.5.0|>=2.5.0,<2.6.0|>=2.6.0,<2.7.0|>=2.7.0,<2.8.0|>=2.8.0,<3.0.0|>=3.0.0,<3.1.0|>=3.1.0,<3.2.0|>=3.2.0,<3.3.0|>=3.3.0,<3.4.0|>=3.4.0,<4.0.0|>=4.0.0,<4.1.0|>=4.1.0,<4.2.0|>=4.2.0,<4.3.0|>=4.3.0,<4.4.0|>=4.4.0,<5.0.0|>=5.0.0,<5.1.0|>=5.1.0,<5.2.0|>=5.2.0,<5.3.0|>=5.3.0,<5.4.0|>=5.4.0,<5.4.56|>=6.0.0,<6.1.0|>=6.1.0,<6.2.0|>=6.2.0,<6.3.0|>=6.3.0,<6.4.0|>=6.4.0,<6.4.50|>=7.0.0,<7.1.0|>=7.1.0,<7.2.0|>=7.2.0,<7.3.0|>=7.3.0,<7.4.0|>=7.4.0,<7.4.23|>=8.0.0,<8.1.0|>=8.1.0,<8.1.11",
+      "cve": "CVE-2026-135802",
+      "title": "CVE-2026-135802: Generated URLs Can Point to a Host Chosen by the Client",
+      "link": "https://symfony.com/cve-2026-135802",
+      "reportedAt": "2026-11-04 10:45:07",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "symfony/symfony/CVE-2026-135802.yaml"
+        }
+      ]
+    },
     "PKSA-s8v1-krjv-23c8": {
       "packageName": "codingms/fluid-form",
       "affectedVersions": ">=6.0.0,<6.0.6|<5.0.10",
@@ -4706,6 +6526,20 @@
         }
       ]
     },
+    "PKSA-sdtj-3ybs-8qds": {
+      "packageName": "spomky-labs/pki-framework",
+      "affectedVersions": "<1.6.2",
+      "cve": null,
+      "title": "No syntax validation on dNSName / rfc822Name allows embedded NUL bytes in subjectAltName",
+      "link": "https://github.com/Spomky-Labs/pki-framework/security/advisories/GHSA-6q28-45jq-2628",
+      "reportedAt": "2026-09-07 21:25:24",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "spomky-labs/pki-framework/GHSA-6q28-45jq-2628.yaml"
+        }
+      ]
+    },
     "PKSA-sfhm-5ntq-1hrw": {
       "packageName": "magento/product-community-edition",
       "affectedVersions": ">=2.1,<2.1.18|>=2.2,<2.2.9|>=2.3,<2.3.2",
@@ -4717,6 +6551,20 @@
         {
           "name": "FriendsOfPHP/security-advisories",
           "remoteId": "magento/product-community-edition/CVE-2019-7872.yaml"
+        }
+      ]
+    },
+    "PKSA-sh22-rchv-256h": {
+      "packageName": "spomky-labs/pki-framework",
+      "affectedVersions": "<1.6.2",
+      "cve": null,
+      "title": "Duplicate certificate extensions are silently merged, last occurrence wins",
+      "link": "https://github.com/Spomky-Labs/pki-framework/security/advisories/GHSA-wc4q-rp39-hwpf",
+      "reportedAt": "2026-09-07 21:25:21",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "spomky-labs/pki-framework/GHSA-wc4q-rp39-hwpf.yaml"
         }
       ]
     },
@@ -4846,6 +6694,20 @@
         }
       ]
     },
+    "PKSA-szz8-81wy-3x8z": {
+      "packageName": "twig/twig",
+      "affectedVersions": ">=1.0.0,<2.0.0|>=2.0.0,<3.0.0|>=3.0.0,<3.31.1",
+      "cve": "CVE-2026-133768",
+      "title": "CVE-2026-133768: Sandbox property allow-list bypass via the `join` filter on non-iterable objects",
+      "link": "https://symfony.com/cve-2026-133768",
+      "reportedAt": "2026-11-24 12:48:46",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "twig/twig/CVE-2026-133768.yaml"
+        }
+      ]
+    },
     "PKSA-t3wq-xfwt-t1h9": {
       "packageName": "symfony/symfony",
       "affectedVersions": ">=6.1.0,<6.2.0|>=6.2.0,<6.3.0|>=6.3.0,<6.4.0|>=6.4.0,<6.4.50|>=7.0.0,<7.1.0|>=7.1.0,<7.2.0|>=7.2.0,<7.3.0|>=7.3.0,<7.4.0|>=7.4.0,<7.4.23|>=8.0.0,<8.1.0|>=8.1.0,<8.1.11",
@@ -4916,6 +6778,20 @@
         }
       ]
     },
+    "PKSA-t85t-2sdq-9qvz": {
+      "packageName": "spomky-labs/otphp",
+      "affectedVersions": "<11.4.4|>=11.5.0,<11.5.1",
+      "cve": null,
+      "title": "Unbounded counter parameter in a provisioning URI triggers an uncaught TypeError in HOTP verification",
+      "link": "https://github.com/Spomky-Labs/otphp/security/advisories/GHSA-526c-px8p-72x8",
+      "reportedAt": "2026-11-07 16:52:51",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "spomky-labs/otphp/GHSA-526c-px8p-72x8.yaml"
+        }
+      ]
+    },
     "PKSA-tb9q-ntdz-hpnd": {
       "packageName": "magento/product-community-edition",
       "affectedVersions": ">=2.1,<2.1.18",
@@ -4944,6 +6820,34 @@
         }
       ]
     },
+    "PKSA-tfq6-ydd8-dhbf": {
+      "packageName": "twig/twig",
+      "affectedVersions": ">=1.0.0,<2.0.0|>=2.0.0,<3.0.0|>=3.0.0,<3.31.1",
+      "cve": "CVE-2026-133764",
+      "title": "CVE-2026-133764: Sandbox `__toString()` policy bypass via the input of custom tests",
+      "link": "https://symfony.com/cve-2026-133764",
+      "reportedAt": "2026-11-24 12:48:46",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "twig/twig/CVE-2026-133764.yaml"
+        }
+      ]
+    },
+    "PKSA-tfyf-4wdb-t8xv": {
+      "packageName": "silverstripe/framework",
+      "affectedVersions": "<4.13.45|>=5.0.0,<5.0.24|>=5.1.0,<5.1.24|>=5.2.0,<5.2.23|>=5.3.0,<5.3.24|>=5.4.0,<5.4.31|>=6.0.0,<6.0.17|>=6.1.0,<6.1.17|>=6.2.0,<6.2.15|>=6.3.0,<6.3.10",
+      "cve": null,
+      "title": "SS-2026-008 - Unauthenticated RCE via form submissions",
+      "link": "https://www.silverstripe.org/download/security-releases/ss-2026-008",
+      "reportedAt": "2026-11-23 21:11:56",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "silverstripe/framework/SS-2026-008.yaml"
+        }
+      ]
+    },
     "PKSA-tgnj-rmzz-qh1t": {
       "packageName": "contao/core-bundle",
       "affectedVersions": ">=4.0.0,<5.3.54|>=5.4.0,<5.7.17|>=6.0.0,<6.0.6",
@@ -4955,6 +6859,20 @@
         {
           "name": "FriendsOfPHP/security-advisories",
           "remoteId": "contao/core-bundle/2026-11-11-4.yaml"
+        }
+      ]
+    },
+    "PKSA-tkhm-sbj2-85rf": {
+      "packageName": "web-auth/webauthn-symfony-bundle",
+      "affectedVersions": ">=3.0.0,<5.3.15",
+      "cve": null,
+      "title": "Client override of authenticatorAttachment or residentKey resets the user verification of a creation profile to preferred",
+      "link": "https://github.com/web-auth/webauthn-framework/security/advisories/GHSA-2989-5cjp-qc2p",
+      "reportedAt": "2026-11-19 10:15:40",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-auth/webauthn-symfony-bundle/GHSA-2989-5cjp-qc2p.yaml"
         }
       ]
     },
@@ -4997,6 +6915,20 @@
         {
           "name": "FriendsOfPHP/security-advisories",
           "remoteId": "symbiote/silverstripe-advancedworkflow/CVE-2026-88990.yaml"
+        }
+      ]
+    },
+    "PKSA-tt47-xzdh-sfv5": {
+      "packageName": "web-auth/webauthn-framework",
+      "affectedVersions": ">=4.0.0,<5.3.13",
+      "cve": null,
+      "title": "Default client override policy lets the client waive the attestation that a creation profile requests",
+      "link": "https://github.com/web-auth/webauthn-framework/security/advisories/GHSA-473f-pfcw-p4h2",
+      "reportedAt": "2026-11-17 19:20:46",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-auth/webauthn-framework/GHSA-473f-pfcw-p4h2.yaml"
         }
       ]
     },
@@ -5056,6 +6988,20 @@
         }
       ]
     },
+    "PKSA-v6ry-d7gg-9dnc": {
+      "packageName": "twig/twig",
+      "affectedVersions": ">=1.0.0,<2.0.0|>=2.0.0,<3.0.0|>=3.0.0,<3.31.1",
+      "cve": "CVE-2026-133770",
+      "title": "CVE-2026-133770: Sandboxed templates can rewrite application-owned `Markup` objects through their constructor",
+      "link": "https://symfony.com/cve-2026-133770",
+      "reportedAt": "2026-11-24 12:48:46",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "twig/twig/CVE-2026-133770.yaml"
+        }
+      ]
+    },
     "PKSA-v7wr-dpfc-6njy": {
       "packageName": "contao/core-bundle",
       "affectedVersions": ">=4.9.0,<5.3.54|>=5.4.0,<5.7.17|>=6.0.0,<6.0.6",
@@ -5098,6 +7044,20 @@
         }
       ]
     },
+    "PKSA-vc9n-yswj-ynsd": {
+      "packageName": "web-token/jwt-framework",
+      "affectedVersions": "<3.4.13|>=4.0.0,<4.0.9|>=4.1.0,<4.1.11|>=4.2.0,<4.2.6",
+      "cve": null,
+      "title": "Direct encryption (dir) does not check the key size: with a key of half the required size, AES-CBC-HMAC content is encrypted under an all-zero AES key and anyone holding the token can read it",
+      "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-jc6j-46g2-xwqc",
+      "reportedAt": "2026-11-08 10:33:52",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-token/jwt-framework/GHSA-jc6j-46g2-xwqc.yaml"
+        }
+      ]
+    },
     "PKSA-vc9x-rs4y-p9dc": {
       "packageName": "magento/magento1ee",
       "affectedVersions": ">=1,<1.14.4.2",
@@ -5123,6 +7083,34 @@
         {
           "name": "FriendsOfPHP/security-advisories",
           "remoteId": "magento/product-community-edition/CVE-2019-7939.yaml"
+        }
+      ]
+    },
+    "PKSA-vkcf-kt71-r3mr": {
+      "packageName": "spomky-labs/pki-framework",
+      "affectedVersions": "<1.6.2",
+      "cve": null,
+      "title": "UTCTime two-digit years 50-69 are decoded with the wrong century, so expired certificates can be seen as valid",
+      "link": "https://github.com/Spomky-Labs/pki-framework/security/advisories/GHSA-j49g-8r6c-p7w2",
+      "reportedAt": "2026-09-07 21:25:15",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "spomky-labs/pki-framework/GHSA-j49g-8r6c-p7w2.yaml"
+        }
+      ]
+    },
+    "PKSA-vn5k-bk44-86fg": {
+      "packageName": "spomky-labs/pki-framework",
+      "affectedVersions": "<1.6.2",
+      "cve": null,
+      "title": "X.509 v1/v2 certificates are accepted as intermediate CAs without any basicConstraints check",
+      "link": "https://github.com/Spomky-Labs/pki-framework/security/advisories/GHSA-vw7q-hxmh-m835",
+      "reportedAt": "2026-09-07 20:26:31",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "spomky-labs/pki-framework/GHSA-vw7q-hxmh-m835.yaml"
         }
       ]
     },
@@ -5280,6 +7268,48 @@
         }
       ]
     },
+    "PKSA-w77v-f7qh-vc53": {
+      "packageName": "web-token/jwt-encryption",
+      "affectedVersions": "<2.0.4",
+      "cve": null,
+      "title": "RSA keys of any size are accepted: a key chosen by the sender of a token costs seconds of CPU per operation (RSA-PSS and RSA encryption, and every RSA algorithm without GMP)",
+      "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-96f8-m4jr-72xj",
+      "reportedAt": "2026-11-24 00:00:00",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-token/jwt-encryption/GHSA-96f8-m4jr-72xj.yaml"
+        }
+      ]
+    },
+    "PKSA-w7hg-g8g6-knnh": {
+      "packageName": "web-auth/cose-lib",
+      "affectedVersions": "<4.7.2",
+      "cve": null,
+      "title": "RSA signature verification accepts trivially forged signatures under keys with public exponent 1",
+      "link": "https://github.com/web-auth/cose-lib/security/advisories/GHSA-rh56-4rc8-hj58",
+      "reportedAt": "2026-09-10 16:21:43",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-auth/cose-lib/GHSA-rh56-4rc8-hj58.yaml"
+        }
+      ]
+    },
+    "PKSA-wb8d-mpq3-3b7k": {
+      "packageName": "web-token/jwt-encryption",
+      "affectedVersions": "<2.0.4",
+      "cve": null,
+      "title": "RSA-OAEP accepts an encrypted key made of several RSA blocks, enabling recovery of another JWE's content encryption key through a decryption oracle",
+      "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-wwcr-82mc-w3pw",
+      "reportedAt": "2026-11-24 00:00:00",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-token/jwt-encryption/GHSA-wwcr-82mc-w3pw.yaml"
+        }
+      ]
+    },
     "PKSA-wczj-fvbh-sqgr": {
       "packageName": "drupal-pattern-lab/add-attributes-twig-extension",
       "affectedVersions": ">=0.0.0,<=1.0.1",
@@ -5291,6 +7321,20 @@
         {
           "name": "FriendsOfPHP/security-advisories",
           "remoteId": "drupal-pattern-lab/add-attributes-twig-extension/2024-11-04.yaml"
+        }
+      ]
+    },
+    "PKSA-wd83-b29h-1h8t": {
+      "packageName": "web-auth/webauthn-symfony-bundle",
+      "affectedVersions": ">=4.0.0,<5.3.13",
+      "cve": null,
+      "title": "RequestBodyUserEntityGuesser lets users add passkeys to other accounts",
+      "link": "https://github.com/web-auth/webauthn-framework/security/advisories/GHSA-3chw-82qh-p72w",
+      "reportedAt": "2026-11-17 18:44:35",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-auth/webauthn-symfony-bundle/GHSA-3chw-82qh-p72w.yaml"
         }
       ]
     },
@@ -5333,6 +7377,20 @@
         {
           "name": "FriendsOfPHP/security-advisories",
           "remoteId": "magento/magento1ee/CVE-2019-7849.yaml"
+        }
+      ]
+    },
+    "PKSA-wk1h-k736-nt9j": {
+      "packageName": "web-token/jwt-framework",
+      "affectedVersions": "<3.4.11|>=4.0.0,<4.0.8|>=4.1.0,<4.1.10|>=4.2.0,<4.2.4",
+      "cve": null,
+      "title": "AES-GCM decryption accepts any authentication tag length: a holder of one valid JWE can brute force a 1-byte tag in at most 256 requests and rewrite the plaintext",
+      "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-j265-mg9q-wpv9",
+      "reportedAt": "2026-10-30 20:35:44",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-token/jwt-framework/GHSA-j265-mg9q-wpv9.yaml"
         }
       ]
     },
@@ -5406,6 +7464,34 @@
         }
       ]
     },
+    "PKSA-wyjx-ngsd-cmj7": {
+      "packageName": "web-token/jwt-encryption",
+      "affectedVersions": "<2.0.4",
+      "cve": null,
+      "title": "ECDH-ES derives at most 256 bits of key material: with A256CBC-HS512 the content is encrypted under an all-zero AES key and anyone holding the token can read it",
+      "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-5pj7-wx9m-cjh6",
+      "reportedAt": "2026-11-24 00:00:00",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-token/jwt-encryption/GHSA-5pj7-wx9m-cjh6.yaml"
+        }
+      ]
+    },
+    "PKSA-wz15-4nsq-vrnz": {
+      "packageName": "symfony/symfony",
+      "affectedVersions": ">=5.4.50,<5.4.56|>=6.4.29,<6.4.50|>=7.3.7,<7.4.0|>=7.4.0,<7.4.23|>=8.0.0,<8.1.0|>=8.1.0,<8.1.11",
+      "cve": "CVE-2026-135801",
+      "title": "CVE-2026-135801: Path Rules Enforced in Front of PHP Can Be Bypassed by Appending the Path to the Script Name",
+      "link": "https://symfony.com/cve-2026-135801",
+      "reportedAt": "2026-11-04 10:45:07",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "symfony/symfony/CVE-2026-135801.yaml"
+        }
+      ]
+    },
     "PKSA-x66t-4jm7-rjy4": {
       "packageName": "magento/product-community-edition",
       "affectedVersions": ">=2.1,<2.1.18|>=2.2,<2.2.9|>=2.3,<2.3.2",
@@ -5445,6 +7531,20 @@
         {
           "name": "FriendsOfPHP/security-advisories",
           "remoteId": "sgalinski/sg-cookie-optin/CVE-2026-112065.yaml"
+        }
+      ]
+    },
+    "PKSA-xcbx-sqvp-q6yt": {
+      "packageName": "web-auth/webauthn-framework",
+      "affectedVersions": ">=5.2.1,<5.3.13",
+      "cve": null,
+      "title": "WebauthnPassport ignores the firewall's user provider, allowing impersonation",
+      "link": "https://github.com/web-auth/webauthn-framework/security/advisories/GHSA-4485-9q39-m27g",
+      "reportedAt": "2026-11-17 19:20:46",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-auth/webauthn-framework/GHSA-4485-9q39-m27g.yaml"
         }
       ]
     },
@@ -5501,6 +7601,20 @@
         {
           "name": "FriendsOfPHP/security-advisories",
           "remoteId": "derhansen/sf_event_mgt/CVE-2026-77129.yaml"
+        }
+      ]
+    },
+    "PKSA-xn9k-w9w9-pcqd": {
+      "packageName": "web-token/jwt-encryption-algorithm-experimental",
+      "affectedVersions": "<=3.2.10",
+      "cve": null,
+      "title": "AES-GCM decryption accepts any authentication tag length: a holder of one valid JWE can brute force a 1-byte tag in at most 256 requests and rewrite the plaintext",
+      "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-j265-mg9q-wpv9",
+      "reportedAt": "2026-11-24 00:00:00",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-token/jwt-encryption-algorithm-experimental/GHSA-j265-mg9q-wpv9.yaml"
         }
       ]
     },
@@ -5725,6 +7839,48 @@
         {
           "name": "FriendsOfPHP/security-advisories",
           "remoteId": "symfony/symfony/CVE-2024-51996.yaml"
+        }
+      ]
+    },
+    "PKSA-z3d4-bmy9-h7cg": {
+      "packageName": "spomky-labs/pki-framework",
+      "affectedVersions": "<1.6.2",
+      "cve": null,
+      "title": "TBSCertificate::fromCSR() copies attacker-controlled extensions, allowing a requester to obtain a CA certificate",
+      "link": "https://github.com/Spomky-Labs/pki-framework/security/advisories/GHSA-5474-45mw-c3xq",
+      "reportedAt": "2026-09-07 20:04:42",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "spomky-labs/pki-framework/GHSA-5474-45mw-c3xq.yaml"
+        }
+      ]
+    },
+    "PKSA-zcbq-d9w6-9mxb": {
+      "packageName": "web-token/jwt-encryption-algorithm-ecdh-es",
+      "affectedVersions": "<=3.2.10",
+      "cve": null,
+      "title": "ECDH-ES derives at most 256 bits of key material: with A256CBC-HS512 the content is encrypted under an all-zero AES key and anyone holding the token can read it",
+      "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-5pj7-wx9m-cjh6",
+      "reportedAt": "2026-11-24 00:00:00",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "web-token/jwt-encryption-algorithm-ecdh-es/GHSA-5pj7-wx9m-cjh6.yaml"
+        }
+      ]
+    },
+    "PKSA-zdhz-ps9q-thgs": {
+      "packageName": "symfony/ux-icons",
+      "affectedVersions": ">=2.36.1,<2.36.3|>=3.2.0,<3.8.1",
+      "cve": "CVE-2026-133777",
+      "title": "CVE-2026-133777: XSS in symfony/ux-icons via SVG Content That Browsers Parse as HTML: Incomplete Fix for CVE-2026-55877",
+      "link": "https://symfony.com/cve-2026-133777",
+      "reportedAt": "2026-11-24 07:14:17",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "symfony/ux-icons/CVE-2026-133777.yaml"
         }
       ]
     },

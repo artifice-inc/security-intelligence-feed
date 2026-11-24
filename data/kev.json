@@ -1,8 +1,29 @@
 {
-  "fetched_at": "2026-11-24T06:08:38Z",
+  "fetched_at": "2026-11-24T18:56:38Z",
   "ok": true,
-  "catalog_version": "2026.11.23",
+  "catalog_version": "2026.11.24",
   "records": [
+    {
+      "cveID": "CVE-2026-132224",
+      "vendorProject": "Optimizely",
+      "product": "Web Experimentation",
+      "dateAdded": "2026-11-24",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
+    {
+      "cveID": "CVE-2026-131914",
+      "vendorProject": "Idunno",
+      "product": "AntiCsrf",
+      "dateAdded": "2026-11-24",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
+    {
+      "cveID": "CVE-2026-132165",
+      "vendorProject": "Drupal",
+      "product": "Core",
+      "dateAdded": "2026-11-24",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
     {
       "cveID": "CVE-2026-133968",
       "vendorProject": "Project MONAI",

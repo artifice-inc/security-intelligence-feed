@@ -1,6 +1,46 @@
 {
-  "updated_at": "2026-11-24T06:08:38Z",
+  "updated_at": "2026-11-25T04:55:59Z",
   "items": [
+    {
+      "source": "jvn",
+      "id": "JVN78929433",
+      "title": "源内Webにおけるサーバサイドリクエストフォージェリの脆弱性",
+      "link": "https://jvn.jp/jp/JVN78929433/",
+      "date": "2026-11-25T12:00:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-11-25T04:55:59Z"
+    },
+    {
+      "source": "jvn",
+      "id": "JVNVU98354779",
+      "title": "Siemens製品に対するアップデート（2026年11月）",
+      "link": "https://jvn.jp/vu/JVNVU98354779/",
+      "date": "2026-11-25T09:15:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-11-05T02:29:21Z"
+    },
+    {
+      "source": "jvn",
+      "id": "JVNVU95723901",
+      "title": "OpenSSLにおける脆弱性に対するアップデート（2026年11月24日）",
+      "link": "https://jvn.jp/vu/JVNVU95723901/",
+      "date": "2026-11-25T09:00:15+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-11-25T04:55:59Z"
+    },
+    {
+      "source": "jvn",
+      "id": "JVNVU93291989",
+      "title": "CISA ICS Advisory / ICS Medical Advisory（2026年11月24日）",
+      "link": "https://jvn.jp/vu/JVNVU93291989/",
+      "date": "2026-11-25T09:00:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-11-25T04:55:59Z"
+    },
     {
       "source": "jvn",
       "id": "JVN84156789",
@@ -10,16 +50,6 @@
       "cves": [],
       "verification_status": "needs_review",
       "first_seen_at": "2026-11-24T06:08:38Z"
-    },
-    {
-      "source": "jvn",
-      "id": "JVNVU98354779",
-      "title": "Siemens製品に対するアップデート（2026年11月）",
-      "link": "https://jvn.jp/vu/JVNVU98354779/",
-      "date": "2026-11-24T09:00:00+09:00",
-      "cves": [],
-      "verification_status": "needs_review",
-      "first_seen_at": "2026-11-05T02:29:21Z"
     },
     {
       "source": "ipa",

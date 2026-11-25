@@ -1,6 +1,28 @@
 {
-  "updated_at": "2026-11-24T18:56:38Z",
+  "updated_at": "2026-11-25T04:55:59Z",
   "items": [
+    {
+      "id": "2026-201-aws",
+      "title": "CVE-2026-135414 - Server-side request forgery in snapshot repository registration in Amazon OpenSearch Service",
+      "url": "https://aws.amazon.com/security/security-bulletins/2026-201-aws/",
+      "rss_pub_date": "2026-11-24T19:27:19Z",
+      "cves": [
+        "CVE-2026-135414"
+      ],
+      "first_seen_at": "2026-11-25T04:55:59Z",
+      "last_changed_at": null
+    },
+    {
+      "id": "2026-200-aws",
+      "title": "CVE-2026-135614 - Sensitive data redaction bypass in the troubleshooting tool in Amazon ECS MCP Server",
+      "url": "https://aws.amazon.com/security/security-bulletins/2026-200-aws/",
+      "rss_pub_date": "2026-11-24T19:27:19Z",
+      "cves": [
+        "CVE-2026-135614"
+      ],
+      "first_seen_at": "2026-11-25T04:55:59Z",
+      "last_changed_at": null
+    },
     {
       "id": "2026-199-aws",
       "title": "CVE-2026-134066 - Query injection via schema-derived identifiers in Graph Explorer",

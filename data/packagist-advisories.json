@@ -1,6 +1,6 @@
 {
   "full_sync_at": "2026-11-22T02:18:44Z",
-  "updated_since": 1795582259,
+  "updated_since": 1795629336,
   "advisories": {
     "PKSA-138c-dqwc-4pfb": {
       "packageName": "magento/product-community-edition",
@@ -372,7 +372,7 @@
       "cve": null,
       "title": "RSA-OAEP accepts an encrypted key made of several RSA blocks, enabling recovery of another JWE's content encryption key through a decryption oracle",
       "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-wwcr-82mc-w3pw",
-      "reportedAt": "2026-11-24 00:00:00",
+      "reportedAt": "2026-11-25 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",
@@ -400,7 +400,7 @@
       "cve": null,
       "title": "Metadata status report check reads a single report and ignores REVOKED",
       "link": "https://github.com/web-auth/webauthn-framework/security/advisories/GHSA-p8cj-mmjr-5c2m",
-      "reportedAt": "2026-11-24 00:00:00",
+      "reportedAt": "2026-11-25 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",
@@ -666,7 +666,7 @@
       "cve": null,
       "title": "AES-GCM decryption accepts any authentication tag length: a holder of one valid JWE can brute force a 1-byte tag in at most 256 requests and rewrite the plaintext",
       "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-j265-mg9q-wpv9",
-      "reportedAt": "2026-11-24 00:00:00",
+      "reportedAt": "2026-11-25 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",
@@ -1856,7 +1856,7 @@
       "cve": null,
       "title": "Attestation certificates sent as PEM text allow forged packed/TPM attestations and an unauthenticated denial of service",
       "link": "https://github.com/web-auth/webauthn-framework/security/advisories/GHSA-c9p6-r72h-rp3x",
-      "reportedAt": "2026-11-24 00:00:00",
+      "reportedAt": "2026-11-25 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",
@@ -2640,7 +2640,7 @@
       "cve": null,
       "title": "AES key wrapping accepts oct keys shorter than the algorithm key size and pads them with zero bytes: an empty key wraps every CEK under an all-zero key",
       "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-4mxj-75j2-j8hc",
-      "reportedAt": "2026-11-24 00:00:00",
+      "reportedAt": "2026-11-25 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",
@@ -2766,7 +2766,7 @@
       "cve": null,
       "title": "RSA keys of any size are accepted: a key chosen by the sender of a token costs seconds of CPU per operation (RSA-PSS and RSA encryption, and every RSA algorithm without GMP)",
       "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-96f8-m4jr-72xj",
-      "reportedAt": "2026-11-24 00:00:00",
+      "reportedAt": "2026-11-25 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",
@@ -3004,7 +3004,7 @@
       "cve": null,
       "title": "Direct encryption (dir) does not check the key size: with a key of half the required size, AES-CBC-HMAC content is encrypted under an all-zero AES key and anyone holding the token can read it",
       "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-jc6j-46g2-xwqc",
-      "reportedAt": "2026-11-24 00:00:00",
+      "reportedAt": "2026-11-25 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",
@@ -3130,7 +3130,7 @@
       "cve": null,
       "title": "dir, ECDH-ES and ECDH-SS accept a non-empty JWE Encrypted Key, so token strings are malleable",
       "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-5cc5-v8qv-6cw7",
-      "reportedAt": "2026-11-24 00:00:00",
+      "reportedAt": "2026-11-25 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",
@@ -3256,7 +3256,7 @@
       "cve": null,
       "title": "JWS and JWE serializers decode attacker-controlled JSON without bounds before verification (CPU and memory denial of service)",
       "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-2xq2-pp89-x7fr",
-      "reportedAt": "2026-11-24 00:00:00",
+      "reportedAt": "2026-11-25 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",
@@ -3312,7 +3312,7 @@
       "cve": null,
       "title": "AES key wrapping accepts oct keys shorter than the algorithm key size and pads them with zero bytes: an empty key wraps every CEK under an all-zero key",
       "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-4mxj-75j2-j8hc",
-      "reportedAt": "2026-11-24 00:00:00",
+      "reportedAt": "2026-11-25 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",
@@ -3690,7 +3690,7 @@
       "cve": null,
       "title": "Denial of service: parsing a JWS in the JSON General serialization takes a time quadratic in its number of signatures",
       "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-jgv7-g4jg-6hqv",
-      "reportedAt": "2026-11-24 00:00:00",
+      "reportedAt": "2026-11-25 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",
@@ -3732,7 +3732,7 @@
       "cve": null,
       "title": "AES-GCM decryption accepts any authentication tag length: a holder of one valid JWE can brute force a 1-byte tag in at most 256 requests and rewrite the plaintext",
       "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-j265-mg9q-wpv9",
-      "reportedAt": "2026-11-24 00:00:00",
+      "reportedAt": "2026-11-25 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",
@@ -3830,7 +3830,7 @@
       "cve": null,
       "title": "RSA private key recoverable through a timing side channel in RSA-OAEP and RSA1_5 decryption",
       "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-2qpx-pwmq-r27r",
-      "reportedAt": "2026-11-24 00:00:00",
+      "reportedAt": "2026-11-25 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",
@@ -3914,7 +3914,7 @@
       "cve": null,
       "title": "AES key wrapping accepts oct keys shorter than the algorithm key size and pads them with zero bytes: an empty key wraps every CEK under an all-zero key",
       "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-4mxj-75j2-j8hc",
-      "reportedAt": "2026-11-24 00:00:00",
+      "reportedAt": "2026-11-25 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",
@@ -4544,7 +4544,7 @@
       "cve": null,
       "title": "RSA keys of any size are accepted: a key chosen by the sender of a token costs seconds of CPU per operation (RSA-PSS and RSA encryption, and every RSA algorithm without GMP)",
       "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-96f8-m4jr-72xj",
-      "reportedAt": "2026-11-24 00:00:00",
+      "reportedAt": "2026-11-25 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",
@@ -4586,7 +4586,7 @@
       "cve": null,
       "title": "JWE and JWS loaders try every recipient or signature of a token, so a small token multiplies the PBES2 iteration cap (denial of service)",
       "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-3vqw-452c-g726",
-      "reportedAt": "2026-11-24 00:00:00",
+      "reportedAt": "2026-11-25 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",
@@ -4782,7 +4782,7 @@
       "cve": null,
       "title": "JWS and JWE serializers decode attacker-controlled JSON without bounds before verification (CPU and memory denial of service)",
       "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-2xq2-pp89-x7fr",
-      "reportedAt": "2026-11-24 00:00:00",
+      "reportedAt": "2026-11-25 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",
@@ -4824,7 +4824,7 @@
       "cve": null,
       "title": "RSA keys of any size are accepted: a key chosen by the sender of a token costs seconds of CPU per operation (RSA-PSS and RSA encryption, and every RSA algorithm without GMP)",
       "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-96f8-m4jr-72xj",
-      "reportedAt": "2026-11-24 00:00:00",
+      "reportedAt": "2026-11-25 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",
@@ -4843,6 +4843,20 @@
         {
           "name": "FriendsOfPHP/security-advisories",
           "remoteId": "twig/twig/CVE-2026-46627.yaml"
+        }
+      ]
+    },
+    "PKSA-kwst-yd6p-pksp": {
+      "packageName": "league/csv",
+      "affectedVersions": ">=9.22,<9.28|>=9.28.0,<9.28.1|>=9.29.0,<9.29.1",
+      "cve": null,
+      "title": "CharsetConverter - Denial of Service through unbounded buffering of invalid multibyte sequences",
+      "link": "https://github.com/thephpleague/csv/security/advisories/GHSA-m9j4-54gj-jvf8",
+      "reportedAt": "2026-11-22 00:00:00",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "league/csv/2026-11-22.yaml"
         }
       ]
     },
@@ -5272,7 +5286,7 @@
       "cve": null,
       "title": "RSA keys of any size are accepted: a key chosen by the sender of a token costs seconds of CPU per operation (RSA-PSS and RSA encryption, and every RSA algorithm without GMP)",
       "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-96f8-m4jr-72xj",
-      "reportedAt": "2026-11-24 00:00:00",
+      "reportedAt": "2026-11-25 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",
@@ -5636,7 +5650,7 @@
       "cve": null,
       "title": "AES key wrapping accepts oct keys shorter than the algorithm key size and pads them with zero bytes: an empty key wraps every CEK under an all-zero key",
       "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-4mxj-75j2-j8hc",
-      "reportedAt": "2026-11-24 00:00:00",
+      "reportedAt": "2026-11-25 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",
@@ -5776,7 +5790,7 @@
       "cve": null,
       "title": "FidoAllianceCompliantMetadataService accepts a metadata BLOB that does not chain to a trust anchor",
       "link": "https://github.com/web-auth/webauthn-framework/security/advisories/GHSA-p653-gg6c-rrjw",
-      "reportedAt": "2026-11-24 00:00:00",
+      "reportedAt": "2026-11-25 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",
@@ -5930,7 +5944,7 @@
       "cve": null,
       "title": "AES-GCM decryption accepts any authentication tag length: a holder of one valid JWE can brute force a 1-byte tag in at most 256 requests and rewrite the plaintext",
       "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-j265-mg9q-wpv9",
-      "reportedAt": "2026-11-24 00:00:00",
+      "reportedAt": "2026-11-25 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",
@@ -6224,7 +6238,7 @@
       "cve": null,
       "title": "JWE and JWS loaders try every recipient or signature of a token, so a small token multiplies the PBES2 iteration cap (denial of service)",
       "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-3vqw-452c-g726",
-      "reportedAt": "2026-11-24 00:00:00",
+      "reportedAt": "2026-11-25 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",
@@ -6406,7 +6420,7 @@
       "cve": null,
       "title": "ECDH-ES: an oversized \"epk\" coordinate costs seconds to minutes of CPU per token when PHP has no GMP extension",
       "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-wwq7-mh3q-hwrh",
-      "reportedAt": "2026-11-24 00:00:00",
+      "reportedAt": "2026-11-25 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",
@@ -7274,7 +7288,7 @@
       "cve": null,
       "title": "RSA keys of any size are accepted: a key chosen by the sender of a token costs seconds of CPU per operation (RSA-PSS and RSA encryption, and every RSA algorithm without GMP)",
       "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-96f8-m4jr-72xj",
-      "reportedAt": "2026-11-24 00:00:00",
+      "reportedAt": "2026-11-25 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",
@@ -7302,7 +7316,7 @@
       "cve": null,
       "title": "RSA-OAEP accepts an encrypted key made of several RSA blocks, enabling recovery of another JWE's content encryption key through a decryption oracle",
       "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-wwcr-82mc-w3pw",
-      "reportedAt": "2026-11-24 00:00:00",
+      "reportedAt": "2026-11-25 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",
@@ -7470,7 +7484,7 @@
       "cve": null,
       "title": "ECDH-ES derives at most 256 bits of key material: with A256CBC-HS512 the content is encrypted under an all-zero AES key and anyone holding the token can read it",
       "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-5pj7-wx9m-cjh6",
-      "reportedAt": "2026-11-24 00:00:00",
+      "reportedAt": "2026-11-25 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",
@@ -7610,7 +7624,7 @@
       "cve": null,
       "title": "AES-GCM decryption accepts any authentication tag length: a holder of one valid JWE can brute force a 1-byte tag in at most 256 requests and rewrite the plaintext",
       "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-j265-mg9q-wpv9",
-      "reportedAt": "2026-11-24 00:00:00",
+      "reportedAt": "2026-11-25 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",
@@ -7862,7 +7876,7 @@
       "cve": null,
       "title": "ECDH-ES derives at most 256 bits of key material: with A256CBC-HS512 the content is encrypted under an all-zero AES key and anyone holding the token can read it",
       "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-5pj7-wx9m-cjh6",
-      "reportedAt": "2026-11-24 00:00:00",
+      "reportedAt": "2026-11-25 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",

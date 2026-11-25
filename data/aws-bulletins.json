@@ -1,6 +1,17 @@
 {
-  "updated_at": "2026-11-25T04:55:59Z",
+  "updated_at": "2026-11-25T18:00:36Z",
   "items": [
+    {
+      "id": "2026-202-aws",
+      "title": "CVE-2026-136267 - Improper neutralization of special elements used in an OS command in Kiro Web",
+      "url": "https://aws.amazon.com/security/security-bulletins/2026-202-aws/",
+      "rss_pub_date": "2026-11-25T17:08:36Z",
+      "cves": [
+        "CVE-2026-136267"
+      ],
+      "first_seen_at": "2026-11-25T18:00:36Z",
+      "last_changed_at": null
+    },
     {
       "id": "2026-201-aws",
       "title": "CVE-2026-135414 - Server-side request forgery in snapshot repository registration in Amazon OpenSearch Service",

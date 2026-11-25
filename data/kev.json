@@ -1,8 +1,15 @@
 {
-  "fetched_at": "2026-11-25T04:55:59Z",
+  "fetched_at": "2026-11-25T18:00:36Z",
   "ok": true,
-  "catalog_version": "2026.11.24",
+  "catalog_version": "2026.11.25",
   "records": [
+    {
+      "cveID": "CVE-2026-103406",
+      "vendorProject": "Hewlett Packard Enterprise (HPE)",
+      "product": "Juniper Session Smart Conductor and Session Smart Router",
+      "dateAdded": "2026-11-25",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
     {
       "cveID": "CVE-2026-132224",
       "vendorProject": "Optimizely",

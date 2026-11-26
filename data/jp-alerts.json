@@ -1,6 +1,38 @@
 {
-  "updated_at": "2026-11-25T18:00:36Z",
+  "updated_at": "2026-11-26T04:12:28Z",
   "items": [
+    {
+      "source": "jvn",
+      "id": "JVN16383801",
+      "title": "Androidアプリ「東京消防庁公式アプリ」におけるパストラバーサルの脆弱性",
+      "link": "https://jvn.jp/jp/JVN16383801/",
+      "date": "2026-11-26T12:00:15+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-11-26T04:12:28Z"
+    },
+    {
+      "source": "jvn",
+      "id": "JVN25972114",
+      "title": "baserCMSにおける複数の脆弱性",
+      "link": "https://jvn.jp/jp/JVN25972114/",
+      "date": "2026-11-26T12:00:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-11-26T04:12:28Z"
+    },
+    {
+      "source": "jpcert",
+      "id": "wr261126",
+      "title": "Weekly Report: 認証を有効にしていないNode-REDに悪意ある制御フローが登録される問題（CVE-2026-58115）について",
+      "link": "https://www.jpcert.or.jp/wr/2026/wr261126.html#22",
+      "date": "2026-11-26T09:24+09:00",
+      "cves": [
+        "CVE-2026-58115"
+      ],
+      "verification_status": "text_extracted",
+      "first_seen_at": "2026-11-26T04:12:28Z"
+    },
     {
       "source": "jvn",
       "id": "JVNVU92527429",

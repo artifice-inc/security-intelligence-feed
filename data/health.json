@@ -1,142 +1,142 @@
 {
-  "run_slot": "2026-11-25T07:17Z",
+  "run_slot": "2026-11-25T22:17Z",
   "last_run": {
-    "started_at": "2026-11-25T18:00:36Z",
-    "finished_at": "2026-11-25T18:00:36Z",
+    "started_at": "2026-11-26T04:12:28Z",
+    "finished_at": "2026-11-26T04:12:28Z",
     "status": "success"
   },
-  "last_success_at": "2026-11-25T18:00:36Z",
+  "last_success_at": "2026-11-26T04:12:28Z",
   "sources": {
     "kev": {
-      "last_attempt_at": "2026-11-25T18:00:36Z",
-      "last_success_at": "2026-11-25T18:00:36Z",
-      "last_attempt_slot": "2026-11-25T07:17Z",
-      "last_success_slot": "2026-11-25T07:17Z",
+      "last_attempt_at": "2026-11-26T04:12:28Z",
+      "last_success_at": "2026-11-26T04:12:28Z",
+      "last_attempt_slot": "2026-11-25T22:17Z",
+      "last_success_slot": "2026-11-25T22:17Z",
       "last_attempt_ok": true,
       "last_error": null
     },
     "epss": {
-      "last_attempt_at": "2026-11-25T18:00:36Z",
-      "last_success_at": "2026-11-25T18:00:36Z",
-      "last_attempt_slot": "2026-11-25T07:17Z",
-      "last_success_slot": "2026-11-25T07:17Z",
+      "last_attempt_at": "2026-11-26T04:12:28Z",
+      "last_success_at": "2026-11-26T04:12:28Z",
+      "last_attempt_slot": "2026-11-25T22:17Z",
+      "last_success_slot": "2026-11-25T22:17Z",
       "last_attempt_ok": true,
       "last_error": null
     },
     "node-core": {
-      "last_attempt_at": "2026-11-25T18:00:36Z",
-      "last_success_at": "2026-11-25T18:00:36Z",
-      "last_attempt_slot": "2026-11-25T07:17Z",
-      "last_success_slot": "2026-11-25T07:17Z",
+      "last_attempt_at": "2026-11-26T04:12:28Z",
+      "last_success_at": "2026-11-26T04:12:28Z",
+      "last_attempt_slot": "2026-11-25T22:17Z",
+      "last_success_slot": "2026-11-25T22:17Z",
       "last_attempt_ok": true,
       "last_error": null
     },
     "node-dist": {
-      "last_attempt_at": "2026-11-25T18:00:36Z",
-      "last_success_at": "2026-11-25T18:00:36Z",
-      "last_attempt_slot": "2026-11-25T07:17Z",
-      "last_success_slot": "2026-11-25T07:17Z",
+      "last_attempt_at": "2026-11-26T04:12:28Z",
+      "last_success_at": "2026-11-26T04:12:28Z",
+      "last_attempt_slot": "2026-11-25T22:17Z",
+      "last_success_slot": "2026-11-25T22:17Z",
       "last_attempt_ok": true,
       "last_error": null
     },
     "php-ghsa": {
-      "last_attempt_at": "2026-11-25T18:00:36Z",
-      "last_success_at": "2026-11-25T18:00:36Z",
-      "last_attempt_slot": "2026-11-25T07:17Z",
-      "last_success_slot": "2026-11-25T07:17Z",
+      "last_attempt_at": "2026-11-26T04:12:28Z",
+      "last_success_at": "2026-11-26T04:12:28Z",
+      "last_attempt_slot": "2026-11-25T22:17Z",
+      "last_success_slot": "2026-11-25T22:17Z",
       "last_attempt_ok": true,
       "last_error": null
     },
     "php-releases": {
-      "last_attempt_at": "2026-11-25T18:00:36Z",
-      "last_success_at": "2026-11-25T18:00:36Z",
-      "last_attempt_slot": "2026-11-25T07:17Z",
-      "last_success_slot": "2026-11-25T07:17Z",
+      "last_attempt_at": "2026-11-26T04:12:28Z",
+      "last_success_at": "2026-11-26T04:12:28Z",
+      "last_attempt_slot": "2026-11-25T22:17Z",
+      "last_success_slot": "2026-11-25T22:17Z",
       "last_attempt_ok": true,
       "last_error": null
     },
     "endoflife": {
-      "last_attempt_at": "2026-11-25T18:00:36Z",
-      "last_success_at": "2026-11-25T18:00:36Z",
-      "last_attempt_slot": "2026-11-25T07:17Z",
-      "last_success_slot": "2026-11-25T07:17Z",
+      "last_attempt_at": "2026-11-26T04:12:28Z",
+      "last_success_at": "2026-11-26T04:12:28Z",
+      "last_attempt_slot": "2026-11-25T22:17Z",
+      "last_success_slot": "2026-11-25T22:17Z",
       "last_attempt_ok": true,
       "last_error": null
     },
     "packagist": {
-      "last_attempt_at": "2026-11-25T18:00:36Z",
-      "last_success_at": "2026-11-25T18:00:36Z",
-      "last_attempt_slot": "2026-11-25T07:17Z",
-      "last_success_slot": "2026-11-25T07:17Z",
+      "last_attempt_at": "2026-11-26T04:12:28Z",
+      "last_success_at": "2026-11-26T04:12:28Z",
+      "last_attempt_slot": "2026-11-25T22:17Z",
+      "last_success_slot": "2026-11-25T22:17Z",
       "last_attempt_ok": true,
       "last_error": null
     },
     "python-psf": {
-      "last_attempt_at": "2026-11-25T18:00:36Z",
-      "last_success_at": "2026-11-25T18:00:36Z",
-      "last_attempt_slot": "2026-11-25T07:17Z",
-      "last_success_slot": "2026-11-25T07:17Z",
+      "last_attempt_at": "2026-11-26T04:12:28Z",
+      "last_success_at": "2026-11-26T04:12:28Z",
+      "last_attempt_slot": "2026-11-25T22:17Z",
+      "last_success_slot": "2026-11-25T22:17Z",
       "last_attempt_ok": true,
       "last_error": null
     },
     "python-releases": {
-      "last_attempt_at": "2026-11-25T18:00:36Z",
-      "last_success_at": "2026-11-25T18:00:36Z",
-      "last_attempt_slot": "2026-11-25T07:17Z",
-      "last_success_slot": "2026-11-25T07:17Z",
+      "last_attempt_at": "2026-11-26T04:12:28Z",
+      "last_success_at": "2026-11-26T04:12:28Z",
+      "last_attempt_slot": "2026-11-25T22:17Z",
+      "last_success_slot": "2026-11-25T22:17Z",
       "last_attempt_ok": true,
       "last_error": null
     },
     "endoflife-python": {
-      "last_attempt_at": "2026-11-25T18:00:36Z",
-      "last_success_at": "2026-11-25T18:00:36Z",
-      "last_attempt_slot": "2026-11-25T07:17Z",
-      "last_success_slot": "2026-11-25T07:17Z",
+      "last_attempt_at": "2026-11-26T04:12:28Z",
+      "last_success_at": "2026-11-26T04:12:28Z",
+      "last_attempt_slot": "2026-11-25T22:17Z",
+      "last_success_slot": "2026-11-25T22:17Z",
       "last_attempt_ok": true,
       "last_error": null
     },
     "jpcert": {
-      "last_attempt_at": "2026-11-25T18:00:36Z",
-      "last_success_at": "2026-11-25T18:00:36Z",
-      "last_attempt_slot": "2026-11-25T07:17Z",
-      "last_success_slot": "2026-11-25T07:17Z",
+      "last_attempt_at": "2026-11-26T04:12:28Z",
+      "last_success_at": "2026-11-26T04:12:28Z",
+      "last_attempt_slot": "2026-11-25T22:17Z",
+      "last_success_slot": "2026-11-25T22:17Z",
       "last_attempt_ok": true,
       "last_error": null
     },
     "ipa": {
-      "last_attempt_at": "2026-11-25T18:00:36Z",
-      "last_success_at": "2026-11-25T18:00:36Z",
-      "last_attempt_slot": "2026-11-25T07:17Z",
-      "last_success_slot": "2026-11-25T07:17Z",
+      "last_attempt_at": "2026-11-26T04:12:28Z",
+      "last_success_at": "2026-11-26T04:12:28Z",
+      "last_attempt_slot": "2026-11-25T22:17Z",
+      "last_success_slot": "2026-11-25T22:17Z",
       "last_attempt_ok": true,
       "last_error": null
     },
     "jvn": {
-      "last_attempt_at": "2026-11-25T18:00:36Z",
-      "last_success_at": "2026-11-25T18:00:36Z",
-      "last_attempt_slot": "2026-11-25T07:17Z",
-      "last_success_slot": "2026-11-25T07:17Z",
+      "last_attempt_at": "2026-11-26T04:12:28Z",
+      "last_success_at": "2026-11-26T04:12:28Z",
+      "last_attempt_slot": "2026-11-25T22:17Z",
+      "last_success_slot": "2026-11-25T22:17Z",
       "last_attempt_ok": true,
       "last_error": null
     },
     "alas": {
-      "last_attempt_at": "2026-11-25T18:00:36Z",
-      "last_success_at": "2026-11-25T18:00:36Z",
-      "last_attempt_slot": "2026-11-25T07:17Z",
-      "last_success_slot": "2026-11-25T07:17Z",
+      "last_attempt_at": "2026-11-26T04:12:28Z",
+      "last_success_at": "2026-11-26T04:12:28Z",
+      "last_attempt_slot": "2026-11-25T22:17Z",
+      "last_success_slot": "2026-11-25T22:17Z",
       "last_attempt_ok": true,
       "last_error": null
     }
   },
   "optional_sources": {
     "aws-bulletins": {
-      "last_attempt_at": "2026-11-25T18:00:36Z",
-      "last_success_at": "2026-11-25T18:00:36Z",
-      "last_attempt_slot": "2026-11-25T07:17Z",
-      "last_success_slot": "2026-11-25T07:17Z",
+      "last_attempt_at": "2026-11-26T04:12:28Z",
+      "last_success_at": "2026-11-26T04:12:28Z",
+      "last_attempt_slot": "2026-11-25T22:17Z",
+      "last_success_slot": "2026-11-25T22:17Z",
       "last_attempt_ok": true,
       "last_error": null
     }
   },
-  "packagist_updated_since": 1795629336
+  "packagist_updated_since": 1795666048
 }

@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-25T18:00:36Z",
+  "fetched_at": "2026-11-26T04:12:28Z",
   "ok": true,
   "catalog_version": "2026.11.25",
   "records": [
@@ -7,6 +7,69 @@
       "cveID": "CVE-2026-103406",
       "vendorProject": "Hewlett Packard Enterprise (HPE)",
       "product": "Juniper Session Smart Conductor and Session Smart Router",
+      "dateAdded": "2026-11-25",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
+    {
+      "cveID": "CVE-2026-133469",
+      "vendorProject": "Vates",
+      "product": "Xen Orchestra",
+      "dateAdded": "2026-11-25",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
+    {
+      "cveID": "CVE-2025-41450",
+      "vendorProject": "Danfoss",
+      "product": "AK-SM 800A Series",
+      "dateAdded": "2026-11-25",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
+    {
+      "cveID": "CVE-2023-25914",
+      "vendorProject": "Danfoss",
+      "product": "AK-SM 800A Series",
+      "dateAdded": "2026-11-25",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
+    {
+      "cveID": "CVE-2023-25915",
+      "vendorProject": "Danfoss",
+      "product": "AK-SM 800A Series",
+      "dateAdded": "2026-11-25",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
+    {
+      "cveID": "CVE-2026-133324",
+      "vendorProject": "Mitel",
+      "product": "MiCollab",
+      "dateAdded": "2026-11-25",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
+    {
+      "cveID": "CVE-2026-133275",
+      "vendorProject": "Mitel",
+      "product": "MiCollab",
+      "dateAdded": "2026-11-25",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
+    {
+      "cveID": "CVE-2026-133311",
+      "vendorProject": "Mitel",
+      "product": "MiCollab",
+      "dateAdded": "2026-11-25",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
+    {
+      "cveID": "CVE-2026-133303",
+      "vendorProject": "Mitel",
+      "product": "MiCollab",
+      "dateAdded": "2026-11-25",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
+    {
+      "cveID": "CVE-2026-133323",
+      "vendorProject": "Mitel",
+      "product": "MiCollab",
       "dateAdded": "2026-11-25",
       "knownRansomwareCampaignUse": "Unknown"
     },

@@ -1,6 +1,6 @@
 {
   "full_sync_at": "2026-11-22T02:18:44Z",
-  "updated_since": 1795666048,
+  "updated_since": 1795714880,
   "advisories": {
     "PKSA-138c-dqwc-4pfb": {
       "packageName": "magento/product-community-edition",
@@ -69,6 +69,20 @@
         {
           "name": "FriendsOfPHP/security-advisories",
           "remoteId": "jweiland/yellowpages2/CVE-2026-77142.yaml"
+        }
+      ]
+    },
+    "PKSA-1b51-1qqv-synq": {
+      "packageName": "symfony/serializer",
+      "affectedVersions": ">=2.0.0,<3.0.0|>=3.0.0,<4.0.0|>=4.0.0,<5.0.0|>=5.0.0,<5.1.0|>=5.1.0,<5.2.0|>=5.2.0,<5.3.0|>=5.3.0,<5.4.0|>=5.4.0,<5.4.57|>=6.0.0,<6.1.0|>=6.1.0,<6.2.0|>=6.2.0,<6.3.0|>=6.3.0,<6.4.0|>=6.4.0,<6.4.51|>=7.0.0,<7.1.0|>=7.1.0,<7.2.0|>=7.2.0,<7.3.0|>=7.3.0,<7.4.0|>=7.4.0,<7.4.24|>=8.0.0,<8.1.0|>=8.1.0,<8.1.12",
+      "cve": "CVE-2026-133761",
+      "title": "CVE-2026-133761: CsvEncoder Nests Rows Once per Key Separator of a Header, Letting a Small CSV Payload Crash PHP",
+      "link": "https://symfony.com/cve-2026-133761",
+      "reportedAt": "2026-11-25 09:12:09",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "symfony/serializer/CVE-2026-133761.yaml"
         }
       ]
     },
@@ -372,7 +386,7 @@
       "cve": null,
       "title": "RSA-OAEP accepts an encrypted key made of several RSA blocks, enabling recovery of another JWE's content encryption key through a decryption oracle",
       "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-wwcr-82mc-w3pw",
-      "reportedAt": "2026-11-25 00:00:00",
+      "reportedAt": "2026-11-26 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",
@@ -400,7 +414,7 @@
       "cve": null,
       "title": "Metadata status report check reads a single report and ignores REVOKED",
       "link": "https://github.com/web-auth/webauthn-framework/security/advisories/GHSA-p8cj-mmjr-5c2m",
-      "reportedAt": "2026-11-25 00:00:00",
+      "reportedAt": "2026-11-26 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",
@@ -489,6 +503,20 @@
         {
           "name": "FriendsOfPHP/security-advisories",
           "remoteId": "magento/product-community-edition/CVE-2019-8114.yaml"
+        }
+      ]
+    },
+    "PKSA-2vy6-qchn-f13r": {
+      "packageName": "symfony/routing",
+      "affectedVersions": ">=2.0.0,<3.0.0|>=3.0.0,<4.0.0|>=4.0.0,<5.0.0|>=5.0.0,<5.1.0|>=5.1.0,<5.2.0|>=5.2.0,<5.3.0|>=5.3.0,<5.4.0|>=5.4.0,<5.4.57|>=6.0.0,<6.1.0|>=6.1.0,<6.2.0|>=6.2.0,<6.3.0|>=6.3.0,<6.4.0|>=6.4.0,<6.4.51|>=7.0.0,<7.1.0|>=7.1.0,<7.2.0|>=7.2.0,<7.3.0|>=7.3.0,<7.4.0|>=7.4.0,<7.4.24|>=8.0.0,<8.1.0|>=8.1.0,<8.1.12",
+      "cve": "CVE-2026-133754",
+      "title": "CVE-2026-133754: UrlGenerator Lets Host Placeholder Values Send Generated URLs to Another Host",
+      "link": "https://symfony.com/cve-2026-133754",
+      "reportedAt": "2026-11-25 09:12:09",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "symfony/routing/CVE-2026-133754.yaml"
         }
       ]
     },
@@ -666,7 +694,7 @@
       "cve": null,
       "title": "AES-GCM decryption accepts any authentication tag length: a holder of one valid JWE can brute force a 1-byte tag in at most 256 requests and rewrite the plaintext",
       "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-j265-mg9q-wpv9",
-      "reportedAt": "2026-11-25 00:00:00",
+      "reportedAt": "2026-11-26 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",
@@ -741,6 +769,20 @@
         {
           "name": "FriendsOfPHP/security-advisories",
           "remoteId": "symfony/http-kernel/CVE-2026-123339.yaml"
+        }
+      ]
+    },
+    "PKSA-3hh6-9b9w-nmcs": {
+      "packageName": "symfony/symfony",
+      "affectedVersions": ">=4.3.0,<5.0.0|>=5.0.0,<5.1.0|>=5.1.0,<5.2.0|>=5.2.0,<5.3.0|>=5.3.0,<5.4.0|>=5.4.0,<5.4.57|>=6.0.0,<6.1.0|>=6.1.0,<6.2.0|>=6.2.0,<6.3.0|>=6.3.0,<6.4.0|>=6.4.0,<6.4.51|>=7.0.0,<7.1.0|>=7.1.0,<7.2.0|>=7.2.0,<7.3.0|>=7.3.0,<7.4.0|>=7.4.0,<7.4.24|>=8.0.0,<8.1.0|>=8.1.0,<8.1.12",
+      "cve": "CVE-2026-134792",
+      "title": "CVE-2026-134792: HttpClient Lets the Proxy Header of a Request Choose the Proxy of Outgoing Requests in HTTP Workers That Run Under the CLI SAPI",
+      "link": "https://symfony.com/cve-2026-134792",
+      "reportedAt": "2026-11-25 09:12:09",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "symfony/symfony/CVE-2026-134792.yaml"
         }
       ]
     },
@@ -1080,6 +1122,20 @@
         }
       ]
     },
+    "PKSA-59pp-zpks-w3hf": {
+      "packageName": "symfony/security-core",
+      "affectedVersions": ">=5.4.0,<5.4.57|>=6.0.0,<6.1.0|>=6.1.0,<6.2.0|>=6.2.0,<6.3.0|>=6.3.0,<6.4.0|>=6.4.0,<6.4.51|>=7.0.0,<7.1.0|>=7.1.0,<7.2.0|>=7.2.0,<7.3.0|>=7.3.0,<7.4.0|>=7.4.0,<7.4.24|>=8.0.0,<8.1.0|>=8.1.0,<8.1.12",
+      "cve": "CVE-2026-133753",
+      "title": "CVE-2026-133753: The Unanimous Strategy Grants access_control Rules When Only One of Their Roles Matches: Regression of CVE-2020-5275",
+      "link": "https://symfony.com/cve-2026-133753",
+      "reportedAt": "2026-11-25 09:12:09",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "symfony/security-core/CVE-2026-133753.yaml"
+        }
+      ]
+    },
     "PKSA-5gky-mh38-q88s": {
       "packageName": "magento/product-community-edition",
       "affectedVersions": ">=2.1,<2.1.18|>=2.2,<2.2.9|>=2.3,<2.3.2",
@@ -1150,6 +1206,20 @@
         }
       ]
     },
+    "PKSA-5t6q-3g96-r69t": {
+      "packageName": "symfony/json-path",
+      "affectedVersions": ">=7.3.0,<7.4.0|>=7.4.0,<7.4.24|>=8.0.0,<8.1.0|>=8.1.0,<8.1.12",
+      "cve": "CVE-2026-133744",
+      "title": "CVE-2026-133744: JsonPath Queries Can Still Hold a Process Through Duplicated Nodes and Repeated Work: Incomplete Fix for CVE-2026-135804",
+      "link": "https://symfony.com/cve-2026-133744",
+      "reportedAt": "2026-11-25 09:22:46",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "symfony/json-path/CVE-2026-133744.yaml"
+        }
+      ]
+    },
     "PKSA-5yx1-sk53-2xgy": {
       "packageName": "magento/product-community-edition",
       "affectedVersions": ">=2.2,<2.2.10|>=2.3,<2.3.2-p2",
@@ -1192,6 +1262,20 @@
         }
       ]
     },
+    "PKSA-63yb-bvyp-jd4n": {
+      "packageName": "easycorp/easyadmin-bundle",
+      "affectedVersions": ">=4.0.0,<4.29.18|>=5.0.0,<5.10.4",
+      "cve": null,
+      "title": "Autocomplete uses fields and pages the user can't access",
+      "link": "https://github.com/EasyCorp/EasyAdminBundle/security/advisories/GHSA-rrpv-c5fp-ppxr",
+      "reportedAt": "2026-11-25 08:06:35",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "easycorp/easyadmin-bundle/GHSA-rrpv-c5fp-ppxr.yaml"
+        }
+      ]
+    },
     "PKSA-64cs-y56b-pvcf": {
       "packageName": "magento/product-community-edition",
       "affectedVersions": ">=2.1,<2.1.18|>=2.2,<2.2.9|>=2.3,<2.3.2",
@@ -1217,6 +1301,20 @@
         {
           "name": "FriendsOfPHP/security-advisories",
           "remoteId": "magento/product-community-edition/CVE-2019-8129.yaml"
+        }
+      ]
+    },
+    "PKSA-66x3-xnnf-qb6w": {
+      "packageName": "symfony/symfony",
+      "affectedVersions": ">=2.0.0,<3.0.0|>=3.0.0,<4.0.0|>=4.0.0,<5.0.0|>=5.0.0,<5.1.0|>=5.1.0,<5.2.0|>=5.2.0,<5.3.0|>=5.3.0,<5.4.0|>=5.4.0,<5.4.57|>=6.0.0,<6.1.0|>=6.1.0,<6.2.0|>=6.2.0,<6.3.0|>=6.3.0,<6.4.0|>=6.4.0,<6.4.51|>=7.0.0,<7.1.0|>=7.1.0,<7.2.0|>=7.2.0,<7.3.0|>=7.3.0,<7.4.0|>=7.4.0,<7.4.24|>=8.0.0,<8.1.0|>=8.1.0,<8.1.12",
+      "cve": "CVE-2026-133754",
+      "title": "CVE-2026-133754: UrlGenerator Lets Host Placeholder Values Send Generated URLs to Another Host",
+      "link": "https://symfony.com/cve-2026-133754",
+      "reportedAt": "2026-11-25 09:12:09",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "symfony/symfony/CVE-2026-133754.yaml"
         }
       ]
     },
@@ -1357,6 +1455,20 @@
         {
           "name": "FriendsOfPHP/security-advisories",
           "remoteId": "contao/contao/CVE-2026-107850.yaml"
+        }
+      ]
+    },
+    "PKSA-6hr5-x8r3-djyd": {
+      "packageName": "symfony/framework-bundle",
+      "affectedVersions": ">=5.4.44,<5.4.57|>=6.4.12,<6.4.51|>=7.1.5,<7.2.0|>=7.2.0,<7.3.0|>=7.3.0,<7.4.0|>=7.4.0,<7.4.24|>=8.0.0,<8.1.0|>=8.1.0,<8.1.12",
+      "cve": "CVE-2026-133745",
+      "title": "CVE-2026-133745: Trailing-Slash and Scheme Redirects Send Paths Starting With // to Another Host",
+      "link": "https://symfony.com/cve-2026-133745",
+      "reportedAt": "2026-11-25 09:12:09",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "symfony/framework-bundle/CVE-2026-133745.yaml"
         }
       ]
     },
@@ -1668,6 +1780,20 @@
         }
       ]
     },
+    "PKSA-7b9s-mkdg-qfhs": {
+      "packageName": "symfony/http-foundation",
+      "affectedVersions": ">=2.0.0,<3.0.0|>=3.0.0,<4.0.0|>=4.0.0,<5.0.0|>=5.0.0,<5.1.0|>=5.1.0,<5.2.0|>=5.2.0,<5.3.0|>=5.3.0,<5.4.0|>=5.4.0,<5.4.57|>=6.0.0,<6.1.0|>=6.1.0,<6.2.0|>=6.2.0,<6.3.0|>=6.3.0,<6.4.0|>=6.4.0,<6.4.50|>=7.0.0,<7.1.0|>=7.1.0,<7.2.0|>=7.2.0,<7.3.0|>=7.3.0,<7.4.0|>=7.4.0,<7.4.23|>=8.0.0,<8.1.0|>=8.1.0,<8.1.11",
+      "cve": "CVE-2026-133748",
+      "title": "CVE-2026-133748: NoPrivateNetworkHttpClient With Custom Subnets Lets IPv4-Mapped Addresses Through",
+      "link": "https://symfony.com/cve-2026-133748",
+      "reportedAt": "2026-11-04 11:23:22",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "symfony/http-foundation/CVE-2026-133748.yaml"
+        }
+      ]
+    },
     "PKSA-7jj5-ctpm-wc51": {
       "packageName": "web-auth/webauthn-framework",
       "affectedVersions": ">=4.0.0,<5.3.13",
@@ -1856,7 +1982,7 @@
       "cve": null,
       "title": "Attestation certificates sent as PEM text allow forged packed/TPM attestations and an unauthenticated denial of service",
       "link": "https://github.com/web-auth/webauthn-framework/security/advisories/GHSA-c9p6-r72h-rp3x",
-      "reportedAt": "2026-11-25 00:00:00",
+      "reportedAt": "2026-11-26 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",
@@ -2046,6 +2172,20 @@
         }
       ]
     },
+    "PKSA-8dv1-1nwm-344v": {
+      "packageName": "symfony/html-sanitizer",
+      "affectedVersions": ">=6.1.0,<6.2.0|>=6.2.0,<6.3.0|>=6.3.0,<6.4.0|>=6.4.0,<6.4.51|>=7.0.0,<7.1.0|>=7.1.0,<7.2.0|>=7.2.0,<7.3.0|>=7.3.0,<7.4.0|>=7.4.0,<7.4.24|>=8.0.0,<8.1.0|>=8.1.0,<8.1.12",
+      "cve": "CVE-2026-133756",
+      "title": "CVE-2026-133756: HtmlSanitizer Doesn't Check Meta Refresh URLs Whose Time Follows a Vertical Tab or a Unicode Space: Incomplete Fix for CVE-2026-121373",
+      "link": "https://symfony.com/cve-2026-133756",
+      "reportedAt": "2026-11-25 09:18:49",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "symfony/html-sanitizer/CVE-2026-133756.yaml"
+        }
+      ]
+    },
     "PKSA-8jg7-444f-4zbz": {
       "packageName": "magento/magento1ce",
       "affectedVersions": ">=1,<1.9.4.2",
@@ -2085,6 +2225,20 @@
         {
           "name": "FriendsOfPHP/security-advisories",
           "remoteId": "contao/contao/2026-11-11-5.yaml"
+        }
+      ]
+    },
+    "PKSA-8kyx-1yw4-pbyj": {
+      "packageName": "symfony/serializer",
+      "affectedVersions": ">=5.1.0,<5.2.0|>=5.2.0,<5.3.0|>=5.3.0,<5.4.0|>=5.4.0,<5.4.57|>=6.0.0,<6.1.0|>=6.1.0,<6.2.0|>=6.2.0,<6.3.0|>=6.3.0,<6.4.0|>=6.4.0,<6.4.51|>=7.0.0,<7.1.0|>=7.1.0,<7.2.0|>=7.2.0,<7.3.0|>=7.3.0,<7.4.0|>=7.4.0,<7.4.24|>=8.0.0,<8.1.0|>=8.1.0,<8.1.12",
+      "cve": "CVE-2026-133752",
+      "title": "CVE-2026-133752: The Serializer Doesn't Enforce #[Ignore] on the Class Picked by a Discriminator Map or object_to_populate",
+      "link": "https://symfony.com/cve-2026-133752",
+      "reportedAt": "2026-11-25 09:12:09",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "symfony/serializer/CVE-2026-133752.yaml"
         }
       ]
     },
@@ -2256,6 +2410,20 @@
         }
       ]
     },
+    "PKSA-93s9-6d49-prxz": {
+      "packageName": "symfony/symfony",
+      "affectedVersions": ">=5.4.48,<5.4.57|>=6.4.16,<6.4.51|>=7.1.9,<7.2.0|>=7.2.0,<7.3.0|>=7.3.0,<7.4.0|>=7.4.0,<7.4.24|>=8.0.0,<8.1.0|>=8.1.0,<8.1.12",
+      "cve": "CVE-2026-133758",
+      "title": "CVE-2026-133758: NoPrivateNetworkHttpClient Makes the Client It Decorates Ignore Its Own Default Options, Like Certificate Pinning",
+      "link": "https://symfony.com/cve-2026-133758",
+      "reportedAt": "2026-11-25 09:12:09",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "symfony/symfony/CVE-2026-133758.yaml"
+        }
+      ]
+    },
     "PKSA-94d5-4scj-92ct": {
       "packageName": "contao/core-bundle",
       "affectedVersions": ">=5.6.0,<5.7.17|>=6.0.0,<6.0.6",
@@ -2326,6 +2494,20 @@
         }
       ]
     },
+    "PKSA-9f7s-2bk7-vyd6": {
+      "packageName": "symfony/symfony",
+      "affectedVersions": ">=2.0.0,<3.0.0|>=3.0.0,<4.0.0|>=4.0.0,<5.0.0|>=5.0.0,<5.1.0|>=5.1.0,<5.2.0|>=5.2.0,<5.3.0|>=5.3.0,<5.4.0|>=5.4.0,<5.4.57",
+      "cve": "CVE-2026-133749",
+      "title": "CVE-2026-133749: Programmatic Logins With Guard Skip the checkPostAuth() Method of User Checkers",
+      "link": "https://symfony.com/cve-2026-133749",
+      "reportedAt": "2026-11-25 09:12:09",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "symfony/symfony/CVE-2026-133749.yaml"
+        }
+      ]
+    },
     "PKSA-9h11-x9bn-q1wf": {
       "packageName": "magento/magento1ce",
       "affectedVersions": ">=1,<1.9.4.3",
@@ -2337,6 +2519,20 @@
         {
           "name": "FriendsOfPHP/security-advisories",
           "remoteId": "magento/magento1ce/CVE-2019-8114.yaml"
+        }
+      ]
+    },
+    "PKSA-9h4b-jzrz-4bpp": {
+      "packageName": "symfony/security-bundle",
+      "affectedVersions": ">=2.0.0,<3.0.0|>=3.0.0,<4.0.0|>=4.0.0,<5.0.0|>=5.0.0,<5.1.0|>=5.1.0,<5.2.0|>=5.2.0,<5.3.0|>=5.3.0,<5.4.0|>=5.4.0,<5.4.57",
+      "cve": "CVE-2026-133749",
+      "title": "CVE-2026-133749: Programmatic Logins With Guard Skip the checkPostAuth() Method of User Checkers",
+      "link": "https://symfony.com/cve-2026-133749",
+      "reportedAt": "2026-11-25 09:12:09",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "symfony/security-bundle/CVE-2026-133749.yaml"
         }
       ]
     },
@@ -2410,6 +2606,20 @@
         }
       ]
     },
+    "PKSA-9ppb-sqnc-vbdg": {
+      "packageName": "symfony/symfony",
+      "affectedVersions": ">=2.0.0,<3.0.0|>=3.0.0,<4.0.0|>=4.0.0,<5.0.0|>=5.0.0,<5.1.0|>=5.1.0,<5.2.0|>=5.2.0,<5.3.0|>=5.3.0,<5.4.0|>=5.4.0,<5.4.57|>=6.0.0,<6.1.0|>=6.1.0,<6.2.0|>=6.2.0,<6.3.0|>=6.3.0,<6.4.0|>=6.4.0,<6.4.51|>=7.0.0,<7.1.0|>=7.1.0,<7.2.0|>=7.2.0,<7.3.0|>=7.3.0,<7.4.0|>=7.4.0,<7.4.24|>=8.0.0,<8.1.0|>=8.1.0,<8.1.12",
+      "cve": "CVE-2026-133743",
+      "title": "CVE-2026-133743: Inline Fragments Let Untrusted Forwarded Headers Change the URLs of asset() and absolute_url(): Incomplete Fix for CVE-2026-123339",
+      "link": "https://symfony.com/cve-2026-133743",
+      "reportedAt": "2026-11-25 09:12:09",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "symfony/symfony/CVE-2026-133743.yaml"
+        }
+      ]
+    },
     "PKSA-9qc7-2hxb-cck5": {
       "packageName": "magento/product-community-edition",
       "affectedVersions": ">=2.1,<2.1.18|>=2.2,<2.2.9|>=2.3,<2.3.2",
@@ -2438,6 +2648,20 @@
         }
       ]
     },
+    "PKSA-9r8k-3vgs-8f3v": {
+      "packageName": "symfony/mailer",
+      "affectedVersions": ">=7.3.0,<7.4.0|>=7.4.0,<7.4.24|>=8.0.0,<8.1.0|>=8.1.0,<8.1.12",
+      "cve": "CVE-2026-133755",
+      "title": "CVE-2026-133755: Mailer Trusts Replies That a Man in the Middle Injects Right After STARTTLS",
+      "link": "https://symfony.com/cve-2026-133755",
+      "reportedAt": "2026-11-25 09:22:46",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "symfony/mailer/CVE-2026-133755.yaml"
+        }
+      ]
+    },
     "PKSA-9sgw-jdpv-rzn8": {
       "packageName": "flowd/phirewall",
       "affectedVersions": ">=0.1.0,<0.11.1",
@@ -2463,6 +2687,20 @@
         {
           "name": "FriendsOfPHP/security-advisories",
           "remoteId": "magento/magento1ee/2018-11-28.yaml"
+        }
+      ]
+    },
+    "PKSA-9t6c-d2hr-ss6w": {
+      "packageName": "symfony/expression-language",
+      "affectedVersions": ">=7.2.0,<7.3.0|>=7.3.0,<7.4.0|>=7.4.0,<7.4.24|>=8.0.0,<8.1.0|>=8.1.0,<8.1.12",
+      "cve": "CVE-2026-134791",
+      "title": "CVE-2026-134791: Unclosed Comments Make the Lexer of ExpressionLanguage Quadratic, Letting Untrusted Expressions Hold a Process",
+      "link": "https://symfony.com/cve-2026-134791",
+      "reportedAt": "2026-11-25 09:22:46",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "symfony/expression-language/CVE-2026-134791.yaml"
         }
       ]
     },
@@ -2640,7 +2878,7 @@
       "cve": null,
       "title": "AES key wrapping accepts oct keys shorter than the algorithm key size and pads them with zero bytes: an empty key wraps every CEK under an all-zero key",
       "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-4mxj-75j2-j8hc",
-      "reportedAt": "2026-11-25 00:00:00",
+      "reportedAt": "2026-11-26 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",
@@ -2687,6 +2925,20 @@
         {
           "name": "FriendsOfPHP/security-advisories",
           "remoteId": "contao/contao/2026-11-11-10.yaml"
+        }
+      ]
+    },
+    "PKSA-bg4m-wqcy-jqw5": {
+      "packageName": "easycorp/easyadmin-bundle",
+      "affectedVersions": ">=5.0.13,<5.10.4",
+      "cve": null,
+      "title": "Forced download of uploaded files can be bypassed",
+      "link": "https://github.com/EasyCorp/EasyAdminBundle/security/advisories/GHSA-rjcw-39g5-9hqr",
+      "reportedAt": "2026-11-25 08:06:35",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "easycorp/easyadmin-bundle/GHSA-rjcw-39g5-9hqr.yaml"
         }
       ]
     },
@@ -2766,7 +3018,7 @@
       "cve": null,
       "title": "RSA keys of any size are accepted: a key chosen by the sender of a token costs seconds of CPU per operation (RSA-PSS and RSA encryption, and every RSA algorithm without GMP)",
       "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-96f8-m4jr-72xj",
-      "reportedAt": "2026-11-25 00:00:00",
+      "reportedAt": "2026-11-26 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",
@@ -2900,6 +3152,20 @@
         }
       ]
     },
+    "PKSA-c24p-hrc8-k4z2": {
+      "packageName": "symfony/symfony",
+      "affectedVersions": ">=2.0.0,<3.0.0|>=3.0.0,<4.0.0|>=4.0.0,<5.0.0|>=5.0.0,<5.1.0|>=5.1.0,<5.2.0|>=5.2.0,<5.3.0|>=5.3.0,<5.4.0|>=5.4.0,<5.4.57|>=6.0.0,<6.1.0|>=6.1.0,<6.2.0|>=6.2.0,<6.3.0|>=6.3.0,<6.4.0|>=6.4.0,<6.4.50|>=7.0.0,<7.1.0|>=7.1.0,<7.2.0|>=7.2.0,<7.3.0|>=7.3.0,<7.4.0|>=7.4.0,<7.4.23|>=8.0.0,<8.1.0|>=8.1.0,<8.1.11",
+      "cve": "CVE-2026-133748",
+      "title": "CVE-2026-133748: NoPrivateNetworkHttpClient With Custom Subnets Lets IPv4-Mapped Addresses Through",
+      "link": "https://symfony.com/cve-2026-133748",
+      "reportedAt": "2026-11-04 11:23:22",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "symfony/symfony/CVE-2026-133748.yaml"
+        }
+      ]
+    },
     "PKSA-c37y-whcp-125s": {
       "packageName": "sylius/theme-bundle",
       "affectedVersions": ">=2.0.0,<2.1.0|>=2.1.0,<2.2.0|>=2.2.0,<2.3.0|>=2.3.0,<2.3.1|>=2.4.0,<2.4.2|>=2.5.0,<2.5.1",
@@ -3004,7 +3270,7 @@
       "cve": null,
       "title": "Direct encryption (dir) does not check the key size: with a key of half the required size, AES-CBC-HMAC content is encrypted under an all-zero AES key and anyone holding the token can read it",
       "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-jc6j-46g2-xwqc",
-      "reportedAt": "2026-11-25 00:00:00",
+      "reportedAt": "2026-11-26 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",
@@ -3130,11 +3396,25 @@
       "cve": null,
       "title": "dir, ECDH-ES and ECDH-SS accept a non-empty JWE Encrypted Key, so token strings are malleable",
       "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-5cc5-v8qv-6cw7",
-      "reportedAt": "2026-11-25 00:00:00",
+      "reportedAt": "2026-11-26 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",
           "remoteId": "web-token/jwt-encryption/GHSA-5cc5-v8qv-6cw7.yaml"
+        }
+      ]
+    },
+    "PKSA-ckfx-7pdw-87zd": {
+      "packageName": "symfony/symfony",
+      "affectedVersions": ">=7.3.0,<7.4.0|>=7.4.0,<7.4.24|>=8.0.0,<8.1.0|>=8.1.0,<8.1.12",
+      "cve": "CVE-2026-133751",
+      "title": "CVE-2026-133751: Mailer's require_tls Can Be Bypassed by a Man in the Middle",
+      "link": "https://symfony.com/cve-2026-133751",
+      "reportedAt": "2026-11-25 09:22:46",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "symfony/symfony/CVE-2026-133751.yaml"
         }
       ]
     },
@@ -3256,7 +3536,7 @@
       "cve": null,
       "title": "JWS and JWE serializers decode attacker-controlled JSON without bounds before verification (CPU and memory denial of service)",
       "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-2xq2-pp89-x7fr",
-      "reportedAt": "2026-11-25 00:00:00",
+      "reportedAt": "2026-11-26 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",
@@ -3312,11 +3592,25 @@
       "cve": null,
       "title": "AES key wrapping accepts oct keys shorter than the algorithm key size and pads them with zero bytes: an empty key wraps every CEK under an all-zero key",
       "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-4mxj-75j2-j8hc",
-      "reportedAt": "2026-11-25 00:00:00",
+      "reportedAt": "2026-11-26 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",
           "remoteId": "web-token/jwt-encryption-algorithm-aeskw/GHSA-4mxj-75j2-j8hc.yaml"
+        }
+      ]
+    },
+    "PKSA-cz1y-xds5-n5pj": {
+      "packageName": "symfony/symfony",
+      "affectedVersions": ">=7.4.0,<7.4.24|>=8.0.0,<8.1.0|>=8.1.0,<8.1.12",
+      "cve": "CVE-2026-133762",
+      "title": "CVE-2026-133762: Without APP_RUNTIME_MODE, HTTP Workers Running Under the CLI SAPI Return Full Exception Dumps in Production",
+      "link": "https://symfony.com/cve-2026-133762",
+      "reportedAt": "2026-11-25 09:22:46",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "symfony/symfony/CVE-2026-133762.yaml"
         }
       ]
     },
@@ -3474,6 +3768,20 @@
         }
       ]
     },
+    "PKSA-df26-3374-7rf4": {
+      "packageName": "symfony/security-http",
+      "affectedVersions": ">=2.0.0,<3.0.0|>=3.0.0,<4.0.0|>=4.0.0,<5.0.0|>=5.0.0,<5.1.0|>=5.1.0,<5.2.0|>=5.2.0,<5.3.0|>=5.3.0,<5.4.0|>=5.4.0,<5.4.57|>=6.0.0,<6.1.0|>=6.1.0,<6.2.0|>=6.2.0,<6.3.0|>=6.3.0,<6.4.0|>=6.4.0,<6.4.51|>=7.0.0,<7.1.0|>=7.1.0,<7.2.0|>=7.2.0,<7.3.0|>=7.3.0,<7.4.0|>=7.4.0,<7.4.24|>=8.0.0,<8.1.0|>=8.1.0,<8.1.12",
+      "cve": "CVE-2026-134790",
+      "title": "CVE-2026-134790: Login Redirects Can Still Reach Another Host When the Session Cookie Domain Is Set: Incomplete Fix for CVE-2017-16652",
+      "link": "https://symfony.com/cve-2026-134790",
+      "reportedAt": "2026-11-25 09:12:09",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "symfony/security-http/CVE-2026-134790.yaml"
+        }
+      ]
+    },
     "PKSA-dhfp-j236-nf9h": {
       "packageName": "in2code/powermail",
       "affectedVersions": ">=13.0.0,<13.2.1|>=11.0.0,<12.6.1|<10.9.3",
@@ -3513,6 +3821,20 @@
         {
           "name": "FriendsOfPHP/security-advisories",
           "remoteId": "magento/product-community-edition/CVE-2019-8090.yaml"
+        }
+      ]
+    },
+    "PKSA-dn9y-6p35-rgys": {
+      "packageName": "symfony/symfony",
+      "affectedVersions": ">=2.0.0,<3.0.0|>=3.0.0,<4.0.0|>=4.0.0,<5.0.0|>=5.0.0,<5.1.0|>=5.1.0,<5.2.0|>=5.2.0,<5.3.0|>=5.3.0,<5.4.0|>=5.4.0,<5.4.57|>=6.0.0,<6.1.0|>=6.1.0,<6.2.0|>=6.2.0,<6.3.0|>=6.3.0,<6.4.0|>=6.4.0,<6.4.51|>=7.0.0,<7.1.0|>=7.1.0,<7.2.0|>=7.2.0,<7.3.0|>=7.3.0,<7.4.0|>=7.4.0,<7.4.24|>=8.0.0,<8.1.0|>=8.1.0,<8.1.12",
+      "cve": "CVE-2026-133759",
+      "title": "CVE-2026-133759: Doctrine Remember-Me Token Provider Accepts Outdated Tokens Under the Series of Their Copy, Also After Logout",
+      "link": "https://symfony.com/cve-2026-133759",
+      "reportedAt": "2026-11-25 09:12:09",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "symfony/symfony/CVE-2026-133759.yaml"
         }
       ]
     },
@@ -3690,7 +4012,7 @@
       "cve": null,
       "title": "Denial of service: parsing a JWS in the JSON General serialization takes a time quadratic in its number of signatures",
       "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-jgv7-g4jg-6hqv",
-      "reportedAt": "2026-11-25 00:00:00",
+      "reportedAt": "2026-11-26 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",
@@ -3732,7 +4054,7 @@
       "cve": null,
       "title": "AES-GCM decryption accepts any authentication tag length: a holder of one valid JWE can brute force a 1-byte tag in at most 256 requests and rewrite the plaintext",
       "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-j265-mg9q-wpv9",
-      "reportedAt": "2026-11-25 00:00:00",
+      "reportedAt": "2026-11-26 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",
@@ -3830,11 +4152,25 @@
       "cve": null,
       "title": "RSA private key recoverable through a timing side channel in RSA-OAEP and RSA1_5 decryption",
       "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-2qpx-pwmq-r27r",
-      "reportedAt": "2026-11-25 00:00:00",
+      "reportedAt": "2026-11-26 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",
           "remoteId": "web-token/jwt-core/GHSA-2qpx-pwmq-r27r.yaml"
+        }
+      ]
+    },
+    "PKSA-fxyp-4kw8-kt6z": {
+      "packageName": "symfony/symfony",
+      "affectedVersions": ">=7.4.0,<7.4.24|>=8.0.0,<8.1.0|>=8.1.0,<8.1.12",
+      "cve": "CVE-2026-133750",
+      "title": "CVE-2026-133750: CachingHttpClient Shares Responses Between Users When Credentials Are Set With withOptions()",
+      "link": "https://symfony.com/cve-2026-133750",
+      "reportedAt": "2026-11-25 09:22:46",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "symfony/symfony/CVE-2026-133750.yaml"
         }
       ]
     },
@@ -3894,6 +4230,20 @@
         }
       ]
     },
+    "PKSA-g3m4-qj64-dvzh": {
+      "packageName": "symfony/http-client",
+      "affectedVersions": ">=5.4.48,<5.4.57|>=6.4.16,<6.4.51|>=7.1.9,<7.2.0|>=7.2.0,<7.3.0|>=7.3.0,<7.4.0|>=7.4.0,<7.4.24|>=8.0.0,<8.1.0|>=8.1.0,<8.1.12",
+      "cve": "CVE-2026-133757",
+      "title": "CVE-2026-133757: NoPrivateNetworkHttpClient Sends the Default Credentials of the Client It Decorates to Other Origins on Redirects",
+      "link": "https://symfony.com/cve-2026-133757",
+      "reportedAt": "2026-11-25 09:12:09",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "symfony/http-client/CVE-2026-133757.yaml"
+        }
+      ]
+    },
     "PKSA-g499-cm4q-v35y": {
       "packageName": "symfony/filesystem",
       "affectedVersions": ">=5.4.0,<5.4.56|>=6.0.0,<6.1.0|>=6.1.0,<6.2.0|>=6.2.0,<6.3.0|>=6.3.0,<6.4.0|>=6.4.0,<6.4.50|>=7.0.0,<7.1.0|>=7.1.0,<7.2.0|>=7.2.0,<7.3.0|>=7.3.0,<7.4.0|>=7.4.0,<7.4.23|>=8.0.0,<8.1.0|>=8.1.0,<8.1.11",
@@ -3914,7 +4264,7 @@
       "cve": null,
       "title": "AES key wrapping accepts oct keys shorter than the algorithm key size and pads them with zero bytes: an empty key wraps every CEK under an all-zero key",
       "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-4mxj-75j2-j8hc",
-      "reportedAt": "2026-11-25 00:00:00",
+      "reportedAt": "2026-11-26 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",
@@ -4188,6 +4538,20 @@
         }
       ]
     },
+    "PKSA-hf8m-htzg-q9ys": {
+      "packageName": "easycorp/easyadmin-bundle",
+      "affectedVersions": ">=4.0.0,<4.29.18|>=5.0.0,<5.10.4",
+      "cve": null,
+      "title": "setPermission() on form tabs, columns and fieldsets only hides their heading",
+      "link": "https://github.com/EasyCorp/EasyAdminBundle/security/advisories/GHSA-v773-mfpm-hqgq",
+      "reportedAt": "2026-11-25 08:06:35",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "easycorp/easyadmin-bundle/GHSA-v773-mfpm-hqgq.yaml"
+        }
+      ]
+    },
     "PKSA-hh72-nt3p-hqck": {
       "packageName": "spomky-labs/pki-framework",
       "affectedVersions": "<1.6.2",
@@ -4412,6 +4776,20 @@
         }
       ]
     },
+    "PKSA-j72q-nyfj-v2hw": {
+      "packageName": "symfony/symfony",
+      "affectedVersions": ">=2.0.0,<3.0.0|>=3.0.0,<4.0.0|>=4.0.0,<5.0.0|>=5.0.0,<5.1.0|>=5.1.0,<5.2.0|>=5.2.0,<5.3.0|>=5.3.0,<5.4.0|>=5.4.0,<5.4.57|>=6.0.0,<6.1.0|>=6.1.0,<6.2.0|>=6.2.0,<6.3.0|>=6.3.0,<6.4.0|>=6.4.0,<6.4.51|>=7.0.0,<7.1.0|>=7.1.0,<7.2.0|>=7.2.0,<7.3.0|>=7.3.0,<7.4.0|>=7.4.0,<7.4.24|>=8.0.0,<8.1.0|>=8.1.0,<8.1.12",
+      "cve": "CVE-2026-133761",
+      "title": "CVE-2026-133761: CsvEncoder Nests Rows Once per Key Separator of a Header, Letting a Small CSV Payload Crash PHP",
+      "link": "https://symfony.com/cve-2026-133761",
+      "reportedAt": "2026-11-25 09:12:09",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "symfony/symfony/CVE-2026-133761.yaml"
+        }
+      ]
+    },
     "PKSA-j78x-bbgt-7dfv": {
       "packageName": "spomky-labs/pki-framework",
       "affectedVersions": "<1.6.2",
@@ -4482,6 +4860,20 @@
         }
       ]
     },
+    "PKSA-jc5b-qgg3-1d1k": {
+      "packageName": "symfony/symfony",
+      "affectedVersions": ">=5.4.44,<5.4.57|>=6.4.12,<6.4.51|>=7.1.5,<7.2.0|>=7.2.0,<7.3.0|>=7.3.0,<7.4.0|>=7.4.0,<7.4.24|>=8.0.0,<8.1.0|>=8.1.0,<8.1.12",
+      "cve": "CVE-2026-133745",
+      "title": "CVE-2026-133745: Trailing-Slash and Scheme Redirects Send Paths Starting With // to Another Host",
+      "link": "https://symfony.com/cve-2026-133745",
+      "reportedAt": "2026-11-25 09:12:09",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "symfony/symfony/CVE-2026-133745.yaml"
+        }
+      ]
+    },
     "PKSA-jdk3-2scw-7rg5": {
       "packageName": "flowd/phirewall",
       "affectedVersions": ">=0.1.0,<0.6.0",
@@ -4544,7 +4936,7 @@
       "cve": null,
       "title": "RSA keys of any size are accepted: a key chosen by the sender of a token costs seconds of CPU per operation (RSA-PSS and RSA encryption, and every RSA algorithm without GMP)",
       "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-96f8-m4jr-72xj",
-      "reportedAt": "2026-11-25 00:00:00",
+      "reportedAt": "2026-11-26 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",
@@ -4586,7 +4978,7 @@
       "cve": null,
       "title": "JWE and JWS loaders try every recipient or signature of a token, so a small token multiplies the PBES2 iteration cap (denial of service)",
       "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-3vqw-452c-g726",
-      "reportedAt": "2026-11-25 00:00:00",
+      "reportedAt": "2026-11-26 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",
@@ -4650,6 +5042,20 @@
         }
       ]
     },
+    "PKSA-k1tg-4k6j-w4xf": {
+      "packageName": "symfony/http-kernel",
+      "affectedVersions": ">=2.0.0,<3.0.0|>=3.0.0,<4.0.0|>=4.0.0,<5.0.0|>=5.0.0,<5.1.0|>=5.1.0,<5.2.0|>=5.2.0,<5.3.0|>=5.3.0,<5.4.0|>=5.4.0,<5.4.57|>=6.0.0,<6.1.0|>=6.1.0,<6.2.0|>=6.2.0,<6.3.0|>=6.3.0,<6.4.0|>=6.4.0,<6.4.51|>=7.0.0,<7.1.0|>=7.1.0,<7.2.0|>=7.2.0,<7.3.0|>=7.3.0,<7.4.0|>=7.4.0,<7.4.24|>=8.0.0,<8.1.0|>=8.1.0,<8.1.12",
+      "cve": "CVE-2026-133743",
+      "title": "CVE-2026-133743: Inline Fragments Let Untrusted Forwarded Headers Change the URLs of asset() and absolute_url(): Incomplete Fix for CVE-2026-123339",
+      "link": "https://symfony.com/cve-2026-133743",
+      "reportedAt": "2026-11-25 09:12:09",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "symfony/http-kernel/CVE-2026-133743.yaml"
+        }
+      ]
+    },
     "PKSA-k1xt-28gt-fw9y": {
       "packageName": "symfony/security-http",
       "affectedVersions": ">=2.0.0,<3.0.0|>=3.0.0,<4.0.0|>=4.0.0,<5.0.0|>=5.0.0,<5.1.0|>=5.1.0,<5.2.0|>=5.2.0,<5.3.0|>=5.3.0,<5.4.0|>=5.4.0,<5.4.56|>=6.0.0,<6.1.0|>=6.1.0,<6.2.0|>=6.2.0,<6.3.0|>=6.3.0,<6.4.0|>=6.4.0,<6.4.50|>=7.0.0,<7.1.0|>=7.1.0,<7.2.0|>=7.2.0,<7.3.0|>=7.3.0,<7.4.0|>=7.4.0,<7.4.23|>=8.0.0,<8.1.0|>=8.1.0,<8.1.11",
@@ -4661,6 +5067,20 @@
         {
           "name": "FriendsOfPHP/security-advisories",
           "remoteId": "symfony/security-http/CVE-2026-118513.yaml"
+        }
+      ]
+    },
+    "PKSA-k2g9-z9qx-r1jw": {
+      "packageName": "symfony/http-client",
+      "affectedVersions": ">=5.4.48,<5.4.57|>=6.4.16,<6.4.51|>=7.1.9,<7.2.0|>=7.2.0,<7.3.0|>=7.3.0,<7.4.0|>=7.4.0,<7.4.24|>=8.0.0,<8.1.0|>=8.1.0,<8.1.12",
+      "cve": "CVE-2026-133758",
+      "title": "CVE-2026-133758: NoPrivateNetworkHttpClient Makes the Client It Decorates Ignore Its Own Default Options, Like Certificate Pinning",
+      "link": "https://symfony.com/cve-2026-133758",
+      "reportedAt": "2026-11-25 09:12:09",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "symfony/http-client/CVE-2026-133758.yaml"
         }
       ]
     },
@@ -4734,6 +5154,20 @@
         }
       ]
     },
+    "PKSA-kdh2-rgw1-c1q9": {
+      "packageName": "symfony/symfony",
+      "affectedVersions": ">=5.4.54,<5.4.57|>=6.4.48,<6.4.51|>=7.4.21,<7.4.24|>=8.1.9,<8.1.12",
+      "cve": "CVE-2026-133760",
+      "title": "CVE-2026-133760: Nested Short Ternaries Make the Nesting Check of the Expression Parser Exponential, Letting Untrusted Expressions Hang It",
+      "link": "https://symfony.com/cve-2026-133760",
+      "reportedAt": "2026-11-25 09:12:09",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "symfony/symfony/CVE-2026-133760.yaml"
+        }
+      ]
+    },
     "PKSA-kk39-vqqg-74n6": {
       "packageName": "nitsan/ns-t3ai",
       "affectedVersions": "<14.0.2",
@@ -4782,11 +5216,25 @@
       "cve": null,
       "title": "JWS and JWE serializers decode attacker-controlled JSON without bounds before verification (CPU and memory denial of service)",
       "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-2xq2-pp89-x7fr",
-      "reportedAt": "2026-11-25 00:00:00",
+      "reportedAt": "2026-11-26 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",
           "remoteId": "web-token/jwt-encryption/GHSA-2xq2-pp89-x7fr.yaml"
+        }
+      ]
+    },
+    "PKSA-kq4v-yjt5-byvd": {
+      "packageName": "easycorp/easyadmin-bundle",
+      "affectedVersions": ">=5.0.5,<5.10.4",
+      "cve": null,
+      "title": "Flysystem file fields look up stored files outside the upload directory",
+      "link": "https://github.com/EasyCorp/EasyAdminBundle/security/advisories/GHSA-4jgw-cjw7-8j52",
+      "reportedAt": "2026-11-25 08:06:35",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "easycorp/easyadmin-bundle/GHSA-4jgw-cjw7-8j52.yaml"
         }
       ]
     },
@@ -4801,6 +5249,20 @@
         {
           "name": "FriendsOfPHP/security-advisories",
           "remoteId": "jweiland/telephonedirectory/CVE-2026-77140.yaml"
+        }
+      ]
+    },
+    "PKSA-krdm-vck6-d4hr": {
+      "packageName": "symfony/symfony",
+      "affectedVersions": ">=7.3.0,<7.4.0|>=7.4.0,<7.4.24|>=8.0.0,<8.1.0|>=8.1.0,<8.1.12",
+      "cve": "CVE-2026-133755",
+      "title": "CVE-2026-133755: Mailer Trusts Replies That a Man in the Middle Injects Right After STARTTLS",
+      "link": "https://symfony.com/cve-2026-133755",
+      "reportedAt": "2026-11-25 09:22:46",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "symfony/symfony/CVE-2026-133755.yaml"
         }
       ]
     },
@@ -4824,7 +5286,7 @@
       "cve": null,
       "title": "RSA keys of any size are accepted: a key chosen by the sender of a token costs seconds of CPU per operation (RSA-PSS and RSA encryption, and every RSA algorithm without GMP)",
       "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-96f8-m4jr-72xj",
-      "reportedAt": "2026-11-25 00:00:00",
+      "reportedAt": "2026-11-26 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",
@@ -4955,6 +5417,20 @@
         {
           "name": "FriendsOfPHP/security-advisories",
           "remoteId": "web-auth/webauthn-symfony-bundle/GHSA-g9ff-w9h6-7ff3.yaml"
+        }
+      ]
+    },
+    "PKSA-mb68-27bd-wyzv": {
+      "packageName": "symfony/http-client",
+      "affectedVersions": ">=7.4.0,<7.4.24|>=8.0.0,<8.1.0|>=8.1.0,<8.1.12",
+      "cve": "CVE-2026-133750",
+      "title": "CVE-2026-133750: CachingHttpClient Shares Responses Between Users When Credentials Are Set With withOptions()",
+      "link": "https://symfony.com/cve-2026-133750",
+      "reportedAt": "2026-11-25 09:22:46",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "symfony/http-client/CVE-2026-133750.yaml"
         }
       ]
     },
@@ -5126,6 +5602,20 @@
         }
       ]
     },
+    "PKSA-mzk6-csbx-x87h": {
+      "packageName": "symfony/security-guard",
+      "affectedVersions": ">=2.0.0,<3.0.0|>=3.0.0,<4.0.0|>=4.0.0,<5.0.0|>=5.0.0,<5.1.0|>=5.1.0,<5.2.0|>=5.2.0,<5.3.0|>=5.3.0,<5.4.0|>=5.4.0,<5.4.57",
+      "cve": "CVE-2026-133749",
+      "title": "CVE-2026-133749: Programmatic Logins With Guard Skip the checkPostAuth() Method of User Checkers",
+      "link": "https://symfony.com/cve-2026-133749",
+      "reportedAt": "2026-11-25 09:12:09",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "symfony/security-guard/CVE-2026-133749.yaml"
+        }
+      ]
+    },
     "PKSA-n3c5-r4ht-z82m": {
       "packageName": "magento/product-community-edition",
       "affectedVersions": ">=2.2,<2.2.10|>=2.3,<2.3.2-p2",
@@ -5286,7 +5776,7 @@
       "cve": null,
       "title": "RSA keys of any size are accepted: a key chosen by the sender of a token costs seconds of CPU per operation (RSA-PSS and RSA encryption, and every RSA algorithm without GMP)",
       "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-96f8-m4jr-72xj",
-      "reportedAt": "2026-11-25 00:00:00",
+      "reportedAt": "2026-11-26 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",
@@ -5350,6 +5840,20 @@
         }
       ]
     },
+    "PKSA-npfz-gx1q-56m6": {
+      "packageName": "symfony/framework-bundle",
+      "affectedVersions": ">=7.4.0,<7.4.24|>=8.0.0,<8.1.0|>=8.1.0,<8.1.12",
+      "cve": "CVE-2026-133762",
+      "title": "CVE-2026-133762: Without APP_RUNTIME_MODE, HTTP Workers Running Under the CLI SAPI Return Full Exception Dumps in Production",
+      "link": "https://symfony.com/cve-2026-133762",
+      "reportedAt": "2026-11-25 09:22:46",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "symfony/framework-bundle/CVE-2026-133762.yaml"
+        }
+      ]
+    },
     "PKSA-nq9j-9tdc-rmf5": {
       "packageName": "sylius/sylius",
       "affectedVersions": ">=2.0.0,<2.1.0|>=2.1.0,<2.1.16|>=2.2.0,<2.2.9",
@@ -5375,6 +5879,20 @@
         {
           "name": "FriendsOfPHP/security-advisories",
           "remoteId": "contao/contao/CVE-2026-104883.yaml"
+        }
+      ]
+    },
+    "PKSA-nsnc-d4gy-hd2q": {
+      "packageName": "symfony/symfony",
+      "affectedVersions": ">=7.2.0,<7.3.0|>=7.3.0,<7.4.0|>=7.4.0,<7.4.24|>=8.0.0,<8.1.0|>=8.1.0,<8.1.12",
+      "cve": "CVE-2026-134791",
+      "title": "CVE-2026-134791: Unclosed Comments Make the Lexer of ExpressionLanguage Quadratic, Letting Untrusted Expressions Hold a Process",
+      "link": "https://symfony.com/cve-2026-134791",
+      "reportedAt": "2026-11-25 09:22:46",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "symfony/symfony/CVE-2026-134791.yaml"
         }
       ]
     },
@@ -5588,6 +6106,20 @@
         }
       ]
     },
+    "PKSA-pbtx-4qgh-mmkh": {
+      "packageName": "symfony/routing",
+      "affectedVersions": ">=2.0.0,<3.0.0|>=3.0.0,<4.0.0|>=4.0.0,<5.0.0|>=5.0.0,<5.1.0|>=5.1.0,<5.2.0|>=5.2.0,<5.3.0|>=5.3.0,<5.4.0|>=5.4.0,<5.4.57|>=6.0.0,<6.1.0|>=6.1.0,<6.2.0|>=6.2.0,<6.3.0|>=6.3.0,<6.4.0|>=6.4.0,<6.4.51|>=7.0.0,<7.1.0|>=7.1.0,<7.2.0|>=7.2.0,<7.3.0|>=7.3.0,<7.4.0|>=7.4.0,<7.4.24|>=8.0.0,<8.1.0|>=8.1.0,<8.1.12",
+      "cve": "CVE-2026-133746",
+      "title": "CVE-2026-133746: UrlGenerator Can Still Generate URLs to Another Host: Incomplete Fix for CVE-2026-45065",
+      "link": "https://symfony.com/cve-2026-133746",
+      "reportedAt": "2026-11-25 09:12:09",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "symfony/routing/CVE-2026-133746.yaml"
+        }
+      ]
+    },
     "PKSA-pcvm-mkvz-dp3g": {
       "packageName": "magento/magento1ee",
       "affectedVersions": ">=1.9.0.0,<1.14.4.1",
@@ -5650,7 +6182,7 @@
       "cve": null,
       "title": "AES key wrapping accepts oct keys shorter than the algorithm key size and pads them with zero bytes: an empty key wraps every CEK under an all-zero key",
       "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-4mxj-75j2-j8hc",
-      "reportedAt": "2026-11-25 00:00:00",
+      "reportedAt": "2026-11-26 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",
@@ -5790,7 +6322,7 @@
       "cve": null,
       "title": "FidoAllianceCompliantMetadataService accepts a metadata BLOB that does not chain to a trust anchor",
       "link": "https://github.com/web-auth/webauthn-framework/security/advisories/GHSA-p653-gg6c-rrjw",
-      "reportedAt": "2026-11-25 00:00:00",
+      "reportedAt": "2026-11-26 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",
@@ -5944,7 +6476,7 @@
       "cve": null,
       "title": "AES-GCM decryption accepts any authentication tag length: a holder of one valid JWE can brute force a 1-byte tag in at most 256 requests and rewrite the plaintext",
       "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-j265-mg9q-wpv9",
-      "reportedAt": "2026-11-25 00:00:00",
+      "reportedAt": "2026-11-26 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",
@@ -5991,6 +6523,20 @@
         {
           "name": "FriendsOfPHP/security-advisories",
           "remoteId": "magento/product-community-edition/CVE-2019-7903.yaml"
+        }
+      ]
+    },
+    "PKSA-qqgg-qvx9-xk83": {
+      "packageName": "symfony/symfony",
+      "affectedVersions": ">=6.1.0,<6.2.0|>=6.2.0,<6.3.0|>=6.3.0,<6.4.0|>=6.4.0,<6.4.51|>=7.0.0,<7.1.0|>=7.1.0,<7.2.0|>=7.2.0,<7.3.0|>=7.3.0,<7.4.0|>=7.4.0,<7.4.24|>=8.0.0,<8.1.0|>=8.1.0,<8.1.12",
+      "cve": "CVE-2026-133756",
+      "title": "CVE-2026-133756: HtmlSanitizer Doesn't Check Meta Refresh URLs Whose Time Follows a Vertical Tab or a Unicode Space: Incomplete Fix for CVE-2026-121373",
+      "link": "https://symfony.com/cve-2026-133756",
+      "reportedAt": "2026-11-25 09:18:49",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "symfony/symfony/CVE-2026-133756.yaml"
         }
       ]
     },
@@ -6238,7 +6784,7 @@
       "cve": null,
       "title": "JWE and JWS loaders try every recipient or signature of a token, so a small token multiplies the PBES2 iteration cap (denial of service)",
       "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-3vqw-452c-g726",
-      "reportedAt": "2026-11-25 00:00:00",
+      "reportedAt": "2026-11-26 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",
@@ -6257,6 +6803,20 @@
         {
           "name": "FriendsOfPHP/security-advisories",
           "remoteId": "magento/product-community-edition/CVE-2019-7923.yaml"
+        }
+      ]
+    },
+    "PKSA-rjwz-cs6f-vcyb": {
+      "packageName": "easycorp/easyadmin-bundle",
+      "affectedVersions": ">=4.1.0,<4.29.18|>=5.0.0,<5.10.4",
+      "cve": null,
+      "title": "routeParams of routeName URLs are passed as controller arguments",
+      "link": "https://github.com/EasyCorp/EasyAdminBundle/security/advisories/GHSA-f7rw-7wx5-3c54",
+      "reportedAt": "2026-11-25 08:06:35",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "easycorp/easyadmin-bundle/GHSA-f7rw-7wx5-3c54.yaml"
         }
       ]
     },
@@ -6420,7 +6980,7 @@
       "cve": null,
       "title": "ECDH-ES: an oversized \"epk\" coordinate costs seconds to minutes of CPU per token when PHP has no GMP extension",
       "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-wwq7-mh3q-hwrh",
-      "reportedAt": "2026-11-25 00:00:00",
+      "reportedAt": "2026-11-26 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",
@@ -6708,6 +7268,20 @@
         }
       ]
     },
+    "PKSA-svmt-qzsq-1rzq": {
+      "packageName": "symfony/symfony",
+      "affectedVersions": ">=5.4.0,<5.4.57|>=6.0.0,<6.1.0|>=6.1.0,<6.2.0|>=6.2.0,<6.3.0|>=6.3.0,<6.4.0|>=6.4.0,<6.4.51|>=7.0.0,<7.1.0|>=7.1.0,<7.2.0|>=7.2.0,<7.3.0|>=7.3.0,<7.4.0|>=7.4.0,<7.4.24|>=8.0.0,<8.1.0|>=8.1.0,<8.1.12",
+      "cve": "CVE-2026-133753",
+      "title": "CVE-2026-133753: The Unanimous Strategy Grants access_control Rules When Only One of Their Roles Matches: Regression of CVE-2020-5275",
+      "link": "https://symfony.com/cve-2026-133753",
+      "reportedAt": "2026-11-25 09:12:09",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "symfony/symfony/CVE-2026-133753.yaml"
+        }
+      ]
+    },
     "PKSA-szz8-81wy-3x8z": {
       "packageName": "twig/twig",
       "affectedVersions": ">=1.0.0,<2.0.0|>=2.0.0,<3.0.0|>=3.0.0,<3.31.1",
@@ -6806,6 +7380,20 @@
         }
       ]
     },
+    "PKSA-t9nk-8dt1-dyvn": {
+      "packageName": "symfony/symfony",
+      "affectedVersions": ">=5.1.0,<5.2.0|>=5.2.0,<5.3.0|>=5.3.0,<5.4.0|>=5.4.0,<5.4.57|>=6.0.0,<6.1.0|>=6.1.0,<6.2.0|>=6.2.0,<6.3.0|>=6.3.0,<6.4.0|>=6.4.0,<6.4.51|>=7.0.0,<7.1.0|>=7.1.0,<7.2.0|>=7.2.0,<7.3.0|>=7.3.0,<7.4.0|>=7.4.0,<7.4.24|>=8.0.0,<8.1.0|>=8.1.0,<8.1.12",
+      "cve": "CVE-2026-133752",
+      "title": "CVE-2026-133752: The Serializer Doesn't Enforce #[Ignore] on the Class Picked by a Discriminator Map or object_to_populate",
+      "link": "https://symfony.com/cve-2026-133752",
+      "reportedAt": "2026-11-25 09:12:09",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "symfony/symfony/CVE-2026-133752.yaml"
+        }
+      ]
+    },
     "PKSA-tb9q-ntdz-hpnd": {
       "packageName": "magento/product-community-edition",
       "affectedVersions": ">=2.1,<2.1.18",
@@ -6873,6 +7461,20 @@
         {
           "name": "FriendsOfPHP/security-advisories",
           "remoteId": "contao/core-bundle/2026-11-11-4.yaml"
+        }
+      ]
+    },
+    "PKSA-thfs-rt4t-5wkv": {
+      "packageName": "symfony/symfony",
+      "affectedVersions": ">=2.0.0,<3.0.0|>=3.0.0,<4.0.0|>=4.0.0,<5.0.0|>=5.0.0,<5.1.0|>=5.1.0,<5.2.0|>=5.2.0,<5.3.0|>=5.3.0,<5.4.0|>=5.4.0,<5.4.57|>=6.0.0,<6.1.0|>=6.1.0,<6.2.0|>=6.2.0,<6.3.0|>=6.3.0,<6.4.0|>=6.4.0,<6.4.51|>=7.0.0,<7.1.0|>=7.1.0,<7.2.0|>=7.2.0,<7.3.0|>=7.3.0,<7.4.0|>=7.4.0,<7.4.24|>=8.0.0,<8.1.0|>=8.1.0,<8.1.12",
+      "cve": "CVE-2026-133746",
+      "title": "CVE-2026-133746: UrlGenerator Can Still Generate URLs to Another Host: Incomplete Fix for CVE-2026-45065",
+      "link": "https://symfony.com/cve-2026-133746",
+      "reportedAt": "2026-11-25 09:12:09",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "symfony/symfony/CVE-2026-133746.yaml"
         }
       ]
     },
@@ -7100,6 +7702,20 @@
         }
       ]
     },
+    "PKSA-vjy4-j52d-dcpp": {
+      "packageName": "symfony/symfony",
+      "affectedVersions": ">=7.4.0,<7.4.24|>=8.0.0,<8.1.0|>=8.1.0,<8.1.12",
+      "cve": "CVE-2026-133747",
+      "title": "CVE-2026-133747: Scoped HTTP Clients With Caching Enabled Send Their Credentials to Any Origin",
+      "link": "https://symfony.com/cve-2026-133747",
+      "reportedAt": "2026-11-25 09:22:46",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "symfony/symfony/CVE-2026-133747.yaml"
+        }
+      ]
+    },
     "PKSA-vkcf-kt71-r3mr": {
       "packageName": "spomky-labs/pki-framework",
       "affectedVersions": "<1.6.2",
@@ -7139,6 +7755,20 @@
         {
           "name": "FriendsOfPHP/security-advisories",
           "remoteId": "symfony/expression-language/CVE-2026-109449.yaml"
+        }
+      ]
+    },
+    "PKSA-vqxj-j8fm-1q3k": {
+      "packageName": "symfony/mailer",
+      "affectedVersions": ">=7.3.0,<7.4.0|>=7.4.0,<7.4.24|>=8.0.0,<8.1.0|>=8.1.0,<8.1.12",
+      "cve": "CVE-2026-133751",
+      "title": "CVE-2026-133751: Mailer's require_tls Can Be Bypassed by a Man in the Middle",
+      "link": "https://symfony.com/cve-2026-133751",
+      "reportedAt": "2026-11-25 09:22:46",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "symfony/mailer/CVE-2026-133751.yaml"
         }
       ]
     },
@@ -7268,6 +7898,20 @@
         }
       ]
     },
+    "PKSA-w548-crpn-171m": {
+      "packageName": "symfony/symfony",
+      "affectedVersions": ">=5.4.48,<5.4.57|>=6.4.16,<6.4.51|>=7.1.9,<7.2.0|>=7.2.0,<7.3.0|>=7.3.0,<7.4.0|>=7.4.0,<7.4.24|>=8.0.0,<8.1.0|>=8.1.0,<8.1.12",
+      "cve": "CVE-2026-133757",
+      "title": "CVE-2026-133757: NoPrivateNetworkHttpClient Sends the Default Credentials of the Client It Decorates to Other Origins on Redirects",
+      "link": "https://symfony.com/cve-2026-133757",
+      "reportedAt": "2026-11-25 09:12:09",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "symfony/symfony/CVE-2026-133757.yaml"
+        }
+      ]
+    },
     "PKSA-w631-k63j-f1g7": {
       "packageName": "magento/product-community-edition",
       "affectedVersions": ">=2.2,<2.2.10|>=2.3,<2.3.2-p2",
@@ -7288,7 +7932,7 @@
       "cve": null,
       "title": "RSA keys of any size are accepted: a key chosen by the sender of a token costs seconds of CPU per operation (RSA-PSS and RSA encryption, and every RSA algorithm without GMP)",
       "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-96f8-m4jr-72xj",
-      "reportedAt": "2026-11-25 00:00:00",
+      "reportedAt": "2026-11-26 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",
@@ -7316,7 +7960,7 @@
       "cve": null,
       "title": "RSA-OAEP accepts an encrypted key made of several RSA blocks, enabling recovery of another JWE's content encryption key through a decryption oracle",
       "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-wwcr-82mc-w3pw",
-      "reportedAt": "2026-11-25 00:00:00",
+      "reportedAt": "2026-11-26 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",
@@ -7422,6 +8066,20 @@
         }
       ]
     },
+    "PKSA-wpyg-hwp6-692q": {
+      "packageName": "symfony/symfony",
+      "affectedVersions": ">=2.0.0,<3.0.0|>=3.0.0,<4.0.0|>=4.0.0,<5.0.0|>=5.0.0,<5.1.0|>=5.1.0,<5.2.0|>=5.2.0,<5.3.0|>=5.3.0,<5.4.0|>=5.4.0,<5.4.57|>=6.0.0,<6.1.0|>=6.1.0,<6.2.0|>=6.2.0,<6.3.0|>=6.3.0,<6.4.0|>=6.4.0,<6.4.51|>=7.0.0,<7.1.0|>=7.1.0,<7.2.0|>=7.2.0,<7.3.0|>=7.3.0,<7.4.0|>=7.4.0,<7.4.24|>=8.0.0,<8.1.0|>=8.1.0,<8.1.12",
+      "cve": "CVE-2026-134790",
+      "title": "CVE-2026-134790: Login Redirects Can Still Reach Another Host When the Session Cookie Domain Is Set: Incomplete Fix for CVE-2017-16652",
+      "link": "https://symfony.com/cve-2026-134790",
+      "reportedAt": "2026-11-25 09:12:09",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "symfony/symfony/CVE-2026-134790.yaml"
+        }
+      ]
+    },
     "PKSA-ws7m-s1y9-vkw6": {
       "packageName": "contao/contao",
       "affectedVersions": ">=5.0.0,<5.3.50|>=5.4.0,<5.7.12",
@@ -7484,7 +8142,7 @@
       "cve": null,
       "title": "ECDH-ES derives at most 256 bits of key material: with A256CBC-HS512 the content is encrypted under an all-zero AES key and anyone holding the token can read it",
       "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-5pj7-wx9m-cjh6",
-      "reportedAt": "2026-11-25 00:00:00",
+      "reportedAt": "2026-11-26 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",
@@ -7503,6 +8161,20 @@
         {
           "name": "FriendsOfPHP/security-advisories",
           "remoteId": "symfony/symfony/CVE-2026-135801.yaml"
+        }
+      ]
+    },
+    "PKSA-x247-v1h6-5bht": {
+      "packageName": "easycorp/easyadmin-bundle",
+      "affectedVersions": ">=4.14.0,<4.29.18|>=5.0.0,<5.10.4",
+      "cve": null,
+      "title": "Crafted links can change what delete buttons and boolean switches act on",
+      "link": "https://github.com/EasyCorp/EasyAdminBundle/security/advisories/GHSA-jqfc-9phg-ghr7",
+      "reportedAt": "2026-11-25 08:06:35",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "easycorp/easyadmin-bundle/GHSA-jqfc-9phg-ghr7.yaml"
         }
       ]
     },
@@ -7531,6 +8203,20 @@
         {
           "name": "FriendsOfPHP/security-advisories",
           "remoteId": "t3g/analytics/CVE-2026-112070.yaml"
+        }
+      ]
+    },
+    "PKSA-x869-m8bp-bwv9": {
+      "packageName": "symfony/symfony",
+      "affectedVersions": ">=7.3.0,<7.4.0|>=7.4.0,<7.4.24|>=8.0.0,<8.1.0|>=8.1.0,<8.1.12",
+      "cve": "CVE-2026-133744",
+      "title": "CVE-2026-133744: JsonPath Queries Can Still Hold a Process Through Duplicated Nodes and Repeated Work: Incomplete Fix for CVE-2026-135804",
+      "link": "https://symfony.com/cve-2026-133744",
+      "reportedAt": "2026-11-25 09:22:46",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "symfony/symfony/CVE-2026-133744.yaml"
         }
       ]
     },
@@ -7624,11 +8310,25 @@
       "cve": null,
       "title": "AES-GCM decryption accepts any authentication tag length: a holder of one valid JWE can brute force a 1-byte tag in at most 256 requests and rewrite the plaintext",
       "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-j265-mg9q-wpv9",
-      "reportedAt": "2026-11-25 00:00:00",
+      "reportedAt": "2026-11-26 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",
           "remoteId": "web-token/jwt-encryption-algorithm-experimental/GHSA-j265-mg9q-wpv9.yaml"
+        }
+      ]
+    },
+    "PKSA-xrxf-qfkf-ygxs": {
+      "packageName": "easycorp/easyadmin-bundle",
+      "affectedVersions": ">=4.0.0,<4.29.18|>=5.0.0,<5.10.4",
+      "cve": null,
+      "title": "FileField and ImageField skip upload restrictions in some cases",
+      "link": "https://github.com/EasyCorp/EasyAdminBundle/security/advisories/GHSA-63v8-jq78-cmg3",
+      "reportedAt": "2026-11-25 08:06:35",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "easycorp/easyadmin-bundle/GHSA-63v8-jq78-cmg3.yaml"
         }
       ]
     },
@@ -7674,6 +8374,20 @@
         }
       ]
     },
+    "PKSA-y31j-3k1p-67dc": {
+      "packageName": "symfony/http-client",
+      "affectedVersions": ">=4.3.0,<5.0.0|>=5.0.0,<5.1.0|>=5.1.0,<5.2.0|>=5.2.0,<5.3.0|>=5.3.0,<5.4.0|>=5.4.0,<5.4.57|>=6.0.0,<6.1.0|>=6.1.0,<6.2.0|>=6.2.0,<6.3.0|>=6.3.0,<6.4.0|>=6.4.0,<6.4.51|>=7.0.0,<7.1.0|>=7.1.0,<7.2.0|>=7.2.0,<7.3.0|>=7.3.0,<7.4.0|>=7.4.0,<7.4.24|>=8.0.0,<8.1.0|>=8.1.0,<8.1.12",
+      "cve": "CVE-2026-134792",
+      "title": "CVE-2026-134792: HttpClient Lets the Proxy Header of a Request Choose the Proxy of Outgoing Requests in HTTP Workers That Run Under the CLI SAPI",
+      "link": "https://symfony.com/cve-2026-134792",
+      "reportedAt": "2026-11-25 09:12:09",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "symfony/http-client/CVE-2026-134792.yaml"
+        }
+      ]
+    },
     "PKSA-y44t-k4sh-8b68": {
       "packageName": "magento/magento1ee",
       "affectedVersions": ">=1,<1.14.4.2",
@@ -7685,6 +8399,20 @@
         {
           "name": "FriendsOfPHP/security-advisories",
           "remoteId": "magento/magento1ee/CVE-2019-7911.yaml"
+        }
+      ]
+    },
+    "PKSA-y4cd-vht6-nc2m": {
+      "packageName": "symfony/framework-bundle",
+      "affectedVersions": ">=7.4.0,<7.4.24|>=8.0.0,<8.1.0|>=8.1.0,<8.1.12",
+      "cve": "CVE-2026-133747",
+      "title": "CVE-2026-133747: Scoped HTTP Clients With Caching Enabled Send Their Credentials to Any Origin",
+      "link": "https://symfony.com/cve-2026-133747",
+      "reportedAt": "2026-11-25 09:22:46",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "symfony/framework-bundle/CVE-2026-133747.yaml"
         }
       ]
     },
@@ -7876,7 +8604,7 @@
       "cve": null,
       "title": "ECDH-ES derives at most 256 bits of key material: with A256CBC-HS512 the content is encrypted under an all-zero AES key and anyone holding the token can read it",
       "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-5pj7-wx9m-cjh6",
-      "reportedAt": "2026-11-25 00:00:00",
+      "reportedAt": "2026-11-26 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",
@@ -7895,6 +8623,20 @@
         {
           "name": "FriendsOfPHP/security-advisories",
           "remoteId": "symfony/ux-icons/CVE-2026-133777.yaml"
+        }
+      ]
+    },
+    "PKSA-zdrk-v27h-x28t": {
+      "packageName": "easycorp/easyadmin-bundle",
+      "affectedVersions": ">=4.0.0,<4.29.18|>=5.0.0,<5.10.4",
+      "cve": null,
+      "title": "Search and sort use fields hidden with setPermission()",
+      "link": "https://github.com/EasyCorp/EasyAdminBundle/security/advisories/GHSA-x7m7-8grf-r6m2",
+      "reportedAt": "2026-11-25 08:06:35",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "easycorp/easyadmin-bundle/GHSA-x7m7-8grf-r6m2.yaml"
         }
       ]
     },
@@ -7996,6 +8738,20 @@
         }
       ]
     },
+    "PKSA-zt52-53gf-j6kr": {
+      "packageName": "symfony/expression-language",
+      "affectedVersions": ">=5.4.54,<5.4.57|>=6.4.48,<6.4.51|>=7.4.21,<7.4.24|>=8.1.9,<8.1.12",
+      "cve": "CVE-2026-133760",
+      "title": "CVE-2026-133760: Nested Short Ternaries Make the Nesting Check of the Expression Parser Exponential, Letting Untrusted Expressions Hang It",
+      "link": "https://symfony.com/cve-2026-133760",
+      "reportedAt": "2026-11-25 09:12:09",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "symfony/expression-language/CVE-2026-133760.yaml"
+        }
+      ]
+    },
     "PKSA-zt69-bd63-2wsb": {
       "packageName": "symfony/symfony",
       "affectedVersions": ">=6.1.0,<6.2.0|>=6.2.0,<6.3.0|>=6.3.0,<6.4.0|>=6.4.0,<6.4.50|>=7.0.0,<7.1.0|>=7.1.0,<7.2.0|>=7.2.0,<7.3.0|>=7.3.0,<7.4.0|>=7.4.0,<7.4.23|>=8.0.0,<8.1.0|>=8.1.0,<8.1.11",
@@ -8049,6 +8805,34 @@
         {
           "name": "FriendsOfPHP/security-advisories",
           "remoteId": "symfony/symfony/CVE-2026-109449.yaml"
+        }
+      ]
+    },
+    "PKSA-zxny-981f-pvjr": {
+      "packageName": "easycorp/easyadmin-bundle",
+      "affectedVersions": ">=4.0.0,<4.29.18|>=5.0.0,<5.10.1",
+      "cve": null,
+      "title": "String options that match a PHP function name are called as functions",
+      "link": "https://github.com/EasyCorp/EasyAdminBundle/security/advisories/GHSA-h72x-jh3r-wmqj",
+      "reportedAt": "2026-11-14 10:06:17",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "easycorp/easyadmin-bundle/GHSA-h72x-jh3r-wmqj.yaml"
+        }
+      ]
+    },
+    "PKSA-zyt8-ksth-zvwf": {
+      "packageName": "symfony/doctrine-bridge",
+      "affectedVersions": ">=2.0.0,<3.0.0|>=3.0.0,<4.0.0|>=4.0.0,<5.0.0|>=5.0.0,<5.1.0|>=5.1.0,<5.2.0|>=5.2.0,<5.3.0|>=5.3.0,<5.4.0|>=5.4.0,<5.4.57|>=6.0.0,<6.1.0|>=6.1.0,<6.2.0|>=6.2.0,<6.3.0|>=6.3.0,<6.4.0|>=6.4.0,<6.4.51|>=7.0.0,<7.1.0|>=7.1.0,<7.2.0|>=7.2.0,<7.3.0|>=7.3.0,<7.4.0|>=7.4.0,<7.4.24|>=8.0.0,<8.1.0|>=8.1.0,<8.1.12",
+      "cve": "CVE-2026-133759",
+      "title": "CVE-2026-133759: Doctrine Remember-Me Token Provider Accepts Outdated Tokens Under the Series of Their Copy, Also After Logout",
+      "link": "https://symfony.com/cve-2026-133759",
+      "reportedAt": "2026-11-25 09:12:09",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "symfony/doctrine-bridge/CVE-2026-133759.yaml"
         }
       ]
     }

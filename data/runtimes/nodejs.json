@@ -1,6 +1,6 @@
 {
   "runtime": "nodejs",
-  "updated_at": "2026-11-19T16:33:51Z",
+  "updated_at": "2026-11-26T17:46:20Z",
   "branches": [
     {
       "branch": "1",
@@ -4356,18 +4356,22 @@
       "ranges": [
         {
           "type": "NODE_SEMVER",
-          "vulnerable": "26.x",
-          "patched": "^26.12.1",
+          "vulnerable": "22.x || 24.x || 26.x",
+          "patched": "^22.23.5 || ^24.22.3 || ^26.12.1",
           "fixed_versions": [
+            "22.23.5",
+            "24.22.3",
             "26.12.1"
           ]
         }
       ],
       "fixed_versions": [
+        "22.23.5",
+        "24.22.3",
         "26.12.1"
       ],
       "source_urls": [
-        "https://nodejs.org/en/blog/vulnerability/october-2026-security-releases"
+        "https://nodejs.org/en/blog/vulnerability/november-2026-security-releases"
       ],
       "published_at": null
     },
@@ -4480,6 +4484,416 @@
       ],
       "source_urls": [
         "https://nodejs.org/en/blog/vulnerability/october-2026-security-releases"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2026-123828",
+      "aliases": [
+        "CVE-2026-123828",
+        "NODE-CORE-205"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "24.x || 26.x",
+          "patched": "^24.22.3 || ^26.13.1",
+          "fixed_versions": [
+            "24.22.3",
+            "26.13.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "24.22.3",
+        "26.13.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/november-2026-security-releases"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2026-123829",
+      "aliases": [
+        "CVE-2026-123829",
+        "NODE-CORE-206"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "22.x || 24.x || 26.x",
+          "patched": "^22.23.5 || ^24.22.3 || ^26.13.1",
+          "fixed_versions": [
+            "22.23.5",
+            "24.22.3",
+            "26.13.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "22.23.5",
+        "24.22.3",
+        "26.13.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/november-2026-security-releases"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2026-123862",
+      "aliases": [
+        "CVE-2026-123862",
+        "NODE-CORE-207"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "22.x || 24.x || 26.x",
+          "patched": "^22.23.5 || ^24.22.3 || ^26.13.1",
+          "fixed_versions": [
+            "22.23.5",
+            "24.22.3",
+            "26.13.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "22.23.5",
+        "24.22.3",
+        "26.13.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/november-2026-security-releases"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2026-123863",
+      "aliases": [
+        "CVE-2026-123863",
+        "NODE-CORE-208"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "24.x || 26.x",
+          "patched": "^24.22.3 || ^26.13.1",
+          "fixed_versions": [
+            "24.22.3",
+            "26.13.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "24.22.3",
+        "26.13.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/november-2026-security-releases"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2026-123864",
+      "aliases": [
+        "CVE-2026-123864",
+        "NODE-CORE-209"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "22.x || 24.x || 26.x",
+          "patched": "^22.23.5 || ^24.22.3 || ^26.13.1",
+          "fixed_versions": [
+            "22.23.5",
+            "24.22.3",
+            "26.13.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "22.23.5",
+        "24.22.3",
+        "26.13.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/november-2026-security-releases"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2026-123865",
+      "aliases": [
+        "CVE-2026-123865",
+        "NODE-CORE-210"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "22.x || 24.x || 26.x",
+          "patched": "^22.23.5 || ^24.22.3 || ^26.13.1",
+          "fixed_versions": [
+            "22.23.5",
+            "24.22.3",
+            "26.13.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "22.23.5",
+        "24.22.3",
+        "26.13.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/november-2026-security-releases"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2026-123866",
+      "aliases": [
+        "CVE-2026-123866",
+        "NODE-CORE-211"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "22.x || 24.x || 26.x",
+          "patched": "^22.23.5 || ^24.22.3 || ^26.13.1",
+          "fixed_versions": [
+            "22.23.5",
+            "24.22.3",
+            "26.13.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "22.23.5",
+        "24.22.3",
+        "26.13.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/november-2026-security-releases"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2026-123867",
+      "aliases": [
+        "CVE-2026-123867",
+        "NODE-CORE-212"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "22.x || 24.x || 26.x",
+          "patched": "^22.23.5 || ^24.22.3 || ^26.13.1",
+          "fixed_versions": [
+            "22.23.5",
+            "24.22.3",
+            "26.13.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "22.23.5",
+        "24.22.3",
+        "26.13.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/november-2026-security-releases"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2026-123868",
+      "aliases": [
+        "CVE-2026-123868",
+        "NODE-CORE-213"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "24.x || 26.x",
+          "patched": "^24.22.3 || ^26.13.1",
+          "fixed_versions": [
+            "24.22.3",
+            "26.13.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "24.22.3",
+        "26.13.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/november-2026-security-releases"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2026-123871",
+      "aliases": [
+        "CVE-2026-123871",
+        "NODE-CORE-214"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "22.x || 24.x || 26.x",
+          "patched": "^22.23.5 || ^24.22.3 || ^26.13.1",
+          "fixed_versions": [
+            "22.23.5",
+            "24.22.3",
+            "26.13.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "22.23.5",
+        "24.22.3",
+        "26.13.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/november-2026-security-releases"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2026-123872",
+      "aliases": [
+        "CVE-2026-123872",
+        "NODE-CORE-216"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "22.x || 24.x || 26.x",
+          "patched": "^22.23.5 || ^24.22.3 || ^26.13.1",
+          "fixed_versions": [
+            "22.23.5",
+            "24.22.3",
+            "26.13.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "22.23.5",
+        "24.22.3",
+        "26.13.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/november-2026-security-releases"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2026-123874",
+      "aliases": [
+        "CVE-2026-123874",
+        "NODE-CORE-217"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "24.x || 26.x",
+          "patched": "^24.22.3 || ^26.13.1",
+          "fixed_versions": [
+            "24.22.3",
+            "26.13.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "24.22.3",
+        "26.13.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/november-2026-security-releases"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2026-123875",
+      "aliases": [
+        "CVE-2026-123875",
+        "NODE-CORE-218"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "22.x || 24.x || 26.x",
+          "patched": "^22.23.5 || ^24.22.3 || ^26.13.1",
+          "fixed_versions": [
+            "22.23.5",
+            "24.22.3",
+            "26.13.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "22.23.5",
+        "24.22.3",
+        "26.13.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/november-2026-security-releases"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2026-123877",
+      "aliases": [
+        "CVE-2026-123877",
+        "NODE-CORE-215"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "22.x || 24.x || 26.x",
+          "patched": "^22.23.5 || ^24.22.3 || ^26.13.1",
+          "fixed_versions": [
+            "22.23.5",
+            "24.22.3",
+            "26.13.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "22.23.5",
+        "24.22.3",
+        "26.13.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/november-2026-security-releases"
+      ],
+      "published_at": null
+    },
+    {
+      "key": "CVE-2026-126051",
+      "aliases": [
+        "CVE-2026-126051",
+        "NODE-CORE-219"
+      ],
+      "ranges": [
+        {
+          "type": "NODE_SEMVER",
+          "vulnerable": "24.x || 26.x",
+          "patched": "^24.22.3 || ^26.13.1",
+          "fixed_versions": [
+            "24.22.3",
+            "26.13.1"
+          ]
+        }
+      ],
+      "fixed_versions": [
+        "24.22.3",
+        "26.13.1"
+      ],
+      "source_urls": [
+        "https://nodejs.org/en/blog/vulnerability/november-2026-security-releases"
       ],
       "published_at": null
     },

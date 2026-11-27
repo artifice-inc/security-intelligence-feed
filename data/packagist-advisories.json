@@ -1,6 +1,6 @@
 {
   "full_sync_at": "2026-11-22T02:18:44Z",
-  "updated_since": 1795752814,
+  "updated_since": 1795800330,
   "advisories": {
     "PKSA-138c-dqwc-4pfb": {
       "packageName": "magento/product-community-edition",
@@ -386,7 +386,7 @@
       "cve": null,
       "title": "RSA-OAEP accepts an encrypted key made of several RSA blocks, enabling recovery of another JWE's content encryption key through a decryption oracle",
       "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-wwcr-82mc-w3pw",
-      "reportedAt": "2026-11-26 00:00:00",
+      "reportedAt": "2026-11-27 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",
@@ -414,7 +414,7 @@
       "cve": null,
       "title": "Metadata status report check reads a single report and ignores REVOKED",
       "link": "https://github.com/web-auth/webauthn-framework/security/advisories/GHSA-p8cj-mmjr-5c2m",
-      "reportedAt": "2026-11-26 00:00:00",
+      "reportedAt": "2026-11-27 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",
@@ -694,7 +694,7 @@
       "cve": null,
       "title": "AES-GCM decryption accepts any authentication tag length: a holder of one valid JWE can brute force a 1-byte tag in at most 256 requests and rewrite the plaintext",
       "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-j265-mg9q-wpv9",
-      "reportedAt": "2026-11-26 00:00:00",
+      "reportedAt": "2026-11-27 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",
@@ -856,6 +856,20 @@
         }
       ]
     },
+    "PKSA-3rgy-w8p4-d8hm": {
+      "packageName": "smile/module-gift-sales-rule",
+      "affectedVersions": ">=1.0.0,<2.0.2",
+      "cve": null,
+      "title": "Gift item price bypass and unauthorized gift rule usage",
+      "link": "https://github.com/Smile-SA/magento2-module-gift-sales-rule/security/advisories/GHSA-rp4h-h93p-fm5q",
+      "reportedAt": "2026-11-24 14:31:02",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "smile/module-gift-sales-rule/GHSA-rp4h-h93p-fm5q.yaml"
+        }
+      ]
+    },
     "PKSA-3skz-jnsp-6kt1": {
       "packageName": "zendframework/zend-mail",
       "affectedVersions": ">=2.0.0,<2.0.99|>=2.1.0,<2.1.99|>=2.3.0,<2.3.8|>=2.4.0,<2.4.1",
@@ -965,6 +979,20 @@
         {
           "name": "FriendsOfPHP/security-advisories",
           "remoteId": "magento/magento1ce/CVE-2019-8152.yaml"
+        }
+      ]
+    },
+    "PKSA-4cv2-dmh8-4z71": {
+      "packageName": "bigbridge/product-import",
+      "affectedVersions": ">=1.0.0,<1.7.9|>=1.8.0,<1.8.2",
+      "cve": null,
+      "title": "Catalog API users can write and read files outside the import directories via the product import web API",
+      "link": "https://github.com/bigbridge-nl/product-import/security/advisories/GHSA-243g-fjgc-p572",
+      "reportedAt": "2026-11-26 08:50:14",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "bigbridge/product-import/GHSA-243g-fjgc-p572.yaml"
         }
       ]
     },
@@ -1371,6 +1399,20 @@
         {
           "name": "FriendsOfPHP/security-advisories",
           "remoteId": "magento/product-community-edition/CVE-2019-8141.yaml"
+        }
+      ]
+    },
+    "PKSA-6828-gpxk-8rck": {
+      "packageName": "smile/elasticsuite",
+      "affectedVersions": ">=2.10.9.1,<2.10.36.2|>=2.11.0,<2.11.21.2|>=2.12.0,<2.12.2.2",
+      "cve": null,
+      "title": "SQL injection through unquoted SKUs in the widget \"position by SKU\" sort",
+      "link": "https://github.com/Smile-SA/elasticsuite/security/advisories/GHSA-7j9j-4fph-828g",
+      "reportedAt": "2026-11-16 13:43:17",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "smile/elasticsuite/GHSA-7j9j-4fph-828g.yaml"
         }
       ]
     },
@@ -1982,7 +2024,7 @@
       "cve": null,
       "title": "Attestation certificates sent as PEM text allow forged packed/TPM attestations and an unauthenticated denial of service",
       "link": "https://github.com/web-auth/webauthn-framework/security/advisories/GHSA-c9p6-r72h-rp3x",
-      "reportedAt": "2026-11-26 00:00:00",
+      "reportedAt": "2026-11-27 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",
@@ -2878,7 +2920,7 @@
       "cve": null,
       "title": "AES key wrapping accepts oct keys shorter than the algorithm key size and pads them with zero bytes: an empty key wraps every CEK under an all-zero key",
       "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-4mxj-75j2-j8hc",
-      "reportedAt": "2026-11-26 00:00:00",
+      "reportedAt": "2026-11-27 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",
@@ -3018,7 +3060,7 @@
       "cve": null,
       "title": "RSA keys of any size are accepted: a key chosen by the sender of a token costs seconds of CPU per operation (RSA-PSS and RSA encryption, and every RSA algorithm without GMP)",
       "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-96f8-m4jr-72xj",
-      "reportedAt": "2026-11-26 00:00:00",
+      "reportedAt": "2026-11-27 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",
@@ -3270,7 +3312,7 @@
       "cve": null,
       "title": "Direct encryption (dir) does not check the key size: with a key of half the required size, AES-CBC-HMAC content is encrypted under an all-zero AES key and anyone holding the token can read it",
       "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-jc6j-46g2-xwqc",
-      "reportedAt": "2026-11-26 00:00:00",
+      "reportedAt": "2026-11-27 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",
@@ -3396,7 +3438,7 @@
       "cve": null,
       "title": "dir, ECDH-ES and ECDH-SS accept a non-empty JWE Encrypted Key, so token strings are malleable",
       "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-5cc5-v8qv-6cw7",
-      "reportedAt": "2026-11-26 00:00:00",
+      "reportedAt": "2026-11-27 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",
@@ -3536,7 +3578,7 @@
       "cve": null,
       "title": "JWS and JWE serializers decode attacker-controlled JSON without bounds before verification (CPU and memory denial of service)",
       "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-2xq2-pp89-x7fr",
-      "reportedAt": "2026-11-26 00:00:00",
+      "reportedAt": "2026-11-27 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",
@@ -3592,7 +3634,7 @@
       "cve": null,
       "title": "AES key wrapping accepts oct keys shorter than the algorithm key size and pads them with zero bytes: an empty key wraps every CEK under an all-zero key",
       "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-4mxj-75j2-j8hc",
-      "reportedAt": "2026-11-26 00:00:00",
+      "reportedAt": "2026-11-27 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",
@@ -4012,7 +4054,7 @@
       "cve": null,
       "title": "Denial of service: parsing a JWS in the JSON General serialization takes a time quadratic in its number of signatures",
       "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-jgv7-g4jg-6hqv",
-      "reportedAt": "2026-11-26 00:00:00",
+      "reportedAt": "2026-11-27 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",
@@ -4054,7 +4096,7 @@
       "cve": null,
       "title": "AES-GCM decryption accepts any authentication tag length: a holder of one valid JWE can brute force a 1-byte tag in at most 256 requests and rewrite the plaintext",
       "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-j265-mg9q-wpv9",
-      "reportedAt": "2026-11-26 00:00:00",
+      "reportedAt": "2026-11-27 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",
@@ -4152,7 +4194,7 @@
       "cve": null,
       "title": "RSA private key recoverable through a timing side channel in RSA-OAEP and RSA1_5 decryption",
       "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-2qpx-pwmq-r27r",
-      "reportedAt": "2026-11-26 00:00:00",
+      "reportedAt": "2026-11-27 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",
@@ -4264,7 +4306,7 @@
       "cve": null,
       "title": "AES key wrapping accepts oct keys shorter than the algorithm key size and pads them with zero bytes: an empty key wraps every CEK under an all-zero key",
       "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-4mxj-75j2-j8hc",
-      "reportedAt": "2026-11-26 00:00:00",
+      "reportedAt": "2026-11-27 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",
@@ -4846,6 +4888,20 @@
         }
       ]
     },
+    "PKSA-jb1k-bzk5-b66b": {
+      "packageName": "smile/module-retailer",
+      "affectedVersions": ">=1.2.0,<2.0.4",
+      "cve": null,
+      "title": "Anonymous web API exposes inactive retailers",
+      "link": "https://github.com/Smile-SA/magento2-module-retailer/security/advisories/GHSA-p4c3-c8wg-wjqm",
+      "reportedAt": "2026-11-24 14:31:10",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "smile/module-retailer/GHSA-p4c3-c8wg-wjqm.yaml"
+        }
+      ]
+    },
     "PKSA-jbgd-4zf8-h9d7": {
       "packageName": "magento/product-community-edition",
       "affectedVersions": ">=2.1,<2.1.18|>=2.2,<2.2.9|>=2.3,<2.3.2",
@@ -4936,7 +4992,7 @@
       "cve": null,
       "title": "RSA keys of any size are accepted: a key chosen by the sender of a token costs seconds of CPU per operation (RSA-PSS and RSA encryption, and every RSA algorithm without GMP)",
       "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-96f8-m4jr-72xj",
-      "reportedAt": "2026-11-26 00:00:00",
+      "reportedAt": "2026-11-27 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",
@@ -4978,7 +5034,7 @@
       "cve": null,
       "title": "JWE and JWS loaders try every recipient or signature of a token, so a small token multiplies the PBES2 iteration cap (denial of service)",
       "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-3vqw-452c-g726",
-      "reportedAt": "2026-11-26 00:00:00",
+      "reportedAt": "2026-11-27 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",
@@ -5168,6 +5224,20 @@
         }
       ]
     },
+    "PKSA-kgxb-qzz7-94kj": {
+      "packageName": "smile/elasticsuite",
+      "affectedVersions": ">=2.1.0,<2.10.37|>=2.11.0,<2.11.22|>=2.12.0,<2.12.3",
+      "cve": null,
+      "title": "SQL injection in the admin Thesaurus grid \"Terms\" filter",
+      "link": "https://github.com/Smile-SA/elasticsuite/security/advisories/GHSA-j4vw-mj39-fg2x",
+      "reportedAt": "2026-11-23 19:16:02",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "smile/elasticsuite/GHSA-j4vw-mj39-fg2x.yaml"
+        }
+      ]
+    },
     "PKSA-kk39-vqqg-74n6": {
       "packageName": "nitsan/ns-t3ai",
       "affectedVersions": "<14.0.2",
@@ -5216,7 +5286,7 @@
       "cve": null,
       "title": "JWS and JWE serializers decode attacker-controlled JSON without bounds before verification (CPU and memory denial of service)",
       "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-2xq2-pp89-x7fr",
-      "reportedAt": "2026-11-26 00:00:00",
+      "reportedAt": "2026-11-27 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",
@@ -5286,7 +5356,7 @@
       "cve": null,
       "title": "RSA keys of any size are accepted: a key chosen by the sender of a token costs seconds of CPU per operation (RSA-PSS and RSA encryption, and every RSA algorithm without GMP)",
       "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-96f8-m4jr-72xj",
-      "reportedAt": "2026-11-26 00:00:00",
+      "reportedAt": "2026-11-27 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",
@@ -5501,6 +5571,20 @@
         {
           "name": "FriendsOfPHP/security-advisories",
           "remoteId": "sylius/sylius/CVE-2026-100872.yaml"
+        }
+      ]
+    },
+    "PKSA-mj5v-gkcv-w3pp": {
+      "packageName": "smile/module-custom-entity",
+      "affectedVersions": ">=1.3.14,<1.3.16",
+      "cve": null,
+      "title": "Missing authorization on custom entity mass delete",
+      "link": "https://github.com/Smile-SA/magento2-module-custom-entity/security/advisories/GHSA-wfv9-fj98-wjph",
+      "reportedAt": "2026-11-24 14:31:21",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "smile/module-custom-entity/GHSA-wfv9-fj98-wjph.yaml"
         }
       ]
     },
@@ -5776,7 +5860,7 @@
       "cve": null,
       "title": "RSA keys of any size are accepted: a key chosen by the sender of a token costs seconds of CPU per operation (RSA-PSS and RSA encryption, and every RSA algorithm without GMP)",
       "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-96f8-m4jr-72xj",
-      "reportedAt": "2026-11-26 00:00:00",
+      "reportedAt": "2026-11-27 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",
@@ -6182,7 +6266,7 @@
       "cve": null,
       "title": "AES key wrapping accepts oct keys shorter than the algorithm key size and pads them with zero bytes: an empty key wraps every CEK under an all-zero key",
       "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-4mxj-75j2-j8hc",
-      "reportedAt": "2026-11-26 00:00:00",
+      "reportedAt": "2026-11-27 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",
@@ -6322,7 +6406,7 @@
       "cve": null,
       "title": "FidoAllianceCompliantMetadataService accepts a metadata BLOB that does not chain to a trust anchor",
       "link": "https://github.com/web-auth/webauthn-framework/security/advisories/GHSA-p653-gg6c-rrjw",
-      "reportedAt": "2026-11-26 00:00:00",
+      "reportedAt": "2026-11-27 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",
@@ -6476,7 +6560,7 @@
       "cve": null,
       "title": "AES-GCM decryption accepts any authentication tag length: a holder of one valid JWE can brute force a 1-byte tag in at most 256 requests and rewrite the plaintext",
       "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-j265-mg9q-wpv9",
-      "reportedAt": "2026-11-26 00:00:00",
+      "reportedAt": "2026-11-27 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",
@@ -6784,7 +6868,7 @@
       "cve": null,
       "title": "JWE and JWS loaders try every recipient or signature of a token, so a small token multiplies the PBES2 iteration cap (denial of service)",
       "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-3vqw-452c-g726",
-      "reportedAt": "2026-11-26 00:00:00",
+      "reportedAt": "2026-11-27 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",
@@ -6980,7 +7064,7 @@
       "cve": null,
       "title": "ECDH-ES: an oversized \"epk\" coordinate costs seconds to minutes of CPU per token when PHP has no GMP extension",
       "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-wwq7-mh3q-hwrh",
-      "reportedAt": "2026-11-26 00:00:00",
+      "reportedAt": "2026-11-27 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",
@@ -7156,6 +7240,20 @@
         }
       ]
     },
+    "PKSA-sjxp-9nwr-ch5d": {
+      "packageName": "smile/module-scoped-eav",
+      "affectedVersions": ">=1.0.0,<1.3.10",
+      "cve": null,
+      "title": "Mass assignment of structural fields on attribute save",
+      "link": "https://github.com/Smile-SA/magento2-module-scoped-eav/security/advisories/GHSA-vphw-6xj5-r7g5",
+      "reportedAt": "2026-11-24 13:48:49",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "smile/module-scoped-eav/GHSA-vphw-6xj5-r7g5.yaml"
+        }
+      ]
+    },
     "PKSA-skg4-rry4-qpqd": {
       "packageName": "magento/magento1ee",
       "affectedVersions": ">=1,<1.14.4.2",
@@ -7223,6 +7321,20 @@
         {
           "name": "FriendsOfPHP/security-advisories",
           "remoteId": "magento/product-community-edition/CVE-2019-8111.yaml"
+        }
+      ]
+    },
+    "PKSA-srvj-dsfz-1mqf": {
+      "packageName": "run-as-root/magento2-prometheus-exporter",
+      "affectedVersions": "<4.4.0",
+      "cve": null,
+      "title": "Metrics endpoint is readable without authentication by default",
+      "link": "https://github.com/run-as-root/magento2-prometheus-exporter/security/advisories/GHSA-f839-c954-vr6x",
+      "reportedAt": "2026-11-25 10:56:46",
+      "sources": [
+        {
+          "name": "FriendsOfPHP/security-advisories",
+          "remoteId": "run-as-root/magento2-prometheus-exporter/GHSA-f839-c954-vr6x.yaml"
         }
       ]
     },
@@ -7932,7 +8044,7 @@
       "cve": null,
       "title": "RSA keys of any size are accepted: a key chosen by the sender of a token costs seconds of CPU per operation (RSA-PSS and RSA encryption, and every RSA algorithm without GMP)",
       "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-96f8-m4jr-72xj",
-      "reportedAt": "2026-11-26 00:00:00",
+      "reportedAt": "2026-11-27 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",
@@ -7960,7 +8072,7 @@
       "cve": null,
       "title": "RSA-OAEP accepts an encrypted key made of several RSA blocks, enabling recovery of another JWE's content encryption key through a decryption oracle",
       "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-wwcr-82mc-w3pw",
-      "reportedAt": "2026-11-26 00:00:00",
+      "reportedAt": "2026-11-27 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",
@@ -8142,7 +8254,7 @@
       "cve": null,
       "title": "ECDH-ES derives at most 256 bits of key material: with A256CBC-HS512 the content is encrypted under an all-zero AES key and anyone holding the token can read it",
       "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-5pj7-wx9m-cjh6",
-      "reportedAt": "2026-11-26 00:00:00",
+      "reportedAt": "2026-11-27 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",
@@ -8310,7 +8422,7 @@
       "cve": null,
       "title": "AES-GCM decryption accepts any authentication tag length: a holder of one valid JWE can brute force a 1-byte tag in at most 256 requests and rewrite the plaintext",
       "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-j265-mg9q-wpv9",
-      "reportedAt": "2026-11-26 00:00:00",
+      "reportedAt": "2026-11-27 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",
@@ -8604,7 +8716,7 @@
       "cve": null,
       "title": "ECDH-ES derives at most 256 bits of key material: with A256CBC-HS512 the content is encrypted under an all-zero AES key and anyone holding the token can read it",
       "link": "https://github.com/web-token/jwt-framework/security/advisories/GHSA-5pj7-wx9m-cjh6",
-      "reportedAt": "2026-11-26 00:00:00",
+      "reportedAt": "2026-11-27 00:00:00",
       "sources": [
         {
           "name": "FriendsOfPHP/security-advisories",

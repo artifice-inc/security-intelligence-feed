@@ -1,6 +1,26 @@
 {
-  "updated_at": "2026-11-26T04:12:28Z",
+  "updated_at": "2026-11-27T04:18:34Z",
   "items": [
+    {
+      "source": "jvn",
+      "id": "JVN36592422",
+      "title": "EspoCRMにおけるクロスサイトスクリプティングの脆弱性",
+      "link": "https://jvn.jp/jp/JVN36592422/",
+      "date": "2026-11-27T12:00:15+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-11-27T04:18:34Z"
+    },
+    {
+      "source": "jvn",
+      "id": "JVN19729125",
+      "title": "スマートフォンアプリ「マイナアプリ（旧マイナポータルアプリ）」における入力リストによる制限が不十分なことに起因する複数の脆弱性",
+      "link": "https://jvn.jp/jp/JVN19729125/",
+      "date": "2026-11-27T12:00:00+09:00",
+      "cves": [],
+      "verification_status": "needs_review",
+      "first_seen_at": "2026-11-27T04:18:34Z"
+    },
     {
       "source": "jvn",
       "id": "JVN16383801",

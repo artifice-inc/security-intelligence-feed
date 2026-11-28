@@ -1,8 +1,29 @@
 {
-  "fetched_at": "2026-11-27T17:30:30Z",
+  "fetched_at": "2026-11-28T03:58:30Z",
   "ok": true,
-  "catalog_version": "2026.11.25",
+  "catalog_version": "2026.11.27",
   "records": [
+    {
+      "cveID": "CVE-2026-120705",
+      "vendorProject": "OSGeo",
+      "product": "GeoServer",
+      "dateAdded": "2026-11-27",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
+    {
+      "cveID": "CVE-2026-129243",
+      "vendorProject": "OSGeo",
+      "product": "GeoServer",
+      "dateAdded": "2026-11-27",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
+    {
+      "cveID": "CVE-2026-136716",
+      "vendorProject": "Drupal",
+      "product": "Core",
+      "dateAdded": "2026-11-27",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
     {
       "cveID": "CVE-2026-103406",
       "vendorProject": "Hewlett Packard Enterprise (HPE)",
